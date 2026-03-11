@@ -1,6 +1,7 @@
-import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { breadcrumbSchema } from "@/lib/schemas";
+import { Link } from "@/i18n/routing";
+import { getTranslations } from "next-intl/server";
 
 interface Crumb {
   label: string;
@@ -14,7 +15,8 @@ interface PageIntroProps {
   breadcrumbs?: Crumb[];
 }
 
-export function PageIntro({ tag, title, subtitle, breadcrumbs }: PageIntroProps) {
+export async function PageIntro({ tag, title, subtitle, breadcrumbs }: PageIntroProps) {
+  const t = await getTranslations("pageIntro");
   const hasBreadcrumbs = breadcrumbs && breadcrumbs.length > 0;
 
   /* BreadcrumbList JSON-LD schema para SEO/GEO */
@@ -46,7 +48,7 @@ export function PageIntro({ tag, title, subtitle, breadcrumbs }: PageIntroProps)
         {hasBreadcrumbs ? (
           <nav aria-label="Breadcrumb" className="mb-8 flex flex-wrap items-center gap-1.5 text-xs text-zinc-600">
             <Link href="/" className="transition-colors hover:text-zinc-700">
-              Início
+              {t("breadcrumbHome")}
             </Link>
             {breadcrumbs.map((crumb, index) => (
               <span key={`${crumb.label}-${index}`} className="flex items-center gap-1.5">

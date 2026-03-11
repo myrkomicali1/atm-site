@@ -7,7 +7,7 @@ const SITE_URL = "https://www.authomathika.com.br";
 const COMPANY_NAME = "Authomathika";
 const LOGO_URL = `${SITE_URL}/logo-authomathika.png`;
 
-export function organizationSchema() {
+export function organizationSchema(t: (key: string) => string) {
   return {
     "@context": "https://schema.org",
     "@type": ["Organization", "LocalBusiness"],
@@ -23,8 +23,7 @@ export function organizationSchema() {
       height: 80,
     },
     image: LOGO_URL,
-    description:
-      "Empresa completa de engenharia integradora de sistemas Elétricos e de Automação. Desde 1999, entregando soluções em automação industrial, elétrica, energias renováveis, montagem eletromecânica e engenharia EPC para o setor industrial brasileiro.",
+    description: t("description"),
     foundingDate: "1999",
     numberOfEmployees: {
       "@type": "QuantitativeValue",
@@ -50,7 +49,7 @@ export function organizationSchema() {
         telephone: "+55-16-3513-4000",
         contactType: "sales",
         areaServed: "BR",
-        availableLanguage: ["Portuguese"],
+        availableLanguage: ["Portuguese", "English", "Spanish"],
         hoursAvailable: {
           "@type": "OpeningHoursSpecification",
           dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
@@ -80,62 +79,46 @@ export function organizationSchema() {
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Soluções de Engenharia Authomathika",
+      name: t("offerCatalogName"),
       itemListElement: [
-        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Automação Industrial" } },
-        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Engenharia Elétrica" } },
-        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Energias Renováveis" } },
-        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Montagem Eletromecânica" } },
-        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Engenharia EPC" } },
-        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Serviços de Manutenção" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: t("service0") } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: t("service1") } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: t("service2") } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: t("service3") } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: t("service4") } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: t("service5") } },
       ],
     },
     knowsAbout: [
-      "Automação Industrial",
-      "Engenharia Elétrica",
-      "Instrumentação Industrial",
-      "Energias Renováveis",
-      "Energia Solar Fotovoltaica",
-      "Montagem Eletromecânica",
-      "Engenharia EPC",
-      "Setor Sucroenergético",
-      "SCADA",
-      "CLP / PLC",
-      "Metrologia Industrial",
-      "Paradas Programadas",
+      t("knows0"), t("knows1"), t("knows2"), t("knows3"),
+      t("knows4"), t("knows5"), t("knows6"), t("knows7"),
+      "SCADA", "CLP / PLC",
+      t("knows10"), t("knows11"),
     ],
     award: [
-      "Prêmio Excelência de Fornecedores BP Biofuels 2016/2017",
-      "2.000 dias sem acidentes de trabalho (2019)",
-      "Selo Verde – Empresa Sustentável",
+      t("award0"),
+      t("award1"),
+      t("award2"),
     ],
     hasCredential: [
       { "@type": "EducationalOccupationalCredential", name: "ISO 9001" },
       { "@type": "EducationalOccupationalCredential", name: "NR-10" },
       { "@type": "EducationalOccupationalCredential", name: "NR-35" },
-      { "@type": "EducationalOccupationalCredential", name: "RBC – Rede Brasileira de Calibração" },
+      { "@type": "EducationalOccupationalCredential", name: t("credential3") },
     ],
   };
 }
 
-export function websiteSchema() {
+export function websiteSchema(t: (key: string) => string, locale: string) {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${SITE_URL}/#website`,
     url: SITE_URL,
     name: COMPANY_NAME,
-    description: "Engenharia integradora de sistemas Elétricos e de Automação – Sertãozinho, SP, desde 1999.",
+    description: t("websiteDescription"),
     publisher: { "@id": `${SITE_URL}/#organization` },
-    inLanguage: "pt-BR",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${SITE_URL}/buscar?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    },
+    inLanguage: locale,
   };
 }
 
@@ -175,9 +158,9 @@ export function serviceSchema({
     provider: { "@id": `${SITE_URL}/#organization` },
     areaServed: {
       "@type": "Country",
-      name: "Brasil",
+      name: "BR",
     },
-    serviceType: "Engenharia Industrial",
+    serviceType: "Industrial Engineering",
     ...(features && features.length > 0
       ? {
           offers: {
@@ -234,7 +217,7 @@ export function productSchema({
       priceSpecification: {
         "@type": "PriceSpecification",
         priceCurrency: "BRL",
-        description: "Consultar via solicitação de orçamento",
+        description: "Request a quote",
       },
     },
   };
@@ -261,12 +244,14 @@ export function articleSchema({
   url,
   datePublished,
   category,
+  locale = "pt-BR",
 }: {
   title: string;
   description: string;
   url: string;
   datePublished: string;
   category?: string;
+  locale?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -278,7 +263,7 @@ export function articleSchema({
     author: { "@id": `${SITE_URL}/#organization` },
     publisher: { "@id": `${SITE_URL}/#organization` },
     ...(category ? { articleSection: category } : {}),
-    inLanguage: "pt-BR",
+    inLanguage: locale,
   };
 }
 
@@ -294,6 +279,7 @@ export function caseStudySchema({
   sector,
   year,
   results,
+  locale = "pt-BR",
 }: {
   title: string;
   description: string;
@@ -302,6 +288,7 @@ export function caseStudySchema({
   sector: string;
   year: number;
   results?: Array<{ metric: string; value: string }>;
+  locale?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -317,8 +304,8 @@ export function caseStudySchema({
       "@type": "Thing",
       name: client,
     },
-    keywords: [sector, "engenharia", "case study", "projeto industrial"],
-    inLanguage: "pt-BR",
+    keywords: [sector, "engineering", "case study", "industrial project"],
+    inLanguage: locale,
     ...(results && results.length > 0
       ? {
           hasPart: results.map((r) => ({

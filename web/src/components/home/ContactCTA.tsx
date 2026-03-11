@@ -1,26 +1,33 @@
-import Link from "next/link";
 import { ArrowRight, Mail, Phone } from "lucide-react";
 import { company } from "@/lib/data/company";
 import { Button } from "@/components/ui/button";
+import { Link } from "@/i18n/routing";
+import { getTranslations } from "next-intl/server";
+import { AnimateOnScroll } from "@/components/ui/animate-on-scroll";
 
-export function ContactCTA() {
+export async function ContactCTA() {
+  const t = await getTranslations("contactCta");
+  const tc = await getTranslations("common");
+
   return (
-    <section className="border-t border-zinc-100 bg-white py-24">
+    <section className="border-t border-zinc-100 bg-white py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           {/* Left: typographic statement */}
+          <AnimateOnScroll variant="fade-left">
           <div>
             <div className="mb-5 h-0.5 w-10 bg-primary" />
             <h2 className="font-display text-[clamp(2rem,4.5vw,4.25rem)] font-bold leading-[1.02] tracking-[-0.03em] text-zinc-900">
-              Pronto para o<br />próximo projeto?
+              {t("heading")}
             </h2>
             <p className="mt-5 max-w-md text-lg leading-relaxed text-zinc-500">
-              Fale diretamente com nossa equipe técnica e receba uma proposta personalizada
-              para o seu desafio industrial.
+              {t("description")}
             </p>
           </div>
+          </AnimateOnScroll>
 
           {/* Right: action cards */}
+          <AnimateOnScroll variant="fade-right" delay={200}>
           <div className="space-y-3">
             <Button
               asChild
@@ -28,7 +35,7 @@ export function ContactCTA() {
               className="flex h-14 w-full items-center justify-between rounded-2xl px-6 text-base font-semibold"
             >
               <Link href="/contato/solicitacao-de-orcamento">
-                <span>Solicitar proposta técnica</span>
+                <span>{tc("solicitarPropostaTecnica")}</span>
                 <ArrowRight className="size-5" />
               </Link>
             </Button>
@@ -40,7 +47,7 @@ export function ContactCTA() {
               className="flex h-14 w-full items-center justify-between rounded-2xl border-zinc-200 px-6 text-base font-semibold text-zinc-700 hover:bg-zinc-50"
             >
               <Link href="/contato/fale-conosco">
-                <span>Fale conosco</span>
+                <span>{tc("faleConosco")}</span>
                 <ArrowRight className="size-5" />
               </Link>
             </Button>
@@ -67,6 +74,7 @@ export function ContactCTA() {
               </a>
             </div>
           </div>
+          </AnimateOnScroll>
         </div>
       </div>
     </section>

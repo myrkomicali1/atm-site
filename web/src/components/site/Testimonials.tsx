@@ -5,6 +5,7 @@ import {
   type Testimonial,
 } from "@/lib/data/testimonials";
 import { Container, Eyebrow, Section } from "@/components/site/primitives";
+import { getTranslations } from "next-intl/server";
 
 const SITE_URL = "https://www.authomathika.com.br";
 
@@ -41,9 +42,9 @@ function reviewSchema(items: Testimonial[]) {
   };
 }
 
-function StarRating({ rating }: { rating: number }) {
+function StarRating({ rating, ariaLabel }: { rating: number; ariaLabel: string }) {
   return (
-    <div className="flex gap-0.5" aria-label={`${rating} de 5 estrelas`}>
+    <div className="flex gap-0.5" aria-label={ariaLabel}>
       {Array.from({ length: 5 }).map((_, i) => (
         <Star
           key={i}
@@ -65,12 +66,14 @@ interface TestimonialsProps {
   subtitle?: string;
 }
 
-export function Testimonials({
+export async function Testimonials({
   featuredOnly = true,
   sector,
   title,
   subtitle,
 }: TestimonialsProps = {}) {
+  const t = await getTranslations("testimonials");
+  const tTest = await getTranslations("testimonialData");
   let items: Testimonial[];
 
   if (sector) {
@@ -83,7 +86,13 @@ export function Testimonials({
 
   if (items.length === 0) return null;
 
-  const schema = reviewSchema(items);
+  const translatedItems = items.map((item) => ({
+    ...item,
+    quote: tTest.has(`${item.id}.quote`) ? tTest(`${item.id}.quote`) : item.quote,
+    role: tTest.has(`${item.id}.role`) ? tTest(`${item.id}.role`) : item.role,
+    company: tTest.has(`${item.id}.company`) ? tTest(`${item.id}.company`) : item.company,
+  }));
+  const schema = reviewSchema(translatedItems);
 
   return (
     <Section className="bg-zinc-50">
@@ -94,13 +103,12 @@ export function Testimonials({
 
       <Container>
         <div className="mb-12 max-w-2xl">
-          <Eyebrow>Depoimentos</Eyebrow>
+          <Eyebrow>{t("eyebrow")}</Eyebrow>
           <h2 className="section-heading-sm mt-4 text-zinc-900">
-            {title ?? "Confiança construída em mais de 200 projetos"}
+            {title ?? t("defaultTitle")}
           </h2>
           <p className="mt-3 text-base text-zinc-600">
-            {subtitle ??
-              "Parceiros de longa data compartilham suas experiências com a Authomathika."}
+            {subtitle ?? t("defaultSubtitle")}
           </p>
         </div>
 
@@ -113,13 +121,13 @@ export function Testimonials({
               <Quote className="size-8 text-primary/20" aria-hidden="true" />
 
               <blockquote className="mt-4 text-sm leading-relaxed text-zinc-600">
-                &ldquo;{item.quote}&rdquo;
+                &ldquo;{tTest.has(`${item.id}.quote`) ? tTest(`${item.id}.quote`) : item.quote}&rdquo;
               </blockquote>
 
               {item.result ? (
                 <div className="mt-4">
                   <span className="inline-block rounded-full bg-primary/8 px-3 py-1 text-xs font-semibold text-primary">
-                    {item.result}
+                    {tTest.has(`${item.id}.result`) ? tTest(`${item.id}.result`) : item.result}
                   </span>
                 </div>
               ) : null}
@@ -130,10 +138,13 @@ export function Testimonials({
                     {item.name}
                   </div>
                   <div className="text-xs text-zinc-500">
-                    {item.role} &mdash; {item.company}
+                    {tTest.has(`${item.id}.role`) ? tTest(`${item.id}.role`) : item.role} &mdash; {tTest.has(`${item.id}.company`) ? tTest(`${item.id}.company`) : item.company}
                   </div>
                 </div>
-                <StarRating rating={item.rating} />
+                <StarRating
+                  rating={item.rating}
+                  ariaLabel={t("starRating", { rating: item.rating })}
+                />
               </div>
 
               <div className="mt-2">

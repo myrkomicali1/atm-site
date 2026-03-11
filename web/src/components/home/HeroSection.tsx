@@ -1,10 +1,17 @@
-import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { businessAreas } from "@/lib/data/businesses";
 import { company } from "@/lib/data/company";
 import { Button } from "@/components/ui/button";
+import { Link } from "@/i18n/routing";
+import { getTranslations } from "next-intl/server";
+import { ScrollableStrip } from "./ScrollableStrip";
 
-export function HeroSection() {
+export async function HeroSection() {
+  const t = await getTranslations("hero");
+  const tc = await getTranslations("common");
+  const tBiz = await getTranslations("businessAreasData");
+  const years = new Date().getFullYear() - 1999;
+
   return (
     <section className="relative overflow-hidden bg-zinc-950">
       <div className="page-grid-dark pointer-events-none absolute inset-0 opacity-60" />
@@ -23,28 +30,25 @@ export function HeroSection() {
               <div className="mb-10 flex items-center gap-3">
                 <div className="h-px w-8 bg-primary" />
                 <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.22em] text-zinc-500">
-                  Engenharia integradora desde {company.founded}
+                  {t("tagline", { founded: company.founded })}
                 </span>
               </div>
 
               {/* Benefit-centered headline */}
               <h1 className="mb-8 font-display font-bold leading-[0.95] tracking-[-0.04em]">
                 <span className="block text-[clamp(2.75rem,6.5vw,5.5rem)] text-zinc-200">
-                  Um parceiro.
+                  {t("headlineLine1")}
                 </span>
                 <span className="block text-[clamp(2.75rem,6.5vw,5.5rem)] text-zinc-200">
-                  Responsabilidade
+                  {t("headlineLine2")}
                 </span>
                 <span className="block text-[clamp(2.75rem,6.5vw,5.5rem)] text-primary">
-                  de ponta a ponta.
+                  {t("headlineLine3")}
                 </span>
               </h1>
 
               <p className="mb-10 max-w-lg text-lg leading-relaxed text-zinc-400">
-                Elétrica, automação, montagem, EPC e inteligência de dados —
-                integrados em um único contrato. 25 anos de gestão de projetos
-                industriais em mais de 12 setores. Entrega no prazo, sem acidentes,
-                sem retrabalho.
+                {t("description", { years })}
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -54,7 +58,7 @@ export function HeroSection() {
                   className="h-12 rounded-full px-7 font-semibold"
                 >
                   <Link href="/contato/solicitacao-de-orcamento">
-                    Solicitar proposta <ArrowRight className="size-4" />
+                    {t("ctaPrimary")} <ArrowRight className="size-4" />
                   </Link>
                 </Button>
                 <Button
@@ -64,7 +68,7 @@ export function HeroSection() {
                   className="h-12 rounded-full border border-zinc-700 px-7 font-semibold text-zinc-300 hover:border-zinc-600 hover:bg-zinc-900 hover:text-white"
                 >
                   <Link href="#setores">
-                    Encontre sua solução <ArrowUpRight className="size-4" />
+                    {t("ctaSecondary")} <ArrowUpRight className="size-4" />
                   </Link>
                 </Button>
               </div>
@@ -74,10 +78,10 @@ export function HeroSection() {
           {/* Right: vertical stats sidebar (desktop only) */}
           <div className="hidden flex-col border-l border-zinc-800/50 pt-28 lg:flex">
             {[
-              { value: "25+", unit: "anos", label: "de mercado" },
-              { value: "42.027", unit: "", label: "equipamentos atendidos" },
-              { value: "336", unit: "MW", label: "energia solar instalada" },
-              { value: "208", unit: "", label: "projetos de montagem" },
+              { value: t("stats.anosValue", { years }), unit: t("stats.anosUnit"), label: t("stats.anosLabel") },
+              { value: t("stats.equipamentosValue"), unit: "", label: t("stats.equipamentosLabel") },
+              { value: t("stats.energiaValue"), unit: t("stats.energiaUnit"), label: t("stats.energiaLabel") },
+              { value: t("stats.projetosValue"), unit: "", label: t("stats.projetosLabel") },
             ].map((item) => (
               <div
                 key={item.label}
@@ -103,7 +107,7 @@ export function HeroSection() {
 
         {/* ── Business areas strip — anchored to hero bottom ── */}
         <div className="border-t border-zinc-800/60">
-          <div className="flex overflow-x-auto">
+          <ScrollableStrip>
             {businessAreas.map((area, i) => (
               <Link
                 key={area.slug}
@@ -115,13 +119,13 @@ export function HeroSection() {
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <span className="text-sm font-medium text-zinc-400 transition-colors group-hover:text-zinc-100">
-                    {area.name}
+                    {tBiz(`${area.slug}.name`)}
                   </span>
                   <ArrowUpRight className="size-3 text-zinc-600 opacity-0 transition-opacity group-hover:opacity-100" />
                 </div>
               </Link>
             ))}
-          </div>
+          </ScrollableStrip>
         </div>
       </div>
     </section>

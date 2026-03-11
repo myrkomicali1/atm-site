@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
-
-/* font-display: swap para evitar FOIT (Flash of Invisible Text) */
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
@@ -62,9 +59,7 @@
   --input: oklch(0.96 0.005 250);
   --ring: oklch(0.451 0.225 17.5);
 
-  --font-body: "Plus Jakarta Sans", system-ui, sans-serif;
-  --font-display: "Space Grotesk", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
+  /* Font variables are injected by next/font via CSS custom properties --font-body, --font-display, --font-mono */
 }
 
 @layer base {
@@ -196,4 +191,25 @@
   font-weight: 700;
   letter-spacing: -0.04em;
   line-height: 1;
+}
+
+/* ── Hide scrollbar utility ──────────────────────── */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ── Respect reduced motion preference ────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { Container, Eyebrow, Section } from "@/components/site/primitives";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 
 export interface FAQSectionItem {
   question: string;
@@ -32,11 +33,14 @@ interface FAQSectionProps {
  */
 export function FAQSection({
   items,
-  title = "Perguntas frequentes",
+  title,
   subtitle,
   standalone = true,
   className,
 }: FAQSectionProps) {
+  const t = useTranslations("faqSection");
+  const resolvedTitle = title ?? t("defaultTitle");
+
   if (items.length === 0) return null;
 
   const content = (
@@ -44,7 +48,7 @@ export function FAQSection({
       {standalone ? (
         <div className="mb-10 max-w-2xl">
           <Eyebrow>FAQ</Eyebrow>
-          <h2 className="section-heading-sm mt-4 text-zinc-900">{title}</h2>
+          <h2 className="section-heading-sm mt-4 text-zinc-900">{resolvedTitle}</h2>
           {subtitle ? (
             <p className="mt-3 text-base text-zinc-600">{subtitle}</p>
           ) : null}
@@ -54,7 +58,7 @@ export function FAQSection({
       <div className="overflow-hidden rounded-2xl border border-zinc-200 bg-white">
         {!standalone ? (
           <h2 className="border-b border-zinc-200 px-5 py-3 text-xs uppercase tracking-[0.14em] text-zinc-500 font-normal">
-            {title}
+            {resolvedTitle}
           </h2>
         ) : null}
         <Accordion type="single" collapsible className="divide-y divide-zinc-200">

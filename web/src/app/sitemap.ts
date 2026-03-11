@@ -6,6 +6,8 @@ import { sectors } from "@/lib/data/sectors";
 import { caseStudies } from "@/lib/data/case-studies";
 
 const BASE = "https://www.authomathika.com.br";
+const LOCALES = ["pt-BR", "en", "es"] as const;
+const DEFAULT_LOCALE = "pt-BR";
 
 type ChangeFreq =
   | "always"
@@ -19,13 +21,22 @@ type ChangeFreq =
 function url(
   path: string,
   priority: number,
-  changeFrequency: ChangeFreq = "monthly"
+  changeFrequency: ChangeFreq = "monthly",
 ): MetadataRoute.Sitemap[number] {
+  const languages: Record<string, string> = {};
+  for (const locale of LOCALES) {
+    const prefix = locale === DEFAULT_LOCALE ? "" : `/${locale}`;
+    languages[locale] = `${BASE}${prefix}${path}`;
+  }
+
   return {
     url: `${BASE}${path}`,
     lastModified: new Date(),
     changeFrequency,
     priority,
+    alternates: {
+      languages,
+    },
   };
 }
 
@@ -40,11 +51,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url("/empresa/linha-do-tempo", 0.7),
     url("/empresa/clientes", 0.7),
 
-    // Nossos Negócios
+    // Nossos Negocios
     url("/nossos-negocios", 0.9),
-    ...businessAreas.map((b) =>
-      url(`/nossos-negocios/${b.slug}`, 0.85)
-    ),
+    ...businessAreas.map((b) => url(`/nossos-negocios/${b.slug}`, 0.85)),
 
     // Setores
     url("/setores", 0.9),
@@ -54,7 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url("/cases", 0.9),
     ...caseStudies.map((c) => url(`/cases/${c.slug}`, 0.8)),
 
-    // Serviços
+    // Servicos
     url("/servicos", 0.9),
     ...servicePages.map((s) => url(`/servicos/${s.slug}`, 0.8)),
 

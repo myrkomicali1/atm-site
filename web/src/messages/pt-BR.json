@@ -1,0 +1,2179 @@
+{
+  "common": {
+    "solicitarProposta": "Solicitar Proposta",
+    "solicitarPropostaTecnica": "Solicitar proposta técnica",
+    "verSolucoes": "Ver soluções",
+    "verSolucoesParaSetor": "Ver soluções para o setor",
+    "faleConosco": "Fale conosco",
+    "falarComEquipeTecnica": "Falar com a equipe técnica",
+    "conhecerEmpresa": "Conhecer a empresa",
+    "linhaDoTempo": "Linha do tempo",
+    "verTodosClientes": "Ver todos os clientes",
+    "todosOsSetores": "Todos os setores",
+    "verTodosOsSetores": "Ver todos os setores",
+    "verTodasDivisoes": "Ver todas as divisões",
+    "verTodosOsCases": "Ver todos os cases",
+    "verTodas": "Ver todas",
+    "encontreSuaSolucao": "Encontre sua solução",
+    "conhecaNossasDivisoes": "Conheça nossas divisões operacionais",
+    "inicio": "Início",
+    "fecharMenu": "Fechar menu",
+    "abrirMenu": "Abrir menu"
+  },
+  "nav": {
+    "empresa": "Empresa",
+    "solucoes": "Soluções",
+    "setores": "Setores",
+    "servicos": "Serviços",
+    "produtos": "Produtos",
+    "cases": "Cases",
+    "mediaCenter": "Media Center",
+    "contato": "Contato",
+    "trabalheConosco": "Trabalhe Conosco",
+    "divisoesOperacionais": "Divisões operacionais",
+    "verTodasDivisoes": "Ver todas as divisões",
+    "aEmpresa": "A empresa",
+    "setoresQueAtendemos": "Setores que atendemos",
+    "verTodosOsSetores": "Ver todos os setores",
+    "mainNav": "Navegação principal",
+    "mobileNav": "Menu de navegação"
+  },
+  "navEmpresa": {
+    "institucional": {
+      "label": "Institucional",
+      "desc": "Nossa história, missão e valores"
+    },
+    "visaoCorporativa": {
+      "label": "Visão Corporativa",
+      "desc": "Pilares de governança e compromisso"
+    },
+    "linhaDoTempo": {
+      "label": "Linha do Tempo",
+      "desc": "25 anos de evolução e marcos"
+    },
+    "clientes": {
+      "label": "Clientes",
+      "desc": "Referências e parceiros estratégicos"
+    }
+  },
+  "hero": {
+    "tagline": "Engenharia integradora desde {founded}",
+    "headlineLine1": "Um parceiro.",
+    "headlineLine2": "Responsabilidade",
+    "headlineLine3": "de ponta a ponta.",
+    "description": "Elétrica, automação, montagem, EPC e inteligência de dados — integrados em um único contrato. {years} anos de gestão de projetos industriais em mais de 12 setores. Entrega no prazo, sem acidentes, sem retrabalho.",
+    "ctaPrimary": "Solicitar proposta",
+    "ctaSecondary": "Encontre sua solução",
+    "stats": {
+      "anosValue": "{years}+",
+      "anosUnit": "anos",
+      "anosLabel": "de mercado",
+      "equipamentosValue": "42.027",
+      "equipamentosLabel": "equipamentos atendidos",
+      "energiaValue": "336",
+      "energiaUnit": "MW",
+      "energiaLabel": "energia solar instalada",
+      "projetosValue": "208",
+      "projetosLabel": "projetos de montagem"
+    }
+  },
+  "sectors": {
+    "tag": "12+ setores atendidos",
+    "heading": "A mesma engenharia. Qualquer segmento industrial.",
+    "description": "25 anos de gestão de projetos em setores com exigências distintas. A capacidade de integrar elétrica, automação, montagem e EPC sob um único contrato é o que nos permite atuar onde seu projeto precisar.",
+    "naoEncontrouSetor": "Não encontrou seu setor?",
+    "naoEncontrouSetorDesc": "208 projetos executados em segmentos diversos. Fale com nosso time técnico sobre o seu desafio específico."
+  },
+  "capabilities": {
+    "tag": "Divisões operacionais",
+    "heading": "O que fazemos"
+  },
+  "methodology": {
+    "tag": "Metodologia de entrega",
+    "heading": "Do diagnóstico ao comissionamento.",
+    "headingHighlight": "Um único responsável.",
+    "description": "Cada projeto segue a mesma metodologia de gestão integrada que já entregou 208 projetos em 12 setores — com cronograma cumprido, documentação completa e zero acidentes.",
+    "steps": {
+      "step01": {
+        "number": "01",
+        "title": "Diagnóstico técnico",
+        "description": "Levantamento de campo, análise de riscos e definição de escopo. Entendemos as especificidades da sua planta antes de propor qualquer solução."
+      },
+      "step02": {
+        "number": "02",
+        "title": "Engenharia e planejamento",
+        "description": "Projeto básico e executivo, cronograma detalhado, EAP e procurement. Gestão de escopo com rastreabilidade digital completa."
+      },
+      "step03": {
+        "number": "03",
+        "title": "Execução integrada",
+        "description": "Elétrica, automação, instrumentação e montagem sob uma única coordenação. 2.000+ dias sem acidentes. NR-10 e NR-35 em cada frente."
+      },
+      "step04": {
+        "number": "04",
+        "title": "Comissionamento e entrega",
+        "description": "Start-up assistido, as-built completo e documentação técnica impecável. Dashboards de operação com inteligência de dados integrada."
+      }
+    },
+    "differentials": {
+      "ia": {
+        "title": "Inteligência artificial e dados",
+        "description": "Dashboards de gestão, automação de processos administrativos e inteligência comercial. Transformamos dados em decisões — da operação à diretoria."
+      },
+      "gestao": {
+        "title": "Gestão integrada de projetos",
+        "description": "Controle de escopo, prazo e custo em uma única metodologia — aplicada com o mesmo rigor em usinas sucroenergéticas, mineradoras, parques solares ou qualquer operação industrial."
+      },
+      "seguranca": {
+        "title": "Segurança como premissa",
+        "description": "2.000+ dias sem acidentes de trabalho, certificações NR-10 e NR-35, DDS diário e cultura de segurança que atende os padrões mais rigorosos do mercado."
+      }
+    }
+  },
+  "proof": {
+    "tag": "Impacto em números",
+    "heading": "42.027 equipamentos. 336 MW solares. Zero retrabalho.",
+    "equipamentosAtendidos": "Equipamentos atendidos",
+    "atendimentosTecnicos": "atendimentos técnicos especializados",
+    "horasDeServico": "Horas de serviço",
+    "energiaSolarInstalada": "Energia solar instalada",
+    "emParquesFotovoltaicos": "em 7 parques fotovoltaicos",
+    "certificacoes": "Certificações"
+  },
+  "works": {
+    "tag": "Portfólio",
+    "heading": "Entregas de referência."
+  },
+  "company": {
+    "tag": "Nossa história",
+    "heading": "Desde {founded}, integrando engenharia e gestão de projetos industriais.",
+    "description": "208 projetos executados em 12 setores industriais. A Authomathika assume responsabilidade integral — do diagnóstico ao comissionamento — com a mesma metodologia de gestão que entrega prazo, segurança e documentação impecável. Hoje, inteligência artificial e análise de dados transformam a gestão administrativa e operacional dos nossos clientes.",
+    "pillars": {
+      "gestaoIntegrada": {
+        "title": "Gestão Integrada",
+        "sub": "Escopo, prazo e custo sob controle"
+      },
+      "iaDados": {
+        "title": "IA & Dados",
+        "sub": "Gestão inteligente e automação"
+      },
+      "iso9001": {
+        "title": "ISO 9001",
+        "sub": "Certificação de qualidade"
+      },
+      "nr10Nr35": {
+        "title": "NR-10 / NR-35",
+        "sub": "Segurança comprovada"
+      },
+      "lgpdNr1": {
+        "title": "LGPD / NR-1",
+        "sub": "Conformidade e proteção de dados"
+      },
+      "diasSemAcidentes": {
+        "title": "2.000+ dias",
+        "sub": "Sem acidentes de trabalho"
+      }
+    },
+    "clientesTag": "Clientes de referência",
+    "clientesDesc": "{count}+ clientes de referência em 12 setores industriais"
+  },
+  "contactCta": {
+    "heading": "Pronto para o próximo projeto?",
+    "description": "Fale diretamente com nossa equipe técnica e receba uma proposta personalizada para o seu desafio industrial."
+  },
+  "footer": {
+    "navLabel": "Navegação do rodapé",
+    "brandTagline": "Engenharia integradora para sistemas industriais críticos.",
+    "brandDescription": "Desde {founded}, conectando elétrica, automação, EPC e energias renováveis em projetos de alta exigência.",
+    "copyright": "© {year} Authomathika Engenharia. Todos os direitos reservados.",
+    "columns": {
+      "empresa": {
+        "title": "Empresa",
+        "institucional": "Institucional",
+        "visaoCorporativa": "Visão Corporativa",
+        "clientes": "Clientes",
+        "linhaDoTempo": "Linha do Tempo"
+      },
+      "solucoes": {
+        "title": "Soluções",
+        "nossosNegocios": "Nossos Negócios",
+        "setores": "Setores",
+        "servicos": "Serviços",
+        "produtos": "Produtos",
+        "cases": "Cases"
+      },
+      "contato": {
+        "title": "Contato",
+        "faleConosco": "Fale Conosco",
+        "solicitarOrcamento": "Solicitar Orçamento",
+        "fornecedores": "Fornecedores",
+        "localizacao": "Localização"
+      }
+    },
+    "socials": {
+      "linkedin": "LinkedIn da Authomathika",
+      "instagram": "Instagram da Authomathika",
+      "facebook": "Facebook da Authomathika",
+      "youtube": "YouTube da Authomathika"
+    }
+  },
+  "floatingCta": {
+    "ariaLabel": "Fale conosco pelo WhatsApp"
+  },
+  "homeFaq": {
+    "q1": "O que é uma empresa integradora de sistemas?",
+    "a1": "Uma integradora de sistemas é uma empresa especializada em projetar, instalar e comissionar soluções completas de controle e monitoramento para plantas industriais. A Authomathika atua como integradora desde 1999, com mais de 290.000 pontos de automação em 180 plantas no Brasil.",
+    "q2": "Quais setores a Authomathika atende?",
+    "a2": "A Authomathika atende mais de 12 setores industriais, incluindo sucroenergético, fertilizantes, saneamento, mineração, alimentos e bebidas, energia solar fotovoltaica, logística, química, siderurgia, papel e celulose, entre outros.",
+    "q3": "Qual a diferença entre projeto greenfield e brownfield?",
+    "a3": "Um projeto greenfield é uma implantação totalmente nova, onde a engenharia é projetada do zero para uma planta que ainda será construída. Já o brownfield envolve a modernização, ampliação ou revamp de sistemas existentes em plantas já em operação. A Authomathika possui experiência em ambos os modelos.",
+    "q4": "A Authomathika realiza projetos EPC (turnkey)?",
+    "a4": "Sim. A Authomathika oferece contratos EPC (Engineering, Procurement and Construction), assumindo responsabilidade integral desde a engenharia básica até o comissionamento. Cases incluem usinas sucroenergéticas completas, fábricas de açúcar e caldeiras turnkey.",
+    "q5": "Como solicitar um orçamento?",
+    "a5": "Você pode solicitar um orçamento através do formulário na página de Solicitação de Proposta, pelo telefone (16) 3513-4000 ou pelo WhatsApp (16) 99646-5516. A Authomathika oferece estudo de escopo gratuito para dimensionar prazos e custos de cada projeto."
+  },
+  "faqSection": {
+    "defaultTitle": "Perguntas frequentes"
+  },
+  "metadata": {
+    "homeTitle": "Authomathika – Engenharia Integradora",
+    "homeDescription": "Engenharia integradora com responsabilidade de ponta a ponta. Elétrica, automação, EPC, IA e dados em um único contrato. 27+ anos, 208 projetos, 12+ setores industriais."
+  },
+  "pageIntro": {
+    "breadcrumbHome": "Início"
+  },
+  "accessibility": {
+    "skipToContent": "Pular para o conteúdo principal"
+  },
+  "testimonials": {
+    "eyebrow": "Depoimentos",
+    "defaultTitle": "Confiança construída em mais de 200 projetos",
+    "defaultSubtitle": "Parceiros de longa data compartilham suas experiências com a Authomathika.",
+    "starRating": "{rating} de 5 estrelas"
+  },
+  "businessAreasData": {
+    "energias-renovaveis": {
+      "name": "Energias Renováveis",
+      "shortDescription": "336 MW de energia solar instalados em 7 parques fotovoltaicos",
+      "description": "A divisão de Energias Renováveis da Authomathika atua na implantação de usinas solares fotovoltaicas de geração centralizada e distribuída. Com expertise em montagem elétrica, mecânica e civil, além de engenharia executiva, entregamos soluções completas para o setor de energia limpa.",
+      "metric0Value": "336 MW",
+      "metric0Label": "Energia Solar Instalada",
+      "metric1Value": "7",
+      "metric1Label": "Parques Executados",
+      "services": {
+        "0": "Solar fotovoltaica – Geração Centralizada",
+        "1": "Solar fotovoltaica – Geração Distribuída",
+        "2": "Montagem elétrica e mecânica",
+        "3": "Montagem civil",
+        "4": "Engenharia executiva",
+        "5": "Comissionamento e start-up",
+        "6": "Operação e manutenção (O&M)"
+      }
+    },
+    "eletrica": {
+      "name": "Elétrica",
+      "shortDescription": "26 plantas Greenfield e 73 Brownfield em processos industriais e prediais",
+      "description": "A divisão Elétrica da Authomathika oferece soluções completas para processos industriais, prediais, de geração e cogeração de energia. Desde o projeto até o comissionamento, nossa equipe de engenheiros especializados garante excelência técnica e cumprimento de prazos.",
+      "metric0Value": "26",
+      "metric0Label": "Plantas Greenfield",
+      "metric1Value": "73",
+      "metric1Label": "Plantas Brownfield",
+      "metric2Value": "225",
+      "metric2Label": "CCMs Instalados",
+      "metric3Value": "256",
+      "metric3Label": "QGBTs Instalados",
+      "metric4Value": "23",
+      "metric4Label": "Centrais Termelétricas",
+      "services": {
+        "0": "Projeto e aquisição de materiais",
+        "1": "Construção e montagem elétrica",
+        "2": "Comissionamento e start-up",
+        "3": "Painéis elétricos (CCMs, QGBTs, switchboards)",
+        "4": "Bancos de capacitores",
+        "5": "Centrais termelétricas",
+        "6": "Sistemas de cogeração"
+      }
+    },
+    "automacao": {
+      "name": "Automação",
+      "shortDescription": "41 plantas Greenfield, 139 Brownfield e 290.000 pontos de automação",
+      "description": "A divisão de Automação da Authomathika é uma das mais completas do setor, atuando em automação industrial e instrumentação para geração e cogeração. Desenvolvemos software SCADA, programamos CLPs e executamos projetos de automação do início ao fim.",
+      "metric0Value": "41",
+      "metric0Label": "Plantas Greenfield",
+      "metric1Value": "139",
+      "metric1Label": "Plantas Brownfield",
+      "metric2Value": "290.000",
+      "metric2Label": "Pontos de Automação",
+      "services": {
+        "0": "Automação industrial e instrumentação",
+        "1": "Desenvolvimento de software SCADA",
+        "2": "Programação de CLPs",
+        "3": "Projetos de automação integrados",
+        "4": "Fabricação de painéis de automação",
+        "5": "Montagem e comissionamento de campo",
+        "6": "Treinamento operacional"
+      }
+    },
+    "servicos": {
+      "name": "Serviços",
+      "shortDescription": "42.027 equipamentos, 297.000 horas e 1.630 atendimentos técnicos",
+      "description": "A divisão de Serviços da Authomathika oferece suporte técnico especializado para manutenção, metrologia e diagnóstico de equipamentos industriais. Com laboratórios fixos e móveis e o sistema online Serelepe, garantimos rastreabilidade e qualidade em cada atendimento.",
+      "metric0Value": "42.027",
+      "metric0Label": "Equipamentos Atendidos",
+      "metric1Value": "297.000",
+      "metric1Label": "Horas de Serviço",
+      "metric2Value": "1.630",
+      "metric2Label": "Atendimentos Técnicos",
+      "services": {
+        "0": "Paradas programadas (NR-10, NR-35)",
+        "1": "Manutenção corretiva e preventiva",
+        "2": "Metrologia RBC – certificados rastreados",
+        "3": "Diagnóstico e certificação de redes",
+        "4": "Serviços em campo (sistema Serelepe online)",
+        "5": "Tecnologia da Informação (CFTV, fibra óptica, redes)",
+        "6": "Laboratórios fixos e móveis"
+      }
+    },
+    "montagem-eletromecanica": {
+      "name": "Montagem Eletromecânica",
+      "shortDescription": "208 projetos em 23+ anos de experiência multissetorial",
+      "description": "Com mais de 23 anos de resultados comprovados, a divisão de Montagem Eletromecânica da Authomathika atende os mais variados segmentos industriais. Da montagem de pequenos equipamentos a grandes projetos industriais, entregamos qualidade e segurança.",
+      "metric0Value": "105",
+      "metric0Label": "Projetos Pequeno Porte",
+      "metric1Value": "74",
+      "metric1Label": "Projetos Médio Porte",
+      "metric2Value": "29",
+      "metric2Label": "Projetos Grande Porte",
+      "services": {
+        "0": "Montagem eletromecânica industrial",
+        "1": "Instalações mecânicas e elétricas",
+        "2": "Alinhamento e nivelamento de equipamentos",
+        "3": "Montagem de tubulações industriais",
+        "4": "Instalação de estruturas metálicas",
+        "5": "Comissionamento mecânico"
+      }
+    },
+    "inteligencia-artificial-dados": {
+      "name": "IA & Dados",
+      "shortDescription": "Inteligência artificial e dados para gestão administrativa, operacional e tomada de decisão empresarial",
+      "description": "A divisão de IA & Dados da Authomathika aplica inteligência artificial, automação de processos e análise de dados para transformar a gestão de empresas. Atuamos na otimização de rotinas administrativas, gestão financeira, controle de estoque, planejamento de recursos, atendimento ao cliente e inteligência comercial. Ajudamos empresas de qualquer segmento a tomar decisões mais rápidas e fundamentadas em dados — da diretoria ao operacional.",
+      "services": {
+        "0": "Dashboards de gestão e indicadores (KPIs) em tempo real",
+        "1": "Automação de processos administrativos e operacionais (RPA)",
+        "2": "Análise de dados para tomada de decisão empresarial",
+        "3": "Inteligência comercial e previsão de demanda",
+        "4": "Otimização de gestão financeira e fluxo de caixa",
+        "5": "Controle inteligente de estoque e supply chain",
+        "6": "Chatbots e assistentes de IA para atendimento e suporte",
+        "7": "Integração de dados entre ERPs, CRMs e sistemas corporativos",
+        "8": "Relatórios automatizados e business intelligence",
+        "9": "Consultoria em transformação digital e cultura de dados"
+      }
+    },
+    "engenharia-epc": {
+      "name": "Engenharia EPC",
+      "shortDescription": "EPC completo desde 1999 – Projetos, administração, construção e produção",
+      "description": "A Authomathika realiza contratos EPC (Engineering, Procurement and Construction) completos desde sua fundação em 1999. Nossa capacidade de gerenciar projetos de engenharia do início ao fim, com parcerias estratégicas para execução, garante entregas dentro do prazo e do orçamento.",
+      "metric0Value": "25+",
+      "metric0Label": "Anos de EPC",
+      "metric1Value": "100%",
+      "metric1Label": "Projetos Entregues",
+      "services": {
+        "0": "Engenharia de projetos (básica e executiva)",
+        "1": "Procurement – aquisição e gerenciamento de materiais",
+        "2": "Construction – construção e montagem",
+        "3": "Gerenciamento integrado de projetos",
+        "4": "Administração e controle de contratos",
+        "5": "Parcerias estratégicas para execução"
+      }
+    }
+  },
+  "sectorNames": {
+    "sucroenergético": {
+      "name": "Sucroenergético",
+      "headline": "Automação e elétrica integradas para usinas que não podem parar",
+      "description": "Desde 1999, a Authomathika é referência em engenharia para o setor sucroenergético. Atuamos em todas as áreas da usina — fermentação, destilaria, caldeira, cogeração e fábrica de açúcar — com soluções integradas de automação, elétrica e montagem eletromecânica. Nossa experiência abrange projetos greenfield completos (turnkey) e revamps de plantas em operação.",
+      "metric0Value": "180+",
+      "metric0Label": "Plantas industriais atendidas",
+      "metric1Value": "290.000",
+      "metric1Label": "Pontos de automação implantados",
+      "metric2Value": "25+",
+      "metric2Label": "Anos no setor sucroenergético",
+      "metric3Value": "8",
+      "metric3Label": "Projetos turnkey entregues",
+      "painPoints": {
+        "0": "Paradas não programadas durante a safra geram prejuízos de centenas de milhares de reais por dia",
+        "1": "Sistemas de automação legados e desintegrados dificultam o controle de processo e aumentam o consumo energético",
+        "2": "Encontrar integradores que conheçam a realidade operacional de uma usina é cada vez mais difícil",
+        "3": "Projetos de modernização precisam ser executados na entressafra, com janelas de tempo extremamente curtas",
+        "4": "Falta de rastreabilidade e documentação técnica atualizada compromete a manutenção e a segurança"
+      },
+      "solutions": {
+        "0": "Projetos turnkey com responsabilidade integral — da engenharia ao comissionamento em um único contrato",
+        "1": "Revamps de automação com migração planejada de CLPs e SCADA sem interromper a produção",
+        "2": "Equipes especializadas no setor sucroenergético há mais de 25 anos, conhecendo cada etapa do processo",
+        "3": "Execução concentrada na entressafra com planejamento detalhado e cumprimento rigoroso de cronograma",
+        "4": "Sistema Serelepe de rastreabilidade com relatórios online e certificados digitais"
+      },
+      "faq": {
+        "0": {
+          "question": "A Authomathika executa projetos turnkey completos para usinas?",
+          "answer": "Sim. A Authomathika realiza projetos turnkey (chave na mão) para usinas sucroenergéticas, assumindo responsabilidade integral desde a engenharia básica até o comissionamento e start-up. Cases incluem a Usina Costa Rica (usina completa), Rio Vermelho (fábrica de açúcar) e Pedra Buriti (caldeira e cogeração)."
+        },
+        "1": {
+          "question": "Como funciona a execução de projetos durante a entressafra?",
+          "answer": "A Authomathika possui experiência comprovada em execução concentrada na entressafra. O planejamento detalhado começa meses antes, com cronograma rigoroso, mobilização de equipes certificadas NR-10/NR-35 e gestão logística completa. O objetivo é minimizar o tempo de parada e garantir que a planta esteja pronta para a próxima safra."
+        },
+        "2": {
+          "question": "Quais plataformas de automação a Authomathika trabalha em usinas?",
+          "answer": "Trabalhamos com as principais plataformas do mercado: Rockwell (Allen-Bradley), Siemens, Yokogawa, Emerson, Altus, ABB, Schneider e GE. Desenvolvemos software SCADA customizado e integramos sistemas de supervisão existentes, além de programar CLPs para todas as áreas da usina."
+        },
+        "3": {
+          "question": "É possível modernizar a automação da usina sem parar a produção?",
+          "answer": "Sim. A Authomathika tem expertise em migrações planejadas de sistemas de automação com mínimo impacto na produção. Utilizamos estratégias de transição gradual, onde o sistema novo opera em paralelo com o legado até a validação completa, garantindo continuidade operacional."
+        },
+        "4": {
+          "question": "A Authomathika oferece suporte após o comissionamento?",
+          "answer": "Sim. A divisão de Serviços da Authomathika oferece suporte pós-comissionamento com paradas programadas, manutenção preventiva e corretiva, metrologia RBC e o sistema Serelepe para rastreabilidade online. São mais de 42.000 equipamentos atendidos e 297.000 horas de serviço acumuladas."
+        }
+      }
+    },
+    "mineracao": {
+      "name": "Mineração",
+      "headline": "Engenharia eletromecânica e automação para operações de mineração críticas",
+      "description": "A Authomathika atende o setor de mineração com projetos de engenharia elétrica, automação e montagem eletromecânica para plantas de beneficiamento, eletro centros e infraestrutura industrial. Com experiência em grandes players do setor como a Vale, oferecemos soluções que atendem aos rigorosos padrões de segurança e qualificação exigidos pela mineração.",
+      "metric0Value": "2.000+",
+      "metric0Label": "Dias sem acidentes",
+      "metric1Value": "ISO 9001",
+      "metric1Label": "Certificação de qualidade",
+      "metric2Value": "NR-10/35",
+      "metric2Label": "Conformidade em segurança",
+      "painPoints": {
+        "0": "Processos de pré-qualificação rigorosos e longos exigem fornecedores com documentação impecável",
+        "1": "Operações em áreas remotas demandam fornecedores com logística própria e capacidade de mobilização rápida",
+        "2": "Ambientes agressivos (poeira, vibração, corrosão) exigem engenharia robusta e materiais especificados",
+        "3": "Requisitos de segurança extremamente rigorosos eliminam fornecedores sem certificações adequadas",
+        "4": "Projetos de CAPEX com prazos inflexíveis e penalidades contratuais por atraso"
+      },
+      "solutions": {
+        "0": "Documentação técnica completa — ISO 9001, NR-10, NR-35, certificados RBC — pronta para pré-qualificação",
+        "1": "Equipes mobilizáveis para projetos em qualquer localidade do Brasil, com frota própria e logística independente",
+        "2": "Engenharia executiva com especificação detalhada de materiais e equipamentos para ambientes severos",
+        "3": "2.000+ dias sem acidentes de trabalho — cultura de segurança comprovada em operações de campo",
+        "4": "Gestão de projetos com cronograma integrado, marcos contratuais e reporting executivo"
+      },
+      "faq": {
+        "0": {
+          "question": "A Authomathika possui as certificações exigidas pela mineração?",
+          "answer": "Sim. A Authomathika é certificada ISO 9001, possui equipes treinadas e certificadas em NR-10 (Segurança em Instalações e Serviços em Eletricidade) e NR-35 (Trabalho em Altura), além de laboratórios de metrologia com certificação RBC (Rede Brasileira de Calibração). Toda a documentação está disponível para processos de pré-qualificação."
+        },
+        "1": {
+          "question": "Como solicitar a documentação para pré-qualificação?",
+          "answer": "A Authomathika mantém um pacote de documentação de pré-qualificação atualizado e pronto para envio. Entre em contato com nossa equipe comercial para receber o kit completo, incluindo certificações, indicadores de segurança (TFCA, TFSA), registros de CNPJ, certidões e referências de projetos anteriores."
+        },
+        "2": {
+          "question": "A Authomathika já executou projetos para grandes mineradoras?",
+          "answer": "Sim. A Authomathika executou projetos para a Vale em Carajás (PA), incluindo implantação de eletro centros com engenharia elétrica e automação completa. A empresa também atende empresas do segmento de fertilizantes ligados à mineração, como a Vale Fertilizantes em Uberaba e Araxá."
+        }
+      }
+    },
+    "energias-renovaveis": {
+      "name": "Energias Renováveis",
+      "headline": "Do projeto ao MW conectado — engenharia solar de grande porte",
+      "description": "A divisão de Energias Renováveis da Authomathika é especializada na implantação de usinas solares fotovoltaicas de geração centralizada e distribuída. Com 336 MW instalados em 7 parques fotovoltaicos, incluindo o projeto de 540 MW da UFV Belmonte em parceria com o Grupo Cobra, a empresa é referência em montagem elétrica, mecânica e civil para o setor solar.",
+      "metric0Value": "336",
+      "metric0Label": "MW instalados",
+      "metric1Value": "7",
+      "metric1Label": "Parques fotovoltaicos",
+      "metric2Value": "540 MW",
+      "metric2Label": "Maior projeto (UFV Belmonte)",
+      "painPoints": {
+        "0": "Prazos agressivos de conexão com a rede exigem execução rápida e sem retrabalho",
+        "1": "Encontrar equipes com experiência real em parques acima de 10 MW é um desafio",
+        "2": "Logística complexa de recebimento, armazenamento e instalação de milhares de módulos e trackers",
+        "3": "Garantir qualidade de montagem que assegure a performance ratio (PR) contratada por 25+ anos",
+        "4": "Integração entre montagem mecânica, elétrica e civil sem conflitos de interface"
+      },
+      "solutions": {
+        "0": "Capacidade comprovada em parques de até 540 MW — montagem elétrica, mecânica e civil integradas",
+        "1": "Equipes especializadas exclusivamente em solar, com mais de 336 MW de experiência acumulada",
+        "2": "Gestão logística de canteiro com controle de materiais, rastreabilidade e eficiência de montagem",
+        "3": "Comissionamento rigoroso com testes de performance e entrega documentada para O&M",
+        "4": "Contrato único para todas as disciplinas — sem interfaces entre múltiplos fornecedores"
+      },
+      "faq": {
+        "0": {
+          "question": "Qual é a capacidade de implantação da Authomathika em energia solar?",
+          "answer": "A Authomathika possui capacidade comprovada para implantação de usinas solares de grande porte. O maior projeto executado foi a UFV Belmonte I & II, com 540 MW de capacidade, em parceria com o Grupo Cobra. Com 7 parques e 336 MW totais instalados, a empresa atende projetos acima de 10 MW."
+        },
+        "1": {
+          "question": "A Authomathika oferece serviço de O&M para usinas solares?",
+          "answer": "Sim. O serviço de Operação e Manutenção (O&M) inclui monitoramento remoto de performance, inspeções periódicas, limpeza de módulos, manutenção preventiva e corretiva de inversores e trackers, gestão de alarmes e interface com a distribuidora."
+        },
+        "2": {
+          "question": "Qual a diferença entre geração centralizada e distribuída?",
+          "answer": "Geração centralizada (GC) são grandes usinas solares, geralmente acima de 5 MW, que injetam energia diretamente na rede de transmissão. Geração distribuída (GD) são sistemas menores, conectados à rede de distribuição local. A Authomathika atua em ambas as modalidades."
+        }
+      }
+    },
+    "saneamento": {
+      "name": "Saneamento",
+      "headline": "Automação e montagem para estações de tratamento de água e esgoto",
+      "description": "A Authomathika atua no setor de saneamento com projetos de automação, montagem eletromecânica e manutenção para estações de tratamento de água (ETA) e esgoto (ETE). Com clientes como SAMAR, Ambient, SANEVAP, SESAMM e Odebrecht Ambiental, a empresa entrega soluções que garantem eficiência operacional e conformidade regulatória.",
+      "metric0Value": "5+",
+      "metric0Label": "Clientes no setor",
+      "metric1Value": "24/7",
+      "metric1Label": "Operação contínua",
+      "painPoints": {
+        "0": "Estações de tratamento operam 24/7 e exigem automação confiável com redundância",
+        "1": "Equipamentos expostos a ambientes corrosivos demandam manutenção especializada",
+        "2": "Necessidade de atender exigências regulatórias de qualidade de água cada vez mais rigorosas"
+      },
+      "solutions": {
+        "0": "Automação de processos com CLPs e SCADA para monitoramento e controle em tempo real",
+        "1": "Montagem eletromecânica com materiais e acabamentos adequados para ambientes corrosivos",
+        "2": "Manutenção preventiva e metrologia RBC para instrumentos críticos de medição"
+      },
+      "faq": {
+        "0": {
+          "question": "A Authomathika tem experiência em estações de tratamento de água?",
+          "answer": "Sim. A Authomathika já executou projetos completos para ETAs e ETEs, incluindo o greenfield do SESAMM em Mogi Mirim com automação e montagem eletromecânica completa. Atendemos clientes como SAMAR, Ambient, SANEVAP e Odebrecht Ambiental."
+        }
+      }
+    },
+    "fertilizantes": {
+      "name": "Fertilizantes",
+      "headline": "Engenharia integrada para plantas de fertilizantes e insumos agrícolas",
+      "description": "A Authomathika atende o setor de fertilizantes com projetos de automação, elétrica e montagem eletromecânica para plantas de produção e beneficiamento. Com experiência em grandes players como Vale Fertilizantes, Bunge e Cargill, a empresa entrega soluções completas que garantem eficiência e segurança operacional.",
+      "metric0Value": "3",
+      "metric0Label": "Grandes clientes atendidos",
+      "metric1Value": "EPC",
+      "metric1Label": "Contratos completos",
+      "painPoints": {
+        "0": "Processos químicos contínuos exigem automação de alta confiabilidade e tempo de resposta rápido",
+        "1": "Ambientes com presença de compostos corrosivos demandam instrumentação e materiais especializados",
+        "2": "Regulamentações ambientais rigorosas exigem monitoramento e controle precisos de emissões"
+      },
+      "solutions": {
+        "0": "Automação industrial com CLPs e SCADA customizados para processos químicos contínuos",
+        "1": "Instrumentação industrial com grau de proteção adequado para ambientes corrosivos e explosivos",
+        "2": "Engenharia EPC com gestão integrada de projeto, aquisição e construção"
+      },
+      "faq": {
+        "0": {
+          "question": "A Authomathika atende plantas de fertilizantes?",
+          "answer": "Sim. A Authomathika possui experiência em plantas de fertilizantes com clientes como Vale Fertilizantes (Uberaba e Araxá), Bunge e Cargill. Os projetos incluem automação, elétrica, montagem eletromecânica e contratos EPC completos."
+        }
+      }
+    },
+    "alimentos-bebidas": {
+      "name": "Alimentos & Bebidas",
+      "headline": "Automação e montagem eletromecânica para a indústria alimentícia",
+      "description": "A Authomathika atende a indústria de alimentos e bebidas com projetos de automação, montagem eletromecânica e manutenção industrial. Com experiência em plantas de processamento como a Indemil (ácido cítrico) e a Amyris, a empresa entrega soluções que atendem aos padrões rigorosos de higiene e segurança alimentar.",
+      "metric0Value": "2+",
+      "metric0Label": "Plantas atendidas",
+      "metric1Value": "100%",
+      "metric1Label": "Conformidade sanitária",
+      "painPoints": {
+        "0": "Normas sanitárias rigorosas (ANVISA, FDA) exigem automação com rastreabilidade completa de processo",
+        "1": "Linhas de produção com múltiplos SKUs demandam flexibilidade e reconfigurabilidade do sistema",
+        "2": "Manutenção preventiva é crítica para evitar contaminação e paradas não programadas"
+      },
+      "solutions": {
+        "0": "Automação com rastreabilidade de lote e conformidade com normas sanitárias",
+        "1": "Montagem eletromecânica de novas linhas com acabamento em aço inox e materiais food-grade",
+        "2": "Serviços de manutenção com equipes treinadas em boas práticas de fabricação (BPF)"
+      },
+      "faq": {
+        "0": {
+          "question": "A Authomathika executa montagem eletromecânica para indústria alimentícia?",
+          "answer": "Sim. A Authomathika já executou montagem eletromecânica completa para plantas alimentícias, incluindo a nova planta de ácido cítrico da Indemil. Os projetos seguem normas sanitárias rigorosas com materiais e acabamentos adequados para ambientes de produção de alimentos."
+        }
+      }
+    },
+    "siderurgia-quimica": {
+      "name": "Siderurgia & Química",
+      "headline": "Engenharia elétrica e automação para indústrias de processo contínuo",
+      "description": "A Authomathika atende os setores de siderurgia, química, petroquímica e farmacêutica com projetos de automação, elétrica e montagem eletromecânica. Com expertise em processos contínuos de alta exigência, a empresa entrega soluções seguras e confiáveis para ambientes industriais severos.",
+      "metric0Value": "NR-10",
+      "metric0Label": "Conformidade elétrica",
+      "metric1Value": "ISO 9001",
+      "metric1Label": "Qualidade certificada",
+      "painPoints": {
+        "0": "Processos contínuos de alta temperatura e pressão exigem instrumentação e automação de máxima confiabilidade",
+        "1": "Áreas classificadas (Ex) demandam equipamentos e mão de obra especializada em atmosferas explosivas",
+        "2": "Paradas programadas curtas e complexas exigem planejamento milimétrico e execução impecável"
+      },
+      "solutions": {
+        "0": "Automação de processos contínuos com redundância e sistemas de segurança (SIS/SIL)",
+        "1": "Engenharia para áreas classificadas com equipamentos à prova de explosão e conformidade NR-10",
+        "2": "Paradas programadas com equipes multidisciplinares certificadas e planejamento integrado"
+      },
+      "faq": {
+        "0": {
+          "question": "A Authomathika trabalha com áreas classificadas (Ex)?",
+          "answer": "Sim. A Authomathika possui equipes treinadas e certificadas para trabalho em áreas classificadas, com conhecimento em normas ABNT/IEC para atmosferas explosivas. A engenharia elétrica e de automação segue rigorosamente os requisitos de zoneamento e classificação de áreas."
+        }
+      }
+    },
+    "logistica": {
+      "name": "Logística",
+      "headline": "Automação e elétrica para infraestrutura de armazenagem e transporte",
+      "description": "A Authomathika atende o setor de logística industrial com projetos de automação e elétrica para armazéns, silos, sistemas de transporte de bagaço e grãos. A expertise em montagem eletromecânica permite a implantação completa de infraestrutura logística para operações industriais.",
+      "metric0Value": "24/7",
+      "metric0Label": "Operação contínua",
+      "metric1Value": "RBC",
+      "metric1Label": "Calibração rastreada",
+      "painPoints": {
+        "0": "Sistemas de transporte e armazenagem operam em regime contínuo e exigem manutenção especializada",
+        "1": "Automação de silos e armazéns precisa garantir rastreabilidade e controle de inventário em tempo real",
+        "2": "Integração entre sistemas de transporte, pesagem e expedição demanda engenharia de automação integrada"
+      },
+      "solutions": {
+        "0": "Automação de sistemas de transporte com CLPs e SCADA para monitoramento contínuo",
+        "1": "Montagem eletromecânica de esteiras, elevadores e sistemas de movimentação de materiais",
+        "2": "Instrumentação de pesagem e medição com calibração RBC rastreada"
+      },
+      "faq": {
+        "0": {
+          "question": "A Authomathika automatiza sistemas de armazenagem e transporte?",
+          "answer": "Sim. A Authomathika oferece soluções de automação para armazéns, silos, esteiras e sistemas de transporte de materiais a granel. Os projetos incluem CLPs para controle de processo, SCADA para monitoramento e instrumentação para pesagem e medição."
+        }
+      }
+    },
+    "papel-celulose": {
+      "name": "Papel & Celulose",
+      "headline": "Automação e elétrica para fábricas de celulose, papel e embalagens",
+      "description": "A Authomathika atende o setor de papel e celulose com soluções de automação industrial, engenharia elétrica e montagem eletromecânica. Com conhecimento em processos contínuos de alta complexidade — da digestão e branqueamento à formação e secagem — entregamos projetos que aumentam a eficiência energética e a confiabilidade operacional das plantas.",
+      "metric0Value": "25+",
+      "metric0Label": "Anos em processos contínuos",
+      "metric1Value": "290.000",
+      "metric1Label": "Pontos de automação implantados",
+      "metric2Value": "NR-10/35",
+      "metric2Label": "Equipes certificadas",
+      "painPoints": {
+        "0": "Processos contínuos de alta temperatura e pressão exigem automação com redundância e alta disponibilidade",
+        "1": "Consumo energético intenso demanda otimização constante de cogeração e recuperação de calor",
+        "2": "Ambientes com presença de vapor, umidade e produtos químicos aceleram a degradação de equipamentos elétricos",
+        "3": "Janelas de manutenção curtas durante paradas anuais exigem planejamento milimétrico e mobilização rápida",
+        "4": "Integração entre sistemas de controle de processo (DCS/SCADA) e sistemas de energia é crítica"
+      },
+      "solutions": {
+        "0": "Automação de processo com CLPs e SCADA customizados para digestores, caldeiras de recuperação e máquinas de papel",
+        "1": "Engenharia elétrica para cogeração, distribuição e painéis de média e baixa tensão",
+        "2": "Montagem eletromecânica de equipamentos rotativos, tubulações e estruturas metálicas",
+        "3": "Paradas programadas com equipes multidisciplinares certificadas NR-10/NR-35",
+        "4": "Metrologia RBC para instrumentos críticos de temperatura, pressão e vazão"
+      },
+      "faq": {
+        "0": {
+          "question": "A Authomathika tem experiência em fábricas de celulose e papel?",
+          "answer": "A Authomathika possui mais de 25 anos de experiência em processos industriais contínuos, com expertise diretamente aplicável a fábricas de celulose e papel. Nossa atuação inclui automação de caldeiras, sistemas de cogeração, montagem eletromecânica e paradas programadas — todas competências essenciais para este setor."
+        },
+        "1": {
+          "question": "Vocês trabalham com automação de caldeiras de recuperação?",
+          "answer": "Sim. A Authomathika possui ampla experiência em automação de caldeiras e sistemas de cogeração, incluindo desenvolvimento de software SCADA, programação de CLPs e instrumentação de campo. Já automatizamos dezenas de caldeiras no setor sucroenergético, com a mesma tecnologia aplicável a caldeiras de recuperação de licor negro."
+        }
+      }
+    },
+    "cimento": {
+      "name": "Cimento",
+      "headline": "Engenharia integrada para fábricas de cimento e materiais de construção",
+      "description": "A Authomathika atende a indústria cimenteira com projetos de automação, elétrica e montagem eletromecânica para plantas de produção de cimento, cal e materiais de construção. Com experiência em processos de alta temperatura e ambientes severos, oferecemos soluções que garantem eficiência energética, disponibilidade operacional e conformidade ambiental.",
+      "metric0Value": "208+",
+      "metric0Label": "Projetos industriais entregues",
+      "metric1Value": "42.027",
+      "metric1Label": "Equipamentos atendidos",
+      "metric2Value": "ISO 9001",
+      "metric2Label": "Certificação de qualidade",
+      "painPoints": {
+        "0": "Processos de clinquerização a 1.450°C exigem instrumentação robusta e automação de altíssima confiabilidade",
+        "1": "Consumo energético representa até 40% do custo de produção, exigindo otimização contínua dos motores e acionamentos",
+        "2": "Ambientes com poeira abrasiva, vibração e altas temperaturas degradam equipamentos elétricos e instrumentação",
+        "3": "Regulamentações ambientais cada vez mais rigorosas para emissões de CO₂ e material particulado",
+        "4": "Plantas remotas dificultam a atração de mão de obra qualificada para manutenção e operação"
+      },
+      "solutions": {
+        "0": "Automação de fornos rotativos, moinhos e sistemas de dosagem com CLPs e SCADA de alta disponibilidade",
+        "1": "Engenharia elétrica para acionamentos de média tensão, CCMs e bancos de capacitores com eficiência energética",
+        "2": "Montagem eletromecânica de equipamentos rotativos de grande porte, transportadores e sistemas de despoeiramento",
+        "3": "Instrumentação especializada para medição de temperatura, nível e vazão em ambientes extremos",
+        "4": "Manutenção preventiva e preditiva com metrologia RBC e sistema Serelepe de rastreabilidade"
+      },
+      "faq": {
+        "0": {
+          "question": "A Authomathika executa projetos para fábricas de cimento?",
+          "answer": "A Authomathika possui expertise em processos industriais de alta temperatura e ambientes severos, com competências diretamente aplicáveis à indústria cimenteira: automação de processos contínuos, engenharia elétrica de média e baixa tensão, montagem eletromecânica de equipamentos rotativos e serviços de manutenção com metrologia certificada."
+        },
+        "1": {
+          "question": "Vocês trabalham com acionamentos de média tensão para moinhos?",
+          "answer": "Sim. A Authomathika projeta e instala sistemas elétricos de média tensão, incluindo CCMs (Centros de Controle de Motores), painéis de partida e acionamentos para motores de grande porte. São mais de 225 CCMs e 256 QGBTs instalados ao longo de 25+ anos."
+        }
+      }
+    },
+    "petroleo-gas": {
+      "name": "Petróleo & Gás",
+      "headline": "Automação e elétrica para operações de óleo, gás e petroquímica",
+      "description": "A Authomathika oferece soluções de automação, engenharia elétrica e montagem eletromecânica para o setor de petróleo, gás e petroquímica. Com equipes certificadas para trabalho em áreas classificadas (Ex), instrumentação para ambientes explosivos e experiência em processos contínuos de alta criticidade, atendemos refinarias, terminais, plataformas onshore e plantas petroquímicas.",
+      "metric0Value": "2.000+",
+      "metric0Label": "Dias sem acidentes",
+      "metric1Value": "NR-10/20/33/35",
+      "metric1Label": "Conformidade total",
+      "metric2Value": "25+",
+      "metric2Label": "Anos em processos industriais",
+      "painPoints": {
+        "0": "Áreas classificadas (zonas 0, 1 e 2) exigem equipamentos e mão de obra altamente especializados em atmosferas explosivas",
+        "1": "Normas regulatórias rigorosas (NR-10, NR-13, NR-20, NR-33, NR-35) tornam a conformidade um desafio constante",
+        "2": "Paradas programadas em refinarias e terminais têm janelas extremamente curtas e custos de milhões por dia de atraso",
+        "3": "Integração entre sistemas de segurança (SIS/SIL), controle de processo e monitoramento ambiental é complexa",
+        "4": "Instrumentação em ambientes corrosivos (H₂S, ácidos) demanda materiais especiais e manutenção frequente"
+      },
+      "solutions": {
+        "0": "Automação de processos com sistemas de segurança instrumentados (SIS/SIL) e CLPs de alta disponibilidade",
+        "1": "Engenharia elétrica para áreas classificadas com equipamentos à prova de explosão certificados (Ex d, Ex e, Ex i)",
+        "2": "Montagem eletromecânica com procedimentos específicos para ambientes com hidrocarbonetos",
+        "3": "Instrumentação industrial com grau de proteção IP68 e materiais resistentes à corrosão (Hastelloy, Inconel, titânio)",
+        "4": "Paradas programadas com equipes multidisciplinares certificadas em NR-10, NR-20, NR-33 e NR-35"
+      },
+      "faq": {
+        "0": {
+          "question": "A Authomathika possui certificação para trabalho em áreas classificadas?",
+          "answer": "Sim. A Authomathika possui equipes treinadas e certificadas para trabalho em áreas classificadas conforme normas ABNT NBR IEC 60079. A engenharia segue rigorosamente os requisitos de zoneamento, classificação de áreas e especificação de equipamentos Ex (à prova de explosão). Também atendemos às NR-10, NR-20 e NR-33."
+        },
+        "1": {
+          "question": "Vocês instalam sistemas de segurança instrumentados (SIS)?",
+          "answer": "A Authomathika possui experiência em automação de processos críticos com sistemas de alta confiabilidade e redundância. Trabalhamos com as principais plataformas de automação do mercado (Rockwell, Siemens, Yokogawa, Emerson, ABB) que suportam arquiteturas SIS/SIL para o setor de óleo e gás."
+        }
+      }
+    },
+    "infraestrutura": {
+      "name": "Infraestrutura",
+      "headline": "Engenharia elétrica e automação para obras de infraestrutura e utilidades",
+      "description": "A Authomathika atende projetos de infraestrutura industrial e urbana com soluções de engenharia elétrica, automação e montagem eletromecânica. De subestações e centrais termelétricas a sistemas de utilidades para grandes empreendimentos, a empresa entrega projetos completos com gestão integrada e conformidade regulatória.",
+      "metric0Value": "23",
+      "metric0Label": "Centrais termelétricas",
+      "metric1Value": "EPC",
+      "metric1Label": "Gestão integrada",
+      "metric2Value": "25+",
+      "metric2Label": "Anos de experiência",
+      "painPoints": {
+        "0": "Projetos de infraestrutura envolvem múltiplas disciplinas e interfaces complexas entre fornecedores",
+        "1": "Cronogramas de obras civis e elétricas precisam ser sincronizados para evitar atrasos em cascata",
+        "2": "Subestações e sistemas de distribuição exigem engenharia elétrica de alta confiabilidade e conformidade com ANEEL",
+        "3": "Sistemas de utilidades (vapor, ar comprimido, água gelada) precisam de automação integrada e monitoramento 24/7"
+      },
+      "solutions": {
+        "0": "Engenharia EPC com gestão integrada de projeto, aquisição e construção para todas as disciplinas",
+        "1": "Montagem eletromecânica de subestações, geradores, transformadores e sistemas de distribuição",
+        "2": "Automação de centrais de utilidades com CLPs e SCADA para monitoramento e controle em tempo real",
+        "3": "23 centrais termelétricas projetadas e comissionadas — experiência comprovada em geração de energia"
+      },
+      "faq": {
+        "0": {
+          "question": "A Authomathika executa montagem de subestações?",
+          "answer": "Sim. A Authomathika projeta, instala e comissiona subestações de média e baixa tensão, incluindo transformadores, disjuntores, painéis de distribuição e sistemas de proteção. São mais de 25 anos de experiência em engenharia elétrica com 26 plantas greenfield e 73 brownfield entregues."
+        },
+        "1": {
+          "question": "Vocês constroem centrais termelétricas?",
+          "answer": "Sim. A Authomathika já projetou e comissionou 23 centrais termelétricas, com engenharia elétrica, automação e montagem eletromecânica completas. Os projetos incluem desde a engenharia básica até o comissionamento e start-up."
+        }
+      }
+    }
+  },
+  "worksData": {
+    "0": {
+      "type": "Greenfields",
+      "category": "Usina Turnkey",
+      "description": "Projeto completo turnkey para usina sucroenergética.",
+      "altText": "Usina sucroenergetica Costa Rica - projeto turnkey completo com automacao, eletrica e montagem eletromecanica executado pela Authomathika"
+    },
+    "1": {
+      "type": "Greenfields",
+      "category": "Fábrica de Açúcar Turnkey",
+      "description": "Implantação completa de fábrica de açúcar.",
+      "altText": "Usina Rio Vermelho - implantacao greenfield de fabrica de acucar turnkey com engenharia EPC completa pela Authomathika"
+    },
+    "2": {
+      "type": "Greenfields",
+      "category": "Caldeira Turnkey",
+      "description": "Sistema de caldeira e cogeração completo.",
+      "altText": "Usina Pedra Buriti - sistema de caldeira e cogeracao turnkey com montagem eletromecanica e comissionamento pela Authomathika"
+    },
+    "3": {
+      "type": "Revamp",
+      "category": "Moenda Eletrificada",
+      "description": "Modernização e eletrificação de moenda.",
+      "altText": "Usina Ferrari - revamp e eletrificacao de moenda sucroenergetica com modernizacao de acionamentos eletricos pela Authomathika"
+    },
+    "4": {
+      "type": "Revamp",
+      "category": "Automação",
+      "description": "Revamp completo do sistema de automação.",
+      "altText": "Bunge Moema - revamp completo do sistema de automacao industrial com CLPs e SCADA pela Authomathika"
+    },
+    "5": {
+      "type": "Revamp",
+      "category": "Turnkey Completo",
+      "description": "Revamp integral da planta industrial.",
+      "altText": "Usina Santa Helena - revamp turnkey completo com automacao, eletrica e instrumentacao industrial pela Authomathika"
+    },
+    "6": {
+      "type": "Revamp",
+      "category": "Revamp Integral",
+      "description": "Modernização completa da planta.",
+      "altText": "Bahia Etanol - modernizacao integral da planta de etanol com revamp de automacao e eletrica pela Authomathika"
+    },
+    "7": {
+      "type": "Projeto",
+      "category": "Eletro Centro",
+      "description": "Implantação de eletro centro.",
+      "altText": "Vale Carajas - implantacao de eletro centro para mineracao com engenharia eletrica e automacao pela Authomathika"
+    },
+    "8": {
+      "type": "Revamp",
+      "category": "Ampliação Completa",
+      "description": "Ampliação e revamp da planta.",
+      "altText": "UMOE - ampliacao e revamp completo de planta sucroenergetica com montagem eletromecanica pela Authomathika"
+    },
+    "9": {
+      "type": "Greenfields",
+      "category": "ETA e ETE Mogi Mirim",
+      "description": "Plantas de tratamento de água e esgoto.",
+      "altText": "SESAMM Mogi Mirim - implantacao greenfield de estacoes de tratamento de agua (ETA) e esgoto (ETE) com automacao pela Authomathika"
+    },
+    "10": {
+      "type": "Montagem",
+      "category": "Nova Planta Ácido Cítrico",
+      "description": "Montagem eletromecânica completa.",
+      "altText": "Indemil - montagem eletromecanica completa de nova planta industrial de acido citrico pela Authomathika"
+    },
+    "11": {
+      "type": "Energia Solar",
+      "category": "540 MW — Grupo Cobra",
+      "description": "Usina fotovoltaica de 540 MW.",
+      "altText": "UFV Belmonte I e II - usina solar fotovoltaica de 540 MW com montagem eletrica e mecanica pela Authomathika em parceria com Grupo Cobra"
+    }
+  },
+  "companyData": {
+    "tagline": "A melhor solução para o seu projeto",
+    "description": "Uma empresa completa de engenharia integradora de sistemas Elétricos e de Automação",
+    "vision": "Reconhecidos pela forma responsável e clara de cumprir os contratos, trabalhando dentro da ética e profissionalismo",
+    "stats": {
+      "0": { "label": "Equipamentos Atendidos" },
+      "1": { "label": "Horas de Serviço" },
+      "2": { "label": "MW de Energia Solar" },
+      "3": { "label": "Anos de Mercado" },
+      "4": { "label": "Atendimentos Técnicos" },
+      "5": { "label": "Projetos de Montagem" }
+    },
+    "visionPillars": {
+      "0": {
+        "title": "Com o Cliente",
+        "description": "Vender com responsabilidade, cumprir contratos com transparência e profissionalismo."
+      },
+      "1": {
+        "title": "Com a Sociedade",
+        "description": "Condições seguras, respeito ao meio ambiente e colaboradores satisfeitos."
+      },
+      "2": {
+        "title": "Com as Finanças",
+        "description": "Garantir retorno sustentável a investidores e colaboradores."
+      },
+      "3": {
+        "title": "Com o Fornecedor",
+        "description": "Comprar com responsabilidade e honrar compromissos com integridade."
+      }
+    },
+    "timeline": {
+      "0": { "event": "Fundação da Authomathika em Sertãozinho, SP" },
+      "1": { "event": "Início das operações de automação industrial de grande porte" },
+      "2": { "event": "Certificação ISO 9001 obtida" },
+      "3": { "event": "Expansão para o setor de montagem eletromecânica" },
+      "4": { "event": "Lançamento da linha de produtos próprios (SLV-1A, AUTH 300)" },
+      "5": { "event": "Parceria estratégica com TOMSA DESTIL (Espanha)" },
+      "6": { "event": "Início da divisão de Energias Renováveis" },
+      "7": { "event": "Prêmio Excelência de Fornecedores Entressafra 2016/2017" },
+      "8": { "event": "Participação na Fenasucro & Agrocana 2018" },
+      "9": { "event": "2.000 dias sem acidentes de trabalho" },
+      "10": { "event": "336 MW de energia solar instalados — 7 parques" },
+      "11": { "event": "Mais de duas décadas consolidando presença no setor sucroenergético e industrial" }
+    },
+    "sectorList": {
+      "0": {
+        "name": "Sucroenergético",
+        "description": "Especialistas desde 1999. Fermentação, destilaria, caldeira, cogeração e fábrica de açúcar."
+      },
+      "1": {
+        "name": "Fertilizantes",
+        "description": "Vale Fertilizantes (Uberaba e Araxá), Bunge, Cargill."
+      },
+      "2": {
+        "name": "Saneamento",
+        "description": "SAMAR, Ambient, SANEVAP, SESAMM, Odebrecht Ambiental."
+      },
+      "3": {
+        "name": "Logística",
+        "description": "Armazéns, silos, transporte de bagaço e grãos."
+      },
+      "4": {
+        "name": "Mineração",
+        "description": "Projetos eletromecânicos e de automação para mineração."
+      },
+      "5": {
+        "name": "Energias Renováveis",
+        "description": "Solar fotovoltaica centralizada e distribuída."
+      },
+      "6": {
+        "name": "Alimentos & Bebidas",
+        "description": "Indústrias alimentícias e de bebidas."
+      },
+      "7": {
+        "name": "Siderurgia & Química",
+        "description": "Petróleo, química, farmacêutica e siderurgia."
+      },
+      "8": {
+        "name": "Papel & Celulose",
+        "description": "Fábricas de celulose, papel e embalagens."
+      },
+      "9": {
+        "name": "Cimento",
+        "description": "Fábricas de cimento, cal e materiais de construção."
+      },
+      "10": {
+        "name": "Petróleo & Gás",
+        "description": "Refinarias, terminais, plantas petroquímicas e onshore."
+      },
+      "11": {
+        "name": "Infraestrutura",
+        "description": "Subestações, termelétricas e centrais de utilidades."
+      }
+    }
+  },
+  "businessFaqData": {
+    "automacao": {
+      "0": {
+        "question": "O que é um integrador de sistemas de automação industrial?",
+        "answer": "Um integrador de sistemas de automação industrial é uma empresa especializada em projetar, instalar e comissionar soluções completas de controle e monitoramento de processos. A Authomathika atua como integradora desde 1999, tendo implantado mais de 290.000 pontos de automação em 180 plantas industriais no Brasil, trabalhando com plataformas como CLPs Rockwell, Siemens, Yokogawa e sistemas SCADA."
+      },
+      "1": {
+        "question": "Qual a diferença entre projeto greenfield e brownfield em automação?",
+        "answer": "Um projeto greenfield é uma implantação totalmente nova, onde a automação é projetada do zero para uma planta que ainda será construída. Já o brownfield envolve a modernização, ampliação ou revamp de sistemas existentes em plantas já em operação. A Authomathika possui experiência em ambos: 41 plantas greenfield e 139 brownfield na divisão de Automação."
+      },
+      "2": {
+        "question": "Quais sistemas SCADA e CLPs a Authomathika trabalha?",
+        "answer": "A Authomathika trabalha com as principais plataformas do mercado: CLPs Rockwell (Allen-Bradley), Siemens, Yokogawa, Emerson, Altus, ABB, Schneider e GE. Em SCADA, desenvolvemos software customizado e integramos sistemas de supervisão para monitoramento em tempo real de processos industriais."
+      },
+      "3": {
+        "question": "Quanto tempo leva um projeto de automação industrial?",
+        "answer": "O prazo depende da complexidade e escopo do projeto. Um revamp parcial de automação (brownfield) pode levar de 3 a 6 meses, enquanto uma implantação greenfield completa pode demandar de 8 a 18 meses. A Authomathika oferece estudo de escopo gratuito para dimensionar prazos e custos de cada projeto."
+      }
+    },
+    "eletrica": {
+      "0": {
+        "question": "O que é engenharia elétrica industrial?",
+        "answer": "Engenharia elétrica industrial abrange o projeto, construção e comissionamento de sistemas elétricos para plantas industriais, incluindo subestações, painéis elétricos (CCMs, QGBTs), sistemas de cogeração e centrais termoelétricas. A Authomathika já executou projetos em 26 plantas greenfield e 73 brownfield, com mais de 225 CCMs e 256 QGBTs instalados."
+      },
+      "1": {
+        "question": "Qual a diferença entre CCM e QGBT?",
+        "answer": "CCM (Centro de Controle de Motores) é um painel elétrico projetado para alimentar, proteger e controlar motores elétricos industriais. QGBT (Quadro Geral de Baixa Tensão) é o painel principal de distribuição de energia elétrica em baixa tensão de uma instalação. A Authomathika projeta e instala ambos os tipos de painéis, além de switchboards e bancos de capacitores."
+      },
+      "2": {
+        "question": "O que é um sistema de cogeração de energia?",
+        "answer": "Cogeração é o processo de gerar simultaneamente energia elétrica e térmica a partir de uma única fonte de combustível, como bagaço de cana em usinas sucroenergéticas. A Authomathika já implantou 23 centrais termoelétricas com sistemas de cogeração, otimizando a eficiência energética e permitindo a venda de excedentes ao grid."
+      },
+      "3": {
+        "question": "A Authomathika fornece painéis elétricos?",
+        "answer": "Sim. A Authomathika projeta, fabrica e instala painéis elétricos industriais, incluindo CCMs, QGBTs, switchboards e bancos de capacitores. Trabalhamos com os principais fabricantes de componentes como WEG, Rockwell, Siemens, ABB, Schneider, GE e EATON, garantindo conformidade com normas técnicas e certificações NR-10."
+      }
+    },
+    "servicos": {
+      "0": {
+        "question": "O que é uma parada programada industrial?",
+        "answer": "Uma parada programada é uma interrupção planejada da operação de uma planta industrial para realizar manutenção preventiva, calibração de instrumentos, inspeções e reparos. A Authomathika executa paradas programadas com equipes certificadas NR-10 e NR-35, tendo acumulado mais de 297.000 horas de serviço e 42.027 equipamentos atendidos."
+      },
+      "1": {
+        "question": "Quanto custa uma parada programada industrial?",
+        "answer": "O custo varia conforme o porte da planta, quantidade de equipamentos, escopo dos serviços e duração. Uma parada de pequeno porte pode custar a partir de R$ 50.000, enquanto paradas de grande porte em usinas sucroenergéticas podem ultrapassar R$ 500.000. A Authomathika oferece orçamentos detalhados com escopo técnico completo para dimensionamento preciso."
+      },
+      "2": {
+        "question": "O que é metrologia RBC e por que é importante?",
+        "answer": "Metrologia RBC (Rede Brasileira de Calibração) é o sistema de calibração de instrumentos de medição com rastreabilidade certificada pelo INMETRO. É fundamental para garantir que instrumentos como transmissores de pressão, temperatura e vazão forneçam medidas precisas e confiáveis. A Authomathika possui laboratórios fixos e móveis com certificação RBC."
+      },
+      "3": {
+        "question": "O que é o sistema Serelepe da Authomathika?",
+        "answer": "O Serelepe é o sistema online proprietário da Authomathika para gestão de serviços de campo. Ele permite rastreabilidade completa de atendimentos técnicos, geração de certificados digitais e acompanhamento em tempo real do status de manutenções e calibrações, garantindo transparência e qualidade em cada atendimento."
+      }
+    },
+    "montagem-eletromecanica": {
+      "0": {
+        "question": "O que é montagem eletromecânica industrial?",
+        "answer": "Montagem eletromecânica é o processo de instalação integrada de componentes elétricos e mecânicos em plantas industriais, incluindo equipamentos, tubulações, estruturas metálicas, painéis e sistemas de força e controle. A Authomathika já executou 208 projetos de montagem, desde pequeno até grande porte, em mais de 23 anos de atuação."
+      },
+      "1": {
+        "question": "Quais setores a Authomathika atende em montagem eletromecânica?",
+        "answer": "A Authomathika atende diversos setores industriais: sucroenergético (usinas de açúcar e etanol), fertilizantes, saneamento, logística, mineração, alimentos e bebidas, química e siderurgia. Com 105 projetos de pequeno porte, 74 de médio porte e 29 de grande porte entregues, a empresa possui experiência multissetorial comprovada."
+      },
+      "2": {
+        "question": "Qual a diferença entre montagem de pequeno, médio e grande porte?",
+        "answer": "A classificação depende do volume de serviços, complexidade e investimento. Projetos de pequeno porte envolvem equipamentos individuais ou sistemas isolados. Médio porte abrange setores completos de uma planta. Grande porte compreende implantações integrais, como uma usina completa (turnkey). A Authomathika possui experiência em todas as escalas."
+      }
+    },
+    "engenharia-epc": {
+      "0": {
+        "question": "O que é engenharia EPC?",
+        "answer": "EPC significa Engineering, Procurement and Construction (Engenharia, Aquisição e Construção). É um modelo de contrato onde uma única empresa assume a responsabilidade integral por um projeto: desde a engenharia básica e executiva, passando pela aquisição de materiais e equipamentos, até a construção, montagem e comissionamento. A Authomathika realiza contratos EPC desde 1999."
+      },
+      "1": {
+        "question": "Qual a vantagem de contratar um projeto EPC?",
+        "answer": "O modelo EPC oferece ponto único de responsabilidade, o que simplifica a gestão, reduz riscos de interfaces entre fornecedores, garante cronograma integrado e maior previsibilidade de custos. Para o contratante, significa ter um único interlocutor para todo o projeto, desde a engenharia até a entrega operacional."
+      },
+      "2": {
+        "question": "Qual a diferença entre EPC e EPCM?",
+        "answer": "No EPC, a contratada assume responsabilidade total pela execução, incluindo custos e prazos (geralmente preço fixo). No EPCM (Engineering, Procurement, Construction Management), a contratada gerencia o projeto mas não executa diretamente a construção, atuando como gestora. A Authomathika oferece ambos os modelos, com parcerias estratégicas para execução quando necessário."
+      },
+      "3": {
+        "question": "A Authomathika realiza projetos turnkey?",
+        "answer": "Sim. Projetos turnkey (chave na mão) são uma especialidade da Authomathika, onde entregamos a planta pronta para operar. Cases incluem a Usina Costa Rica (usina sucroenergética completa), Rio Vermelho (fábrica de açúcar turnkey) e Pedra Buriti (caldeira turnkey). Todos entregues dentro do prazo e orçamento acordados."
+      }
+    },
+    "energias-renovaveis": {
+      "0": {
+        "question": "A Authomathika instala usinas solares fotovoltaicas?",
+        "answer": "Sim. A divisão de Energias Renováveis da Authomathika já instalou 336 MW de energia solar em 7 parques fotovoltaicos, atuando em geração centralizada e distribuída. Os serviços incluem montagem elétrica e mecânica, montagem civil, engenharia executiva, comissionamento e operação e manutenção (O&M)."
+      },
+      "1": {
+        "question": "Qual a diferença entre geração centralizada e distribuída de energia solar?",
+        "answer": "Geração centralizada (GC) são grandes usinas solares, geralmente acima de 5 MW, que injetam energia diretamente na rede de transmissão. Geração distribuída (GD) são sistemas menores, instalados em telhados ou terrenos de consumidores, conectados à rede de distribuição local. A Authomathika atua em ambas as modalidades."
+      },
+      "2": {
+        "question": "O que inclui o serviço de O&M para usinas solares?",
+        "answer": "O serviço de Operação e Manutenção (O&M) para usinas solares inclui monitoramento remoto de performance, inspeções periódicas, limpeza de módulos, manutenção preventiva e corretiva de inversores e trackers, gestão de alarmes e indicadores de desempenho (PR - Performance Ratio), e interface com a distribuidora para questões de conexão."
+      },
+      "3": {
+        "question": "Qual a capacidade de implantação da Authomathika em energia solar?",
+        "answer": "A Authomathika possui capacidade comprovada para implantação de usinas solares de grande porte. O maior projeto executado foi a UFV Belmonte I & II, com 540 MW de capacidade, em parceria com o Grupo Cobra. Com 7 parques e 336 MW totais instalados, a empresa tem experiência para atender projetos acima de 10 MW."
+      }
+    }
+  },
+  "testimonialData": {
+    "ricardo-m": {
+      "role": "Diretor Industrial",
+      "company": "Usina Sucroenergética",
+      "quote": "A Authomathika entregou o projeto de automação da nossa planta dentro do prazo e com qualidade técnica excepcional. A equipe demonstrou profundo conhecimento do setor sucroenergético, e o sistema SCADA implantado reduziu nosso tempo de resposta a alarmes em 40%.",
+      "result": "Tempo de resposta a alarmes reduzido em 40%"
+    },
+    "fernanda-o": {
+      "role": "Gerente de Projetos Capex",
+      "company": "Indústria de Fertilizantes",
+      "quote": "Contratamos a Authomathika para um projeto EPC completo e ficamos impressionados com a gestão integrada. O cronograma foi cumprido rigorosamente, a documentação técnica entregue foi impecável e a comunicação durante todo o projeto foi transparente.",
+      "result": "Cronograma cumprido com documentação impecável"
+    },
+    "carlos-s": {
+      "role": "Engenheiro de Automação",
+      "company": "Parque Solar",
+      "quote": "A expertise da Authomathika em montagem eletromecânica para parques solares é diferenciada. Executaram 120 MW no nosso parque com zero acidentes e entregaram antes do prazo previsto. A qualidade da montagem e comissionamento superou nossas expectativas.",
+      "result": "120 MW montados com zero acidentes"
+    },
+    "marcos-l": {
+      "role": "Gerente de Manutenção",
+      "company": "Usina de Açúcar e Etanol",
+      "quote": "Trabalhamos com a Authomathika em paradas programadas há mais de 10 anos. A equipe certificada NR-10 e NR-35, aliada ao sistema Serelepe de rastreabilidade, nos dá total confiança na qualidade e segurança dos serviços prestados.",
+      "result": "10+ anos de parceria em paradas programadas"
+    },
+    "andre-p": {
+      "role": "Diretor de Engenharia",
+      "company": "Concessionária de Saneamento",
+      "quote": "A automação das nossas estações de tratamento pela Authomathika transformou nossa operação. O sistema SCADA permite monitoramento remoto em tempo real de todas as ETAs e ETEs, reduzindo a necessidade de equipe presencial e aumentando a eficiência operacional.",
+      "result": "Monitoramento remoto de todas as estações"
+    },
+    "patricia-r": {
+      "role": "Coordenadora de Projetos",
+      "company": "Indústria Química",
+      "quote": "O que nos impressionou na Authomathika foi a capacidade de entregar um projeto completo — elétrica, automação e montagem — em uma parada programada de apenas 45 dias. A gestão de segurança em área classificada foi exemplar, com zero ocorrências.",
+      "result": "Parada de 45 dias executada com zero ocorrências"
+    },
+    "lucas-f": {
+      "role": "Gerente de Operações",
+      "company": "Grupo Sucroenergético",
+      "quote": "Após a eletrificação da moenda pela Authomathika, nosso consumo energético caiu significativamente e ganhamos controle total sobre o processo de extração. O retorno do investimento veio na segunda safra, e a confiabilidade do sistema é excepcional.",
+      "result": "Retorno do investimento na segunda safra"
+    },
+    "roberto-g": {
+      "role": "Diretor Técnico",
+      "company": "Desenvolvedora de Parques Solares",
+      "quote": "Para um parque de 540 MW, precisávamos de um parceiro local com capacidade real de execução. A Authomathika mobilizou equipes rapidamente, manteve a qualidade de montagem em escala e garantiu os indicadores de performance ratio. Parceria renovada para os próximos projetos.",
+      "result": "Performance ratio garantida em 540 MW"
+    }
+  },
+  "caseStudyData": {
+    "costa-rica": {
+      "title": "Usina Costa Rica — Projeto Turnkey Completo",
+      "duration": "18 meses",
+      "challenge": "A Usina Costa Rica precisava de uma implantação greenfield completa de sua planta sucroenergética, incluindo automação, elétrica e montagem eletromecânica. O desafio era entregar todas as disciplinas de engenharia de forma integrada, dentro de um cronograma agressivo de 18 meses, garantindo que a usina estivesse pronta para a primeira safra.",
+      "solution": "A Authomathika assumiu a responsabilidade integral como contratada EPC, coordenando engenharia de projeto, aquisição de materiais, montagem eletromecânica, automação completa com SCADA e comissionamento de todas as áreas. A gestão integrada eliminou interfaces entre fornecedores e garantiu o cumprimento do cronograma.",
+      "altText": "Usina sucroenergetica Costa Rica - projeto turnkey completo com automacao, eletrica e montagem eletromecanica executado pela Authomathika",
+      "results": {
+        "0": { "metric": "Prazo", "value": "Entregue dentro do cronograma" },
+        "1": { "metric": "Escopo", "value": "Usina completa turnkey" },
+        "2": { "metric": "Áreas", "value": "Automação, elétrica, montagem" },
+        "3": { "metric": "Modelo", "value": "Contrato EPC integrado" }
+      }
+    },
+    "rio-vermelho": {
+      "title": "Rio Vermelho — Fábrica de Açúcar Turnkey",
+      "duration": "14 meses",
+      "challenge": "A Usina Rio Vermelho necessitava da implantação completa de uma fábrica de açúcar greenfield. O projeto exigia coordenação perfeita entre engenharia elétrica, automação de processo e montagem mecânica para atingir capacidade de produção no primeiro ciclo de operação.",
+      "solution": "A Authomathika executou o projeto turnkey da fábrica de açúcar, integrando automação de processo com CLPs e SCADA, montagem elétrica completa incluindo CCMs e QGBTs, e toda a montagem mecânica de equipamentos. O comissionamento foi realizado com acompanhamento técnico até a estabilização da produção.",
+      "altText": "Usina Rio Vermelho - implantacao greenfield de fabrica de acucar turnkey com engenharia EPC completa pela Authomathika",
+      "results": {
+        "0": { "metric": "Prazo", "value": "14 meses de execução" },
+        "1": { "metric": "Escopo", "value": "Fábrica de açúcar completa" },
+        "2": { "metric": "Start-up", "value": "Produção no 1o ciclo" }
+      }
+    },
+    "pedra-buriti": {
+      "title": "Pedra Buriti — Caldeira e Cogeração Turnkey",
+      "duration": "12 meses",
+      "challenge": "A Usina Pedra Buriti precisava expandir sua capacidade de cogeração de energia com a implantação de um novo sistema de caldeira. O desafio envolvia a montagem eletromecânica completa em paralelo com a operação existente da usina, exigindo gestão rigorosa de segurança e interfaces.",
+      "solution": "A Authomathika executou a montagem completa da caldeira e sistema de cogeração, incluindo toda a parte elétrica, automação com CLPs para controle de combustão e vapor, instrumentação de campo e comissionamento com validação de performance. A integração com o sistema existente foi realizada sem impacto na operação.",
+      "altText": "Usina Pedra Buriti - sistema de caldeira e cogeracao turnkey com montagem eletromecanica e comissionamento pela Authomathika",
+      "results": {
+        "0": { "metric": "Escopo", "value": "Caldeira + cogeração" },
+        "1": { "metric": "Integração", "value": "Zero impacto na operação" },
+        "2": { "metric": "Segurança", "value": "Zero acidentes" }
+      }
+    },
+    "ferrari": {
+      "title": "Usina Ferrari — Eletrificação de Moenda",
+      "challenge": "A Usina Ferrari operava com acionamentos mecânicos na moenda, limitando a eficiência energética e o controle de processo. O projeto de eletrificação precisava ser executado integralmente na entressafra, com janela de aproximadamente 90 dias.",
+      "solution": "A Authomathika executou o revamp completo com eletrificação da moenda, incluindo instalação de acionamentos elétricos, novos painéis CCMs, automação com CLPs para controle de velocidade e torque, e instrumentação de processo. A execução concentrada na entressafra foi cumprida dentro do prazo previsto.",
+      "altText": "Usina Ferrari - revamp e eletrificacao de moenda sucroenergetica com modernizacao de acionamentos eletricos pela Authomathika",
+      "results": {
+        "0": { "metric": "Escopo", "value": "Eletrificação completa da moenda" },
+        "1": { "metric": "Execução", "value": "Dentro da janela de entressafra" },
+        "2": { "metric": "Eficiência", "value": "Ganho energético significativo" }
+      }
+    },
+    "bunge-moema": {
+      "title": "Bunge Moema — Revamp de Automação",
+      "challenge": "A planta da Bunge Moema operava com sistemas de automação defasados que limitavam o controle de processo e geravam ineficiência operacional. O revamp precisava ser planejado para minimizar o tempo de parada e garantir a transição segura do sistema legado para a nova plataforma.",
+      "solution": "A Authomathika realizou o revamp completo do sistema de automação, incluindo migração de CLPs, novo sistema SCADA, substituição de instrumentação de campo e recabeamento. A migração foi feita de forma gradual, com operação em paralelo dos sistemas antigo e novo para validação antes do descomissionamento.",
+      "altText": "Bunge Moema - revamp completo do sistema de automacao industrial com CLPs e SCADA pela Authomathika",
+      "results": {
+        "0": { "metric": "Escopo", "value": "Revamp completo de automação" },
+        "1": { "metric": "Migração", "value": "Transição gradual sem parada" },
+        "2": { "metric": "Confiabilidade", "value": "Sistema modernizado" }
+      }
+    },
+    "santa-helena": {
+      "title": "Santa Helena — Revamp Turnkey Completo",
+      "challenge": "A Usina Santa Helena precisava de um revamp integral de sua planta industrial, abrangendo automação, elétrica e instrumentação. A modernização completa deveria ser coordenada para manter a interdependência entre as diferentes áreas da usina funcionando corretamente.",
+      "solution": "A Authomathika coordenou o revamp turnkey completo, abrangendo automação de todas as áreas (fermentação, destilaria, caldeira), modernização da infraestrutura elétrica e substituição de instrumentação. O modelo de contrato único garantiu gestão integrada sem conflitos de interface.",
+      "altText": "Usina Santa Helena - revamp turnkey completo com automacao, eletrica e instrumentacao industrial pela Authomathika",
+      "results": {
+        "0": { "metric": "Escopo", "value": "Revamp integral turnkey" },
+        "1": { "metric": "Áreas", "value": "Automação + elétrica + instrumentação" },
+        "2": { "metric": "Modelo", "value": "Contrato único integrado" }
+      }
+    },
+    "bahia-etanol": {
+      "title": "Bahia Etanol — Modernização Integral",
+      "challenge": "A planta da Bahia Etanol necessitava de modernização completa para aumentar a eficiência produtiva e reduzir custos operacionais. O projeto envolvia a atualização de sistemas de automação, elétrica e instrumentação em uma planta que já estava em operação.",
+      "solution": "A Authomathika realizou a modernização completa com substituição de CLPs e SCADA, atualização do sistema elétrico com novos painéis e proteções, e calibração e substituição de instrumentação de campo. O escopo foi executado em fases para permitir continuidade parcial da operação.",
+      "altText": "Bahia Etanol - modernizacao integral da planta de etanol com revamp de automacao e eletrica pela Authomathika",
+      "results": {
+        "0": { "metric": "Escopo", "value": "Modernização integral" },
+        "1": { "metric": "Fases", "value": "Execução por etapas" },
+        "2": { "metric": "Resultado", "value": "Eficiência operacional aumentada" }
+      }
+    },
+    "vale-carajas": {
+      "title": "Vale Carajás — Implantação de Eletro Centro",
+      "challenge": "A Vale necessitava da implantação de um eletro centro na operação de Carajás, região remota do Pará. O desafio incluía a logística de mobilização em área isolada, os rigorosos padrões de segurança e qualificação da mineração, e o ambiente operacional severo com poeira e vibração.",
+      "solution": "A Authomathika executou a implantação completa do eletro centro, incluindo engenharia elétrica, automação e montagem eletromecânica. A mobilização de equipes certificadas NR-10/NR-35 foi planejada com logística independente. Toda a documentação técnica foi entregue conforme os padrões de pré-qualificação da Vale.",
+      "altText": "Vale Carajas - implantacao de eletro centro para mineracao com engenharia eletrica e automacao pela Authomathika",
+      "results": {
+        "0": { "metric": "Escopo", "value": "Eletro centro completo" },
+        "1": { "metric": "Segurança", "value": "Zero acidentes na obra" },
+        "2": { "metric": "Documentação", "value": "Conforme padrões Vale" }
+      }
+    },
+    "umoe-1": {
+      "title": "UMOE — Ampliação e Revamp Completo",
+      "challenge": "A planta da UMOE precisava de ampliação de capacidade produtiva combinada com revamp dos sistemas existentes. O desafio era coordenar a expansão com a modernização sem comprometer a operação em andamento.",
+      "solution": "A Authomathika executou a ampliação e revamp completo, incluindo montagem eletromecânica de novos equipamentos, automação de novas áreas com integração ao sistema existente e modernização da infraestrutura elétrica. A coordenação entre expansão e operação foi gerenciada com planejamento integrado.",
+      "altText": "UMOE - ampliacao e revamp completo de planta sucroenergetica com montagem eletromecanica pela Authomathika",
+      "results": {
+        "0": { "metric": "Escopo", "value": "Ampliação + revamp" },
+        "1": { "metric": "Integração", "value": "Sistemas novos e existentes" },
+        "2": { "metric": "Operação", "value": "Sem interrupção" }
+      }
+    },
+    "sesamm": {
+      "title": "SESAMM — ETA e ETE Mogi Mirim",
+      "challenge": "O SESAMM precisava de plantas de tratamento de água (ETA) e esgoto (ETE) completas para atender a demanda crescente de Mogi Mirim. O projeto exigia automação de processo com alta confiabilidade para operação contínua 24/7 e conformidade com padrões ambientais rigorosos.",
+      "solution": "A Authomathika executou a implantação greenfield das estações de tratamento, incluindo automação completa com CLPs e SCADA para monitoramento e controle de processo, montagem eletromecânica de equipamentos e infraestrutura elétrica. O sistema entregue permite operação e monitoramento remotos.",
+      "altText": "SESAMM Mogi Mirim - implantacao greenfield de estacoes de tratamento de agua (ETA) e esgoto (ETE) com automacao pela Authomathika",
+      "results": {
+        "0": { "metric": "Escopo", "value": "ETA + ETE completas" },
+        "1": { "metric": "Operação", "value": "24/7 automatizada" },
+        "2": { "metric": "Monitoramento", "value": "SCADA remoto" }
+      }
+    },
+    "indemil": {
+      "title": "Indemil — Nova Planta de Ácido Cítrico",
+      "challenge": "A Indemil precisava da montagem eletromecânica completa de uma nova planta de ácido cítrico. O projeto exigia acabamentos e materiais adequados para ambiente food-grade, além de coordenação precisa entre disciplinas mecânica, elétrica e de instrumentação.",
+      "solution": "A Authomathika realizou a montagem eletromecânica completa da planta, incluindo instalação de equipamentos de processo, tubulações, infraestrutura elétrica e instrumentação. Todos os materiais e acabamentos foram especificados para conformidade com normas sanitárias da indústria alimentícia.",
+      "altText": "Indemil - montagem eletromecanica completa de nova planta industrial de acido citrico pela Authomathika",
+      "results": {
+        "0": { "metric": "Escopo", "value": "Montagem eletromecânica completa" },
+        "1": { "metric": "Conformidade", "value": "Normas food-grade" },
+        "2": { "metric": "Entrega", "value": "Planta pronta para operação" }
+      }
+    },
+    "ufv-belmonte": {
+      "title": "UFV Belmonte I & II — Usina Solar 540 MW",
+      "duration": "24 meses",
+      "challenge": "O Grupo Cobra precisava de um parceiro brasileiro com capacidade para executar a montagem elétrica e mecânica de uma das maiores usinas solares do Brasil, com 540 MW de potência. O prazo era agressivo, a logística complexa e a qualidade da montagem deveria garantir performance ratio contratual por 25+ anos.",
+      "solution": "A Authomathika foi selecionada para a montagem elétrica e mecânica da UFV Belmonte I & II, mobilizando equipes especializadas em solar. O escopo incluiu instalação de trackers, módulos fotovoltaicos, cabeamento DC/AC, inversores string e centrais, além de subestação. O controle de qualidade em campo garantiu rastreabilidade de cada componente instalado.",
+      "altText": "UFV Belmonte I e II - usina solar fotovoltaica de 540 MW com montagem eletrica e mecanica pela Authomathika em parceria com Grupo Cobra",
+      "results": {
+        "0": { "metric": "Capacidade", "value": "540 MW instalados" },
+        "1": { "metric": "Segurança", "value": "Zero acidentes graves" },
+        "2": { "metric": "Entrega", "value": "Dentro do cronograma" },
+        "3": { "metric": "Parceiro", "value": "Grupo Cobra (Espanha)" }
+      }
+    }
+  },
+  "serviceData": {
+    "paradas-programadas": {
+      "name": "Paradas Programadas",
+      "shortDescription": "Gestão completa de paradas industriais com conformidade NR-10 e NR-35",
+      "description": "A Authomathika oferece serviços completos de paradas programadas, com equipes especializadas e treinadas conforme as normas NR-10 e NR-35. Planejamos e executamos paradas de forma segura, eficiente e dentro do prazo estabelecido.",
+      "features": {
+        "0": "Planejamento e programação de paradas",
+        "1": "Equipes treinadas em NR-10 e NR-35",
+        "2": "Gestão de segurança do trabalho",
+        "3": "Manutenção elétrica e de instrumentação",
+        "4": "Inspeção e diagnóstico de equipamentos",
+        "5": "Relatórios técnicos detalhados"
+      }
+    },
+    "manutencao": {
+      "name": "Manutenção",
+      "shortDescription": "Manutenção corretiva e preventiva para equipamentos elétricos e de automação",
+      "description": "Nossa divisão de manutenção oferece serviços corretivos e preventivos para equipamentos elétricos e de automação, com equipes multidisciplinares e ferramental completo para atendimento ágil e de qualidade.",
+      "features": {
+        "0": "Manutenção corretiva emergencial 24/7",
+        "1": "Programas de manutenção preventiva",
+        "2": "Manutenção preditiva",
+        "3": "Revisão e overhaul de equipamentos",
+        "4": "Calibração de instrumentos",
+        "5": "Sistema Serelepe – relatórios online"
+      }
+    },
+    "metrologia": {
+      "name": "Metrologia",
+      "shortDescription": "Laboratórios fixos e móveis com certificados RBC rastreados",
+      "description": "O serviço de metrologia da Authomathika conta com laboratórios fixos e móveis, emitindo certificados rastreados pela RBC (Rede Brasileira de Calibração). Garantimos conformidade e precisão para todos os seus instrumentos de medição.",
+      "features": {
+        "0": "Laboratórios fixos e móveis",
+        "1": "Certificados rastreados RBC",
+        "2": "Calibração de instrumentos industriais",
+        "3": "Verificação e ajuste de transmissores",
+        "4": "Diagnóstico e certificação de redes",
+        "5": "Relatórios de conformidade"
+      }
+    },
+    "servicos-em-campo": {
+      "name": "Serviços em Campo",
+      "shortDescription": "Atendimento técnico especializado com sistema online Serelepe",
+      "description": "A Authomathika oferece serviços em campo com equipes altamente capacitadas e respaldo do sistema Serelepe, que permite acompanhamento online de relatórios e histórico de atendimentos. Frota própria com controle por radar garante agilidade no atendimento.",
+      "features": {
+        "0": "Atendimento técnico especializado",
+        "1": "Sistema Serelepe – acompanhamento online",
+        "2": "Frota própria com controle por radar",
+        "3": "Relatórios online em tempo real",
+        "4": "Histórico de atendimentos",
+        "5": "Suporte técnico remoto"
+      }
+    },
+    "tecnologia-da-informacao": {
+      "name": "Tecnologia da Informação",
+      "shortDescription": "CFTV, fibra óptica e redes industriais",
+      "description": "A divisão de TI da Authomathika oferece soluções completas em infraestrutura de telecomunicações e redes industriais, incluindo sistemas de CFTV, instalação de fibra óptica e redes de comunicação industrial.",
+      "features": {
+        "0": "Sistemas de CFTV e monitoramento",
+        "1": "Instalação de fibra óptica",
+        "2": "Redes industriais (Ethernet, Profibus, DeviceNet)",
+        "3": "Infraestrutura de telecomunicações",
+        "4": "Certificação de redes",
+        "5": "Suporte e manutenção de infraestrutura"
+      }
+    }
+  },
+  "productData": {
+    "slv-1a": {
+      "name": "SLV-1A",
+      "shortDescription": "Medidor de Nível do Chute Donnelly Inteligente",
+      "description": "O SLV-1A é um medidor de nível do chute Donnelly inteligente, desenvolvido pela Authomathika para o setor sucroenergético. Com mais de 2.650 pontos instalados, é referência em confiabilidade e precisão para usinas de açúcar e etanol.",
+      "badge": "2.650+ instalações",
+      "features": {
+        "0": "Medição contínua e precisa do nível do chute",
+        "1": "Tecnologia ultrassônica avançada",
+        "2": "Comunicação industrial (4-20mA, HART, Profibus)",
+        "3": "Interface de configuração intuitiva",
+        "4": "Alta resistência a ambiente agressivo (IP65)",
+        "5": "Fácil instalação e manutenção"
+      },
+      "specs": {
+        "pontosInstalados": { "label": "Pontos Instalados", "value": "2.650+" },
+        "sinalDeSaida": { "label": "Sinal de Saída", "value": "4-20 mA / HART" },
+        "grauDeProtecao": { "label": "Grau de Proteção", "value": "IP65" },
+        "alimentacao": { "label": "Alimentação", "value": "24 VDC" }
+      }
+    },
+    "px-400": {
+      "name": "PX 400",
+      "shortDescription": "Analisador e Medidor de Pasteurização",
+      "description": "O PX 400 é um analisador e medidor de pasteurização com patente americana (US Patent 6,870,486). Equipamento de alta precisão para controle de processos de pasteurização industrial.",
+      "badge": "Patente USA",
+      "features": {
+        "0": "Patente americana US Patent 6,870,486",
+        "1": "Alta precisão de medição",
+        "2": "Monitoramento em tempo real",
+        "3": "Interface de usuário avançada",
+        "4": "Comunicação industrial",
+        "5": "Certificação para uso industrial"
+      },
+      "specs": {
+        "patente": { "label": "Patente", "value": "US Patent 6,870,486" },
+        "tipoDeMedicao": { "label": "Tipo de Medição", "value": "Pasteurização" },
+        "comunicacao": { "label": "Comunicação", "value": "Industrial" }
+      }
+    },
+    "auth-300": {
+      "name": "AUTH 300",
+      "shortDescription": "Atuador Cilíndrico Eletropneumático",
+      "description": "O AUTH 300 é um atuador cilíndrico eletropneumático desenvolvido pela Authomathika. Com mais de 190 pontos instalados, oferece precisão e confiabilidade para aplicações de controle de fluxo industrial.",
+      "badge": "190+ instalações",
+      "features": {
+        "0": "Design compacto e robusto",
+        "1": "Controle preciso de posição",
+        "2": "Alta confiabilidade operacional",
+        "3": "Compatível com sistemas de automação",
+        "4": "Manutenção simplificada",
+        "5": "Ampla faixa de aplicação"
+      },
+      "specs": {
+        "pontosInstalados": { "label": "Pontos Instalados", "value": "190+" },
+        "tipo": { "label": "Tipo", "value": "Eletropneumático" },
+        "sinalDeControle": { "label": "Sinal de Controle", "value": "4-20 mA" }
+      }
+    },
+    "dpg-1a": {
+      "name": "DPG-1A",
+      "shortDescription": "Transmissor de Posição e Deslocamento de Rolo",
+      "description": "O DPG-1A é um transmissor de posição e deslocamento de rolo, projetado para aplicações em moendas e equipamentos de processamento. Fornece medição precisa e confiável em ambientes industriais severos.",
+      "features": {
+        "0": "Medição de posição de alta precisão",
+        "1": "Robusto para ambientes agressivos",
+        "2": "Sinal de saída analógico",
+        "3": "Instalação direta em rolos",
+        "4": "Baixa necessidade de manutenção"
+      },
+      "specs": {
+        "tipoDeMedicao": { "label": "Tipo de Medição", "value": "Posição / Deslocamento" },
+        "sinalDeSaida": { "label": "Sinal de Saída", "value": "4-20 mA" },
+        "aplicacao": { "label": "Aplicação", "value": "Moendas industriais" }
+      }
+    },
+    "dclt-1c": {
+      "name": "DCLT-1C",
+      "shortDescription": "Medição Contínua do Nível do Chute Donnelly",
+      "description": "O DCLT-1C é o mais moderno medidor de nível contínuo do chute Donnelly da linha Authomathika. Com display OLED, grau de proteção IP67 e patente pendente, representa o estado da arte em instrumentação para usinas sucroenergéticas.",
+      "badge": "Patent Pending",
+      "features": {
+        "0": "Display OLED de alta visibilidade",
+        "1": "Grau de proteção IP67",
+        "2": "Patente pendente (Patent pending)",
+        "3": "Medição contínua e precisa",
+        "4": "Comunicação industrial avançada",
+        "5": "Resistência a ambientes úmidos e agressivos"
+      },
+      "specs": {
+        "display": { "label": "Display", "value": "OLED" },
+        "grauDeProtecao": { "label": "Grau de Proteção", "value": "IP67" },
+        "patente": { "label": "Patente", "value": "Patent pending" },
+        "medicao": { "label": "Medição", "value": "Contínua" }
+      }
+    },
+    "promtec": {
+      "name": "ProMtec",
+      "shortDescription": "Medidor de Densidade e Processo",
+      "description": "O ProMtec é um medidor de densidade e processo com mais de 8.500 instalações mundiais. Desenvolvido com tecnologia alemã, é referência global em medição de densidade para processos industriais.",
+      "badge": "8.500+ instalações",
+      "features": {
+        "0": "Tecnologia alemã de ponta",
+        "1": "Mais de 8.500 instalações mundiais",
+        "2": "Alta precisão na medição de densidade",
+        "3": "Robusto para processo industrial",
+        "4": "Ampla compatibilidade com fluidos",
+        "5": "Baixo custo de manutenção"
+      },
+      "specs": {
+        "instalacoesMundiais": { "label": "Instalações Mundiais", "value": "8.500+" },
+        "tecnologia": { "label": "Tecnologia", "value": "Alemã" },
+        "tipoDeMedicao": { "label": "Tipo de Medição", "value": "Densidade / Processo" }
+      }
+    },
+    "derivador-asi": {
+      "name": "Derivador AS-i",
+      "shortDescription": "Derivador para Rede AS-i",
+      "description": "O Derivador AS-i da Authomathika é um equipamento para conexão e distribuição em redes AS-Interface (AS-i), padrão mundial para comunicação em automação industrial de campo.",
+      "features": {
+        "0": "Compatível com padrão AS-Interface",
+        "1": "Conexão simplificada de dispositivos",
+        "2": "Alta confiabilidade de comunicação",
+        "3": "Instalação rápida",
+        "4": "Proteção contra interferências"
+      },
+      "specs": {
+        "protocolo": { "label": "Protocolo", "value": "AS-Interface (AS-i)" },
+        "aplicacao": { "label": "Aplicação", "value": "Redes industriais de campo" }
+      }
+    },
+    "planta-didatica": {
+      "name": "Planta Didática",
+      "shortDescription": "Para Ensaios de Malhas de Controle",
+      "description": "A Planta Didática da Authomathika é um equipamento de treinamento e educação, desenvolvida para ensaios práticos de malhas de controle. Ideal para capacitação técnica de operadores e engenheiros.",
+      "features": {
+        "0": "Simulação de processos reais",
+        "1": "Múltiplas malhas de controle",
+        "2": "Interface educacional intuitiva",
+        "3": "Compatível com controladores industriais",
+        "4": "Ideal para treinamento e capacitação",
+        "5": "Material didático incluído"
+      },
+      "specs": {
+        "aplicacao": { "label": "Aplicação", "value": "Treinamento e capacitação" },
+        "tipoDeMalhas": { "label": "Tipo de Malhas", "value": "PID, cascata, feedforward" }
+      }
+    },
+    "paineis": {
+      "name": "Painéis Elétricos",
+      "shortDescription": "Painéis Elétricos Industriais sob Medida",
+      "description": "A Authomathika projeta e fabrica painéis elétricos industriais sob medida, incluindo CCMs, QGBTs, switchboards e painéis de automação. Cada painel é desenvolvido conforme as normas técnicas vigentes e as necessidades específicas do cliente.",
+      "features": {
+        "0": "Projeto e fabricação sob medida",
+        "1": "CCMs, QGBTs e switchboards",
+        "2": "Conformidade com normas ABNT/IEC",
+        "3": "Parceiros Weg, Siemens, Schneider, ABB",
+        "4": "Testes e comissionamento",
+        "5": "Documentação técnica completa"
+      },
+      "specs": {
+        "tipos": { "label": "Tipos", "value": "CCM, QGBT, Switchboard, Automação" },
+        "normas": { "label": "Normas", "value": "ABNT / IEC" },
+        "fabricacao": { "label": "Fabricação", "value": "Sob medida" }
+      }
+    }
+  },
+  "pages": {
+    "businessDetail": {
+      "division": "Divisão",
+      "technicalContext": "Contexto técnico",
+      "servicesAndSolutions": "Serviços e soluções",
+      "technologicalPartners": "Parceiros tecnológicos",
+      "partnersFootnote": "Trabalhamos com os principais fabricantes globais, garantindo compatibilidade e suporte técnico de primeiro nível.",
+      "divisionIndicators": "Indicadores da divisão",
+      "openScopeStudy": "Abrir estudo de escopo",
+      "requestTechnicalProposal": "Solicitar proposta técnica",
+      "responseIn48h": "Resposta em até 48h úteis",
+      "dataConfidential": "Seus dados são confidenciais",
+      "talkViaWhatsapp": "Falar via WhatsApp",
+      "faq": "Perguntas frequentes"
+    },
+    "sectorDetail": {
+      "sector": "Setor",
+      "sectorChallenges": "Desafios do setor",
+      "howAuthomathikaSolves": "Como a Authomathika resolve",
+      "relatedSolutions": "Soluções relacionadas",
+      "viewSolution": "Ver solução",
+      "projectsInSector": "Projetos neste setor",
+      "faq": "Perguntas frequentes",
+      "sectorIndicators": "Indicadores no setor",
+      "sectorClients": "Clientes no setor",
+      "talkToSpecialistIn": "Fale com especialista em {sector}",
+      "teamKnowsChallenges": "Nossa equipe conhece os desafios do seu setor. Receba uma proposta técnica personalizada.",
+      "requestProposal": "Solicitar proposta",
+      "responseIn48h": "Resposta em até 48h úteis",
+      "dataConfidential": "Seus dados são confidenciais"
+    },
+    "serviceDetail": {
+      "service": "Serviço",
+      "scope": "Escopo",
+      "deliverables": "Entregáveis",
+      "certifications": "Certificações",
+      "talkToSpecialist": "Falar com especialista",
+      "openService": "Abrir atendimento",
+      "otherServices": "Outros serviços"
+    },
+    "productDetail": {
+      "product": "Produto",
+      "application": "Aplicação",
+      "mainFeatures": "Características principais",
+      "specifications": "Especificações",
+      "requestTechnicalEvaluation": "Solicitar avaliação técnica",
+      "openRequest": "Abrir solicitação",
+      "otherProducts": "Outros produtos"
+    },
+    "caseDetail": {
+      "successCase": "Case de sucesso",
+      "notFound": "Não encontrado",
+      "theChallenge": "O desafio",
+      "theSolution": "A solução",
+      "results": "Resultados",
+      "divisionsInvolved": "Divisões envolvidas",
+      "similarChallenge": "Tem um desafio similar?",
+      "talkToEngineering": "Fale com nossa engenharia",
+      "engineeringDescription": "Fale com nossa equipe de engenharia e receba uma proposta técnica personalizada para o seu projeto.",
+      "otherProjectsIn": "Outros projetos em {sector}",
+      "viewCase": "Ver case",
+      "responseIn48h": "Resposta em até 48h úteis",
+      "dataConfidential": "Seus dados são confidenciais",
+      "typeLabels": {
+        "greenfield": "Greenfield",
+        "brownfield": "Brownfield",
+        "revamp": "Revamp",
+        "epc": "EPC",
+        "montagem": "Montagem",
+        "solar": "Energia Solar"
+      }
+    },
+    "businessList": {
+      "title": "Nossos Negócios",
+      "description": "Divisões especializadas em engenharia elétrica e automação industrial.",
+      "tag": "Estrutura de serviços",
+      "subtitle": "Unidades complementares para projeto, implantação e sustentação de ativos industriais.",
+      "capabilitiesMap": "Mapa de capacidades",
+      "capabilitiesDescription": "Cada divisão opera com equipe e método próprios, integrados por uma governança técnica única.",
+      "details": "Detalhes"
+    },
+    "sectorList": {
+      "title": "Setores Atendidos",
+      "description": "A Authomathika atende 12 setores industriais: sucroenergético, mineração, energias renováveis, saneamento, fertilizantes, alimentos, siderurgia, logística, papel e celulose, cimento, petróleo e gás e infraestrutura.",
+      "tag": "Atuação setorial",
+      "heading": "Setores que Atendemos",
+      "subtitle": "Cada setor tem desafios únicos. Nossa engenharia é especializada para resolver os problemas reais da sua operação industrial.",
+      "featuredSectors": "Setores prioritários",
+      "otherSectors": "Outros setores",
+      "viewSolutions": "Ver soluções",
+      "viewSector": "Ver setor"
+    },
+    "serviceList": {
+      "title": "Serviços",
+      "description": "Serviços especializados em manutenção, metrologia, paradas programadas e mais.",
+      "tag": "Suporte de campo",
+      "subtitle": "Cobertura técnica para paradas, manutenção, metrologia, campo e infraestrutura de TI industrial.",
+      "journeyTitle": "Jornada de suporte contínuo",
+      "journeyDescription": "Do planejamento de intervenção ao relatório técnico final, com governança operacional e rastreabilidade.",
+      "details": "Detalhes",
+      "statsEquipamentos": "Equipamentos atendidos",
+      "statsHoras": "Horas de serviço",
+      "statsAtendimentos": "Atendimentos técnicos"
+    },
+    "productList": {
+      "title": "Produtos",
+      "description": "Linha de produtos próprios Authomathika para instrumentação e controle industrial.",
+      "tag": "Catálogo técnico",
+      "subtitle": "Portfólio de instrumentação e controle industrial com tecnologia proprietária.",
+      "columnProduct": "Produto",
+      "columnHighlight": "Destaque",
+      "columnAction": "Ação",
+      "open": "Abrir",
+      "specNote": "Precisa de especificação detalhada para compatibilização com seu processo? Nossa engenharia de aplicação apoia seleção e integração dos equipamentos."
+    },
+    "caseList": {
+      "breadcrumbHome": "Início",
+      "breadcrumbCases": "Cases",
+      "tag": "Cases de sucesso",
+      "heading": "Projetos que comprovam nossa engenharia",
+      "subtitle": "Mais de 200 projetos entregues em diferentes setores e contextos operacionais. Conheça os detalhes.",
+      "allSectors": "Todos os setores",
+      "featured": "Destaques",
+      "allProjects": "Todos os projetos",
+      "viewFullCase": "Ver case completo",
+      "noCasesFound": "Nenhum case encontrado para este setor."
+    },
+    "worksList": {
+      "title": "Obras",
+      "description": "Portfólio de projetos e obras executadas pela Authomathika.",
+      "tag": "Portfólio executado",
+      "heading": "Projetos e Obras",
+      "subtitle": "Implantações industriais entregues em diferentes segmentos e contextos operacionais."
+    },
+    "metadata": {
+      "businessTitle": "{name} – Engenharia Industrial",
+      "sectorTitle": "{name} – Engenharia Industrial para o Setor",
+      "serviceTitle": "{name} – Serviços Industriais",
+      "notFound": "Não encontrado"
+    },
+    "careers": {
+      "metaTitle": "Trabalhe Conosco",
+      "metaDescription": "Faça parte da equipe Authomathika. Vagas em engenharia elétrica, automação industrial e montagem eletromecânica em Sertãozinho/SP.",
+      "tag": "Carreiras",
+      "title": "Trabalhe Conosco",
+      "subtitle": "Faça parte de uma equipe de engenharia orientada a execução e evolução técnica contínua.",
+      "breadcrumb": "Trabalhe Conosco",
+      "whyBuildCareer": "Por que construir carreira aqui",
+      "whyDescription": "Projetos de alta complexidade, cultura técnica forte e ambiente com autonomia responsável.",
+      "pillars": {
+        "0": "Foco em resultado",
+        "1": "Ambiente colaborativo",
+        "2": "Tecnologia aplicada",
+        "3": "Crescimento profissional"
+      },
+      "jobsTitle": "Vagas via Gupy",
+      "jobsDescription": "Acompanhe oportunidades abertas e candidate-se na nossa plataforma oficial de recrutamento.",
+      "viewJobs": "Ver vagas disponíveis"
+    },
+    "documentation": {
+      "metaTitle": "Documentação e Certificações",
+      "metaDescription": "Certificações, indicadores de segurança, dados cadastrais e materiais técnicos da Authomathika. ISO 9001, NR-10, NR-35, RBC.",
+      "tag": "Pré-qualificação",
+      "title": "Documentação e Certificações",
+      "subtitle": "Acesso rápido a certificações, indicadores de segurança, dados cadastrais e materiais técnicos para processos de qualificação.",
+      "breadcrumb": "Documentação",
+      "certificationsTag": "Certificações",
+      "certificationsHeading": "Qualidade e conformidade comprovadas",
+      "certificationsDescription": "A Authomathika mantém certificações e conformidades regulatórias que garantem a excelência e segurança de cada projeto.",
+      "statusActive": "Vigente",
+      "certifications": {
+        "0": {
+          "name": "ISO 9001",
+          "description": "Sistema de gestão da qualidade certificado, garantindo processos padronizados e melhoria contínua em todos os projetos."
+        },
+        "1": {
+          "name": "NR-10",
+          "description": "Conformidade com a Norma Regulamentadora de Segurança em Instalações e Serviços em Eletricidade. Equipe integralmente certificada."
+        },
+        "2": {
+          "name": "NR-35",
+          "description": "Conformidade com a Norma Regulamentadora de Trabalho em Altura. Profissionais treinados e equipamentos inspecionados."
+        },
+        "3": {
+          "name": "RBC – Rede Brasileira de Calibração",
+          "description": "Laboratórios fixos e móveis com rastreabilidade INMETRO para calibração de instrumentos de medição industrial."
+        }
+      },
+      "safetyTag": "Segurança",
+      "safetyHeading": "Indicadores de segurança no trabalho",
+      "safetyDescription": "Segurança não é meta — é premissa. Cada número reflete o compromisso da Authomathika com a integridade de seus colaboradores.",
+      "safetyIndicators": {
+        "0": {
+          "value": "2.000+",
+          "label": "Dias sem acidentes de trabalho",
+          "description": "Marca alcançada em 2019 e mantida como padrão operacional"
+        },
+        "1": {
+          "value": "0",
+          "label": "TFCA (Taxa de Frequência de Acidentes)",
+          "description": "Compromisso zero acidentes em todas as frentes de trabalho"
+        },
+        "2": {
+          "value": "297.000+",
+          "label": "Horas de serviço acumuladas",
+          "description": "Volume de operação com histórico de segurança exemplar"
+        }
+      },
+      "registrationTag": "Dados cadastrais",
+      "registrationHeading": "Informações corporativas",
+      "labelRazaoSocial": "Razão Social",
+      "labelCnpj": "CNPJ",
+      "labelFundacao": "Fundação",
+      "labelEndereco": "Endereço",
+      "labelTelefone": "Telefone",
+      "labelEmailComercial": "E-mail Comercial",
+      "labelConformidade": "Conformidade",
+      "downloadsTag": "Downloads",
+      "downloadsHeading": "Materiais técnicos",
+      "downloadsDescription": "Documentos disponíveis para download. Para materiais adicionais, entre em contato com nosso comercial.",
+      "downloadBtn": "Baixar",
+      "comingSoon": "Em breve",
+      "materials": {
+        "0": {
+          "title": "Portfólio Institucional",
+          "description": "Apresentação completa da empresa, divisões e cases de referência."
+        },
+        "1": {
+          "title": "Catálogo de Produtos",
+          "description": "Linha de produtos próprios: SLV-1A, AUTH 300, AUTH 600 e mais."
+        },
+        "2": {
+          "title": "Certificado ISO 9001",
+          "description": "Certificado vigente do sistema de gestão da qualidade."
+        },
+        "3": {
+          "title": "Ficha de Pré-Qualificação",
+          "description": "Dados técnicos e cadastrais para processos de RFP e pré-qualificação."
+        }
+      }
+    },
+    "mediaCenter": {
+      "metaTitle": "Media Center",
+      "metaDescription": "Notícias, cases e conteúdo técnico sobre automação industrial, energia solar fotovoltaica e engenharia EPC da Authomathika.",
+      "tag": "Conteúdo",
+      "title": "Media Center",
+      "subtitle": "Notícias e conteúdo técnico da Authomathika.",
+      "breadcrumb": "Media Center",
+      "newsTitle": "Notícias",
+      "newsDescription": "Cobertura de eventos, marcos e atualizações institucionais.",
+      "newsCount": "9 publicações",
+      "blogTitle": "Blog",
+      "blogDescription": "Conteúdos técnicos sobre engenharia elétrica e automação.",
+      "blogCount": "2 artigos"
+    },
+    "news": {
+      "metaTitle": "Notícias",
+      "tag": "Atualizações",
+      "title": "Notícias",
+      "subtitle": "Principais marcos, eventos e reconhecimentos da Authomathika.",
+      "breadcrumbParent": "Media Center",
+      "breadcrumb": "Notícias",
+      "items": {
+        "0": { "title": "Fenasucro 2022", "excerpt": "Participação da Authomathika na principal feira de bioenergia." },
+        "1": { "title": "Fenasucro 2019", "excerpt": "Novos projetos e investimentos para o setor industrial." },
+        "2": { "title": "2.000 dias sem acidentes de trabalho", "excerpt": "Marco no compromisso com segurança operacional." },
+        "3": { "title": "Reunião Anual Fermentec 2019", "excerpt": "Fortalecimento de relacionamentos no setor sucroenergético." },
+        "4": { "title": "Projetos de 2018", "excerpt": "Bahia Etanol, Mosaic Uberaba e outros cases relevantes." },
+        "5": { "title": "Authomathika na Fenasucro 2018", "excerpt": "Presença consolidada no calendário de bioenergia." },
+        "6": { "title": "Prêmio Excelência Entressafra 2016/2017", "excerpt": "Reconhecimento da BP Biofuels à performance da equipe." },
+        "7": { "title": "Parada Geral Vale CMA e Vale CIU", "excerpt": "Execução de parada de manutenção de grande porte." },
+        "8": { "title": "Planta Piloto de Etanol SENAI", "excerpt": "Conclusão da primeira unidade piloto de etanol (UPPE)." }
+      }
+    },
+    "blog": {
+      "metaTitle": "Blog",
+      "tag": "Conteúdo técnico",
+      "title": "Blog",
+      "subtitle": "Artigos práticos sobre elétrica, automação e performance industrial.",
+      "breadcrumbParent": "Media Center",
+      "breadcrumb": "Blog",
+      "posts": {
+        "0": {
+          "title": "10 Dicas para Escolher seu Fornecedor de Painéis e Quadros Elétricos",
+          "category": "Elétrica",
+          "readTime": "7 min",
+          "excerpt": "Critérios de engenharia para avaliar fornecedores com foco em confiabilidade, prazo e suporte."
+        },
+        "1": {
+          "title": "Como o DCLT Melhora a Eficiência de uma Usina de Açúcar e Etanol?",
+          "category": "Produtos",
+          "readTime": "5 min",
+          "excerpt": "Aplicação prática de medição contínua no chute Donnelly para ganho operacional."
+        }
+      }
+    },
+    "proposalForm": {
+      "sectors": {
+        "0": "Sucroenergético",
+        "1": "Mineração",
+        "2": "Energias Renováveis",
+        "3": "Saneamento",
+        "4": "Fertilizantes",
+        "5": "Alimentos e Bebidas",
+        "6": "Siderurgia e Química",
+        "7": "Logística",
+        "8": "Papel e Celulose",
+        "9": "Cimento",
+        "10": "Petróleo e Gás",
+        "11": "Infraestrutura",
+        "12": "Outro"
+      },
+      "projectTypes": {
+        "0": "Greenfield (planta nova)",
+        "1": "Brownfield (ampliação/modernização)",
+        "2": "Revamp (retrofit)",
+        "3": "Manutenção / Parada programada",
+        "4": "Outro"
+      },
+      "serviceOptions": {
+        "automacao": "Automação Industrial",
+        "eletrica": "Engenharia Elétrica",
+        "energias-renovaveis": "Energias Renováveis",
+        "montagem": "Montagem Eletromecânica",
+        "epc": "Engenharia EPC",
+        "ia-dados": "IA & Dados",
+        "paradas": "Paradas Programadas",
+        "manutencao": "Manutenção",
+        "metrologia": "Metrologia e Calibração",
+        "servicos-campo": "Serviços em Campo",
+        "ti": "Tecnologia da Informação"
+      },
+      "productOptions": {
+        "slv-1a": "SLV-1A",
+        "px-400": "PX 400",
+        "auth-300": "AUTH 300",
+        "dpg-1a": "DPG-1A",
+        "dclt-1c": "DCLT-1C",
+        "promtec": "ProMtec",
+        "derivador-asi": "Derivador AS-i",
+        "planta-didatica": "Planta Didática",
+        "paineis": "Painéis Elétricos"
+      },
+      "steps": {
+        "1": "Sobre o projeto",
+        "2": "Seus dados",
+        "3": "Escopo técnico"
+      },
+      "step1Title": "Sobre o projeto",
+      "step1Description": "Nos ajude a entender o contexto do seu projeto.",
+      "step2Title": "Seus dados",
+      "step2Description": "Para que possamos entrar em contato.",
+      "step3Title": "Escopo técnico",
+      "step3Description": "Descreva o projeto ou compartilhe o memorial descritivo.",
+      "labelSetor": "Setor de atuação",
+      "labelTipoProjeto": "Tipo de projeto",
+      "labelInteresseEm": "Interesse em",
+      "labelCategoria": "Produto ou Serviço?",
+      "labelProduto": "Produto",
+      "labelServico": "Serviço",
+      "labelProdutosInteresse": "Produtos de interesse",
+      "labelServicosInteresse": "Serviços de interesse",
+      "labelNome": "Nome completo",
+      "labelEmpresa": "Empresa",
+      "labelEmail": "E-mail corporativo",
+      "labelTelefone": "Telefone",
+      "labelEscopo": "Descrição do escopo",
+      "placeholderSetor": "Selecione o setor",
+      "placeholderTipo": "Selecione o tipo",
+      "placeholderEscopo": "Descreva o projeto, local, dimensionamento estimado, prazos desejáveis e outras informações relevantes...",
+      "placeholderTelefone": "(00) 00000-0000",
+      "errorSetor": "Selecione o setor",
+      "errorTipoProjeto": "Selecione o tipo de projeto",
+      "errorCategoria": "Selecione produto ou serviço",
+      "errorServicos": "Selecione ao menos um item",
+      "errorNome": "Informe seu nome",
+      "errorEmpresa": "Informe a empresa",
+      "errorEmail": "Informe um e-mail válido",
+      "errorTelefone": "Informe o telefone",
+      "errorEscopo": "Descreva brevemente o escopo do projeto",
+      "btnVoltar": "Voltar",
+      "btnProximo": "Próximo",
+      "btnEnviar": "Enviar solicitação",
+      "successTitle": "Solicitação recebida",
+      "successDescription": "Nossa equipe de engenharia comercial analisará seu escopo e retornará em até 48 horas úteis com uma proposta técnica personalizada.",
+      "trustResponse": "Resposta em até 48h úteis",
+      "trustConfidential": "Seus dados são confidenciais"
+    },
+    "institucional": {
+      "title": "Institucional",
+      "description": "Conheça a Authomathika – engenharia integradora desde 1999.",
+      "tag": "Empresa",
+      "pageTitle": "Institucional",
+      "subtitle": "Histórico, posicionamento e diferenciais operacionais da Authomathika.",
+      "breadcrumbEmpresa": "Empresa",
+      "breadcrumbInstitucional": "Institucional",
+      "quemSomos": "Quem somos",
+      "paragraph1": "Fundada em 1999 em Sertãozinho/SP, a Authomathika atua como integradora de engenharia para sistemas elétricos, automação e implantação industrial.",
+      "paragraph2": "Com atuação multissetorial, nossa operação combina projeto, execução e manutenção com compromisso contratual de alta previsibilidade.",
+      "paragraph3": "A empresa é reconhecida por clareza técnica, ética de entrega e capacidade de escalar projetos complexos em diferentes ambientes industriais.",
+      "diferenciais": "Diferenciais",
+      "diferencial0": "Equipe multidisciplinar de engenharia e campo",
+      "diferencial1": "Operação no mundo inteiro com unidades próprias no Paraguai",
+      "diferencial2": "Gestão digital de serviços com rastreabilidade",
+      "diferencial3": "Metrologia RBC com laboratórios fixos e móveis",
+      "diferencial4": "Frota própria e operação nacional",
+      "diferencial5": "Conformidade com normas críticas de segurança (NR-10, NR-35)",
+      "diferencial6": "+25 anos de experiência no setor sucroenergético e industrial",
+      "diferencial7": "336 MW de energia solar instalados em 7 parques",
+      "diferencial8": "Mais de 297.000 horas de serviço executadas",
+      "diferencial9": "Capacidade turnkey: projeto, execução e comissionamento",
+      "dadosCorporativos": "Dados corporativos",
+      "fundacao": "Fundação:",
+      "presidente": "Presidente:",
+      "telefone": "Telefone:",
+      "conformidades": "Conformidades"
+    },
+    "visaoCorporativa": {
+      "title": "Visão Corporativa",
+      "description": "Conheça os princípios e valores que guiam a Authomathika há mais de 25 anos: compromisso com o cliente, segurança, qualidade ISO 9001 e transparência.",
+      "tag": "Direcionamento",
+      "pageTitle": "Visão Corporativa",
+      "subtitle": "Princípios que orientam decisões técnicas, contratuais e relacionais da Authomathika.",
+      "breadcrumbEmpresa": "Empresa",
+      "breadcrumbVisao": "Visão Corporativa",
+      "quote": "Reconhecidos pela forma responsável e clara de cumprir contratos, sempre dentro da ética e do profissionalismo."
+    },
+    "linhaDoTempo": {
+      "title": "Linha do Tempo",
+      "description": "De 1999 a hoje: mais de 25 anos de marcos na engenharia integradora. 336 MW solares, 2.000+ dias sem acidentes, certificação ISO 9001 e evolução contínua.",
+      "tag": "Histórico",
+      "pageTitle": "Linha do Tempo",
+      "subtitle": "Marcos de evolução da Authomathika desde 1999.",
+      "breadcrumbEmpresa": "Empresa",
+      "breadcrumbLinhaDoTempo": "Linha do Tempo"
+    },
+    "clientes": {
+      "title": "Clientes",
+      "description": "Empresas líderes que confiam na Authomathika há mais de 25 anos.",
+      "tag": "Relações de mercado",
+      "pageTitle": "Clientes e Parceiros",
+      "subtitle": "Base de relacionamento construída em projetos críticos de engenharia industrial.",
+      "breadcrumbEmpresa": "Empresa",
+      "breadcrumbClientes": "Clientes",
+      "clientesDeReferencia": "Clientes de referência",
+      "setoresAtendidos": "Setores atendidos"
+    },
+    "equipe": {
+      "title": "Nossa Equipe",
+      "description": "Conheça a liderança da Authomathika. Mais de 25 anos de experiência em engenharia integradora de sistemas elétricos e automação.",
+      "tag": "Pessoas",
+      "pageTitle": "Nossa Equipe",
+      "subtitle": "Por trás de cada projeto entregue, existe uma equipe comprometida com excelência técnica e segurança.",
+      "breadcrumbEmpresa": "Empresa",
+      "breadcrumbEquipe": "Nossa Equipe",
+      "mensagemPresidencia": "Mensagem da Presidência",
+      "fotoAlt": "Foto de {name}, {role} da Authomathika",
+      "lideranca": "Liderança",
+      "equipeGestao": "Equipe de gestão",
+      "equipeGestaoDesc": "Profissionais com décadas de experiência nos setores sucroenergético, mineração, energia e infraestrutura.",
+      "memberFotoAlt": "Foto de {name}, {role}",
+      "linkedinAlt": "LinkedIn de {name}",
+      "presidentRole": "Presidente e Fundador",
+      "presidentMessage": "Desde 1999, fundei a Authomathika com um princípio simples: cumprir o que prometemos. Em mais de 25 anos de mercado, construímos nossa reputação entregando projetos industriais críticos com responsabilidade, segurança e excelência técnica. Nossa equipe é formada por profissionais apaixonados por engenharia, que entendem que cada projeto representa a confiança que o cliente deposita em nós. Trabalhamos para que essa confiança seja sempre retribuída com resultados concretos.",
+      "member0Role": "Presidente e Fundador",
+      "member0Bio": "Engenheiro fundador da Authomathika em 1999. Lidera a visão estratégica e o crescimento da empresa há mais de 25 anos.",
+      "member1Name": "Diretor de Engenharia",
+      "member1Role": "Diretor de Engenharia",
+      "member1Bio": "Responsável pela gestão técnica de todas as divisões operacionais e garantia de qualidade dos projetos.",
+      "member2Name": "Diretor Comercial",
+      "member2Role": "Diretor Comercial",
+      "member2Bio": "Lidera a estratégia comercial e o relacionamento com clientes em todos os setores atendidos.",
+      "member3Name": "Gerente de Automação",
+      "member3Role": "Gerente de Automação",
+      "member3Bio": "Coordena os projetos de automação industrial, programação de CLPs e desenvolvimento de SCADA.",
+      "member4Name": "Gerente de Projetos EPC",
+      "member4Role": "Gerente de Projetos EPC",
+      "member4Bio": "Gerencia os contratos EPC e turnkey, garantindo entregas dentro do prazo e orçamento.",
+      "member5Name": "Coordenador de Segurança",
+      "member5Role": "Coordenador de QSMS",
+      "member5Bio": "Responsável pelos padrões de qualidade, segurança, meio ambiente e saúde que sustentam os 2.000+ dias sem acidentes."
+    },
+    "contato": {
+      "title": "Contato",
+      "tag": "Relacionamento",
+      "subtitle": "Escolha o fluxo mais adequado para sua demanda.",
+      "options": {
+        "specialist": {
+          "title": "Falar com Especialista",
+          "description": "Canal direto para atendimento técnico e comercial."
+        },
+        "proposal": {
+          "title": "Solicitar Proposta Técnica",
+          "description": "Envie o escopo do projeto e receba proposta personalizada."
+        },
+        "suppliers": {
+          "title": "Fornecedores",
+          "description": "Cadastro para base homologada de parceiros."
+        },
+        "location": {
+          "title": "Localização",
+          "description": "Informações de endereço e atendimento presencial."
+        }
+      },
+      "faleConosco": {
+        "title": "Falar com Especialista",
+        "tag": "Atendimento",
+        "subtitle": "Canal direto para dúvidas técnicas, suporte e relacionamento comercial.",
+        "channels": {
+          "phone": {
+            "title": "Telefone",
+            "value": "(16) 3513-4000",
+            "details": "Atendimento comercial"
+          },
+          "email": {
+            "title": "E-mail",
+            "value": "comercial@authomathika.com.br",
+            "details": "Solicitações técnicas"
+          },
+          "sac": {
+            "title": "SAC",
+            "value": "sac.atm@authomathika.com.br",
+            "details": "Atendimento ao cliente"
+          },
+          "address": {
+            "title": "Endereço",
+            "value": "Sertãozinho - SP",
+            "details": "R. Ivone Fernandes Bernardi, 504"
+          }
+        },
+        "form": {
+          "name": "Nome",
+          "email": "E-mail",
+          "subject": "Assunto",
+          "message": "Mensagem",
+          "submit": "Enviar mensagem"
+        }
+      },
+      "fornecedores": {
+        "title": "Fornecedores",
+        "tag": "Supply chain",
+        "heading": "Portal de Fornecedores",
+        "subtitle": "Cadastro para fornecedores interessados em atuar com a Authomathika.",
+        "form": {
+          "companyName": "Razão social",
+          "cnpj": "CNPJ",
+          "contact": "Contato",
+          "email": "E-mail",
+          "productsServices": "Produtos/Serviços",
+          "submit": "Enviar cadastro"
+        }
+      },
+      "localizacao": {
+        "title": "Localização",
+        "metaDescription": "Sede da Authomathika em Sertãozinho, SP. Endereço, telefone, e-mail e horário de atendimento.",
+        "tag": "Unidade",
+        "subtitle": "Informações da sede e canais de atendimento presencial da Authomathika.",
+        "headquarters": {
+          "city": "Sertãozinho, SP",
+          "label": "Sede"
+        },
+        "info": {
+          "address": "Endereço",
+          "phone": "Telefone",
+          "emailCommercial": "E-mail comercial",
+          "hours": "Horário",
+          "hoursValue": "Segunda a sexta, 08h às 18h"
+        },
+        "openGoogleMaps": "Abrir no Google Maps"
+      },
+      "solicitacao": {
+        "title": "Solicitar Proposta Técnica",
+        "metaDescription": "Solicite uma proposta técnica personalizada para seu projeto de automação, elétrica, energias renováveis ou montagem eletromecânica.",
+        "tag": "Pré-proposta",
+        "subtitle": "Preencha as informações abaixo para receber um retorno da nossa engenharia comercial com escopo e estimativa.",
+        "breadcrumb": "Proposta Técnica"
+      }
+    },
+    "empresa": {
+      "institucional": {
+        "metaTitle": "Institucional",
+        "metaDescription": "Conheça a Authomathika – engenharia integradora desde 1999.",
+        "tag": "Empresa",
+        "title": "Institucional",
+        "subtitle": "Histórico, posicionamento e diferenciais operacionais da Authomathika.",
+        "breadcrumbEmpresa": "Empresa",
+        "quemSomos": "Quem somos",
+        "quemSomosP1": "Fundada em 1999 em Sertãozinho/SP, a Authomathika atua como integradora de engenharia para sistemas elétricos, automação e implantação industrial.",
+        "quemSomosP2": "Com atuação multissetorial, nossa operação combina projeto, execução e manutenção com compromisso contratual de alta previsibilidade.",
+        "quemSomosP3": "A empresa é reconhecida por clareza técnica, ética de entrega e capacidade de escalar projetos complexos em diferentes ambientes industriais.",
+        "diferenciaisLabel": "Diferenciais",
+        "diferenciais": {
+          "0": "Equipe multidisciplinar de engenharia e campo",
+          "1": "Operação no mundo inteiro com unidades próprias no Paraguai",
+          "2": "Gestão digital de serviços com rastreabilidade",
+          "3": "Metrologia RBC com laboratórios fixos e móveis",
+          "4": "Frota própria e operação nacional",
+          "5": "Conformidade com normas críticas de segurança (NR-10, NR-35)",
+          "6": "+25 anos de experiência no setor sucroenergético e industrial",
+          "7": "336 MW de energia solar instalados em 7 parques",
+          "8": "Mais de 297.000 horas de serviço executadas",
+          "9": "Capacidade turnkey: projeto, execução e comissionamento"
+        },
+        "dadosCorporativos": "Dados corporativos",
+        "fundacao": "Fundação",
+        "presidente": "Presidente",
+        "telefone": "Telefone",
+        "conformidades": "Conformidades"
+      },
+      "visaoCorporativa": {
+        "metaTitle": "Visão Corporativa",
+        "metaDescription": "Conheça os princípios e valores que guiam a Authomathika há mais de 25 anos: compromisso com o cliente, segurança, qualidade ISO 9001 e transparência.",
+        "tag": "Direcionamento",
+        "title": "Visão Corporativa",
+        "subtitle": "Princípios que orientam decisões técnicas, contratuais e relacionais da Authomathika.",
+        "breadcrumbEmpresa": "Empresa",
+        "pillars": {
+          "0": {
+            "title": "Com o Cliente",
+            "description": "Vender com responsabilidade, cumprir contratos com transparência e profissionalismo."
+          },
+          "1": {
+            "title": "Com a Sociedade",
+            "description": "Condições seguras, respeito ao meio ambiente e colaboradores satisfeitos."
+          },
+          "2": {
+            "title": "Com as Finanças",
+            "description": "Garantir retorno sustentável a investidores e colaboradores."
+          },
+          "3": {
+            "title": "Com o Fornecedor",
+            "description": "Comprar com responsabilidade e honrar compromissos com integridade."
+          }
+        },
+        "quote": "Reconhecidos pela forma responsável e clara de cumprir contratos, sempre dentro da ética e do profissionalismo."
+      },
+      "linhaDoTempo": {
+        "metaTitle": "Linha do Tempo",
+        "metaDescription": "De 1999 a hoje: mais de 25 anos de marcos na engenharia integradora. 336 MW solares, 2.000+ dias sem acidentes, certificação ISO 9001 e evolução contínua.",
+        "tag": "Histórico",
+        "title": "Linha do Tempo",
+        "subtitle": "Marcos de evolução da Authomathika desde 1999.",
+        "breadcrumbEmpresa": "Empresa"
+      },
+      "clientes": {
+        "metaTitle": "Clientes",
+        "metaDescription": "Empresas líderes que confiam na Authomathika há mais de 25 anos.",
+        "tag": "Relações de mercado",
+        "title": "Clientes e Parceiros",
+        "subtitle": "Base de relacionamento construída em projetos críticos de engenharia industrial.",
+        "breadcrumbEmpresa": "Empresa",
+        "breadcrumbClientes": "Clientes",
+        "clientesReferencia": "Clientes de referência",
+        "setoresAtendidos": "Setores atendidos"
+      },
+      "nossaEquipe": {
+        "metaTitle": "Nossa Equipe",
+        "metaDescription": "Conheça a liderança da Authomathika. Mais de 25 anos de experiência em engenharia integradora de sistemas elétricos e automação.",
+        "tag": "Pessoas",
+        "title": "Nossa Equipe",
+        "subtitle": "Por trás de cada projeto entregue, existe uma equipe comprometida com excelência técnica e segurança.",
+        "breadcrumbEmpresa": "Empresa",
+        "photoAlt": "Foto de {name}, {role} da Authomathika",
+        "mensagemPresidencia": "Mensagem da Presidência",
+        "lideranca": "Liderança",
+        "equipeGestao": "Equipe de gestão",
+        "equipeGestaoDesc": "Profissionais com décadas de experiência nos setores sucroenergético, mineração, energia e infraestrutura.",
+        "memberPhotoAlt": "Foto de {name}, {role}",
+        "linkedinDe": "LinkedIn de {name}"
+      }
+    }
+  },
+  "schemas": {
+    "description": "Empresa completa de engenharia integradora de sistemas Elétricos e de Automação. Desde 1999, entregando soluções em automação industrial, elétrica, energias renováveis, montagem eletromecânica e engenharia EPC para o setor industrial brasileiro.",
+    "websiteDescription": "Engenharia integradora de sistemas Elétricos e de Automação – Sertãozinho, SP, desde 1999.",
+    "offerCatalogName": "Soluções de Engenharia Authomathika",
+    "service0": "Automação Industrial",
+    "service1": "Engenharia Elétrica",
+    "service2": "Energias Renováveis",
+    "service3": "Montagem Eletromecânica",
+    "service4": "Engenharia EPC",
+    "service5": "Serviços de Manutenção",
+    "knows0": "Automação Industrial",
+    "knows1": "Engenharia Elétrica",
+    "knows2": "Instrumentação Industrial",
+    "knows3": "Energias Renováveis",
+    "knows4": "Energia Solar Fotovoltaica",
+    "knows5": "Montagem Eletromecânica",
+    "knows6": "Engenharia EPC",
+    "knows7": "Setor Sucroenergético",
+    "knows10": "Metrologia Industrial",
+    "knows11": "Paradas Programadas",
+    "award0": "Prêmio Excelência de Fornecedores BP Biofuels 2016/2017",
+    "award1": "2.000 dias sem acidentes de trabalho (2019)",
+    "award2": "Selo Verde – Empresa Sustentável",
+    "credential3": "RBC – Rede Brasileira de Calibração"
+  }
+}

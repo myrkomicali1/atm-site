@@ -1,47 +1,50 @@
-import Link from "next/link";
 import Image from "next/image";
 import { Facebook, Instagram, Linkedin, Mail, Phone, Youtube } from "lucide-react";
 import { company } from "@/lib/data/company";
+import { Link } from "@/i18n/routing";
+import { getTranslations } from "next-intl/server";
 
-const columns = [
+const columnConfigs = [
   {
-    title: "Empresa",
+    key: "empresa" as const,
     links: [
-      { label: "Institucional", href: "/empresa/institucional" },
-      { label: "Visão Corporativa", href: "/empresa/visao-corporativa" },
-      { label: "Clientes", href: "/empresa/clientes" },
-      { label: "Linha do Tempo", href: "/empresa/linha-do-tempo" },
+      { labelKey: "institucional", href: "/empresa/institucional" },
+      { labelKey: "visaoCorporativa", href: "/empresa/visao-corporativa" },
+      { labelKey: "clientes", href: "/empresa/clientes" },
+      { labelKey: "linhaDoTempo", href: "/empresa/linha-do-tempo" },
     ],
   },
   {
-    title: "Soluções",
+    key: "solucoes" as const,
     links: [
-      { label: "Nossos Negócios", href: "/nossos-negocios" },
-      { label: "Setores", href: "/setores" },
-      { label: "Serviços", href: "/servicos" },
-      { label: "Produtos", href: "/produtos" },
-      { label: "Cases", href: "/cases" },
+      { labelKey: "nossosNegocios", href: "/nossos-negocios" },
+      { labelKey: "setores", href: "/setores" },
+      { labelKey: "servicos", href: "/servicos" },
+      { labelKey: "produtos", href: "/produtos" },
+      { labelKey: "cases", href: "/cases" },
     ],
   },
   {
-    title: "Contato",
+    key: "contato" as const,
     links: [
-      { label: "Fale Conosco", href: "/contato/fale-conosco" },
-      { label: "Solicitar Orçamento", href: "/contato/solicitacao-de-orcamento" },
-      { label: "Fornecedores", href: "/contato/fornecedores" },
-      { label: "Localização", href: "/contato/localizacao" },
+      { labelKey: "faleConosco", href: "/contato/fale-conosco" },
+      { labelKey: "solicitarOrcamento", href: "/contato/solicitacao-de-orcamento" },
+      { labelKey: "fornecedores", href: "/contato/fornecedores" },
+      { labelKey: "localizacao", href: "/contato/localizacao" },
     ],
   },
 ];
 
-const socials = [
-  { href: company.social.linkedin, Icon: Linkedin, label: "LinkedIn da Authomathika" },
-  { href: company.social.instagram, Icon: Instagram, label: "Instagram da Authomathika" },
-  { href: company.social.facebook, Icon: Facebook, label: "Facebook da Authomathika" },
-  { href: company.social.youtube, Icon: Youtube, label: "YouTube da Authomathika" },
+const socialIcons = [
+  { key: "linkedin" as const, href: company.social.linkedin, Icon: Linkedin },
+  { key: "instagram" as const, href: company.social.instagram, Icon: Instagram },
+  { key: "facebook" as const, href: company.social.facebook, Icon: Facebook },
+  { key: "youtube" as const, href: company.social.youtube, Icon: Youtube },
 ];
 
-export function SiteFooter() {
+export async function SiteFooter() {
+  const t = await getTranslations("footer");
+
   return (
     <footer className="bg-zinc-950 text-zinc-400">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
@@ -59,19 +62,19 @@ export function SiteFooter() {
               />
             </div>
             <p className="mb-2 text-sm font-medium text-zinc-200">
-              Engenharia integradora para sistemas industriais críticos.
+              {t("brandTagline")}
             </p>
             <p className="text-sm leading-relaxed text-zinc-500">
-              Desde {company.founded}, conectando elétrica, automação, EPC e energias renováveis em projetos de alta exigência.
+              {t("brandDescription", { founded: company.founded })}
             </p>
             <div className="mt-7 flex items-center gap-2">
-              {socials.map(({ href, Icon, label }) => (
+              {socialIcons.map(({ key, href, Icon }) => (
                 <a
-                  key={label}
+                  key={key}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={label}
+                  aria-label={t(`socials.${key}`)}
                   className="inline-flex size-9 items-center justify-center rounded-lg border border-zinc-800 text-zinc-500 transition-colors hover:border-primary/50 hover:text-primary"
                 >
                   <Icon className="size-4" aria-hidden="true" />
@@ -81,32 +84,33 @@ export function SiteFooter() {
           </div>
 
           {/* Nav columns */}
-          <div className="grid gap-8 sm:grid-cols-3 lg:col-span-8">
-            {columns.map((column) => (
-              <div key={column.title}>
+          <nav aria-label={t("navLabel")} className="grid gap-8 sm:grid-cols-3 lg:col-span-8">
+            {columnConfigs.map((column) => (
+              <div key={column.key}>
                 <p className="mb-4 font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-zinc-600">
-                  {column.title}
+                  {t(`columns.${column.key}.title`)}
                 </p>
-                <div className="space-y-2.5">
+                <ul className="space-y-2.5" role="list">
                   {column.links.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className="block text-sm text-zinc-400 transition-colors hover:text-zinc-100"
-                    >
-                      {link.label}
-                    </Link>
+                    <li key={link.href}>
+                      <Link
+                        href={link.href}
+                        className="block text-sm text-zinc-400 transition-colors hover:text-zinc-100"
+                      >
+                        {t(`columns.${column.key}.${link.labelKey}`)}
+                      </Link>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
             ))}
-          </div>
+          </nav>
         </div>
 
         {/* Bottom bar */}
         <div className="flex flex-col gap-4 py-7 text-xs md:flex-row md:items-center md:justify-between">
           <p className="text-zinc-600">
-            © {new Date().getFullYear()} Authomathika Engenharia. Todos os direitos reservados.
+            {t("copyright", { year: new Date().getFullYear() })}
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-6">
             <a

@@ -1,8 +1,10 @@
 "use client";
 
-import Link from "next/link";
 import { ArrowRight, Sun, Zap, Cpu, Wrench, Settings, Building2, Brain } from "lucide-react";
 import { businessAreas } from "@/lib/data/businesses";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
+import { AnimateOnScroll } from "@/components/ui/animate-on-scroll";
 
 const iconMap: Record<string, React.ElementType> = {
   Sun,
@@ -15,22 +17,28 @@ const iconMap: Record<string, React.ElementType> = {
 };
 
 export function CapabilitiesRail() {
+  const t = useTranslations("capabilities");
+  const tc = useTranslations("common");
+  const tBiz = useTranslations("businessAreasData");
+
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-16 md:py-24">
       {/* Header */}
       <div className="mx-auto mb-10 max-w-7xl px-5 sm:px-8">
-        <div className="flex items-end justify-between">
-          <div>
-            <p className="mono-label mb-3">Divisões operacionais</p>
-            <h2 className="section-heading-sm text-zinc-900">O que fazemos</h2>
+        <AnimateOnScroll>
+          <div className="flex items-end justify-between">
+            <div>
+              <p className="mono-label mb-3">{t("tag")}</p>
+              <h2 className="section-heading-sm text-zinc-900">{t("heading")}</h2>
+            </div>
+            <Link
+              href="/nossos-negocios"
+              className="hidden items-center gap-2 text-sm font-semibold text-zinc-400 transition-colors hover:text-zinc-900 sm:inline-flex"
+            >
+              {tc("verTodas")} <ArrowRight className="size-4" />
+            </Link>
           </div>
-          <Link
-            href="/nossos-negocios"
-            className="hidden items-center gap-2 text-sm font-semibold text-zinc-400 transition-colors hover:text-zinc-900 sm:inline-flex"
-          >
-            Ver todas <ArrowRight className="size-4" />
-          </Link>
-        </div>
+        </AnimateOnScroll>
       </div>
 
       {/* Uniform grid — no scroll */}
@@ -39,10 +47,10 @@ export function CapabilitiesRail() {
           {businessAreas.map((area, i) => {
             const Icon = iconMap[area.icon] ?? Building2;
             return (
+              <AnimateOnScroll key={area.slug} delay={i * 80}>
               <Link
-                key={area.slug}
                 href={`/nossos-negocios/${area.slug}`}
-                className="group flex flex-col rounded-2xl border border-zinc-200 bg-zinc-50 p-6 transition-all duration-300 hover:border-primary/30 hover:bg-white hover:shadow-lg hover:shadow-zinc-900/6 hover:-translate-y-0.5"
+                className="group flex h-full flex-col rounded-2xl border border-zinc-200 bg-zinc-50 p-6 transition-all duration-300 hover:border-primary/30 hover:bg-white hover:shadow-lg hover:shadow-zinc-900/6 hover:-translate-y-0.5"
               >
                 {/* Number + icon */}
                 <div className="mb-5 flex items-start justify-between">
@@ -55,22 +63,26 @@ export function CapabilitiesRail() {
                 </div>
 
                 <h3 className="mb-2 font-display text-lg font-bold text-zinc-900">
-                  {area.name}
+                  {tBiz(`${area.slug}.name`)}
                 </h3>
                 <p className="mb-auto text-sm leading-relaxed text-zinc-500">
-                  {area.shortDescription}
+                  {tBiz(`${area.slug}.shortDescription`)}
                 </p>
 
                 {/* Metrics */}
                 {area.metrics.length > 0 ? (
                   <div className="mt-6 grid grid-cols-2 gap-3 border-t border-zinc-100 pt-5">
-                    {area.metrics.slice(0, 2).map((m) => (
-                      <div key={m.label}>
+                    {area.metrics.slice(0, 2).map((m, idx) => (
+                      <div key={idx}>
                         <div className="font-display text-xl font-bold text-zinc-900">
-                          {m.value}
+                          {tBiz.has(`${area.slug}.metric${idx}Value`)
+                            ? tBiz(`${area.slug}.metric${idx}Value`)
+                            : m.value}
                         </div>
                         <div className="mt-0.5 text-[10px] leading-tight text-zinc-600">
-                          {m.label}
+                          {tBiz.has(`${area.slug}.metric${idx}Label`)
+                            ? tBiz(`${area.slug}.metric${idx}Label`)
+                            : m.label}
                         </div>
                       </div>
                     ))}
@@ -79,10 +91,11 @@ export function CapabilitiesRail() {
 
                 {/* CTA */}
                 <div className="mt-5 flex items-center gap-1.5 text-sm font-semibold text-zinc-400 transition-colors group-hover:text-primary">
-                  <span>Saiba mais</span>
+                  <span>{tc("verSolucoes")}</span>
                   <ArrowRight className="size-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
                 </div>
               </Link>
+              </AnimateOnScroll>
             );
           })}
         </div>
@@ -93,7 +106,7 @@ export function CapabilitiesRail() {
             href="/nossos-negocios"
             className="inline-flex items-center gap-2 text-sm font-semibold text-zinc-500 hover:text-zinc-900"
           >
-            Ver todas as divisões <ArrowRight className="size-4" />
+            {tc("verTodasDivisoes")} <ArrowRight className="size-4" />
           </Link>
         </div>
       </div>

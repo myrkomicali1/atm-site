@@ -5,6 +5,7 @@ import { EmblaCarousel } from "@/components/ui/carousel-embla";
 import { Container, Eyebrow, Section } from "@/components/site/primitives";
 import { Badge } from "@/components/ui/badge";
 import { testimonials, type Testimonial } from "@/lib/data/testimonials";
+import { useTranslations } from "next-intl";
 
 interface TestimonialsSectionProps {
   /** Filter testimonials by sector slug */
@@ -17,18 +18,25 @@ interface TestimonialsSectionProps {
 }
 
 function TestimonialCard({ item }: { item: Testimonial }) {
+  const tTest = useTranslations("testimonialData");
+  const key = item.id;
+  const quote = tTest.has(`${key}.quote`) ? tTest(`${key}.quote`) : item.quote;
+  const role = tTest.has(`${key}.role`) ? tTest(`${key}.role`) : item.role;
+  const company = tTest.has(`${key}.company`) ? tTest(`${key}.company`) : item.company;
+  const result = tTest.has(`${key}.result`) ? tTest(`${key}.result`) : item.result;
+
   return (
     <article className="panel-surface flex h-full flex-col p-6 md:p-8">
       <Quote className="size-8 text-primary/20" aria-hidden="true" />
 
       <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-zinc-600">
-        &ldquo;{item.quote}&rdquo;
+        &ldquo;{quote}&rdquo;
       </blockquote>
 
-      {item.result ? (
+      {result ? (
         <div className="mt-4">
           <Badge variant="outline" className="border-emerald-200 bg-emerald-50 text-emerald-700 text-xs">
-            {item.result}
+            {result}
           </Badge>
         </div>
       ) : null}
@@ -39,7 +47,7 @@ function TestimonialCard({ item }: { item: Testimonial }) {
             {item.name}
           </div>
           <div className="text-xs text-zinc-500">
-            {item.role} &mdash; {item.company}
+            {role} &mdash; {company}
           </div>
         </div>
         <span className="inline-block rounded-full border border-zinc-200 bg-zinc-50 px-2.5 py-0.5 text-[10px] uppercase tracking-[0.14em] text-zinc-500">
@@ -52,10 +60,11 @@ function TestimonialCard({ item }: { item: Testimonial }) {
 
 export function TestimonialsSection({
   sector,
-  title = "Confianca construida em mais de 200 projetos",
-  subtitle = "Parceiros de longa data compartilham suas experiencias com a Authomathika.",
+  title,
+  subtitle,
   className,
 }: TestimonialsSectionProps) {
+  const t = useTranslations("testimonials");
   const filtered = sector
     ? testimonials.filter((t) => t.sector === sector)
     : testimonials;
@@ -66,9 +75,13 @@ export function TestimonialsSection({
     <Section className={className}>
       <Container>
         <div className="mb-12 max-w-2xl">
-          <Eyebrow>Depoimentos</Eyebrow>
-          <h2 className="section-heading-sm mt-4 text-zinc-900">{title}</h2>
-          <p className="mt-3 text-base text-zinc-600">{subtitle}</p>
+          <Eyebrow>{t("eyebrow")}</Eyebrow>
+          <h2 className="section-heading-sm mt-4 text-zinc-900">
+            {title ?? t("defaultTitle")}
+          </h2>
+          <p className="mt-3 text-base text-zinc-600">
+            {subtitle ?? t("defaultSubtitle")}
+          </p>
         </div>
 
         <EmblaCarousel

@@ -22,7 +22,7 @@ export const company = {
     youtube: "https://www.youtube.com/@authomathika8151",
   },
   certifications: ["ISO 9001", "NR-10", "NR-35"],
-  erp: "TOTVS",
+  compliance: ["LGPD", "NR-1"],
   gupy: "https://authomathika.gupy.io",
 };
 
@@ -43,7 +43,7 @@ export const stats = [
     suffix: " MW",
   },
   {
-    value: "25",
+    value: String(new Date().getFullYear() - 1999),
     label: "Anos de Mercado",
     suffix: "+",
   },
@@ -98,7 +98,7 @@ export const timeline = [
   { year: 2018, event: "Participação na Fenasucro & Agrocana 2018" },
   { year: 2019, event: "2.000 dias sem acidentes de trabalho" },
   { year: 2021, event: "336 MW de energia solar instalados — 7 parques" },
-  { year: 2022, event: "25+ anos consolidando presença no setor sucroenergético e industrial" },
+  { year: 2022, event: "Mais de duas décadas consolidando presença no setor sucroenergético e industrial" },
 ];
 
 export const sectors = [
