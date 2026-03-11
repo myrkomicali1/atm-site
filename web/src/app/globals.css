@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+/* font-display: swap para evitar FOIT (Flash of Invisible Text) */
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* Neutral palette — clean white base */
+  --background: oklch(0.99 0.002 100);
+  --foreground: oklch(0.13 0.01 260);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.13 0.01 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.13 0.01 260);
+
+  /* Authomathika Red — brand primary */
+  --primary: oklch(0.451 0.225 17.5);
+  --primary-foreground: oklch(1 0 0);
+
+  --secondary: oklch(0.97 0.004 250);
+  --secondary-foreground: oklch(0.2 0.02 260);
+  --muted: oklch(0.96 0.005 250);
+  --muted-foreground: oklch(0.48 0.03 250);
+  --accent: oklch(0.96 0.005 250);
+  --accent-foreground: oklch(0.2 0.02 260);
+  --destructive: oklch(0.62 0.23 28);
+  --border: oklch(0.91 0.008 250);
+  --input: oklch(0.96 0.005 250);
+  --ring: oklch(0.451 0.225 17.5);
+
+  --font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/40;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Focus indicators visiveis para acessibilidade (WCAG 2.4.7) */
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+
+  /* Remover outline padrao em favor do focus-visible */
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+/* ── Grid overlays ─────────────────────────────────── */
+.page-grid {
+  background-image:
+    linear-gradient(oklch(0.55 0.03 260 / 7%) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(0.55 0.03 260 / 7%) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.page-grid-dark {
+  background-image:
+    linear-gradient(oklch(1 0 0 / 4%) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(1 0 0 / 4%) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ── Eyebrow / mono label ──────────────────────────── */
+.mono-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.mono-label-muted {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: oklch(0.55 0.03 250);
+  font-weight: 600;
+}
+
+/* ── Section headings ──────────────────────────────── */
+.section-heading {
+  font-size: clamp(2rem, 3.5vw, 3.75rem);
+  line-height: 1.04;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.section-heading-sm {
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+/* ── Panel / card surface ──────────────────────────── */
+.panel-surface {
+  background: oklch(1 0 0);
+  border: 1px solid oklch(0.91 0.008 250);
+  border-radius: 1rem;
+  box-shadow:
+    0 1px 2px oklch(0.13 0.01 260 / 5%),
+    0 4px 16px oklch(0.13 0.01 260 / 4%);
+}
+
+/* ── Hover lift ────────────────────────────────────── */
+.hover-lift {
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease,
+    border-color 200ms ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px oklch(0.13 0.01 260 / 10%);
+}
+
+/* ── Dropdown reveal animation ─────────────────────── */
+.animate-reveal {
+  animation: reveal 0.3s cubic-bezier(0.21, 1.02, 0.73, 1) forwards;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Stat card number ──────────────────────────────── */
+.stat-value {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 2.5vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
