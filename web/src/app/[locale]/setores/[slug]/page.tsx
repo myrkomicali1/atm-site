@@ -17,13 +17,16 @@ import { getCaseStudiesBySector } from "@/lib/data/case-studies";
 import { faqSchema } from "@/lib/schemas";
 import { PageIntro } from "@/components/layout/PageIntro";
 import { Container, Eyebrow, Panel, Section } from "@/components/site/primitives";
+import { routing } from "@/i18n/routing";
 
 interface Props {
   params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
-  return sectors.map((s) => ({ slug: s.slug }));
+  return routing.locales.flatMap((locale) =>
+    sectors.map((s) => ({ locale, slug: s.slug }))
+  );
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

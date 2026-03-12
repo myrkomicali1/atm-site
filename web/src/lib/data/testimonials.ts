@@ -27,7 +27,7 @@ export const testimonials: Testimonial[] = [
     name: "Ricardo M.",
     role: "Diretor Industrial",
     company: "Usina Sucroenergética",
-    sector: "sucroenergético",
+    sector: "sucroenergetico",
     quote:
       "A Authomathika entregou o projeto de automação da nossa planta dentro do prazo e com qualidade técnica excepcional. A equipe demonstrou profundo conhecimento do setor sucroenergético, e o sistema SCADA implantado reduziu nosso tempo de resposta a alarmes em 40%.",
     result: "Tempo de resposta a alarmes reduzido em 40%",
@@ -66,7 +66,7 @@ export const testimonials: Testimonial[] = [
     name: "Marcos L.",
     role: "Gerente de Manutenção",
     company: "Usina de Açúcar e Etanol",
-    sector: "sucroenergético",
+    sector: "sucroenergetico",
     quote:
       "Trabalhamos com a Authomathika em paradas programadas há mais de 10 anos. A equipe certificada NR-10 e NR-35, aliada ao sistema Serelepe de rastreabilidade, nos dá total confiança na qualidade e segurança dos serviços prestados.",
     result: "10+ anos de parceria em paradas programadas",
@@ -105,7 +105,7 @@ export const testimonials: Testimonial[] = [
     name: "Lucas F.",
     role: "Gerente de Operações",
     company: "Grupo Sucroenergético",
-    sector: "sucroenergético",
+    sector: "sucroenergetico",
     quote:
       "Após a eletrificação da moenda pela Authomathika, nosso consumo energético caiu significativamente e ganhamos controle total sobre o processo de extração. O retorno do investimento veio na segunda safra, e a confiabilidade do sistema é excepcional.",
     result: "Retorno do investimento na segunda safra",

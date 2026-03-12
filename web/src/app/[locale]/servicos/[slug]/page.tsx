@@ -6,6 +6,7 @@ import { getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 import { getServicePage, servicePages } from "@/lib/data/services";
 import { serviceSchema } from "@/lib/schemas";
+import { routing } from "@/i18n/routing";
 import { PageIntro } from "@/components/layout/PageIntro";
 import { Container, Eyebrow, Panel, Section } from "@/components/site/primitives";
 
@@ -14,7 +15,9 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return servicePages.map((service) => ({ slug: service.slug }));
+  return routing.locales.flatMap((locale) =>
+    servicePages.map((service) => ({ locale, slug: service.slug }))
+  );
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

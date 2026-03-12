@@ -23,7 +23,7 @@ export interface Sector {
 
 export const sectors: Sector[] = [
   {
-    slug: "sucroenergético",
+    slug: "sucroenergetico",
     name: "Sucroenergético",
     headline: "Automação e elétrica integradas para usinas que não podem parar",
     description:

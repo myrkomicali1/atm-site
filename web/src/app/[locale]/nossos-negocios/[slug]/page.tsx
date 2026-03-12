@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { businessAreas, getBusinessArea } from "@/lib/data/businesses";
 import { businessFaqs } from "@/lib/data/faqs";
 import { serviceSchema, faqSchema } from "@/lib/schemas";
+import { routing } from "@/i18n/routing";
 import { PageIntro } from "@/components/layout/PageIntro";
 import { Container, Eyebrow, Panel, Section } from "@/components/site/primitives";
 import { FAQSection } from "@/components/content/FAQSection";
@@ -17,7 +18,9 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return businessAreas.map((area) => ({ slug: area.slug }));
+  return routing.locales.flatMap((locale) =>
+    businessAreas.map((area) => ({ locale, slug: area.slug }))
+  );
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

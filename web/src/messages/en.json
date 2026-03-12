@@ -389,7 +389,7 @@
     }
   },
   "sectorNames": {
-    "sucroenergético": {
+    "sucroenergetico": {
       "name": "Sugar & Ethanol",
       "headline": "Integrated automation and electrical engineering for plants that can't stop",
       "description": "Since 1999, Authomathika has been a reference in engineering for the sugar-energy sector. We work across all areas of the plant — fermentation, distillery, boiler, cogeneration and sugar factory — with integrated automation, electrical and electromechanical assembly solutions. Our experience spans complete greenfield (turnkey) projects and revamps of operating plants.",
@@ -410,10 +410,18 @@
         "4": "Serelepe traceability system with online reports and digital certificates"
       },
       "metrics": {
-        "0": { "label": "Industrial plants served" },
-        "1": { "label": "Automation points deployed" },
-        "2": { "label": "Years in the sugar-energy sector" },
-        "3": { "label": "Turnkey projects delivered" }
+        "0": {
+          "label": "Industrial plants served"
+        },
+        "1": {
+          "label": "Automation points deployed"
+        },
+        "2": {
+          "label": "Years in the sugar-energy sector"
+        },
+        "3": {
+          "label": "Turnkey projects delivered"
+        }
       },
       "faq": {
         "0": {
@@ -436,7 +444,13 @@
           "question": "Does Authomathika offer support after commissioning?",
           "answer": "Yes. Authomathika's Services division offers post-commissioning support including scheduled shutdowns, preventive and corrective maintenance, RBC metrology and the Serelepe system for online traceability. We have serviced over 42,000 pieces of equipment and accumulated 297,000 service hours."
         }
-      }
+      },
+      "metric1Label": "Automation points deployed",
+      "metric1Value": "290.000",
+      "metric2Label": "Years in the sugar-energy sector",
+      "metric2Value": "25+",
+      "metric3Label": "Turnkey projects delivered",
+      "metric3Value": "8"
     },
     "mineracao": {
       "name": "Mining",
@@ -459,9 +473,15 @@
         "4": "Project management with integrated schedule, contractual milestones and executive reporting"
       },
       "metrics": {
-        "0": { "label": "Days without accidents" },
-        "1": { "label": "Quality certification" },
-        "2": { "label": "Safety compliance" }
+        "0": {
+          "label": "Days without accidents"
+        },
+        "1": {
+          "label": "Quality certification"
+        },
+        "2": {
+          "label": "Safety compliance"
+        }
       },
       "faq": {
         "0": {
@@ -476,7 +496,11 @@
           "question": "Has Authomathika executed projects for major mining companies?",
           "answer": "Yes. Authomathika has executed projects for Vale in Carajas (PA), including the deployment of electrical centers with complete electrical engineering and automation. The company also serves companies in the mining-related fertilizer segment, such as Vale Fertilizantes in Uberaba and Araxa."
         }
-      }
+      },
+      "metric1Label": "Quality certification",
+      "metric1Value": "ISO 9001",
+      "metric2Label": "Safety compliance",
+      "metric2Value": "NR-10/35"
     },
     "energias-renovaveis": {
       "name": "Renewable Energy",
@@ -499,9 +523,15 @@
         "4": "Single contract for all disciplines — no interfaces between multiple suppliers"
       },
       "metrics": {
-        "0": { "label": "MW installed" },
-        "1": { "label": "Photovoltaic parks" },
-        "2": { "label": "Largest project (UFV Belmonte)" }
+        "0": {
+          "label": "MW installed"
+        },
+        "1": {
+          "label": "Photovoltaic parks"
+        },
+        "2": {
+          "label": "Largest project (UFV Belmonte)"
+        }
       },
       "faq": {
         "0": {
@@ -516,7 +546,11 @@
           "question": "What is the difference between centralized and distributed generation?",
           "answer": "Centralized generation (CG) consists of large solar plants, typically above 5 MW, that inject power directly into the transmission grid. Distributed generation (DG) consists of smaller systems connected to the local distribution grid. Authomathika operates in both modalities."
         }
-      }
+      },
+      "metric1Label": "Photovoltaic parks",
+      "metric1Value": "7",
+      "metric2Label": "Largest project (UFV Belmonte)",
+      "metric2Value": "540 MW"
     },
     "saneamento": {
       "name": "Water & Sanitation",
@@ -535,15 +569,21 @@
         "2": "Preventive maintenance and RBC metrology for critical measurement instruments"
       },
       "metrics": {
-        "0": { "label": "Clients in the sector" },
-        "1": { "label": "Continuous operation" }
+        "0": {
+          "label": "Clients in the sector"
+        },
+        "1": {
+          "label": "Continuous operation"
+        }
       },
       "faq": {
         "0": {
           "question": "Does Authomathika have experience with water treatment plants?",
           "answer": "Yes. Authomathika has completed full projects for WTPs and WWTPs, including the SESAMM greenfield in Mogi Mirim with complete automation and electromechanical assembly. We serve clients such as SAMAR, Ambient, SANEVAP and Odebrecht Ambiental."
         }
-      }
+      },
+      "metric1Label": "Continuous operation",
+      "metric1Value": "24/7"
     },
     "fertilizantes": {
       "name": "Fertilizers",
@@ -562,15 +602,21 @@
         "2": "EPC engineering with integrated project, procurement and construction management"
       },
       "metrics": {
-        "0": { "label": "Major clients served" },
-        "1": { "label": "Full contracts" }
+        "0": {
+          "label": "Major clients served"
+        },
+        "1": {
+          "label": "Full contracts"
+        }
       },
       "faq": {
         "0": {
           "question": "Does Authomathika serve fertilizer plants?",
           "answer": "Yes. Authomathika has experience in fertilizer plants with clients such as Vale Fertilizantes (Uberaba and Araxa), Bunge and Cargill. Projects include automation, electrical, electromechanical assembly and full EPC contracts."
         }
-      }
+      },
+      "metric1Label": "Full contracts",
+      "metric1Value": "EPC"
     },
     "alimentos-bebidas": {
       "name": "Food & Beverage",
@@ -589,15 +635,21 @@
         "2": "Maintenance services with teams trained in Good Manufacturing Practices (GMP)"
       },
       "metrics": {
-        "0": { "label": "Plants served" },
-        "1": { "label": "Sanitary compliance" }
+        "0": {
+          "label": "Plants served"
+        },
+        "1": {
+          "label": "Sanitary compliance"
+        }
       },
       "faq": {
         "0": {
           "question": "Does Authomathika perform electromechanical assembly for the food industry?",
           "answer": "Yes. Authomathika has completed full electromechanical assembly for food processing plants, including the new citric acid plant for Indemil. Projects follow strict sanitary regulations with materials and finishes suitable for food production environments."
         }
-      }
+      },
+      "metric1Label": "Sanitary compliance",
+      "metric1Value": "100%"
     },
     "siderurgia-quimica": {
       "name": "Steel & Chemical",
@@ -616,15 +668,21 @@
         "2": "Scheduled shutdowns with certified multidisciplinary teams and integrated planning"
       },
       "metrics": {
-        "0": { "label": "Electrical compliance" },
-        "1": { "label": "Certified quality" }
+        "0": {
+          "label": "Electrical compliance"
+        },
+        "1": {
+          "label": "Certified quality"
+        }
       },
       "faq": {
         "0": {
           "question": "Does Authomathika work with classified (hazardous) areas?",
           "answer": "Yes. Authomathika has trained and certified teams for work in classified areas, with knowledge of ABNT/IEC standards for explosive atmospheres. Electrical and automation engineering strictly follows zoning and area classification requirements."
         }
-      }
+      },
+      "metric1Label": "Certified quality",
+      "metric1Value": "ISO 9001"
     },
     "logistica": {
       "name": "Logistics",
@@ -643,15 +701,21 @@
         "2": "Weighing and measurement instrumentation with traceable RBC calibration"
       },
       "metrics": {
-        "0": { "label": "Continuous operation" },
-        "1": { "label": "Traceable calibration" }
+        "0": {
+          "label": "Continuous operation"
+        },
+        "1": {
+          "label": "Traceable calibration"
+        }
       },
       "faq": {
         "0": {
           "question": "Does Authomathika automate storage and transport systems?",
           "answer": "Yes. Authomathika offers automation solutions for warehouses, silos, conveyors and bulk material transport systems. Projects include PLCs for process control, SCADA for monitoring and instrumentation for weighing and measurement."
         }
-      }
+      },
+      "metric1Label": "Traceable calibration",
+      "metric1Value": "RBC"
     },
     "papel-celulose": {
       "name": "Pulp & Paper",
@@ -674,9 +738,15 @@
         "4": "RBC metrology for critical temperature, pressure and flow instruments"
       },
       "metrics": {
-        "0": { "label": "Years in continuous processes" },
-        "1": { "label": "Automation points deployed" },
-        "2": { "label": "Certified teams" }
+        "0": {
+          "label": "Years in continuous processes"
+        },
+        "1": {
+          "label": "Automation points deployed"
+        },
+        "2": {
+          "label": "Certified teams"
+        }
       },
       "faq": {
         "0": {
@@ -687,7 +757,11 @@
           "question": "Do you work with recovery boiler automation?",
           "answer": "Yes. Authomathika has extensive experience in boiler automation and cogeneration systems, including SCADA software development, PLC programming and field instrumentation. We have automated dozens of boilers in the sugar-energy sector, with the same technology applicable to black liquor recovery boilers."
         }
-      }
+      },
+      "metric1Label": "Automation points deployed",
+      "metric1Value": "290.000",
+      "metric2Label": "Certified teams",
+      "metric2Value": "NR-10/35"
     },
     "cimento": {
       "name": "Cement",
@@ -710,9 +784,15 @@
         "4": "Preventive and predictive maintenance with RBC metrology and Serelepe traceability system"
       },
       "metrics": {
-        "0": { "label": "Industrial projects delivered" },
-        "1": { "label": "Equipment serviced" },
-        "2": { "label": "Quality certification" }
+        "0": {
+          "label": "Industrial projects delivered"
+        },
+        "1": {
+          "label": "Equipment serviced"
+        },
+        "2": {
+          "label": "Quality certification"
+        }
       },
       "faq": {
         "0": {
@@ -723,7 +803,11 @@
           "question": "Do you work with medium-voltage drives for mills?",
           "answer": "Yes. Authomathika designs and installs medium-voltage electrical systems, including MCCs (Motor Control Centers), starter panels and drives for large motors. We have installed over 225 MCCs and 256 LV switchboards over 25+ years."
         }
-      }
+      },
+      "metric1Label": "Equipment serviced",
+      "metric1Value": "42.027",
+      "metric2Label": "Quality certification",
+      "metric2Value": "ISO 9001"
     },
     "petroleo-gas": {
       "name": "Oil & Gas",
@@ -746,9 +830,15 @@
         "4": "Scheduled shutdowns with multidisciplinary teams certified in NR-10, NR-20, NR-33 and NR-35"
       },
       "metrics": {
-        "0": { "label": "Days without accidents" },
-        "1": { "label": "Full compliance" },
-        "2": { "label": "Years in industrial processes" }
+        "0": {
+          "label": "Days without accidents"
+        },
+        "1": {
+          "label": "Full compliance"
+        },
+        "2": {
+          "label": "Years in industrial processes"
+        }
       },
       "faq": {
         "0": {
@@ -759,7 +849,11 @@
           "question": "Do you install safety instrumented systems (SIS)?",
           "answer": "Authomathika has experience in critical process automation with high-reliability and redundancy systems. We work with all major automation platforms (Rockwell, Siemens, Yokogawa, Emerson, ABB) that support SIS/SIL architectures for the oil and gas sector."
         }
-      }
+      },
+      "metric1Label": "Full compliance",
+      "metric1Value": "NR-10/20/33/35",
+      "metric2Label": "Years in industrial processes",
+      "metric2Value": "25+"
     },
     "infraestrutura": {
       "name": "Infrastructure",
@@ -780,9 +874,15 @@
         "3": "23 thermoelectric power plants designed and commissioned — proven power generation experience"
       },
       "metrics": {
-        "0": { "label": "Thermoelectric power plants" },
-        "1": { "label": "Integrated management" },
-        "2": { "label": "Years of experience" }
+        "0": {
+          "label": "Thermoelectric power plants"
+        },
+        "1": {
+          "label": "Integrated management"
+        },
+        "2": {
+          "label": "Years of experience"
+        }
       },
       "faq": {
         "0": {
@@ -793,7 +893,11 @@
           "question": "Do you build thermoelectric power plants?",
           "answer": "Yes. Authomathika has designed and commissioned 23 thermoelectric power plants, with complete electrical engineering, automation and electromechanical assembly. Projects range from basic engineering through commissioning and start-up."
         }
-      }
+      },
+      "metric1Label": "Integrated management",
+      "metric1Value": "EPC",
+      "metric2Label": "Years of experience",
+      "metric2Value": "25+"
     }
   },
   "worksData": {
@@ -875,12 +979,24 @@
     "description": "A complete systems integration engineering company for Electrical and Automation systems",
     "vision": "Recognized for our responsible and transparent approach to fulfilling contracts, operating with ethics and professionalism",
     "stats": {
-      "0": { "label": "Equipment Serviced" },
-      "1": { "label": "Service Hours" },
-      "2": { "label": "MW of Solar Energy" },
-      "3": { "label": "Years in the Market" },
-      "4": { "label": "Technical Service Calls" },
-      "5": { "label": "Assembly Projects" }
+      "0": {
+        "label": "Equipment Serviced"
+      },
+      "1": {
+        "label": "Service Hours"
+      },
+      "2": {
+        "label": "MW of Solar Energy"
+      },
+      "3": {
+        "label": "Years in the Market"
+      },
+      "4": {
+        "label": "Technical Service Calls"
+      },
+      "5": {
+        "label": "Assembly Projects"
+      }
     },
     "visionPillars": {
       "0": {
@@ -901,18 +1017,42 @@
       }
     },
     "timeline": {
-      "0": { "event": "Authomathika founded in Sertaozinho, SP" },
-      "1": { "event": "Start of large-scale industrial automation operations" },
-      "2": { "event": "ISO 9001 certification obtained" },
-      "3": { "event": "Expansion into the electromechanical assembly sector" },
-      "4": { "event": "Launch of proprietary product line (SLV-1A, AUTH 300)" },
-      "5": { "event": "Strategic partnership with TOMSA DESTIL (Spain)" },
-      "6": { "event": "Launch of the Renewable Energy division" },
-      "7": { "event": "Off-Season Supplier Excellence Award 2016/2017" },
-      "8": { "event": "Participation in Fenasucro & Agrocana 2018" },
-      "9": { "event": "2,000 days without workplace accidents" },
-      "10": { "event": "336 MW of solar energy installed — 7 parks" },
-      "11": { "event": "Over two decades consolidating presence in the sugar-energy and industrial sectors" }
+      "0": {
+        "event": "Authomathika founded in Sertaozinho, SP"
+      },
+      "1": {
+        "event": "Start of large-scale industrial automation operations"
+      },
+      "2": {
+        "event": "ISO 9001 certification obtained"
+      },
+      "3": {
+        "event": "Expansion into the electromechanical assembly sector"
+      },
+      "4": {
+        "event": "Launch of proprietary product line (SLV-1A, AUTH 300)"
+      },
+      "5": {
+        "event": "Strategic partnership with TOMSA DESTIL (Spain)"
+      },
+      "6": {
+        "event": "Launch of the Renewable Energy division"
+      },
+      "7": {
+        "event": "Off-Season Supplier Excellence Award 2016/2017"
+      },
+      "8": {
+        "event": "Participation in Fenasucro & Agrocana 2018"
+      },
+      "9": {
+        "event": "2,000 days without workplace accidents"
+      },
+      "10": {
+        "event": "336 MW of solar energy installed — 7 parks"
+      },
+      "11": {
+        "event": "Over two decades consolidating presence in the sugar-energy and industrial sectors"
+      }
     },
     "sectorList": {
       "0": {
@@ -1129,10 +1269,22 @@
       "solution": "Authomathika assumed full responsibility as the EPC contractor, coordinating project engineering, material procurement, electromechanical assembly, complete automation with SCADA and commissioning of all areas. Integrated management eliminated interfaces between suppliers and ensured schedule compliance.",
       "altText": "Costa Rica sugar-energy plant - complete turnkey project with automation, electrical and electromechanical assembly by Authomathika",
       "results": {
-        "0": { "metric": "Schedule", "value": "Delivered on time" },
-        "1": { "metric": "Scope", "value": "Complete turnkey plant" },
-        "2": { "metric": "Areas", "value": "Automation, electrical, assembly" },
-        "3": { "metric": "Model", "value": "Integrated EPC contract" }
+        "0": {
+          "metric": "Schedule",
+          "value": "Delivered on time"
+        },
+        "1": {
+          "metric": "Scope",
+          "value": "Complete turnkey plant"
+        },
+        "2": {
+          "metric": "Areas",
+          "value": "Automation, electrical, assembly"
+        },
+        "3": {
+          "metric": "Model",
+          "value": "Integrated EPC contract"
+        }
       }
     },
     "rio-vermelho": {
@@ -1142,9 +1294,18 @@
       "solution": "Authomathika executed the turnkey sugar factory project, integrating process automation with PLCs and SCADA, complete electrical assembly including MCCs and LV switchboards, and all mechanical equipment assembly. Commissioning was performed with technical support through production stabilization.",
       "altText": "Rio Vermelho Plant - greenfield implementation of turnkey sugar factory with complete EPC engineering by Authomathika",
       "results": {
-        "0": { "metric": "Schedule", "value": "14 months of execution" },
-        "1": { "metric": "Scope", "value": "Complete sugar factory" },
-        "2": { "metric": "Start-up", "value": "Production in the 1st cycle" }
+        "0": {
+          "metric": "Schedule",
+          "value": "14 months of execution"
+        },
+        "1": {
+          "metric": "Scope",
+          "value": "Complete sugar factory"
+        },
+        "2": {
+          "metric": "Start-up",
+          "value": "Production in the 1st cycle"
+        }
       }
     },
     "pedra-buriti": {
@@ -1154,9 +1315,18 @@
       "solution": "Authomathika executed the complete boiler and cogeneration system assembly, including all electrical work, automation with PLCs for combustion and steam control, field instrumentation and commissioning with performance validation. Integration with the existing system was achieved with zero impact on operations.",
       "altText": "Pedra Buriti Plant - turnkey boiler and cogeneration system with electromechanical assembly and commissioning by Authomathika",
       "results": {
-        "0": { "metric": "Scope", "value": "Boiler + cogeneration" },
-        "1": { "metric": "Integration", "value": "Zero impact on operations" },
-        "2": { "metric": "Safety", "value": "Zero accidents" }
+        "0": {
+          "metric": "Scope",
+          "value": "Boiler + cogeneration"
+        },
+        "1": {
+          "metric": "Integration",
+          "value": "Zero impact on operations"
+        },
+        "2": {
+          "metric": "Safety",
+          "value": "Zero accidents"
+        }
       }
     },
     "ferrari": {
@@ -1166,9 +1336,18 @@
       "solution": "Authomathika executed the complete revamp with mill electrification, including installation of electric drives, new MCC panels, automation with PLCs for speed and torque control, and process instrumentation. The concentrated off-season execution was completed within the planned timeframe.",
       "altText": "Ferrari Plant - sugar mill revamp and electrification with electric drive modernization by Authomathika",
       "results": {
-        "0": { "metric": "Scope", "value": "Complete mill electrification" },
-        "1": { "metric": "Execution", "value": "Within the off-season window" },
-        "2": { "metric": "Efficiency", "value": "Significant energy savings" }
+        "0": {
+          "metric": "Scope",
+          "value": "Complete mill electrification"
+        },
+        "1": {
+          "metric": "Execution",
+          "value": "Within the off-season window"
+        },
+        "2": {
+          "metric": "Efficiency",
+          "value": "Significant energy savings"
+        }
       }
     },
     "bunge-moema": {
@@ -1178,9 +1357,18 @@
       "solution": "Authomathika performed the complete automation system revamp, including PLC migration, new SCADA system, field instrumentation replacement and recabling. The migration was done gradually, with the old and new systems running in parallel for validation before decommissioning.",
       "altText": "Bunge Moema - complete industrial automation system revamp with PLCs and SCADA by Authomathika",
       "results": {
-        "0": { "metric": "Scope", "value": "Complete automation revamp" },
-        "1": { "metric": "Migration", "value": "Gradual transition with no downtime" },
-        "2": { "metric": "Reliability", "value": "Modernized system" }
+        "0": {
+          "metric": "Scope",
+          "value": "Complete automation revamp"
+        },
+        "1": {
+          "metric": "Migration",
+          "value": "Gradual transition with no downtime"
+        },
+        "2": {
+          "metric": "Reliability",
+          "value": "Modernized system"
+        }
       }
     },
     "santa-helena": {
@@ -1190,9 +1378,18 @@
       "solution": "Authomathika coordinated the complete turnkey revamp, encompassing automation of all areas (fermentation, distillery, boiler), modernization of electrical infrastructure and instrumentation replacement. The single-contract model ensured integrated management without interface conflicts.",
       "altText": "Santa Helena Plant - complete turnkey revamp with automation, electrical and industrial instrumentation by Authomathika",
       "results": {
-        "0": { "metric": "Scope", "value": "Full turnkey revamp" },
-        "1": { "metric": "Areas", "value": "Automation + electrical + instrumentation" },
-        "2": { "metric": "Model", "value": "Single integrated contract" }
+        "0": {
+          "metric": "Scope",
+          "value": "Full turnkey revamp"
+        },
+        "1": {
+          "metric": "Areas",
+          "value": "Automation + electrical + instrumentation"
+        },
+        "2": {
+          "metric": "Model",
+          "value": "Single integrated contract"
+        }
       }
     },
     "bahia-etanol": {
@@ -1202,9 +1399,18 @@
       "solution": "Authomathika performed the complete modernization with PLC and SCADA replacement, electrical system upgrade with new panels and protections, and field instrumentation calibration and replacement. The scope was executed in phases to allow partial continuation of operations.",
       "altText": "Bahia Etanol - full ethanol plant modernization with automation and electrical revamp by Authomathika",
       "results": {
-        "0": { "metric": "Scope", "value": "Full modernization" },
-        "1": { "metric": "Phases", "value": "Staged execution" },
-        "2": { "metric": "Result", "value": "Increased operational efficiency" }
+        "0": {
+          "metric": "Scope",
+          "value": "Full modernization"
+        },
+        "1": {
+          "metric": "Phases",
+          "value": "Staged execution"
+        },
+        "2": {
+          "metric": "Result",
+          "value": "Increased operational efficiency"
+        }
       }
     },
     "vale-carajas": {
@@ -1214,9 +1420,18 @@
       "solution": "Authomathika executed the complete electrical center deployment, including electrical engineering, automation and electromechanical assembly. Mobilization of NR-10/NR-35 certified teams was planned with independent logistics. All technical documentation was delivered according to Vale's pre-qualification standards.",
       "altText": "Vale Carajas - electrical center implementation for mining with electrical engineering and automation by Authomathika",
       "results": {
-        "0": { "metric": "Scope", "value": "Complete electrical center" },
-        "1": { "metric": "Safety", "value": "Zero accidents on site" },
-        "2": { "metric": "Documentation", "value": "Per Vale standards" }
+        "0": {
+          "metric": "Scope",
+          "value": "Complete electrical center"
+        },
+        "1": {
+          "metric": "Safety",
+          "value": "Zero accidents on site"
+        },
+        "2": {
+          "metric": "Documentation",
+          "value": "Per Vale standards"
+        }
       }
     },
     "umoe-1": {
@@ -1226,9 +1441,18 @@
       "solution": "Authomathika executed the complete expansion and revamp, including electromechanical assembly of new equipment, automation of new areas with integration into the existing system and modernization of electrical infrastructure. Coordination between expansion and operation was managed through integrated planning.",
       "altText": "UMOE - complete expansion and revamp of sugar-energy plant with electromechanical assembly by Authomathika",
       "results": {
-        "0": { "metric": "Scope", "value": "Expansion + revamp" },
-        "1": { "metric": "Integration", "value": "New and existing systems" },
-        "2": { "metric": "Operation", "value": "No interruption" }
+        "0": {
+          "metric": "Scope",
+          "value": "Expansion + revamp"
+        },
+        "1": {
+          "metric": "Integration",
+          "value": "New and existing systems"
+        },
+        "2": {
+          "metric": "Operation",
+          "value": "No interruption"
+        }
       }
     },
     "sesamm": {
@@ -1238,9 +1462,18 @@
       "solution": "Authomathika executed the greenfield deployment of the treatment plants, including complete automation with PLCs and SCADA for process monitoring and control, electromechanical equipment assembly and electrical infrastructure. The delivered system enables remote operation and monitoring.",
       "altText": "SESAMM Mogi Mirim - greenfield implementation of water (WTP) and wastewater (WWTP) treatment plants with automation by Authomathika",
       "results": {
-        "0": { "metric": "Scope", "value": "Complete WTP + WWTP" },
-        "1": { "metric": "Operation", "value": "24/7 automated" },
-        "2": { "metric": "Monitoring", "value": "Remote SCADA" }
+        "0": {
+          "metric": "Scope",
+          "value": "Complete WTP + WWTP"
+        },
+        "1": {
+          "metric": "Operation",
+          "value": "24/7 automated"
+        },
+        "2": {
+          "metric": "Monitoring",
+          "value": "Remote SCADA"
+        }
       }
     },
     "indemil": {
@@ -1250,9 +1483,18 @@
       "solution": "Authomathika performed the complete electromechanical assembly of the plant, including process equipment installation, piping, electrical infrastructure and instrumentation. All materials and finishes were specified for compliance with food industry sanitary regulations.",
       "altText": "Indemil - complete electromechanical assembly of new citric acid industrial plant by Authomathika",
       "results": {
-        "0": { "metric": "Scope", "value": "Complete electromechanical assembly" },
-        "1": { "metric": "Compliance", "value": "Food-grade standards" },
-        "2": { "metric": "Delivery", "value": "Plant ready for operation" }
+        "0": {
+          "metric": "Scope",
+          "value": "Complete electromechanical assembly"
+        },
+        "1": {
+          "metric": "Compliance",
+          "value": "Food-grade standards"
+        },
+        "2": {
+          "metric": "Delivery",
+          "value": "Plant ready for operation"
+        }
       }
     },
     "ufv-belmonte": {
@@ -1262,10 +1504,22 @@
       "solution": "Authomathika was selected for the electrical and mechanical assembly of UFV Belmonte I & II, mobilizing solar-specialized teams. The scope included installation of trackers, photovoltaic modules, DC/AC cabling, string and central inverters, as well as the substation. On-site quality control ensured traceability of every installed component.",
       "altText": "UFV Belmonte I & II - 540 MW solar photovoltaic plant with electrical and mechanical assembly by Authomathika in partnership with Grupo Cobra",
       "results": {
-        "0": { "metric": "Capacity", "value": "540 MW installed" },
-        "1": { "metric": "Safety", "value": "Zero serious accidents" },
-        "2": { "metric": "Delivery", "value": "On schedule" },
-        "3": { "metric": "Partner", "value": "Grupo Cobra (Spain)" }
+        "0": {
+          "metric": "Capacity",
+          "value": "540 MW installed"
+        },
+        "1": {
+          "metric": "Safety",
+          "value": "Zero serious accidents"
+        },
+        "2": {
+          "metric": "Delivery",
+          "value": "On schedule"
+        },
+        "3": {
+          "metric": "Partner",
+          "value": "Grupo Cobra (Spain)"
+        }
       }
     }
   },
@@ -1351,10 +1605,22 @@
         "5": "Easy installation and maintenance"
       },
       "specs": {
-        "pontosInstalados": { "label": "Installed Units", "value": "2,650+" },
-        "sinalDeSaida": { "label": "Output Signal", "value": "4-20 mA / HART" },
-        "grauDeProtecao": { "label": "Protection Rating", "value": "IP65" },
-        "alimentacao": { "label": "Power Supply", "value": "24 VDC" }
+        "pontosInstalados": {
+          "label": "Installed Units",
+          "value": "2,650+"
+        },
+        "sinalDeSaida": {
+          "label": "Output Signal",
+          "value": "4-20 mA / HART"
+        },
+        "grauDeProtecao": {
+          "label": "Protection Rating",
+          "value": "IP65"
+        },
+        "alimentacao": {
+          "label": "Power Supply",
+          "value": "24 VDC"
+        }
       }
     },
     "px-400": {
@@ -1371,9 +1637,18 @@
         "5": "Certified for industrial use"
       },
       "specs": {
-        "patente": { "label": "Patent", "value": "US Patent 6,870,486" },
-        "tipoDeMedicao": { "label": "Measurement Type", "value": "Pasteurization" },
-        "comunicacao": { "label": "Communication", "value": "Industrial" }
+        "patente": {
+          "label": "Patent",
+          "value": "US Patent 6,870,486"
+        },
+        "tipoDeMedicao": {
+          "label": "Measurement Type",
+          "value": "Pasteurization"
+        },
+        "comunicacao": {
+          "label": "Communication",
+          "value": "Industrial"
+        }
       }
     },
     "auth-300": {
@@ -1390,9 +1665,18 @@
         "5": "Wide application range"
       },
       "specs": {
-        "pontosInstalados": { "label": "Installed Units", "value": "190+" },
-        "tipo": { "label": "Type", "value": "Electropneumatic" },
-        "sinalDeControle": { "label": "Control Signal", "value": "4-20 mA" }
+        "pontosInstalados": {
+          "label": "Installed Units",
+          "value": "190+"
+        },
+        "tipo": {
+          "label": "Type",
+          "value": "Electropneumatic"
+        },
+        "sinalDeControle": {
+          "label": "Control Signal",
+          "value": "4-20 mA"
+        }
       }
     },
     "dpg-1a": {
@@ -1408,9 +1692,18 @@
         "4": "Low maintenance requirements"
       },
       "specs": {
-        "tipoDeMedicao": { "label": "Measurement Type", "value": "Position / Displacement" },
-        "sinalDeSaida": { "label": "Output Signal", "value": "4-20 mA" },
-        "aplicacao": { "label": "Application", "value": "Industrial mills" }
+        "tipoDeMedicao": {
+          "label": "Measurement Type",
+          "value": "Position / Displacement"
+        },
+        "sinalDeSaida": {
+          "label": "Output Signal",
+          "value": "4-20 mA"
+        },
+        "aplicacao": {
+          "label": "Application",
+          "value": "Industrial mills"
+        }
       }
     },
     "dclt-1c": {
@@ -1427,10 +1720,22 @@
         "5": "Resistance to humid and harsh environments"
       },
       "specs": {
-        "display": { "label": "Display", "value": "OLED" },
-        "grauDeProtecao": { "label": "Protection Rating", "value": "IP67" },
-        "patente": { "label": "Patent", "value": "Patent pending" },
-        "medicao": { "label": "Measurement", "value": "Continuous" }
+        "display": {
+          "label": "Display",
+          "value": "OLED"
+        },
+        "grauDeProtecao": {
+          "label": "Protection Rating",
+          "value": "IP67"
+        },
+        "patente": {
+          "label": "Patent",
+          "value": "Patent pending"
+        },
+        "medicao": {
+          "label": "Measurement",
+          "value": "Continuous"
+        }
       }
     },
     "promtec": {
@@ -1447,9 +1752,18 @@
         "5": "Low maintenance cost"
       },
       "specs": {
-        "instalacoesMundiais": { "label": "Worldwide Installations", "value": "8,500+" },
-        "tecnologia": { "label": "Technology", "value": "German" },
-        "tipoDeMedicao": { "label": "Measurement Type", "value": "Density / Process" }
+        "instalacoesMundiais": {
+          "label": "Worldwide Installations",
+          "value": "8,500+"
+        },
+        "tecnologia": {
+          "label": "Technology",
+          "value": "German"
+        },
+        "tipoDeMedicao": {
+          "label": "Measurement Type",
+          "value": "Density / Process"
+        }
       }
     },
     "derivador-asi": {
@@ -1465,8 +1779,14 @@
         "4": "Interference protection"
       },
       "specs": {
-        "protocolo": { "label": "Protocol", "value": "AS-Interface (AS-i)" },
-        "aplicacao": { "label": "Application", "value": "Field-level industrial networks" }
+        "protocolo": {
+          "label": "Protocol",
+          "value": "AS-Interface (AS-i)"
+        },
+        "aplicacao": {
+          "label": "Application",
+          "value": "Field-level industrial networks"
+        }
       }
     },
     "planta-didatica": {
@@ -1483,8 +1803,14 @@
         "5": "Training materials included"
       },
       "specs": {
-        "aplicacao": { "label": "Application", "value": "Training and development" },
-        "tipoDeMalhas": { "label": "Loop Types", "value": "PID, cascade, feedforward" }
+        "aplicacao": {
+          "label": "Application",
+          "value": "Training and development"
+        },
+        "tipoDeMalhas": {
+          "label": "Loop Types",
+          "value": "PID, cascade, feedforward"
+        }
       }
     },
     "paineis": {
@@ -1501,9 +1827,18 @@
         "5": "Complete technical documentation"
       },
       "specs": {
-        "tipos": { "label": "Types", "value": "MCC, LV Switchboard, Switchgear, Automation" },
-        "normas": { "label": "Standards", "value": "ABNT / IEC" },
-        "fabricacao": { "label": "Manufacturing", "value": "Custom" }
+        "tipos": {
+          "label": "Types",
+          "value": "MCC, LV Switchboard, Switchgear, Automation"
+        },
+        "normas": {
+          "label": "Standards",
+          "value": "ABNT / IEC"
+        },
+        "fabricacao": {
+          "label": "Manufacturing",
+          "value": "Custom"
+        }
       }
     }
   },
@@ -1770,15 +2105,42 @@
       "breadcrumbParent": "Media Center",
       "breadcrumb": "News",
       "items": {
-        "0": { "title": "Fenasucro 2022", "excerpt": "Authomathika's participation in the main bioenergy fair." },
-        "1": { "title": "Fenasucro 2019", "excerpt": "New projects and investments for the industrial sector." },
-        "2": { "title": "2,000 days without workplace accidents", "excerpt": "Milestone in the commitment to operational safety." },
-        "3": { "title": "Fermentec Annual Meeting 2019", "excerpt": "Strengthening relationships in the sugar-energy sector." },
-        "4": { "title": "2018 Projects", "excerpt": "Bahia Etanol, Mosaic Uberaba and other relevant case studies." },
-        "5": { "title": "Authomathika at Fenasucro 2018", "excerpt": "Consolidated presence in the bioenergy calendar." },
-        "6": { "title": "Off-Season Excellence Award 2016/2017", "excerpt": "BP Biofuels recognition for team performance." },
-        "7": { "title": "General Shutdown Vale CMA and Vale CIU", "excerpt": "Execution of a large-scale maintenance shutdown." },
-        "8": { "title": "SENAI Ethanol Pilot Plant", "excerpt": "Completion of the first ethanol pilot unit (UPPE)." }
+        "0": {
+          "title": "Fenasucro 2022",
+          "excerpt": "Authomathika's participation in the main bioenergy fair."
+        },
+        "1": {
+          "title": "Fenasucro 2019",
+          "excerpt": "New projects and investments for the industrial sector."
+        },
+        "2": {
+          "title": "2,000 days without workplace accidents",
+          "excerpt": "Milestone in the commitment to operational safety."
+        },
+        "3": {
+          "title": "Fermentec Annual Meeting 2019",
+          "excerpt": "Strengthening relationships in the sugar-energy sector."
+        },
+        "4": {
+          "title": "2018 Projects",
+          "excerpt": "Bahia Etanol, Mosaic Uberaba and other relevant case studies."
+        },
+        "5": {
+          "title": "Authomathika at Fenasucro 2018",
+          "excerpt": "Consolidated presence in the bioenergy calendar."
+        },
+        "6": {
+          "title": "Off-Season Excellence Award 2016/2017",
+          "excerpt": "BP Biofuels recognition for team performance."
+        },
+        "7": {
+          "title": "General Shutdown Vale CMA and Vale CIU",
+          "excerpt": "Execution of a large-scale maintenance shutdown."
+        },
+        "8": {
+          "title": "SENAI Ethanol Pilot Plant",
+          "excerpt": "Completion of the first ethanol pilot unit (UPPE)."
+        }
       }
     },
     "blog": {
