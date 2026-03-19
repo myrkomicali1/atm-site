@@ -122,12 +122,12 @@ export function websiteSchema(t: (key: string) => string, locale: string) {
   };
 }
 
-export function breadcrumbSchema(items: Array<{ name: string; url?: string }>) {
+export function breadcrumbSchema(items: Array<{ name: string; url?: string }>, homeName = "Início") {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 1, name: homeName, item: SITE_URL },
       ...items.map((item, i) => ({
         "@type": "ListItem",
         position: i + 2,

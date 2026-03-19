@@ -28,16 +28,12 @@ export function AnimateOnScroll({
   as: Tag = "div",
 }: AnimateOnScrollProps) {
   const ref = useRef<HTMLElement>(null);
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(
+    () => typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  );
 
   useEffect(() => {
-    // Respect reduced motion
-    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (prefersReduced) {
-      setVisible(true);
-      return;
-    }
-
+    if (visible) return;
     const el = ref.current;
     if (!el) return;
 

@@ -861,12 +861,24 @@
     "description": "Una empresa completa de ingeniería integradora de sistemas Eléctricos y de Automatización",
     "vision": "Reconocidos por la forma responsable y clara de cumplir los contratos, trabajando dentro de la ética y el profesionalismo",
     "stats": {
-      "0": { "label": "Equipos Atendidos" },
-      "1": { "label": "Horas de Servicio" },
-      "2": { "label": "MW de Energía Solar" },
-      "3": { "label": "Años de Mercado" },
-      "4": { "label": "Atenciones Técnicas" },
-      "5": { "label": "Proyectos de Montaje" }
+      "0": {
+        "label": "Equipos Atendidos"
+      },
+      "1": {
+        "label": "Horas de Servicio"
+      },
+      "2": {
+        "label": "MW de Energía Solar"
+      },
+      "3": {
+        "label": "Años de Mercado"
+      },
+      "4": {
+        "label": "Atenciones Técnicas"
+      },
+      "5": {
+        "label": "Proyectos de Montaje"
+      }
     },
     "visionPillars": {
       "0": {
@@ -887,18 +899,42 @@
       }
     },
     "timeline": {
-      "0": { "event": "Fundación de Authomathika en Sertãozinho, SP" },
-      "1": { "event": "Inicio de las operaciones de automatización industrial de gran porte" },
-      "2": { "event": "Certificación ISO 9001 obtenida" },
-      "3": { "event": "Expansión hacia el sector de montaje electromecánico" },
-      "4": { "event": "Lanzamiento de la línea de productos propios (SLV-1A, AUTH 300)" },
-      "5": { "event": "Alianza estratégica con TOMSA DESTIL (España)" },
-      "6": { "event": "Inicio de la división de Energías Renovables" },
-      "7": { "event": "Premio Excelencia de Proveedores Entrezafra 2016/2017" },
-      "8": { "event": "Participación en Fenasucro & Agrocana 2018" },
-      "9": { "event": "2.000 días sin accidentes laborales" },
-      "10": { "event": "336 MW de energía solar instalados — 7 parques" },
-      "11": { "event": "Más de dos décadas consolidando presencia en el sector sucroenergético e industrial" }
+      "0": {
+        "event": "Fundación de Authomathika en Sertãozinho, SP"
+      },
+      "1": {
+        "event": "Inicio de las operaciones de automatización industrial de gran porte"
+      },
+      "2": {
+        "event": "Certificación ISO 9001 obtenida"
+      },
+      "3": {
+        "event": "Expansión hacia el sector de montaje electromecánico"
+      },
+      "4": {
+        "event": "Lanzamiento de la línea de productos propios (SLV-1A, AUTH 300)"
+      },
+      "5": {
+        "event": "Alianza estratégica con TOMSA DESTIL (España)"
+      },
+      "6": {
+        "event": "Inicio de la división de Energías Renovables"
+      },
+      "7": {
+        "event": "Premio Excelencia de Proveedores Entrezafra 2016/2017"
+      },
+      "8": {
+        "event": "Participación en Fenasucro & Agrocana 2018"
+      },
+      "9": {
+        "event": "2.000 días sin accidentes laborales"
+      },
+      "10": {
+        "event": "336 MW de energía solar instalados — 7 parques"
+      },
+      "11": {
+        "event": "Más de dos décadas consolidando presencia en el sector sucroenergético e industrial"
+      }
     },
     "sectorList": {
       "0": {
@@ -1108,143 +1144,572 @@
     }
   },
   "caseStudyData": {
-    "0": {
+    "costa-rica": {
       "title": "Planta Costa Rica — Proyecto Turnkey Completo",
       "duration": "18 meses",
       "challenge": "La Planta Costa Rica precisaba de una implantación greenfield completa de su planta sucroenergética, incluyendo automatización, eléctrica y montaje electromecánico. El desafío era entregar todas las disciplinas de ingeniería de forma integrada, dentro de un cronograma agresivo de 18 meses, garantizando que la planta estuviera lista para la primera zafra.",
       "solution": "Authomathika asumió la responsabilidad integral como contratista EPC, coordinando ingeniería de proyecto, adquisición de materiales, montaje electromecánico, automatización completa con SCADA y comisionamiento de todas las áreas. La gestión integrada eliminó interfaces entre proveedores y garantizó el cumplimiento del cronograma.",
       "altText": "Planta sucroenergética Costa Rica - proyecto turnkey completo con automatización, eléctrica y montaje electromecánico ejecutado por Authomathika",
       "results": {
-        "0": { "metric": "Plazo", "value": "Entregado dentro del cronograma" },
-        "1": { "metric": "Alcance", "value": "Planta completa turnkey" },
-        "2": { "metric": "Áreas", "value": "Automatización, eléctrica, montaje" },
-        "3": { "metric": "Modelo", "value": "Contrato EPC integrado" }
+        "0": {
+          "metric": "Plazo",
+          "value": "Entregado dentro del cronograma"
+        },
+        "1": {
+          "metric": "Alcance",
+          "value": "Planta completa turnkey"
+        },
+        "2": {
+          "metric": "Áreas",
+          "value": "Automatización, eléctrica, montaje"
+        },
+        "3": {
+          "metric": "Modelo",
+          "value": "Contrato EPC integrado"
+        }
       }
     },
-    "1": {
+    "rio-vermelho": {
       "title": "Rio Vermelho — Fábrica de Azúcar Turnkey",
       "duration": "14 meses",
       "challenge": "La Planta Rio Vermelho necesitaba la implantación completa de una fábrica de azúcar greenfield. El proyecto exigía coordinación perfecta entre ingeniería eléctrica, automatización de proceso y montaje mecánico para alcanzar capacidad de producción en el primer ciclo de operación.",
       "solution": "Authomathika ejecutó el proyecto turnkey de la fábrica de azúcar, integrando automatización de proceso con PLCs y SCADA, montaje eléctrico completo incluyendo CCMs y QGBTs, y todo el montaje mecánico de equipos. El comisionamiento fue realizado con acompañamiento técnico hasta la estabilización de la producción.",
       "altText": "Planta Rio Vermelho - implantación greenfield de fábrica de azúcar turnkey con ingeniería EPC completa por Authomathika",
       "results": {
-        "0": { "metric": "Plazo", "value": "14 meses de ejecución" },
-        "1": { "metric": "Alcance", "value": "Fábrica de azúcar completa" },
-        "2": { "metric": "Start-up", "value": "Producción en el 1er ciclo" }
+        "0": {
+          "metric": "Plazo",
+          "value": "14 meses de ejecución"
+        },
+        "1": {
+          "metric": "Alcance",
+          "value": "Fábrica de azúcar completa"
+        },
+        "2": {
+          "metric": "Start-up",
+          "value": "Producción en el 1er ciclo"
+        }
       }
     },
-    "2": {
+    "pedra-buriti": {
       "title": "Pedra Buriti — Caldera y Cogeneración Turnkey",
       "duration": "12 meses",
       "challenge": "La Planta Pedra Buriti precisaba expandir su capacidad de cogeneración de energía con la implantación de un nuevo sistema de caldera. El desafío involucraba el montaje electromecánico completo en paralelo con la operación existente de la planta, exigiendo gestión rigurosa de seguridad e interfaces.",
       "solution": "Authomathika ejecutó el montaje completo de la caldera y sistema de cogeneración, incluyendo toda la parte eléctrica, automatización con PLCs para control de combustión y vapor, instrumentación de campo y comisionamiento con validación de rendimiento. La integración con el sistema existente fue realizada sin impacto en la operación.",
       "altText": "Planta Pedra Buriti - sistema de caldera y cogeneración turnkey con montaje electromecánico y comisionamiento por Authomathika",
       "results": {
-        "0": { "metric": "Alcance", "value": "Caldera + cogeneración" },
-        "1": { "metric": "Integración", "value": "Cero impacto en la operación" },
-        "2": { "metric": "Seguridad", "value": "Cero accidentes" }
+        "0": {
+          "metric": "Alcance",
+          "value": "Caldera + cogeneración"
+        },
+        "1": {
+          "metric": "Integración",
+          "value": "Cero impacto en la operación"
+        },
+        "2": {
+          "metric": "Seguridad",
+          "value": "Cero accidentes"
+        }
       }
     },
-    "3": {
+    "ferrari": {
       "title": "Planta Ferrari — Electrificación de Molino",
       "challenge": "La Planta Ferrari operaba con accionamientos mecánicos en el molino, limitando la eficiencia energética y el control de proceso. El proyecto de electrificación debía ser ejecutado íntegramente en la entrezafra, con una ventana de aproximadamente 90 días.",
       "solution": "Authomathika ejecutó el revamp completo con electrificación del molino, incluyendo instalación de accionamientos eléctricos, nuevos paneles CCMs, automatización con PLCs para control de velocidad y torque, e instrumentación de proceso. La ejecución concentrada en la entrezafra fue cumplida dentro del plazo previsto.",
       "altText": "Planta Ferrari - revamp y electrificación de molino sucroenergético con modernización de accionamientos eléctricos por Authomathika",
       "results": {
-        "0": { "metric": "Alcance", "value": "Electrificación completa del molino" },
-        "1": { "metric": "Ejecución", "value": "Dentro de la ventana de entrezafra" },
-        "2": { "metric": "Eficiencia", "value": "Ganancia energética significativa" }
+        "0": {
+          "metric": "Alcance",
+          "value": "Electrificación completa del molino"
+        },
+        "1": {
+          "metric": "Ejecución",
+          "value": "Dentro de la ventana de entrezafra"
+        },
+        "2": {
+          "metric": "Eficiencia",
+          "value": "Ganancia energética significativa"
+        }
       }
     },
-    "4": {
+    "bunge-moema": {
       "title": "Bunge Moema — Revamp de Automatización",
       "challenge": "La planta de Bunge Moema operaba con sistemas de automatización obsoletos que limitaban el control de proceso y generaban ineficiencia operativa. El revamp debía ser planificado para minimizar el tiempo de parada y garantizar la transición segura del sistema legado a la nueva plataforma.",
       "solution": "Authomathika realizó el revamp completo del sistema de automatización, incluyendo migración de PLCs, nuevo sistema SCADA, sustitución de instrumentación de campo y recableado. La migración fue realizada de forma gradual, con operación en paralelo de los sistemas antiguo y nuevo para validación antes del descomisionamiento.",
       "altText": "Bunge Moema - revamp completo del sistema de automatización industrial con PLCs y SCADA por Authomathika",
       "results": {
-        "0": { "metric": "Alcance", "value": "Revamp completo de automatización" },
-        "1": { "metric": "Migración", "value": "Transición gradual sin parada" },
-        "2": { "metric": "Confiabilidad", "value": "Sistema modernizado" }
+        "0": {
+          "metric": "Alcance",
+          "value": "Revamp completo de automatización"
+        },
+        "1": {
+          "metric": "Migración",
+          "value": "Transición gradual sin parada"
+        },
+        "2": {
+          "metric": "Confiabilidad",
+          "value": "Sistema modernizado"
+        }
       }
     },
-    "5": {
+    "santa-helena": {
       "title": "Santa Helena — Revamp Turnkey Completo",
       "challenge": "La Planta Santa Helena precisaba de un revamp integral de su planta industrial, abarcando automatización, eléctrica e instrumentación. La modernización completa debía ser coordinada para mantener la interdependencia entre las diferentes áreas de la planta funcionando correctamente.",
       "solution": "Authomathika coordinó el revamp turnkey completo, abarcando automatización de todas las áreas (fermentación, destilería, caldera), modernización de la infraestructura eléctrica y sustitución de instrumentación. El modelo de contrato único garantizó gestión integrada sin conflictos de interfaz.",
       "altText": "Planta Santa Helena - revamp turnkey completo con automatización, eléctrica e instrumentación industrial por Authomathika",
       "results": {
-        "0": { "metric": "Alcance", "value": "Revamp integral turnkey" },
-        "1": { "metric": "Áreas", "value": "Automatización + eléctrica + instrumentación" },
-        "2": { "metric": "Modelo", "value": "Contrato único integrado" }
+        "0": {
+          "metric": "Alcance",
+          "value": "Revamp integral turnkey"
+        },
+        "1": {
+          "metric": "Áreas",
+          "value": "Automatización + eléctrica + instrumentación"
+        },
+        "2": {
+          "metric": "Modelo",
+          "value": "Contrato único integrado"
+        }
       }
     },
-    "6": {
+    "bahia-etanol": {
       "title": "Bahia Etanol — Modernización Integral",
       "challenge": "La planta de Bahia Etanol necesitaba modernización completa para aumentar la eficiencia productiva y reducir costos operativos. El proyecto involucraba la actualización de sistemas de automatización, eléctrica e instrumentación en una planta que ya estaba en operación.",
       "solution": "Authomathika realizó la modernización completa con sustitución de PLCs y SCADA, actualización del sistema eléctrico con nuevos paneles y protecciones, y calibración y sustitución de instrumentación de campo. El alcance fue ejecutado en fases para permitir continuidad parcial de la operación.",
       "altText": "Bahia Etanol - modernización integral de la planta de etanol con revamp de automatización y eléctrica por Authomathika",
       "results": {
-        "0": { "metric": "Alcance", "value": "Modernización integral" },
-        "1": { "metric": "Fases", "value": "Ejecución por etapas" },
-        "2": { "metric": "Resultado", "value": "Eficiencia operativa aumentada" }
+        "0": {
+          "metric": "Alcance",
+          "value": "Modernización integral"
+        },
+        "1": {
+          "metric": "Fases",
+          "value": "Ejecución por etapas"
+        },
+        "2": {
+          "metric": "Resultado",
+          "value": "Eficiencia operativa aumentada"
+        }
       }
     },
-    "7": {
+    "vale-carajas": {
       "title": "Vale Carajás — Implantación de Centro Eléctrico",
       "challenge": "Vale necesitaba la implantación de un centro eléctrico en la operación de Carajás, región remota del Pará. El desafío incluía la logística de movilización en área aislada, los rigurosos estándares de seguridad y calificación de la minería, y el ambiente operativo severo con polvo y vibración.",
       "solution": "Authomathika ejecutó la implantación completa del centro eléctrico, incluyendo ingeniería eléctrica, automatización y montaje electromecánico. La movilización de equipos certificados NR-10/NR-35 fue planificada con logística independiente. Toda la documentación técnica fue entregada conforme los estándares de precalificación de Vale.",
       "altText": "Vale Carajás - implantación de centro eléctrico para minería con ingeniería eléctrica y automatización por Authomathika",
       "results": {
-        "0": { "metric": "Alcance", "value": "Centro eléctrico completo" },
-        "1": { "metric": "Seguridad", "value": "Cero accidentes en la obra" },
-        "2": { "metric": "Documentación", "value": "Conforme estándares Vale" }
+        "0": {
+          "metric": "Alcance",
+          "value": "Centro eléctrico completo"
+        },
+        "1": {
+          "metric": "Seguridad",
+          "value": "Cero accidentes en la obra"
+        },
+        "2": {
+          "metric": "Documentación",
+          "value": "Conforme estándares Vale"
+        }
       }
     },
-    "8": {
+    "umoe-1": {
       "title": "UMOE — Ampliación y Revamp Completo",
       "challenge": "La planta de UMOE precisaba de ampliación de capacidad productiva combinada con revamp de los sistemas existentes. El desafío era coordinar la expansión con la modernización sin comprometer la operación en curso.",
       "solution": "Authomathika ejecutó la ampliación y revamp completo, incluyendo montaje electromecánico de nuevos equipos, automatización de nuevas áreas con integración al sistema existente y modernización de la infraestructura eléctrica. La coordinación entre expansión y operación fue gestionada con planificación integrada.",
       "altText": "UMOE - ampliación y revamp completo de planta sucroenergética con montaje electromecánico por Authomathika",
       "results": {
-        "0": { "metric": "Alcance", "value": "Ampliación + revamp" },
-        "1": { "metric": "Integración", "value": "Sistemas nuevos y existentes" },
-        "2": { "metric": "Operación", "value": "Sin interrupción" }
+        "0": {
+          "metric": "Alcance",
+          "value": "Ampliación + revamp"
+        },
+        "1": {
+          "metric": "Integración",
+          "value": "Sistemas nuevos y existentes"
+        },
+        "2": {
+          "metric": "Operación",
+          "value": "Sin interrupción"
+        }
       }
     },
-    "9": {
+    "sesamm": {
       "title": "SESAMM — ETA y ETE Mogi Mirim",
       "challenge": "El SESAMM precisaba de plantas de tratamiento de agua (ETA) y efluentes (ETE) completas para atender la demanda creciente de Mogi Mirim. El proyecto exigía automatización de proceso con alta confiabilidad para operación continua 24/7 y conformidad con estándares ambientales rigurosos.",
       "solution": "Authomathika ejecutó la implantación greenfield de las estaciones de tratamiento, incluyendo automatización completa con PLCs y SCADA para monitoreo y control de proceso, montaje electromecánico de equipos e infraestructura eléctrica. El sistema entregado permite operación y monitoreo remotos.",
       "altText": "SESAMM Mogi Mirim - implantación greenfield de estaciones de tratamiento de agua (ETA) y efluentes (ETE) con automatización por Authomathika",
       "results": {
-        "0": { "metric": "Alcance", "value": "ETA + ETE completas" },
-        "1": { "metric": "Operación", "value": "24/7 automatizada" },
-        "2": { "metric": "Monitoreo", "value": "SCADA remoto" }
+        "0": {
+          "metric": "Alcance",
+          "value": "ETA + ETE completas"
+        },
+        "1": {
+          "metric": "Operación",
+          "value": "24/7 automatizada"
+        },
+        "2": {
+          "metric": "Monitoreo",
+          "value": "SCADA remoto"
+        }
       }
     },
-    "10": {
+    "indemil": {
       "title": "Indemil — Nueva Planta de Ácido Cítrico",
       "challenge": "Indemil precisaba del montaje electromecánico completo de una nueva planta de ácido cítrico. El proyecto exigía acabados y materiales adecuados para ambiente food-grade, además de coordinación precisa entre disciplinas mecánica, eléctrica y de instrumentación.",
       "solution": "Authomathika realizó el montaje electromecánico completo de la planta, incluyendo instalación de equipos de proceso, tuberías, infraestructura eléctrica e instrumentación. Todos los materiales y acabados fueron especificados para conformidad con normas sanitarias de la industria alimentaria.",
       "altText": "Indemil - montaje electromecánico completo de nueva planta industrial de ácido cítrico por Authomathika",
       "results": {
-        "0": { "metric": "Alcance", "value": "Montaje electromecánico completo" },
-        "1": { "metric": "Conformidad", "value": "Normas food-grade" },
-        "2": { "metric": "Entrega", "value": "Planta lista para operación" }
+        "0": {
+          "metric": "Alcance",
+          "value": "Montaje electromecánico completo"
+        },
+        "1": {
+          "metric": "Conformidad",
+          "value": "Normas food-grade"
+        },
+        "2": {
+          "metric": "Entrega",
+          "value": "Planta lista para operación"
+        }
       }
     },
-    "11": {
+    "ufv-belmonte": {
       "title": "UFV Belmonte I & II — Planta Solar 540 MW",
       "duration": "24 meses",
       "challenge": "El Grupo Cobra precisaba de un socio brasileño con capacidad para ejecutar el montaje eléctrico y mecánico de una de las mayores plantas solares de Brasil, con 540 MW de potencia. El plazo era agresivo, la logística compleja y la calidad del montaje debía garantizar el performance ratio contractual por 25+ años.",
       "solution": "Authomathika fue seleccionada para el montaje eléctrico y mecánico de la UFV Belmonte I & II, movilizando equipos especializados en solar. El alcance incluyó instalación de trackers, módulos fotovoltaicos, cableado DC/AC, inversores string y centrales, además de subestación. El control de calidad en campo garantizó trazabilidad de cada componente instalado.",
       "altText": "UFV Belmonte I y II - planta solar fotovoltaica de 540 MW con montaje eléctrico y mecánico por Authomathika en alianza con Grupo Cobra",
       "results": {
-        "0": { "metric": "Capacidad", "value": "540 MW instalados" },
-        "1": { "metric": "Seguridad", "value": "Cero accidentes graves" },
-        "2": { "metric": "Entrega", "value": "Dentro del cronograma" },
-        "3": { "metric": "Socio", "value": "Grupo Cobra (España)" }
+        "0": {
+          "metric": "Capacidad",
+          "value": "540 MW instalados"
+        },
+        "1": {
+          "metric": "Seguridad",
+          "value": "Cero accidentes graves"
+        },
+        "2": {
+          "metric": "Entrega",
+          "value": "Dentro del cronograma"
+        },
+        "3": {
+          "metric": "Socio",
+          "value": "Grupo Cobra (España)"
+        }
       }
+    },
+    "alto-taquari": {
+      "title": "Alto Taquari — Planta Greenfield Turnkey",
+      "altText": "Planta Alto Taquari Atvos - implantación greenfield sucroenergética turnkey por Authomathika en Mato Grosso",
+      "challenge": "La planta Alto Taquari (Atvos) requería una implantación greenfield completa en Mato Grosso, con automatización, eléctrica y montaje electromecánico integrados en modelo EPC para entrega de la planta operacional en el plazo."
+    },
+    "rio-claro": {
+      "title": "Rio Claro — Planta Greenfield Turnkey",
+      "altText": "Planta Rio Claro Atvos - implantación greenfield sucroenergética turnkey por Authomathika en Mato Grosso do Sul",
+      "challenge": "La planta Rio Claro (Atvos) requería un proyecto greenfield turnkey en Mato Grosso do Sul, con ingeniería integrada de automatización, eléctrica y montaje electromecánico para entrega completa de la planta."
+    },
+    "morro-vermelho": {
+      "title": "Morro Vermelho — Planta Greenfield Turnkey",
+      "altText": "Planta Morro Vermelho Atvos - implantación greenfield sucroenergética turnkey por Authomathika en Goiás",
+      "challenge": "La planta Morro Vermelho (Atvos) requería una implantación greenfield turnkey en Goiás, con coordinación integrada de automatización, eléctrica y montaje electromecánico para el arranque en la primera zafra."
+    },
+    "alcidia": {
+      "title": "Alcídia — Revamp Completo de la Planta",
+      "altText": "Planta Alcídia Atvos - revamp completo de automatización eléctrica y sistemas electromecánicos por Authomathika en São Paulo",
+      "challenge": "La planta Alcídia (Atvos) requería un revamp completo de automatización, eléctrica y sistemas electromecánicos para modernizar la planta y mejorar el rendimiento operacional en São Paulo."
+    },
+    "agua-emendada": {
+      "title": "Água Emendada — Planta Greenfield Turnkey",
+      "altText": "Planta Água Emendada Atvos - implantación greenfield sucroenergética turnkey por Authomathika en Mato Grosso do Sul",
+      "challenge": "La planta Água Emendada (Atvos) requería una implantación greenfield completa en Mato Grosso do Sul, con integración total de automatización, eléctrica y montaje electromecánico en modelo EPC."
+    },
+    "santa-luzia": {
+      "title": "Santa Luzia — Planta Greenfield Turnkey",
+      "altText": "Planta Santa Luzia Atvos - implantación greenfield sucroenergética turnkey por Authomathika en Mato Grosso do Sul",
+      "challenge": "La planta Santa Luzia (Atvos) requería un proyecto greenfield turnkey en Mato Grosso do Sul, con alcance integrado de automatización, eléctrica y montaje para planta sucroenergética completa."
+    },
+    "eldorado": {
+      "title": "Eldorado — Greenfield y Revamp Ampliación Turnkey",
+      "altText": "Planta Eldorado Atvos - proyecto combinado greenfield y revamp con ampliación por Authomathika en Mato Grosso do Sul",
+      "challenge": "La planta Eldorado (Atvos) requería un proyecto combinado de greenfield y revamp con ampliación en Mato Grosso do Sul, exigiendo coordinación de nuevas instalaciones con modernización de los sistemas existentes."
+    },
+    "conquista-do-pontal": {
+      "title": "Conquista do Pontal — Termoeléctrica Greenfield y Brownfield",
+      "altText": "Conquista do Pontal Atvos - termoeléctrica greenfield y brownfield por Authomathika en São Paulo",
+      "challenge": "La planta Conquista do Pontal (Atvos) requería implantación de termoeléctrica en modelos greenfield y brownfield en São Paulo, integrando automatización, eléctrica y montaje electromecánico."
+    },
+    "da-mata": {
+      "title": "Da Mata — Planta Greenfield Turnkey",
+      "altText": "Planta Da Mata - implantación greenfield sucroenergética turnkey por Authomathika en São Paulo",
+      "challenge": "La planta Da Mata requería un proyecto greenfield turnkey en São Paulo, con implantación integrada de automatización, eléctrica y montaje para planta sucroenergética completa en modelo EPC."
+    },
+    "santa-terezinha-terra-rica": {
+      "title": "Santa Terezinha Terra Rica — Planta Greenfield Turnkey",
+      "altText": "Santa Terezinha Terra Rica - implantación greenfield sucroenergética turnkey por Authomathika en Paraná",
+      "challenge": "La planta Santa Terezinha Terra Rica requería un proyecto greenfield completo en Paraná, abarcando automatización, eléctrica y montaje electromecánico integrados en modelo EPC."
+    },
+    "cerradinho": {
+      "title": "Cerradinho — Caldera Greenfield Turnkey",
+      "altText": "Planta Cerradinho - implantación greenfield de caldera turnkey por Authomathika en São Paulo",
+      "challenge": "La planta Cerradinho requería una implantación greenfield de caldera turnkey en São Paulo, incluyendo automatización de control de combustión y vapor, eléctrica y montaje electromecánico."
+    },
+    "coruripe-carneirinho": {
+      "title": "Coruripe Carneirinho — Caldera Greenfield Turnkey",
+      "altText": "Planta Coruripe Carneirinho - implantación greenfield de caldera turnkey por Authomathika en Minas Gerais",
+      "challenge": "La planta Coruripe Carneirinho requería una implantación greenfield de caldera turnkey en Minas Gerais, con automatización, eléctrica y montaje electromecánico integrados."
+    },
+    "santa-terezinha-iguatemi": {
+      "title": "Santa Terezinha Iguatemi — Fábrica de Azúcar Turnkey",
+      "altText": "Santa Terezinha Iguatemi - fábrica de azúcar greenfield turnkey por Authomathika en Paraná",
+      "challenge": "Santa Terezinha Iguatemi requería una fábrica de azúcar greenfield turnkey en Paraná, con implantación integrada de automatización, eléctrica y montaje electromecánico en modelo EPC."
+    },
+    "santa-isabel-novo-horizonte": {
+      "title": "Santa Isabel Novo Horizonte — Planta Greenfield Turnkey",
+      "altText": "Planta Santa Isabel Novo Horizonte - implantación greenfield sucroenergética turnkey por Authomathika en São Paulo",
+      "challenge": "La planta Santa Isabel Novo Horizonte requería un proyecto greenfield turnkey en São Paulo, con automatización, eléctrica y montaje electromecánico integrados en modelo EPC."
+    },
+    "sao-martinho-santa-cruz": {
+      "title": "São Martinho Santa Cruz — Fábrica de Azúcar y Cocedor",
+      "altText": "São Martinho Santa Cruz - fábrica de azúcar y cocedor greenfield por Authomathika en São Paulo",
+      "challenge": "São Martinho Santa Cruz requería una implantación greenfield de fábrica de azúcar y cocedor en São Paulo, con ingeniería EPC integrada de automatización, eléctrica y montaje electromecánico."
+    },
+    "santo-angelo": {
+      "title": "Santo Ângelo — Caldera Greenfield Turnkey",
+      "altText": "Planta Santo Ângelo - implantación greenfield de caldera turnkey por Authomathika en São Paulo",
+      "challenge": "La planta Santo Ângelo requería una caldera greenfield turnkey en São Paulo, incluyendo automatización de proceso, eléctrica y montaje electromecánico integrados."
+    },
+    "santa-terezinha-paranacity": {
+      "title": "Santa Terezinha Paranacity — Caldera Greenfield Turnkey",
+      "altText": "Santa Terezinha Paranacity - implantación greenfield de caldera turnkey por Authomathika en Paraná",
+      "challenge": "Santa Terezinha Paranacity requería una caldera greenfield turnkey en Paraná, con automatización de control, eléctrica y montaje electromecánico integrados."
+    },
+    "santa-isabel-mendonca": {
+      "title": "Santa Isabel Mendonça — Revamp Integral Turnkey",
+      "altText": "Planta Santa Isabel Mendonça - revamp integral turnkey por Authomathika en São Paulo",
+      "challenge": "La planta Santa Isabel Mendonça requería un revamp integral turnkey en São Paulo, modernizando automatización, eléctrica y sistemas electromecánicos con gestión integrada en contrato único."
+    },
+    "bp-tropical": {
+      "title": "BP Tropical — Revamp Integral de Planta y Fábrica",
+      "altText": "BP Tropical - revamp integral de planta y fábrica por Authomathika en São Paulo",
+      "challenge": "BP Tropical requería un revamp integral de la planta y fábrica en São Paulo, con modernización completa de automatización, eléctrica y montaje electromecánico para aumento de eficiencia operacional."
+    },
+    "jalles-machado-uol": {
+      "title": "Jalles Machado UOL — Revamp Completo de la Planta",
+      "altText": "Jalles Machado UOL - revamp completo de la planta por Authomathika en Goiás",
+      "challenge": "Jalles Machado UOL requería un revamp completo de la planta en Goiás, con actualización integrada de automatización, eléctrica y sistemas electromecánicos para modernización de la planta."
+    },
+    "cocal-narandiba": {
+      "title": "Cocal Narandiba — Revamp Integral de la Planta",
+      "altText": "Cocal Narandiba - revamp integral de la planta por Authomathika en São Paulo",
+      "challenge": "Cocal Narandiba requería un revamp integral en São Paulo, modernizando automatización, eléctrica y montaje electromecánico para aumentar la confiabilidad y eficiencia de la planta."
+    },
+    "cocal-paraguacu-paulista": {
+      "title": "Cocal Paraguaçu Paulista — Revamp Integral de la Planta",
+      "altText": "Cocal Paraguaçu Paulista - revamp integral de la planta por Authomathika en São Paulo",
+      "challenge": "Cocal Paraguaçu Paulista requería un revamp integral de la planta en São Paulo, con modernización de automatización, eléctrica y montaje electromecánico para optimización operacional."
+    },
+    "sao-martinho-matriz": {
+      "title": "São Martinho Matriz — COA Greenfield Turnkey",
+      "altText": "São Martinho Matriz - COA greenfield turnkey por Authomathika en São Paulo",
+      "challenge": "São Martinho Matriz requería una implantación de COA greenfield turnkey en São Paulo, con automatización, eléctrica y montaje electromecánico integrados en modelo EPC."
+    },
+    "sao-martinho-boa-vista": {
+      "title": "São Martinho Boa Vista — Planta Greenfield Turnkey",
+      "altText": "São Martinho Boa Vista - implantación greenfield sucroenergética turnkey por Authomathika en São Paulo",
+      "challenge": "São Martinho Boa Vista requería un proyecto greenfield turnkey en São Paulo, con implantación integrada de automatización, eléctrica y montaje para planta sucroenergética completa."
+    },
+    "vale-do-parana": {
+      "title": "Vale do Paraná — Fábrica de Azúcar Greenfield Turnkey",
+      "altText": "Planta Vale do Paraná - fábrica de azúcar greenfield turnkey por Authomathika en São Paulo",
+      "challenge": "La planta Vale do Paraná requería una fábrica de azúcar greenfield turnkey en São Paulo, con ingeniería EPC integrada de automatización, eléctrica y montaje electromecánico."
+    },
+    "alcon": {
+      "title": "Alcon — Fábrica de Azúcar Greenfield Turnkey",
+      "altText": "Alcon - fábrica de azúcar greenfield turnkey por Authomathika en São Paulo",
+      "challenge": "Alcon requería una fábrica de azúcar greenfield turnkey en São Paulo, con automatización de proceso, eléctrica y montaje electromecánico integrados en modelo EPC."
+    },
+    "pedra-serrana": {
+      "title": "Pedra Serrana — Fábrica de Azúcar Greenfield Turnkey",
+      "altText": "Planta Pedra Serrana - fábrica de azúcar greenfield turnkey por Authomathika en São Paulo",
+      "challenge": "La planta Pedra Serrana requería una fábrica de azúcar greenfield turnkey en São Paulo, con implantación de automatización, eléctrica y montaje electromecánico en modelo EPC."
+    },
+    "pedra-ipe": {
+      "title": "Pedra Ipê — Planta Greenfield Turnkey",
+      "altText": "Planta Pedra Ipê - implantación greenfield sucroenergética turnkey por Authomathika en São Paulo",
+      "challenge": "La planta Pedra Ipê requería un proyecto greenfield turnkey en São Paulo, incluyendo automatización, eléctrica y montaje electromecánico para planta sucroenergética completa."
+    },
+    "goiasa": {
+      "title": "Goiasa — Renovación de Tableros Eléctricos",
+      "altText": "Goiasa - renovación de tableros eléctricos CCMs y QGBTs por Authomathika en Goiás",
+      "challenge": "Goiasa necesitaba renovar su infraestructura de tableros eléctricos en Goiás, modernizando CCMs y QGBTs para garantizar confiabilidad operacional y conformidad con las normas vigentes."
+    },
+    "mannesmamm": {
+      "title": "Mannesmamm — Implantación de Nueva Caldera",
+      "altText": "Mannesmamm - implantación de nueva caldera con automatización eléctrica y montaje por Authomathika en São Paulo",
+      "challenge": "Mannesmamm requería la implantación de una nueva caldera en São Paulo, con automatización, eléctrica y montaje electromecánico integrados para sistema de cogeneración."
+    },
+    "bunge-itapagipe": {
+      "title": "Bunge Itapagipe — Revamp del Sistema de Automatización",
+      "altText": "Bunge Itapagipe - revamp del sistema de automatización industrial con PLCs y SCADA por Authomathika en Minas Gerais",
+      "challenge": "Bunge Itapagipe requería un revamp del sistema de automatización en Minas Gerais, modernizando PLCs y SCADA para mejorar el control de proceso y la eficiencia operacional."
+    },
+    "sao-luiz": {
+      "title": "São Luiz — Revamp Tratamiento de Jugo y Molino",
+      "altText": "Planta São Luiz - revamp de tratamiento de jugo y molino por Authomathika en São Paulo",
+      "challenge": "La planta São Luiz requería un revamp del tratamiento de jugo y molino en São Paulo, con modernización de automatización, eléctrica y montaje electromecánico para aumento de eficiencia."
+    },
+    "mandu": {
+      "title": "Mandú — Implantación Proyecto de Ampliación",
+      "altText": "Planta Mandú - implantación de proyecto de ampliación con automatización eléctrica y montaje por Authomathika en São Paulo",
+      "challenge": "La planta Mandú requería la ampliación de su capacidad productiva en São Paulo, con implantación de nuevos sistemas de automatización, eléctrica y montaje electromecánico."
+    },
+    "malosso": {
+      "title": "Malosso — Proyecto Turnkey de Renovación Eléctrica",
+      "altText": "Malosso - proyecto turnkey de renovación eléctrica por Authomathika en São Paulo",
+      "challenge": "Malosso requería una renovación eléctrica turnkey en São Paulo, con sustitución completa de infraestructura eléctrica para modernización y conformidad normativa."
+    },
+    "santa-vitoria": {
+      "title": "Santa Vitória — Implantación del Sistema Completo",
+      "altText": "Planta Santa Vitória - implantación del sistema completo de automatización eléctrica y montaje por Authomathika en Minas Gerais",
+      "challenge": "La planta Santa Vitória requería la implantación del sistema completo en Minas Gerais, abarcando automatización, eléctrica y montaje electromecánico integrados para operación plena."
+    },
+    "itajobi": {
+      "title": "Itajobi — Implantación Molino y Caldera",
+      "altText": "Planta Itajobi - implantación de molino y caldera con automatización eléctrica y montaje por Authomathika en São Paulo",
+      "challenge": "La planta Itajobi requería la implantación de molino y caldera en São Paulo, con automatización, eléctrica y montaje electromecánico integrados para expansión de la capacidad productiva."
+    },
+    "sao-joao": {
+      "title": "São João — Brownfield Ampliación General",
+      "altText": "Planta São João - brownfield de ampliación general de automatización eléctrica y montaje por Authomathika en São Paulo",
+      "challenge": "La planta São João requería un brownfield de ampliación general en São Paulo, integrando automatización, eléctrica y montaje electromecánico con los sistemas existentes para expansión de capacidad."
+    },
+    "floralco": {
+      "title": "Floralco — Brownfield Caldera, Molino y Fábrica",
+      "altText": "Floralco - brownfield de caldera molino y fábrica por Authomathika en São Paulo",
+      "challenge": "Floralco requería una ampliación brownfield de caldera, molino y fábrica en São Paulo, con automatización, eléctrica y montaje electromecánico integrados a los sistemas en operación."
+    },
+    "valdez-equador": {
+      "title": "Valdez (Ecuador) — Ampliación Completa de la Planta",
+      "altText": "Valdez Ecuador - proyecto internacional de ampliación completa de la planta por Authomathika",
+      "challenge": "La planta Valdez en Ecuador requería una ampliación completa con automatización, eléctrica y montaje electromecánico, demostrando la capacidad de Authomathika en proyectos sucroenergéticos internacionales."
+    },
+    "biocom-angola": {
+      "title": "Biocom (Angola) — Planta Greenfield Turnkey",
+      "altText": "Biocom Angola - implantación greenfield de planta sucroenergética turnkey por Authomathika en Angola",
+      "challenge": "Biocom en Angola requería una implantación greenfield de planta sucroenergética turnkey, un proyecto internacional de gran escala con automatización, eléctrica y montaje integrados."
+    },
+    "senai-sertaozinho": {
+      "title": "Senai Sertãozinho — Destilería Educacional Greenfield EPC",
+      "altText": "Senai Sertãozinho - destilería educacional greenfield EPC por Authomathika en São Paulo",
+      "challenge": "El Senai Sertãozinho requería una destilería educacional greenfield EPC en São Paulo, con automatización, eléctrica y montaje electromecánico para uso en capacitación e investigación en la industria sucroenergética."
+    },
+    "sjc-quirinopolis": {
+      "title": "SJC Quirinópolis — Implantación Planta de Etanol de Maíz",
+      "altText": "SJC Quirinópolis - implantación de planta de etanol de maíz por Authomathika en Goiás",
+      "challenge": "SJC Quirinópolis requería la implantación de una planta de etanol de maíz en Goiás, con automatización, eléctrica y montaje electromecánico para nueva línea de producción de biocombustible."
+    },
+    "destilaria-agua-bonita": {
+      "title": "Destilaria Água Bonita — Termoeléctrica Greenfield Turnkey",
+      "altText": "Destilaria Água Bonita - termoeléctrica greenfield turnkey por Authomathika en Goiás",
+      "challenge": "La Destilaria Água Bonita requería una termoeléctrica greenfield turnkey en Goiás, incluyendo automatización de proceso, eléctrica y montaje electromecánico para generación de energía a partir de biomasa."
+    },
+    "floraplac": {
+      "title": "Floraplac — Termoeléctrica Greenfield Turnkey",
+      "altText": "Floraplac - termoeléctrica greenfield turnkey para industria de papel y celulosa por Authomathika en Pará",
+      "challenge": "Floraplac requería una termoeléctrica greenfield turnkey en Pará, con automatización, eléctrica y montaje electromecánico para generación de energía en la industria de papel y celulosa."
+    },
+    "cadasa-panama": {
+      "title": "Cadasa (Panamá) — Termoeléctrica Greenfield y Electrificación",
+      "altText": "Cadasa Panamá - termoeléctrica greenfield y electrificación completa por Authomathika en Panamá",
+      "challenge": "Cadasa en Panamá requería una termoeléctrica greenfield y electrificación completa, un proyecto internacional con automatización, eléctrica y montaje electromecánico integrados."
+    },
+    "alianza-mexico": {
+      "title": "Alianza (México) — Termoeléctrica Greenfield",
+      "altText": "Alianza México - termoeléctrica greenfield por Authomathika en México",
+      "challenge": "Alianza en México requería una termoeléctrica greenfield con automatización, eléctrica y montaje electromecánico, expandiendo la presencia de Authomathika en proyectos internacionales de energía."
+    },
+    "revap": {
+      "title": "REVAP — Caldera Greenfield Turnkey",
+      "altText": "REVAP Petrobras - caldera greenfield turnkey por Authomathika en São José dos Campos",
+      "challenge": "REVAP (Petrobras) requería una caldera greenfield turnkey en São José dos Campos, con automatización, eléctrica y montaje electromecánico dentro de los rigurosos estándares de la industria petroquímica."
+    },
+    "elecnor": {
+      "title": "Elecnor — Tableros Eléctricos Complejo Fotovoltaico 297 MWp",
+      "altText": "Elecnor - tableros eléctricos para complejo fotovoltaico Lar do Sol 297 MWp por Authomathika en Bahia",
+      "challenge": "Elecnor requería el suministro e implantación de tableros eléctricos para complejo fotovoltaico de 297 MWp en Bahia, con alta confiabilidad y trazabilidad de componentes."
+    },
+    "hidreletrica-serra-do-facao": {
+      "title": "Hidroeléctrica Serra do Facão — Implantación Planta de Transición",
+      "altText": "Hidroeléctrica Serra do Facão - implantación de planta de transición por Authomathika en Goiás",
+      "challenge": "La Hidroeléctrica Serra do Facão requería la implantación de una planta de transición en Goiás, con automatización, eléctrica y montaje electromecánico para soporte durante el período de construcción y puesta en marcha."
+    },
+    "pch-fazenda-velha": {
+      "title": "PCH Fazenda Velha — Montaje Electromecánico",
+      "altText": "PCH Fazenda Velha - montaje electromecánico de pequeña central hidroeléctrica por Authomathika",
+      "challenge": "PCH Fazenda Velha requería un montaje electromecánico completo para pequeña central hidroeléctrica, incluyendo infraestructura eléctrica y sistemas de generación."
+    },
+    "mosaic-cubatao": {
+      "title": "Vale Mosaic Cubatão — Implantación ETA",
+      "altText": "Vale Mosaic Cubatão - implantación de estación de tratamiento de agua ETA por Authomathika en Cubatão",
+      "challenge": "Vale Mosaic en Cubatão requería la implantación de ETA (Estación de Tratamiento de Agua) con automatización, eléctrica y montaje electromecánico para operación industrial continua."
+    },
+    "ambient-gs-inima": {
+      "title": "Ambient (GS Inima) — Brownfield Ampliación ETA y ETE",
+      "altText": "Ambient GS Inima - brownfield de ampliación de ETA y ETE por Authomathika en São Paulo",
+      "challenge": "GS Inima requería una ampliación brownfield de ETA y ETE en São Paulo, con automatización, eléctrica y montaje electromecánico para aumentar la capacidad de tratamiento de agua y aguas residuales."
+    },
+    "sanevap": {
+      "title": "Sanevap (GS Inima) — Greenfield ETE Pararangaba y EEE",
+      "altText": "Sanevap GS Inima - greenfield ETE Pararangaba y estación elevadora de aguas residuales por Authomathika en São Paulo",
+      "challenge": "GS Inima (Sanevap) requería la implantación greenfield de ETE en Pararangaba y estación elevadora de aguas residuales en São Paulo, con automatización completa y montaje electromecánico."
+    },
+    "samar": {
+      "title": "Samar (GS Inima) — Revamp ETA, ETE Baguaçu y Telemetría",
+      "altText": "Samar GS Inima - revamp de ETA y ETE Baguaçu con sistema de telemetría por Authomathika en São Paulo",
+      "challenge": "GS Inima (Samar) requería un revamp de ETA y ETE Baguaçu con implantación de telemetría en São Paulo, modernizando automatización y eléctrica para operación remota y monitoreo continuo."
+    },
+    "vale-mineradora": {
+      "title": "Vale Minería — Greenfield Sistema de Molinos",
+      "altText": "Vale Minería - implantación greenfield de sistema de molinos con automatización eléctrica y montaje por Authomathika",
+      "challenge": "Vale requería la implantación greenfield de un sistema de molinos para minería, con automatización, eléctrica y montaje electromecánico para operación de alta demanda en ambiente severo."
+    },
+    "mosaic-catalao": {
+      "title": "Vale Mosaic Catalão — Renovación de Tableros de Automatización",
+      "altText": "Vale Mosaic Catalão - renovación de tableros de automatización por Authomathika en Catalão Goiás",
+      "challenge": "Vale Mosaic en Catalão requería la renovación de sus tableros de automatización, actualizando PLCs e infraestructura eléctrica para mejorar la confiabilidad operacional de la planta de fertilizantes."
+    },
+    "mosaic-uberaba": {
+      "title": "Vale Mosaic Uberaba — Greenfield Acidulación y Granulación",
+      "altText": "Vale Mosaic Uberaba - greenfield plantas de acidulación y granulación por Authomathika en Uberaba",
+      "challenge": "Vale Mosaic en Uberaba requería la implantación greenfield de plantas de acidulación y granulación, con automatización, eléctrica y montaje electromecánico integrados."
+    },
+    "mosaic-araxa": {
+      "title": "Vale Mosaic Araxá — Proyecto Turnkey SPDA",
+      "altText": "Vale Mosaic Araxá - proyecto turnkey de sistema de protección contra descargas atmosféricas SPDA por Authomathika en Araxá",
+      "challenge": "Vale Mosaic en Araxá requería un proyecto turnkey de SPDA (Sistema de Protección contra Descargas Atmosféricas), garantizando conformidad normativa y seguridad de la planta industrial."
+    },
+    "citrus-juice": {
+      "title": "Citrus Juice — Planta de Jugo Greenfield",
+      "altText": "Citrus Juice - implantación greenfield de planta de jugo cítrico por Authomathika en São Paulo",
+      "challenge": "Citrus Juice requería una planta de jugo greenfield completa en São Paulo, con automatización, eléctrica y montaje electromecánico food-grade integrados para nueva línea de producción."
+    },
+    "frigorifico-astra": {
+      "title": "Frigorífico Astra — Implantación de CCMs",
+      "altText": "Frigorífico Astra - implantación de centros de control de motores CCMs por Authomathika",
+      "challenge": "El Frigorífico Astra requería la implantación de CCMs (Centros de Control de Motores) para modernización de la infraestructura eléctrica, garantizando confiabilidad y seguridad en la operación frigorífica."
+    },
+    "cofco-potirendaba": {
+      "title": "Cofco Potirendaba — Proyecto de Ingeniería de Sistema",
+      "altText": "Cofco Potirendaba - proyecto de ingeniería de sistema de automatización y eléctrica por Authomathika en São Paulo",
+      "challenge": "Cofco Potirendaba requería un proyecto de ingeniería de sistema con automatización y eléctrica para modernización y optimización de la planta agroindustrial en São Paulo."
+    },
+    "agc-vidros": {
+      "title": "AGC Vidros — Implantación Greenfield COATER",
+      "altText": "AGC Vidros - implantación greenfield de equipo COATER con automatización eléctrica y montaje por Authomathika",
+      "challenge": "AGC Vidros requería la implantación greenfield de un equipo COATER, con automatización, eléctrica y montaje electromecánico para línea de revestimiento de vidrio de alta precisión."
+    },
+    "logum": {
+      "title": "Logum — Automatización Greenfield de Terminales",
+      "altText": "Logum - automatización greenfield de terminales de distribución de combustibles por Authomathika",
+      "challenge": "Logum requería la automatización greenfield de terminales de distribución de combustibles, implementando sistemas de control e infraestructura eléctrica para operación integrada y segura de los terminales."
     }
   },
   "serviceData": {
@@ -1329,10 +1794,22 @@
         "5": "Fácil instalación y mantenimiento"
       },
       "specs": {
-        "Puntos Instalados": { "label": "Puntos Instalados", "value": "2.685+" },
-        "Señal de Salida": { "label": "Señal de Salida", "value": "4-20 mA / HART" },
-        "Grado de Protección": { "label": "Grado de Protección", "value": "IP65" },
-        "Alimentación": { "label": "Alimentación", "value": "24 VDC" }
+        "Puntos Instalados": {
+          "label": "Puntos Instalados",
+          "value": "2.685+"
+        },
+        "Señal de Salida": {
+          "label": "Señal de Salida",
+          "value": "4-20 mA / HART"
+        },
+        "Grado de Protección": {
+          "label": "Grado de Protección",
+          "value": "IP65"
+        },
+        "Alimentación": {
+          "label": "Alimentación",
+          "value": "24 VDC"
+        }
       }
     },
     "px-400": {
@@ -1349,9 +1826,18 @@
         "5": "Certificación para uso industrial"
       },
       "specs": {
-        "Patente": { "label": "Patente", "value": "US Patent 6,870,486" },
-        "Tipo de Medición": { "label": "Tipo de Medición", "value": "Pasteurización" },
-        "Comunicación": { "label": "Comunicación", "value": "Industrial" }
+        "Patente": {
+          "label": "Patente",
+          "value": "US Patent 6,870,486"
+        },
+        "Tipo de Medición": {
+          "label": "Tipo de Medición",
+          "value": "Pasteurización"
+        },
+        "Comunicación": {
+          "label": "Comunicación",
+          "value": "Industrial"
+        }
       }
     },
     "auth-300": {
@@ -1368,9 +1854,18 @@
         "5": "Amplio rango de aplicación"
       },
       "specs": {
-        "Puntos Instalados": { "label": "Puntos Instalados", "value": "190+" },
-        "Tipo": { "label": "Tipo", "value": "Electroneumático" },
-        "Señal de Control": { "label": "Señal de Control", "value": "4-20 mA" }
+        "Puntos Instalados": {
+          "label": "Puntos Instalados",
+          "value": "190+"
+        },
+        "Tipo": {
+          "label": "Tipo",
+          "value": "Electroneumático"
+        },
+        "Señal de Control": {
+          "label": "Señal de Control",
+          "value": "4-20 mA"
+        }
       }
     },
     "dpg-1a": {
@@ -1385,9 +1880,18 @@
         "4": "Baja necesidad de mantenimiento"
       },
       "specs": {
-        "Tipo de Medición": { "label": "Tipo de Medición", "value": "Posición / Desplazamiento" },
-        "Señal de Salida": { "label": "Señal de Salida", "value": "4-20 mA" },
-        "Aplicación": { "label": "Aplicación", "value": "Molinos industriales" }
+        "Tipo de Medición": {
+          "label": "Tipo de Medición",
+          "value": "Posición / Desplazamiento"
+        },
+        "Señal de Salida": {
+          "label": "Señal de Salida",
+          "value": "4-20 mA"
+        },
+        "Aplicación": {
+          "label": "Aplicación",
+          "value": "Molinos industriales"
+        }
       }
     },
     "dclt-1c": {
@@ -1404,10 +1908,22 @@
         "5": "Resistencia a ambientes húmedos y agresivos"
       },
       "specs": {
-        "Display": { "label": "Display", "value": "OLED" },
-        "Grado de Protección": { "label": "Grado de Protección", "value": "IP67" },
-        "Patente": { "label": "Patente", "value": "Patent pending" },
-        "Medición": { "label": "Medición", "value": "Continua" }
+        "Display": {
+          "label": "Display",
+          "value": "OLED"
+        },
+        "Grado de Protección": {
+          "label": "Grado de Protección",
+          "value": "IP67"
+        },
+        "Patente": {
+          "label": "Patente",
+          "value": "Patent pending"
+        },
+        "Medición": {
+          "label": "Medición",
+          "value": "Continua"
+        }
       }
     },
     "promtec": {
@@ -1424,9 +1940,18 @@
         "5": "Bajo costo de mantenimiento"
       },
       "specs": {
-        "Instalaciones Mundiales": { "label": "Instalaciones Mundiales", "value": "8.500+" },
-        "Tecnología": { "label": "Tecnología", "value": "Alemana" },
-        "Tipo de Medición": { "label": "Tipo de Medición", "value": "Densidad / Proceso" }
+        "Instalaciones Mundiales": {
+          "label": "Instalaciones Mundiales",
+          "value": "8.500+"
+        },
+        "Tecnología": {
+          "label": "Tecnología",
+          "value": "Alemana"
+        },
+        "Tipo de Medición": {
+          "label": "Tipo de Medición",
+          "value": "Densidad / Proceso"
+        }
       }
     },
     "derivador-asi": {
@@ -1441,8 +1966,14 @@
         "4": "Protección contra interferencias"
       },
       "specs": {
-        "Protocolo": { "label": "Protocolo", "value": "AS-Interface (AS-i)" },
-        "Aplicación": { "label": "Aplicación", "value": "Redes industriales de campo" }
+        "Protocolo": {
+          "label": "Protocolo",
+          "value": "AS-Interface (AS-i)"
+        },
+        "Aplicación": {
+          "label": "Aplicación",
+          "value": "Redes industriales de campo"
+        }
       }
     },
     "planta-didatica": {
@@ -1458,8 +1989,14 @@
         "5": "Material didáctico incluido"
       },
       "specs": {
-        "Aplicación": { "label": "Aplicación", "value": "Capacitación y entrenamiento" },
-        "Tipo de Lazos": { "label": "Tipo de Lazos", "value": "PID, cascada, feedforward" }
+        "Aplicación": {
+          "label": "Aplicación",
+          "value": "Capacitación y entrenamiento"
+        },
+        "Tipo de Lazos": {
+          "label": "Tipo de Lazos",
+          "value": "PID, cascada, feedforward"
+        }
       }
     },
     "paineis": {
@@ -1475,9 +2012,18 @@
         "5": "Documentación técnica completa"
       },
       "specs": {
-        "Tipos": { "label": "Tipos", "value": "CCM, QGBT, Switchboard, Automatización" },
-        "Normas": { "label": "Normas", "value": "ABNT / IEC" },
-        "Fabricación": { "label": "Fabricación", "value": "A medida" }
+        "Tipos": {
+          "label": "Tipos",
+          "value": "CCM, QGBT, Switchboard, Automatización"
+        },
+        "Normas": {
+          "label": "Normas",
+          "value": "ABNT / IEC"
+        },
+        "Fabricación": {
+          "label": "Fabricación",
+          "value": "A medida"
+        }
       }
     }
   },
@@ -1744,15 +2290,42 @@
       "breadcrumbParent": "Media Center",
       "breadcrumb": "Noticias",
       "items": {
-        "0": { "title": "Fenasucro 2022", "excerpt": "Participación de Authomathika en la principal feria de bioenergía." },
-        "1": { "title": "Fenasucro 2019", "excerpt": "Nuevos proyectos e inversiones para el sector industrial." },
-        "2": { "title": "2.000 días sin accidentes laborales", "excerpt": "Hito en el compromiso con la seguridad operacional." },
-        "3": { "title": "Reunión Anual Fermentec 2019", "excerpt": "Fortalecimiento de relaciones en el sector sucroenergético." },
-        "4": { "title": "Proyectos de 2018", "excerpt": "Bahia Etanol, Mosaic Uberaba y otros casos relevantes." },
-        "5": { "title": "Authomathika en Fenasucro 2018", "excerpt": "Presencia consolidada en el calendario de bioenergía." },
-        "6": { "title": "Premio Excelencia Entrezafra 2016/2017", "excerpt": "Reconocimiento de BP Biofuels al desempeño del equipo." },
-        "7": { "title": "Parada General Vale CMA y Vale CIU", "excerpt": "Ejecución de parada de mantenimiento de gran escala." },
-        "8": { "title": "Planta Piloto de Etanol SENAI", "excerpt": "Conclusión de la primera unidad piloto de etanol (UPPE)." }
+        "0": {
+          "title": "Fenasucro 2022",
+          "excerpt": "Participación de Authomathika en la principal feria de bioenergía."
+        },
+        "1": {
+          "title": "Fenasucro 2019",
+          "excerpt": "Nuevos proyectos e inversiones para el sector industrial."
+        },
+        "2": {
+          "title": "2.000 días sin accidentes laborales",
+          "excerpt": "Hito en el compromiso con la seguridad operacional."
+        },
+        "3": {
+          "title": "Reunión Anual Fermentec 2019",
+          "excerpt": "Fortalecimiento de relaciones en el sector sucroenergético."
+        },
+        "4": {
+          "title": "Proyectos de 2018",
+          "excerpt": "Bahia Etanol, Mosaic Uberaba y otros casos relevantes."
+        },
+        "5": {
+          "title": "Authomathika en Fenasucro 2018",
+          "excerpt": "Presencia consolidada en el calendario de bioenergía."
+        },
+        "6": {
+          "title": "Premio Excelencia Entrezafra 2016/2017",
+          "excerpt": "Reconocimiento de BP Biofuels al desempeño del equipo."
+        },
+        "7": {
+          "title": "Parada General Vale CMA y Vale CIU",
+          "excerpt": "Ejecución de parada de mantenimiento de gran escala."
+        },
+        "8": {
+          "title": "Planta Piloto de Etanol SENAI",
+          "excerpt": "Conclusión de la primera unidad piloto de etanol (UPPE)."
+        }
       }
     },
     "blog": {
@@ -1915,7 +2488,107 @@
       "pageTitle": "Línea de Tiempo",
       "subtitle": "Hitos de evolución de Authomathika desde 1999.",
       "breadcrumbEmpresa": "Empresa",
-      "breadcrumbLinhaDoTempo": "Línea de Tiempo"
+      "breadcrumbLinhaDoTempo": "Línea de Tiempo",
+      "stats": {
+        "yearsLabel": "Años en el mercado",
+        "projectsLabel": "Proyectos entregados",
+        "solarLabel": "Energía solar instalada",
+        "countriesLabel": "Países con proyectos",
+        "countriesValue": "5 países"
+      },
+      "legend": {
+        "title": "Leyenda",
+        "founding": "Fundación",
+        "milestone": "Hito",
+        "projects": "Proyectos",
+        "award": "Premio",
+        "expansion": "Expansión",
+        "international": "Internacional"
+      },
+      "endCap": "En crecimiento continuo",
+      "worksCount": "{count} obras",
+      "entries": {
+        "1999": {
+          "headline": "Fundación de Authomathika en Sertãozinho, SP",
+          "highlight": "Inicio de operaciones como integradora de sistemas eléctricos y automatización industrial"
+        },
+        "2003": {
+          "headline": "Expansión a plantas termoeléctricas y cogeneración",
+          "highlight": "Primeros proyectos de automatización completa en plantas de cogeneración"
+        },
+        "2005": {
+          "headline": "Certificación ISO 9001 obtenida",
+          "highlight": "Sistema de gestión de calidad implementado en todos los procesos"
+        },
+        "2008": {
+          "headline": "Tres grandes greenfields sucro-energéticos simultáneos"
+        },
+        "2009": {
+          "headline": "Grandes plantas de cogeneración en el Centro-Oeste"
+        },
+        "2011": {
+          "headline": "Cuatro proyectos simultáneos — expansión multisectorial"
+        },
+        "2012": {
+          "headline": "Premio Excelencia de Proveedores y expansión en fertilizantes"
+        },
+        "2013": {
+          "headline": "Entrada al sector logístico — etanoductos LOGUM"
+        },
+        "2014": {
+          "headline": "Primer proyecto internacional — Angola + récord de 18 obras",
+          "highlight": "Mayor volumen de proyectos simultáneos hasta entonces: Vale Fertilizantes (3 plantas), Biocom Angola y expansión logística."
+        },
+        "2015": {
+          "headline": "Inicio de la división de Energías Renovables — 14 proyectos entregados",
+          "highlight": "Primer proyecto solar fotovoltaico. Expansión simultánea en saneamiento, logística y energía."
+        },
+        "2016": {
+          "headline": "Termoeléctrica 15 MW, ETE y expansión del ciclo Bunge"
+        },
+        "2017": {
+          "headline": "Operación en Panamá — segundo país atendido"
+        },
+        "2018": {
+          "headline": "Récord histórico — 20 obras simultáneas",
+          "highlight": "Mayor volumen de operaciones en la historia de la empresa. Bunge (3 unidades), São Martinho, Mosaic y primeros proyectos EPC de gran escala."
+        },
+        "2019": {
+          "headline": "2.000 días sin accidentes — hito de seguridad operacional",
+          "highlight": "Hito histórico de seguridad consolidado. 18 proyectos entregados: São Martinho, FS Bioenergia y expansión de saneamiento."
+        },
+        "2020": {
+          "headline": "12 proyectos entregados durante la pandemia"
+        },
+        "2021": {
+          "headline": "UFV Belmonte 300 MW + 20 proyectos — entrada definitiva en solar",
+          "highlight": "Mayor proyecto solar ejecutado hasta entonces, en asociación con Grupo Cobra. São Martinho (4 unidades), Mosaic (3 unidades) y Adimax simultáneos."
+        },
+        "2022": {
+          "headline": "14 proyectos — alimentos, soja y sucro-energético"
+        },
+        "2023": {
+          "headline": "UFV São José do Belmonte 300 MW y biogás industrial"
+        },
+        "2025": {
+          "headline": "UFV Lins I & II — 207 MW en Ceará"
+        },
+        "2026": {
+          "headline": "UFV Lins III–VIII — 230 MW en Piauí — en ejecución",
+          "highlight": "Mayor proyecto solar en curso de Authomathika. Cristino Castro, PI."
+        }
+      },
+      "sectorLabels": {
+        "Sucroenergético": "Sucro-energético",
+        "Energia": "Energía",
+        "Saneamento": "Saneamiento",
+        "Fertilizantes": "Fertilizantes",
+        "Logística": "Logística",
+        "Internacional": "Internacional",
+        "Solar": "Solar",
+        "Alimentos": "Alimentos",
+        "Mineração": "Minería"
+      }
     },
     "clientes": {
       "title": "Clientes",
@@ -2035,12 +2708,12 @@
     },
     "orcamento": {
       "title": "Solicitar Propuesta Técnica",
-      "description": "Solicite una propuesta técnica personalizada para su proyecto de automatización, eléctrica, energías renovables o montaje electromecánico.",
+      "description": "Solicite una propuesta técnica personalizada para su proyecto.",
       "tag": "Pre-propuesta",
-      "pageTitle": "Solicitar Propuesta Técnica",
-      "subtitle": "Complete la información a continuación para recibir una respuesta de nuestra ingeniería comercial con alcance y estimación.",
+      "pageTitle": "Solicitar Propuesta",
+      "subtitle": "Complete la información a continuación para recibir una respuesta de nuestra ingeniería comercial.",
       "breadcrumbContato": "Contacto",
-      "breadcrumbOrcamento": "Propuesta Técnica"
+      "breadcrumbOrcamento": "Solicitar Propuesta"
     }
   },
   "schemas": {

@@ -3,47 +3,41 @@
 import { useEffect, useRef, useState } from "react";
 import type { TimelineEntry } from "@/lib/data/company";
 
-const TYPE_CONFIG: Record<
+const TYPE_STYLE: Record<
   string,
-  { label: string; yearColor: string; dotBg: string; badgeCls: string; lineCls: string }
+  { yearColor: string; dotBg: string; badgeCls: string; lineCls: string }
 > = {
   founding: {
-    label: "Fundação",
     yearColor: "text-zinc-900",
     dotBg: "bg-zinc-900",
     badgeCls: "bg-zinc-900 text-white",
     lineCls: "bg-zinc-900",
   },
   milestone: {
-    label: "Marco",
     yearColor: "text-primary",
     dotBg: "bg-primary",
     badgeCls: "bg-primary text-white",
     lineCls: "bg-primary",
   },
   project: {
-    label: "Projetos",
     yearColor: "text-zinc-700",
     dotBg: "bg-zinc-600",
     badgeCls: "bg-zinc-100 text-zinc-600 border border-zinc-300",
     lineCls: "bg-zinc-400",
   },
   award: {
-    label: "Prêmio",
     yearColor: "text-amber-600",
     dotBg: "bg-amber-500",
     badgeCls: "bg-amber-50 text-amber-700 border border-amber-200",
     lineCls: "bg-amber-400",
   },
   expansion: {
-    label: "Expansão",
     yearColor: "text-blue-600",
     dotBg: "bg-blue-600",
     badgeCls: "bg-blue-50 text-blue-700 border border-blue-200",
     lineCls: "bg-blue-500",
   },
   international: {
-    label: "Internacional",
     yearColor: "text-emerald-600",
     dotBg: "bg-emerald-600",
     badgeCls: "bg-emerald-50 text-emerald-700 border border-emerald-200",
@@ -51,7 +45,19 @@ const TYPE_CONFIG: Record<
   },
 };
 
-export function TimelineAnimated({ items }: { items: TimelineEntry[] }) {
+interface TimelineAnimatedProps {
+  items: TimelineEntry[];
+  typeLabels: Record<string, string>;
+  worksLabel: string;
+  endCapLabel: string;
+}
+
+export function TimelineAnimated({
+  items,
+  typeLabels,
+  worksLabel,
+  endCapLabel,
+}: TimelineAnimatedProps) {
   const [visible, setVisible] = useState<Set<number>>(new Set());
   const refs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -80,7 +86,7 @@ export function TimelineAnimated({ items }: { items: TimelineEntry[] }) {
     <div className="relative">
       {/* Vertical line */}
       <div
-        className="absolute top-0 bottom-0 w-px bg-zinc-200"
+        className="absolute top-0 bottom-0 w-px bg-zinc-200 md:hidden"
         style={{ left: "1.25rem" }}
         aria-hidden="true"
       />
@@ -94,7 +100,8 @@ export function TimelineAnimated({ items }: { items: TimelineEntry[] }) {
         {items.map((item, index) => {
           const isLeft = index % 2 === 0;
           const isVis = visible.has(index);
-          const cfg = TYPE_CONFIG[item.type] ?? TYPE_CONFIG.project;
+          const style = TYPE_STYLE[item.type] ?? TYPE_STYLE.project;
+          const label = typeLabels[item.type] ?? item.type;
           const major = item.isMajor ?? false;
 
           return (
@@ -110,12 +117,12 @@ export function TimelineAnimated({ items }: { items: TimelineEntry[] }) {
                 transition: `opacity 0.55s ease ${(index % 5) * 70}ms, transform 0.55s ease ${(index % 5) * 70}ms`,
               }}
             >
-              {/* ── Dot ── */}
+              {/* ── Dot (mobile only) ── */}
               <div
                 className={`
-                  absolute z-10 flex items-center justify-center rounded-full
+                  absolute z-10 flex md:hidden items-center justify-center rounded-full
                   border-2 border-white shadow
-                  ${cfg.dotBg}
+                  ${style.dotBg}
                   ${major ? "size-10" : "size-7"}
                 `}
                 style={{
@@ -134,7 +141,7 @@ export function TimelineAnimated({ items }: { items: TimelineEntry[] }) {
                 className={`
                   absolute z-10 hidden md:flex items-center justify-center rounded-full
                   border-2 border-white shadow
-                  ${cfg.dotBg}
+                  ${style.dotBg}
                   ${major ? "size-10" : "size-7"}
                 `}
                 style={{
@@ -173,19 +180,19 @@ export function TimelineAnimated({ items }: { items: TimelineEntry[] }) {
                   {/* Badges row */}
                   <div className="flex flex-wrap items-center gap-2 mb-3">
                     <span
-                      className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest ${cfg.badgeCls}`}
+                      className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest ${style.badgeCls}`}
                     >
-                      {cfg.label}
+                      {label}
                     </span>
                     {item.count && item.count > 1 && (
                       <span className="inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-zinc-500">
-                        {item.count} obras
+                        {worksLabel.replace("{count}", String(item.count))}
                       </span>
                     )}
                   </div>
 
                   {/* Year */}
-                  <div className={`font-display text-5xl font-bold leading-none mb-2 ${cfg.yearColor}`}>
+                  <div className={`font-display text-5xl font-bold leading-none mb-2 ${style.yearColor}`}>
                     {item.year}
                   </div>
 
@@ -201,8 +208,8 @@ export function TimelineAnimated({ items }: { items: TimelineEntry[] }) {
                     </p>
                   )}
 
-                  {/* Featured — major: full cards */}
-                  {major && item.featured && item.featured.length > 0 && (
+                  {/* Featured works — card format for all items */}
+                  {item.featured && item.featured.length > 0 && (
                     <div className="mt-4 space-y-2 border-t border-zinc-100 pt-4">
                       {item.featured.map((w, wi) => (
                         <div
@@ -216,20 +223,6 @@ export function TimelineAnimated({ items }: { items: TimelineEntry[] }) {
                             {w.scope}
                           </p>
                         </div>
-                      ))}
-                    </div>
-                  )}
-
-                  {/* Featured — normal: compact chips */}
-                  {!major && item.featured && item.featured.length > 0 && (
-                    <div className="mt-3 flex flex-wrap gap-1.5">
-                      {item.featured.map((w, wi) => (
-                        <span
-                          key={wi}
-                          className="inline-block rounded-lg border border-zinc-200 bg-zinc-50 px-2 py-1 text-[10px] text-zinc-600 leading-tight"
-                        >
-                          {w.client}
-                        </span>
                       ))}
                     </div>
                   )}
@@ -258,7 +251,7 @@ export function TimelineAnimated({ items }: { items: TimelineEntry[] }) {
       <div className="relative ml-10 md:flex md:ml-0 md:justify-center">
         <div className="inline-flex items-center gap-2.5 rounded-full border border-zinc-200 bg-white px-4 py-2 shadow-sm">
           <span className="size-2 rounded-full bg-primary animate-pulse" aria-hidden="true" />
-          <span className="text-xs font-medium text-zinc-500">Em crescimento contínuo</span>
+          <span className="text-xs font-medium text-zinc-500">{endCapLabel}</span>
         </div>
       </div>
     </div>

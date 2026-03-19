@@ -100,7 +100,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             {ta("skipToContent")}
           </a>
           <SiteHeader />
-          <div id="main-content">{children}</div>
+          <main id="main-content">{children}</main>
           <SiteFooter />
           <FloatingCTA />
         </NextIntlClientProvider>

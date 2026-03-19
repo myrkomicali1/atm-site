@@ -17,18 +17,16 @@ function CaseCard({
   const tt = useTranslations("pages.caseDetail.typeLabels");
   const td = useTranslations("caseStudyData");
 
-  return (
-    <Link
-      href={`/cases/${cs.slug}`}
-      className="group overflow-hidden rounded-2xl border border-zinc-200 bg-white transition-all hover:border-primary/20 hover:shadow-lg hover:shadow-zinc-900/6"
-    >
+  const hasDetails = cs.hasDetails !== false;
+  const cardContent = (
+    <>
       <div className="relative aspect-[16/9]">
         <Image
           src={cs.image}
-          alt={td(`${cs.slug}.altText`)}
+          alt={td.raw(`${cs.slug}.altText`) as string ?? cs.altText}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className={`object-cover transition-transform duration-500 ${hasDetails ? "group-hover:scale-105" : ""}`}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/60 to-transparent" />
         <div className="absolute bottom-3 left-3 flex gap-2">
@@ -39,13 +37,13 @@ function CaseCard({
       </div>
       <div className="p-5">
         <h3 className="font-display text-lg font-bold text-zinc-900">
-          {td(`${cs.slug}.title`)}
+          {td.raw(`${cs.slug}.title`) as string ?? cs.title}
         </h3>
         <p className="mt-1 text-xs text-zinc-500">
           {cs.client} — {cs.location}
         </p>
         <p className="mt-2 line-clamp-2 text-sm text-zinc-600">
-          {td(`${cs.slug}.challenge`).split(". ")[0]}.
+          {((td.raw(`${cs.slug}.challenge`) as string) ?? "").split(". ")[0]}.
         </p>
 
         {cs.results.length > 0 ? (
@@ -55,17 +53,36 @@ function CaseCard({
                 key={r.metric}
                 className="rounded-full bg-primary/8 px-2.5 py-0.5 text-[10px] font-semibold text-primary"
               >
-                {td(`${cs.slug}.results.${i}.metric`)}: {td(`${cs.slug}.results.${i}.value`)}
+                {td.raw(`${cs.slug}.results.${i}.metric`) as string}: {td.raw(`${cs.slug}.results.${i}.value`) as string}
               </span>
             ))}
           </div>
         ) : null}
 
-        <div className="mt-4 flex items-center gap-1.5 text-sm font-semibold text-zinc-400 transition-colors group-hover:text-primary">
-          <span>{t("viewFullCase")}</span>
-          <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
-        </div>
+        {hasDetails && (
+          <div className="mt-4 flex items-center gap-1.5 text-sm font-semibold text-zinc-400 transition-colors group-hover:text-primary">
+            <span>{t("viewFullCase")}</span>
+            <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
+          </div>
+        )}
       </div>
+    </>
+  );
+
+  if (!hasDetails) {
+    return (
+      <div className="overflow-hidden rounded-2xl border border-zinc-200 bg-white">
+        {cardContent}
+      </div>
+    );
+  }
+
+  return (
+    <Link
+      href={`/cases/${cs.slug}`}
+      className="group overflow-hidden rounded-2xl border border-zinc-200 bg-white transition-all hover:border-primary/20 hover:shadow-lg hover:shadow-zinc-900/6"
+    >
+      {cardContent}
     </Link>
   );
 }
