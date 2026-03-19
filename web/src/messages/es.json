@@ -58,7 +58,7 @@
   },
   "hero": {
     "tagline": "Ingeniería integradora desde {founded}",
-    "headlineLine1": "Un socio.",
+    "headlineLine1": "Un integrador.",
     "headlineLine2": "Responsabilidad",
     "headlineLine3": "de punta a punta.",
     "description": "Eléctrica, automatización, montaje, EPC e inteligencia de datos — integrados en un único contrato. {years} años de gestión de proyectos industriales en más de 12 sectores. Entrega a tiempo, sin accidentes, sin retrabajo.",
@@ -222,7 +222,7 @@
   },
   "homeFaq": {
     "q1": "¿Qué es una empresa integradora de sistemas?",
-    "a1": "Una integradora de sistemas es una empresa especializada en diseñar, instalar y comisionar soluciones completas de control y monitoreo para plantas industriales. Authomathika actúa como integradora desde 1999, con más de 290.000 puntos de automatización en 180 plantas en Brasil.",
+    "a1": "Una integradora de sistemas es una empresa especializada en diseñar, instalar y comisionar soluciones completas de control y monitoreo para plantas industriales. Authomathika actúa como integradora desde 1999, con más de 296.400 puntos de automatización en 180 plantas en Brasil.",
     "q2": "¿Qué sectores atiende Authomathika?",
     "a2": "Authomathika atiende más de 12 sectores industriales, incluyendo sucroenergético, fertilizantes, saneamiento, minería, alimentos y bebidas, energía solar fotovoltaica, logística, química, siderurgia, papel y celulosa, entre otros.",
     "q3": "¿Cuál es la diferencia entre proyecto greenfield y brownfield?",
@@ -272,18 +272,20 @@
     },
     "eletrica": {
       "name": "Eléctrica",
-      "shortDescription": "26 plantas Greenfield y 73 Brownfield en procesos industriales y comerciales",
+      "shortDescription": "43 plantas Greenfield y 82 Brownfield en procesos industriales y comerciales",
       "description": "La división Eléctrica de Authomathika ofrece soluciones completas para procesos industriales, comerciales, de generación y cogeneración de energía. Desde el proyecto hasta el comisionamiento, nuestro equipo de ingenieros especializados garantiza excelencia técnica y cumplimiento de plazos.",
-      "metric0Value": "26",
+      "metric0Value": "43",
       "metric0Label": "Plantas Greenfield",
-      "metric1Value": "73",
+      "metric1Value": "82",
       "metric1Label": "Plantas Brownfield",
-      "metric2Value": "225",
+      "metric2Value": "245",
       "metric2Label": "CCMs Instalados",
-      "metric3Value": "256",
+      "metric3Value": "281",
       "metric3Label": "QGBTs Instalados",
       "metric4Value": "23",
       "metric4Label": "Centrales Termoeléctricas",
+      "metric5Value": "3",
+      "metric5Label": "Subestaciones",
       "services": {
         "0": "Proyecto y adquisición de materiales",
         "1": "Construcción y montaje eléctrico",
@@ -296,13 +298,13 @@
     },
     "automacao": {
       "name": "Automatización",
-      "shortDescription": "41 plantas Greenfield, 139 Brownfield y 290.000 puntos de automatización",
+      "shortDescription": "49 plantas Greenfield, 144 Brownfield y 296.400 puntos de automatización",
       "description": "La división de Automatización de Authomathika es una de las más completas del sector, actuando en automatización industrial e instrumentación para generación y cogeneración. Desarrollamos software SCADA, programamos PLCs y ejecutamos proyectos de automatización de principio a fin.",
-      "metric0Value": "41",
+      "metric0Value": "49",
       "metric0Label": "Plantas Greenfield",
-      "metric1Value": "139",
+      "metric1Value": "144",
       "metric1Label": "Plantas Brownfield",
-      "metric2Value": "290.000",
+      "metric2Value": "296.400",
       "metric2Label": "Puntos de Automatización",
       "services": {
         "0": "Automatización industrial e instrumentación",
@@ -336,13 +338,13 @@
     },
     "montagem-eletromecanica": {
       "name": "Montaje Electromecánico",
-      "shortDescription": "208 proyectos en 23+ años de experiencia multisectorial",
+      "shortDescription": "251 proyectos en 23+ años de experiencia multisectorial",
       "description": "Con más de 23 años de resultados comprobados, la división de Montaje Electromecánico de Authomathika atiende los más variados segmentos industriales. Desde el montaje de pequeños equipos hasta grandes proyectos industriales, entregamos calidad y seguridad.",
-      "metric0Value": "105",
+      "metric0Value": "126",
       "metric0Label": "Proyectos Pequeño Porte",
-      "metric1Value": "74",
+      "metric1Value": "81",
       "metric1Label": "Proyectos Mediano Porte",
-      "metric2Value": "29",
+      "metric2Value": "44",
       "metric2Label": "Proyectos Gran Porte",
       "services": {
         "0": "Montaje electromecánico industrial",
@@ -395,7 +397,7 @@
       "description": "Desde 1999, Authomathika es referencia en ingeniería para el sector sucroenergético. Actuamos en todas las áreas de la planta — fermentación, destilería, caldera, cogeneración y fábrica de azúcar — con soluciones integradas de automatización, eléctrica y montaje electromecánico. Nuestra experiencia abarca proyectos greenfield completos (turnkey) y revamps de plantas en operación.",
       "metric0Value": "180+",
       "metric0Label": "Plantas industriales atendidas",
-      "metric1Value": "290.000",
+      "metric1Value": "296.400",
       "metric1Label": "Puntos de automatización implantados",
       "metric2Value": "25+",
       "metric2Label": "Años en el sector sucroenergético",
@@ -647,7 +649,7 @@
       "description": "Authomathika atiende el sector de papel y celulosa con soluciones de automatización industrial, ingeniería eléctrica y montaje electromecánico. Con conocimiento en procesos continuos de alta complejidad — desde la digestión y blanqueo hasta la formación y secado — entregamos proyectos que aumentan la eficiencia energética y la confiabilidad operativa de las plantas.",
       "metric0Value": "25+",
       "metric0Label": "Años en procesos continuos",
-      "metric1Value": "290.000",
+      "metric1Value": "296.400",
       "metric1Label": "Puntos de automatización implantados",
       "metric2Value": "NR-10/35",
       "metric2Label": "Equipos certificados",
@@ -707,7 +709,7 @@
         },
         "1": {
           "question": "¿Trabajan con accionamientos de media tensión para molinos?",
-          "answer": "Sí. Authomathika proyecta e instala sistemas eléctricos de media tensión, incluyendo CCMs (Centros de Control de Motores), paneles de arranque y accionamientos para motores de gran porte. Son más de 225 CCMs y 256 QGBTs instalados a lo largo de 25+ años."
+          "answer": "Sí. Authomathika proyecta e instala sistemas eléctricos de media tensión, incluyendo CCMs (Centros de Control de Motores), paneles de arranque y accionamientos para motores de gran porte. Son más de 245 CCMs y 281 QGBTs instalados a lo largo de 25+ años."
         }
       }
     },
@@ -953,7 +955,7 @@
     "automacao": {
       "0": {
         "question": "¿Qué es un integrador de sistemas de automatización industrial?",
-        "answer": "Un integrador de sistemas de automatización industrial es una empresa especializada en diseñar, instalar y comisionar soluciones completas de control y monitoreo de procesos. Authomathika actúa como integradora desde 1999, habiendo implantado más de 290.000 puntos de automatización en 180 plantas industriales en Brasil, trabajando con plataformas como PLCs Rockwell, Siemens, Yokogawa y sistemas SCADA."
+        "answer": "Un integrador de sistemas de automatización industrial es una empresa especializada en diseñar, instalar y comisionar soluciones completas de control y monitoreo de procesos. Authomathika actúa como integradora desde 1999, habiendo implantado más de 296.400 puntos de automatización en 180 plantas industriales en Brasil, trabajando con plataformas como PLCs Rockwell, Siemens, Yokogawa y sistemas SCADA."
       },
       "1": {
         "question": "¿Cuál es la diferencia entre proyecto greenfield y brownfield en automatización?",
@@ -971,7 +973,7 @@
     "eletrica": {
       "0": {
         "question": "¿Qué es ingeniería eléctrica industrial?",
-        "answer": "La ingeniería eléctrica industrial abarca el proyecto, construcción y comisionamiento de sistemas eléctricos para plantas industriales, incluyendo subestaciones, paneles eléctricos (CCMs, QGBTs), sistemas de cogeneración y centrales termoeléctricas. Authomathika ya ejecutó proyectos en 26 plantas greenfield y 73 brownfield, con más de 225 CCMs y 256 QGBTs instalados."
+        "answer": "La ingeniería eléctrica industrial abarca el proyecto, construcción y comisionamiento de sistemas eléctricos para plantas industriales, incluyendo subestaciones, paneles eléctricos (CCMs, QGBTs), sistemas de cogeneración y centrales termoeléctricas. Authomathika ya ejecutó proyectos en 43 plantas greenfield y 82 brownfield, con más de 245 CCMs y 281 QGBTs instalados."
       },
       "1": {
         "question": "¿Cuál es la diferencia entre CCM y QGBT?",
@@ -1316,8 +1318,8 @@
     "slv-1a": {
       "name": "SLV-1A",
       "shortDescription": "Medidor de Nivel del Chute Donnelly Inteligente",
-      "description": "El SLV-1A es un medidor de nivel del chute Donnelly inteligente, desarrollado por Authomathika para el sector sucroenergético. Con más de 2.650 puntos instalados, es referencia en confiabilidad y precisión para plantas de azúcar y etanol.",
-      "badge": "2.650+ instalaciones",
+      "description": "El SLV-1A es un medidor de nivel del chute Donnelly inteligente, desarrollado por Authomathika para el sector sucroenergético. Con más de 2.685 puntos instalados en el mundo, es referencia en confiabilidad y precisión para plantas de azúcar y etanol.",
+      "badge": "2.685+ instalaciones",
       "features": {
         "0": "Medición continua y precisa del nivel del chute",
         "1": "Tecnología ultrasónica avanzada",
@@ -1327,7 +1329,7 @@
         "5": "Fácil instalación y mantenimiento"
       },
       "specs": {
-        "Puntos Instalados": { "label": "Puntos Instalados", "value": "2.650+" },
+        "Puntos Instalados": { "label": "Puntos Instalados", "value": "2.685+" },
         "Señal de Salida": { "label": "Señal de Salida", "value": "4-20 mA / HART" },
         "Grado de Protección": { "label": "Grado de Protección", "value": "IP65" },
         "Alimentación": { "label": "Alimentación", "value": "24 VDC" }

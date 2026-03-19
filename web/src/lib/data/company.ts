@@ -28,14 +28,14 @@ export const company = {
 
 export const stats = [
   {
-    value: "42.027",
-    label: "Equipamentos Atendidos",
+    value: "251",
+    label: "Projetos de Montagem",
     suffix: "",
   },
   {
-    value: "297.000",
-    label: "Horas de Serviço",
-    suffix: "+",
+    value: "380K+",
+    label: "Pontos de Controle",
+    suffix: "",
   },
   {
     value: "336",
@@ -48,13 +48,23 @@ export const stats = [
     suffix: "+",
   },
   {
-    value: "1.630",
-    label: "Atendimentos Técnicos",
+    value: "43",
+    label: "Plantas Greenfield Elétrica",
     suffix: "",
   },
   {
-    value: "208",
-    label: "Projetos de Montagem",
+    value: "49",
+    label: "Plantas Greenfield Automação",
+    suffix: "",
+  },
+  {
+    value: "5",
+    label: "Países com Projetos",
+    suffix: "",
+  },
+  {
+    value: "580",
+    label: "Funcionários/Ano",
     suffix: "",
   },
 ];
@@ -86,19 +96,260 @@ export const visionPillars = [
   },
 ];
 
-export const timeline = [
-  { year: 1999, event: "Fundação da Authomathika em Sertãozinho, SP" },
-  { year: 2002, event: "Início das operações de automação industrial de grande porte" },
-  { year: 2005, event: "Certificação ISO 9001 obtida" },
-  { year: 2008, event: "Expansão para o setor de montagem eletromecânica" },
-  { year: 2010, event: "Lançamento da linha de produtos próprios (SLV-1A, AUTH 300)" },
-  { year: 2012, event: "Parceria estratégica com TOMSA DESTIL (Espanha)" },
-  { year: 2015, event: "Início da divisão de Energias Renováveis" },
-  { year: 2016, event: "Prêmio Excelência de Fornecedores Entressafra 2016/2017" },
-  { year: 2018, event: "Participação na Fenasucro & Agrocana 2018" },
-  { year: 2019, event: "2.000 dias sem acidentes de trabalho" },
-  { year: 2021, event: "336 MW de energia solar instalados — 7 parques" },
-  { year: 2022, event: "Mais de duas décadas consolidando presença no setor sucroenergético e industrial" },
+export type TimelineType =
+  | "founding"
+  | "milestone"
+  | "project"
+  | "award"
+  | "expansion"
+  | "international";
+
+export interface TimelineWork {
+  client: string;
+  scope: string;
+  sector?: string;
+}
+
+export interface TimelineEntry {
+  year: number;
+  type: TimelineType;
+  headline: string;
+  highlight?: string;
+  count?: number;
+  sectors?: string[];
+  featured?: TimelineWork[];
+  isMajor?: boolean;
+}
+
+export const timeline: TimelineEntry[] = [
+  {
+    year: 1999,
+    type: "founding",
+    headline: "Fundação da Authomathika em Sertãozinho, SP",
+    highlight: "Início das operações como integradora de sistemas elétricos e automação industrial",
+    count: 2,
+    sectors: ["Sucroenergético"],
+  },
+  {
+    year: 2003,
+    type: "project",
+    headline: "Expansão para termelétricas e cogeração de energia",
+    highlight: "Primeiros projetos de automação completa em plantas de cogeração",
+    count: 6,
+    sectors: ["Sucroenergético", "Energia"],
+  },
+  {
+    year: 2005,
+    type: "milestone",
+    headline: "Certificação ISO 9001 obtida",
+    highlight: "Sistema de gestão da qualidade implementado em todos os processos",
+    count: 8,
+    sectors: ["Sucroenergético", "Saneamento", "Fertilizantes"],
+  },
+  {
+    year: 2008,
+    type: "project",
+    headline: "Três grandes greenfields sucroenergéticos simultâneos",
+    count: 5,
+    sectors: ["Sucroenergético"],
+    featured: [
+      { client: "São Martinho — Boa Vista", scope: "Automação termoelétrica e etanol — 4.500 pontos" },
+      { client: "Da Mata", scope: "Automação etanol e levedura — 2.000 pontos" },
+      { client: "Ipê", scope: "Automação etanol — 1.800 pontos" },
+    ],
+  },
+  {
+    year: 2009,
+    type: "project",
+    headline: "Grandes plantas de cogeração no Centro-Oeste",
+    count: 4,
+    sectors: ["Sucroenergético", "Energia"],
+    featured: [
+      { client: "Rio Claro", scope: "Automação termoelétrica e etanol — 4.500 pontos" },
+      { client: "Santa Luzia", scope: "Automação e cogeração — 4.500 pontos" },
+    ],
+  },
+  {
+    year: 2011,
+    type: "project",
+    headline: "Quatro projetos simultâneos — expansão multissetorial",
+    count: 7,
+    sectors: ["Sucroenergético", "Saneamento"],
+    featured: [
+      { client: "Água Emendada", scope: "Automação termoelétrica e etanol — 3.800 pontos" },
+      { client: "Alto Taquari", scope: "Automação termoelétrica e etanol — 3.800 pontos" },
+      { client: "Conquista do Pontal", scope: "Automação cogeração — 1.300 pontos" },
+      { client: "GS Inima — ETE Caiçara", scope: "Automação e elétrica — 1.100 pontos" },
+    ],
+  },
+  {
+    year: 2012,
+    type: "award",
+    headline: "Prêmio Excelência de Fornecedores e expansão fertilizantes",
+    count: 6,
+    sectors: ["Sucroenergético", "Saneamento", "Fertilizantes"],
+    featured: [
+      { client: "SESAMM", scope: "ETE Mogi Mirim — automação, civil e elétrica — 1.500 pontos" },
+      { client: "Mosaic Fertilizantes", scope: "Área U-830 dosagem microgranulado — 520 pontos" },
+    ],
+  },
+  {
+    year: 2013,
+    type: "expansion",
+    headline: "Entrada no setor de logística — etanoldutos LOGUM",
+    count: 8,
+    sectors: ["Logística", "Fertilizantes"],
+    featured: [
+      { client: "LOGUM — Ribeirão Preto", scope: "Automação terminal etanol — 7.300 pontos" },
+      { client: "LOGUM — Etanolduto", scope: "Automação, elétrica e civil greenfield — 1.000 pontos" },
+    ],
+  },
+  {
+    year: 2014,
+    type: "international",
+    headline: "Primeiro projeto internacional — Angola + recorde de 18 obras",
+    highlight: "Maior volume de projetos simultâneos até então: Vale Fertilizantes (3 plantas), Biocom Angola e expansão logística.",
+    count: 18,
+    isMajor: true,
+    sectors: ["Fertilizantes", "Sucroenergético", "Logística", "Internacional"],
+    featured: [
+      { client: "Biocom — Angola", scope: "Automação greenfield turnkey completo — 6.000 pontos", sector: "Internacional" },
+      { client: "Vale Fertilizantes", scope: "3 plantas simultâneas: U-280, U-260 e U-170 — 8.490 pontos", sector: "Fertilizantes" },
+      { client: "LOGUM Uberaba", scope: "Terminal de recebimento e armazenamento — 8.500 pontos", sector: "Logística" },
+      { client: "Santa Isabel I", scope: "Automação açúcar e etanol — 1.100 pontos", sector: "Sucroenergético" },
+    ],
+  },
+  {
+    year: 2015,
+    type: "expansion",
+    headline: "Início da divisão de Energias Renováveis — 14 projetos entregues",
+    highlight: "Primeiro projeto solar fotovoltaico. Expansão simultânea em saneamento, logística e energia.",
+    count: 14,
+    sectors: ["Sucroenergético", "Saneamento", "Logística", "Energia"],
+    featured: [
+      { client: "Costa Rica", scope: "Automação termoelétrica e etanol — 3.800 pontos" },
+      { client: "SANEVAP — São José dos Campos", scope: "ETE automação e elétrica — 5.000 pontos" },
+      { client: "Floraplac", scope: "Automação termoelétrica 20 MWt — 1.000 pontos" },
+    ],
+  },
+  {
+    year: 2016,
+    type: "project",
+    headline: "Termoelétrica 15 MW, ETE e expansão do ciclo Bunge",
+    count: 12,
+    sectors: ["Sucroenergético", "Saneamento", "Fertilizantes"],
+  },
+  {
+    year: 2017,
+    type: "international",
+    headline: "Operação no Panamá — segundo país atendido",
+    count: 16,
+    sectors: ["Sucroenergético", "Fertilizantes", "Internacional"],
+    featured: [
+      { client: "Cadasa — Panamá", scope: "Automação e elétrica termoelétrica 40 MVA + eletrificação de moenda", sector: "Internacional" },
+      { client: "Mosaic / Vale — CMA e CIU", scope: "Instrumentação e válvulas — paradas programadas", sector: "Fertilizantes" },
+    ],
+  },
+  {
+    year: 2018,
+    type: "project",
+    headline: "Recorde histórico — 20 obras simultâneas",
+    highlight: "Maior volume de operações da história da empresa. Bunge (3 unidades), São Martinho, Mosaic e primeiros projetos EPC de grande porte.",
+    count: 20,
+    isMajor: true,
+    sectors: ["Sucroenergético", "Fertilizantes", "Saneamento", "Alimentos"],
+    featured: [
+      { client: "Bunge Moema / Itatinge / Fruto", scope: "Revamp completo automação — 3 unidades simultâneas" },
+      { client: "ISAPA", scope: "Projeto EPC — ampliação completa" },
+      { client: "Sada Bioenergia", scope: "Fábrica de açúcar completa — 1.500 pontos" },
+      { client: "Aroeira / Caldema", scope: "Automação e elétrica de caldeira" },
+    ],
+  },
+  {
+    year: 2019,
+    type: "milestone",
+    headline: "2.000 dias sem acidentes — marco de segurança operacional",
+    highlight: "Marco histórico de segurança consolidado. 18 projetos entregues: São Martinho, FS Bioenergia e expansão de saneamento.",
+    count: 18,
+    isMajor: true,
+    sectors: ["Sucroenergético", "Saneamento", "Fertilizantes"],
+    featured: [
+      { client: "São Martinho — Iracema (×2)", scope: "Fermentação e Mix Etanol" },
+      { client: "FS Bioenergia (×2)", scope: "Lins e Sorriso" },
+      { client: "GRASP", scope: "Secador de levedura" },
+      { client: "GS Inima Samar", scope: "ETA I e II — Araçatuba" },
+    ],
+  },
+  {
+    year: 2020,
+    type: "project",
+    headline: "12 projetos entregues durante a pandemia",
+    count: 12,
+    sectors: ["Sucroenergético", "Energia", "Alimentos"],
+    featured: [
+      { client: "Jalles Machado", scope: "Moenda + tratamento de caldo + CDA + destilaria — 1.200 pontos" },
+      { client: "Vale do Paraná — UTE VDPA", scope: "Automação e instrumentação caldeira — 1.200 pontos" },
+      { client: "Cerradinho Bio", scope: "Automação fermentação e montagem de campo — 800 pontos" },
+    ],
+  },
+  {
+    year: 2021,
+    type: "project",
+    headline: "UFV Belmonte 300 MW + 20 projetos — entrada definitiva no solar",
+    highlight: "Maior projeto solar executado até então, em parceria com o Grupo Cobra. São Martinho (4 unidades), Mosaic (3 unidades) e Adimax simultâneos.",
+    count: 20,
+    isMajor: true,
+    sectors: ["Solar", "Sucroenergético", "Fertilizantes", "Alimentos"],
+    featured: [
+      { client: "UFV Belmonte I & II — Grupo Cobra", scope: "Montagem eletro-civil 300 MW — São José do Belmonte, PE", sector: "Solar" },
+      { client: "São Martinho (×4)", scope: "Iracema, Santa Cruz, Pradópolis e Boa Vista" },
+      { client: "Mosaic / Vale (×3)", scope: "Campo Grande e Uberlândia" },
+      { client: "Adimax — Feira de Santana", scope: "Planta greenfield alimentos — 1.000 pontos" },
+    ],
+  },
+  {
+    year: 2022,
+    type: "project",
+    headline: "14 projetos — alimentos, soja e sucroenergético",
+    count: 14,
+    sectors: ["Sucroenergético", "Alimentos", "Fertilizantes"],
+    featured: [
+      { client: "Serra Verde — Boa Vista, RR", scope: "Planta greenfield extração e refino de óleo de soja — 800 pontos" },
+    ],
+  },
+  {
+    year: 2023,
+    type: "expansion",
+    headline: "UFV São José do Belmonte 300 MW e biogás industrial",
+    count: 8,
+    sectors: ["Solar", "Alimentos", "Fertilizantes"],
+    featured: [
+      { client: "Grupo Cobra — UFV São José do Belmonte I & II", scope: "Montagem eletro-civil 300 MW — Pernambuco", sector: "Solar" },
+      { client: "Combio / Ingredion", scope: "Elétrica e automação — biogás industrial — 1.500 pontos" },
+    ],
+  },
+  {
+    year: 2025,
+    type: "expansion",
+    headline: "UFV Lins I & II — 207 MW no Ceará",
+    count: 4,
+    sectors: ["Solar"],
+    featured: [
+      { client: "Grupo Cobra — UFV Mundo Novo Lins I & II", scope: "Montagem eletromecânica 207 MW — São Gonçalo do Amarante, CE" },
+    ],
+  },
+  {
+    year: 2026,
+    type: "expansion",
+    headline: "UFV Lins III–VIII — 230 MW no Piauí — em execução",
+    highlight: "Maior projeto solar em andamento da Authomathika. Cristino Castro, PI.",
+    count: 1,
+    sectors: ["Solar"],
+    isMajor: true,
+    featured: [
+      { client: "Grupo Cobra — UFV Lins III–VIII", scope: "Montagem eletromecânica 230 MW — Cristino Castro, PI" },
+    ],
+  },
 ];
 
 export const sectors = [

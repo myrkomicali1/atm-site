@@ -72,7 +72,7 @@ export const sectors: Sector[] = [
     ],
     metrics: [
       { value: "180+", label: "Plantas industriais atendidas" },
-      { value: "290.000", label: "Pontos de automação implantados" },
+      { value: "296.400", label: "Pontos de automação implantados" },
       { value: "25+", label: "Anos no setor sucroenergético" },
       { value: "8", label: "Projetos turnkey entregues" },
     ],
@@ -440,7 +440,7 @@ export const sectors: Sector[] = [
     clients: [],
     metrics: [
       { value: "25+", label: "Anos em processos contínuos" },
-      { value: "290.000", label: "Pontos de automação implantados" },
+      { value: "296.400", label: "Pontos de automação implantados" },
       { value: "NR-10/35", label: "Equipes certificadas" },
     ],
     faq: [

@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/accordion";
 import { Container, Eyebrow, Section } from "@/components/site/primitives";
 import { cn } from "@/lib/utils";
-import { useTranslations } from "next-intl";
 
 export interface FAQSectionItem {
   question: string;
@@ -38,8 +37,7 @@ export function FAQSection({
   standalone = true,
   className,
 }: FAQSectionProps) {
-  const t = useTranslations("faqSection");
-  const resolvedTitle = title ?? t("defaultTitle");
+  const resolvedTitle = title ?? "Perguntas frequentes";
 
   if (items.length === 0) return null;
 

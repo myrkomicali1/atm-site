@@ -58,7 +58,7 @@
   },
   "hero": {
     "tagline": "Systems integration engineering since {founded}",
-    "headlineLine1": "One partner.",
+    "headlineLine1": "One integrator.",
     "headlineLine2": "End-to-end",
     "headlineLine3": "responsibility.",
     "description": "Electrical, automation, assembly, EPC and data intelligence — integrated into a single contract. {years} years managing industrial projects across 12+ sectors. On-time delivery, zero accidents, zero rework.",
@@ -222,7 +222,7 @@
   },
   "homeFaq": {
     "q1": "What is a systems integration company?",
-    "a1": "A systems integrator is a company specialized in designing, installing, and commissioning complete control and monitoring solutions for industrial plants. Authomathika has been operating as an integrator since 1999, with over 290,000 automation points across 180 plants in Brazil.",
+    "a1": "A systems integrator is a company specialized in designing, installing, and commissioning complete control and monitoring solutions for industrial plants. Authomathika has been operating as an integrator since 1999, with over 296,400 automation points across 180 plants in Brazil.",
     "q2": "Which industries does Authomathika serve?",
     "a2": "Authomathika serves more than 12 industrial sectors, including sugar and ethanol, fertilizers, sanitation, mining, food and beverage, solar photovoltaic energy, logistics, chemicals, steel, pulp and paper, among others.",
     "q3": "What is the difference between greenfield and brownfield projects?",
@@ -272,18 +272,20 @@
     },
     "eletrica": {
       "name": "Electrical",
-      "shortDescription": "26 Greenfield and 73 Brownfield plants in industrial and commercial processes",
+      "shortDescription": "43 Greenfield and 82 Brownfield plants in industrial and commercial processes",
       "description": "Authomathika's Electrical division offers complete solutions for industrial processes, commercial buildings, power generation and cogeneration. From design through commissioning, our team of specialized engineers ensures technical excellence and on-time delivery.",
-      "metric0Value": "26",
+      "metric0Value": "43",
       "metric0Label": "Greenfield Plants",
-      "metric1Value": "73",
+      "metric1Value": "82",
       "metric1Label": "Brownfield Plants",
-      "metric2Value": "225",
+      "metric2Value": "245",
       "metric2Label": "MCCs Installed",
-      "metric3Value": "256",
+      "metric3Value": "281",
       "metric3Label": "LV Switchboards Installed",
       "metric4Value": "23",
       "metric4Label": "Thermoelectric Power Plants",
+      "metric5Value": "3",
+      "metric5Label": "Substations",
       "services": {
         "0": "Design and material procurement",
         "1": "Electrical construction and assembly",
@@ -296,13 +298,13 @@
     },
     "automacao": {
       "name": "Automation",
-      "shortDescription": "41 Greenfield, 139 Brownfield plants and 290,000 automation points",
+      "shortDescription": "49 Greenfield, 144 Brownfield plants and 296,400 automation points",
       "description": "Authomathika's Automation division is one of the most comprehensive in the industry, working with industrial automation and instrumentation for power generation and cogeneration. We develop SCADA software, program PLCs and execute automation projects from start to finish.",
-      "metric0Value": "41",
+      "metric0Value": "49",
       "metric0Label": "Greenfield Plants",
-      "metric1Value": "139",
+      "metric1Value": "144",
       "metric1Label": "Brownfield Plants",
-      "metric2Value": "290,000",
+      "metric2Value": "296,400",
       "metric2Label": "Automation Points",
       "services": {
         "0": "Industrial automation and instrumentation",
@@ -336,13 +338,13 @@
     },
     "montagem-eletromecanica": {
       "name": "Electromechanical Assembly",
-      "shortDescription": "208 projects in 23+ years of multi-sector experience",
+      "shortDescription": "251 projects in 23+ years of multi-sector experience",
       "description": "With over 23 years of proven results, Authomathika's Electromechanical Assembly division serves a wide range of industrial segments. From small equipment installations to large-scale industrial projects, we deliver quality and safety.",
-      "metric0Value": "105",
+      "metric0Value": "126",
       "metric0Label": "Small-Scale Projects",
-      "metric1Value": "74",
+      "metric1Value": "81",
       "metric1Label": "Medium-Scale Projects",
-      "metric2Value": "29",
+      "metric2Value": "44",
       "metric2Label": "Large-Scale Projects",
       "services": {
         "0": "Industrial electromechanical assembly",
@@ -446,7 +448,7 @@
         }
       },
       "metric1Label": "Automation points deployed",
-      "metric1Value": "290.000",
+      "metric1Value": "296.400",
       "metric2Label": "Years in the sugar-energy sector",
       "metric2Value": "25+",
       "metric3Label": "Turnkey projects delivered",
@@ -759,7 +761,7 @@
         }
       },
       "metric1Label": "Automation points deployed",
-      "metric1Value": "290.000",
+      "metric1Value": "296.400",
       "metric2Label": "Certified teams",
       "metric2Value": "NR-10/35"
     },
@@ -1109,7 +1111,7 @@
     "automacao": {
       "0": {
         "question": "What is an industrial automation systems integrator?",
-        "answer": "An industrial automation systems integrator is a company specialized in designing, installing and commissioning complete process control and monitoring solutions. Authomathika has been operating as an integrator since 1999, having deployed over 290,000 automation points across 180 industrial plants in Brazil, working with platforms such as Rockwell PLCs, Siemens, Yokogawa and SCADA systems."
+        "answer": "An industrial automation systems integrator is a company specialized in designing, installing and commissioning complete process control and monitoring solutions. Authomathika has been operating as an integrator since 1999, having deployed over 296,400 automation points across 180 industrial plants in Brazil, working with platforms such as Rockwell PLCs, Siemens, Yokogawa and SCADA systems."
       },
       "1": {
         "question": "What is the difference between greenfield and brownfield automation projects?",
@@ -1594,8 +1596,8 @@
     "slv-1a": {
       "name": "SLV-1A",
       "shortDescription": "Intelligent Donnelly Chute Level Meter",
-      "description": "The SLV-1A is an intelligent Donnelly chute level meter developed by Authomathika for the sugar-energy sector. With over 2,650 installed units, it is a reference in reliability and precision for sugar and ethanol plants.",
-      "badge": "2,650+ installations",
+      "description": "The SLV-1A is an intelligent Donnelly chute level meter developed by Authomathika for the sugar-energy sector. With over 2,685 installed units worldwide, it is a reference in reliability and precision for sugar and ethanol plants.",
+      "badge": "2,685+ installations",
       "features": {
         "0": "Continuous and precise chute level measurement",
         "1": "Advanced ultrasonic technology",
@@ -1607,7 +1609,7 @@
       "specs": {
         "pontosInstalados": {
           "label": "Installed Units",
-          "value": "2,650+"
+          "value": "2,685+"
         },
         "sinalDeSaida": {
           "label": "Output Signal",

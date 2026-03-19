@@ -14,7 +14,7 @@ export const businessFaqs: Record<string, FAQ[]> = {
     {
       question: "O que é um integrador de sistemas de automação industrial?",
       answer:
-        "Um integrador de sistemas de automação industrial é uma empresa especializada em projetar, instalar e comissionar soluções completas de controle e monitoramento de processos. A Authomathika atua como integradora desde 1999, tendo implantado mais de 290.000 pontos de automação em 180 plantas industriais no Brasil, trabalhando com plataformas como CLPs Rockwell, Siemens, Yokogawa e sistemas SCADA.",
+        "Um integrador de sistemas de automação industrial é uma empresa especializada em projetar, instalar e comissionar soluções completas de controle e monitoramento de processos. A Authomathika atua como integradora desde 1999, tendo implantado mais de 296.400 pontos de automação em 180 plantas industriais no Brasil, trabalhando com plataformas como CLPs Rockwell, Siemens, Yokogawa e sistemas SCADA.",
     },
     {
       question: "Qual a diferença entre projeto greenfield e brownfield em automação?",

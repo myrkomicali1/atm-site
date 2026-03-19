@@ -1,100 +1,266 @@
 "use client";
 
-import { useEffect, useRef, useState, useCallback } from "react";
+import { useEffect, useRef, useState } from "react";
+import type { TimelineEntry } from "@/lib/data/company";
 
-interface TimelineItem {
-  year: number;
-  event: string;
-}
+const TYPE_CONFIG: Record<
+  string,
+  { label: string; yearColor: string; dotBg: string; badgeCls: string; lineCls: string }
+> = {
+  founding: {
+    label: "Fundação",
+    yearColor: "text-zinc-900",
+    dotBg: "bg-zinc-900",
+    badgeCls: "bg-zinc-900 text-white",
+    lineCls: "bg-zinc-900",
+  },
+  milestone: {
+    label: "Marco",
+    yearColor: "text-primary",
+    dotBg: "bg-primary",
+    badgeCls: "bg-primary text-white",
+    lineCls: "bg-primary",
+  },
+  project: {
+    label: "Projetos",
+    yearColor: "text-zinc-700",
+    dotBg: "bg-zinc-600",
+    badgeCls: "bg-zinc-100 text-zinc-600 border border-zinc-300",
+    lineCls: "bg-zinc-400",
+  },
+  award: {
+    label: "Prêmio",
+    yearColor: "text-amber-600",
+    dotBg: "bg-amber-500",
+    badgeCls: "bg-amber-50 text-amber-700 border border-amber-200",
+    lineCls: "bg-amber-400",
+  },
+  expansion: {
+    label: "Expansão",
+    yearColor: "text-blue-600",
+    dotBg: "bg-blue-600",
+    badgeCls: "bg-blue-50 text-blue-700 border border-blue-200",
+    lineCls: "bg-blue-500",
+  },
+  international: {
+    label: "Internacional",
+    yearColor: "text-emerald-600",
+    dotBg: "bg-emerald-600",
+    badgeCls: "bg-emerald-50 text-emerald-700 border border-emerald-200",
+    lineCls: "bg-emerald-500",
+  },
+};
 
-export function TimelineAnimated({ items }: { items: TimelineItem[] }) {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [fillHeight, setFillHeight] = useState(0);
-  const [activeItems, setActiveItems] = useState<Set<number>>(new Set());
-
-  const handleScroll = useCallback(() => {
-    const container = containerRef.current;
-    if (!container) return;
-
-    const rect = container.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-    const triggerPoint = windowHeight * 0.7;
-    const scrolled = triggerPoint - rect.top;
-    const progress = Math.max(0, Math.min(1, scrolled / rect.height));
-
-    setFillHeight(progress * 100);
-
-    // Determine which items the fill bar has reached
-    const articles = container.querySelectorAll<HTMLElement>("article");
-    const newActive = new Set<number>();
-
-    articles.forEach((article) => {
-      const index = Number(article.dataset.index);
-      const dot = article.querySelector<HTMLElement>("[data-dot]");
-      if (!dot) return;
-
-      const dotRect = dot.getBoundingClientRect();
-      const dotCenter = dotRect.top + dotRect.height / 2;
-
-      // Dot is active if the scroll trigger point has passed it
-      if (dotCenter <= triggerPoint) {
-        newActive.add(index);
-      }
-    });
-
-    setActiveItems(newActive);
-  }, []);
+export function TimelineAnimated({ items }: { items: TimelineEntry[] }) {
+  const [visible, setVisible] = useState<Set<number>>(new Set());
+  const refs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [handleScroll]);
+    const observers: IntersectionObserver[] = [];
+
+    refs.current.forEach((el, i) => {
+      if (!el) return;
+      const obs = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setVisible((prev) => new Set([...prev, i]));
+            obs.disconnect();
+          }
+        },
+        { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+      );
+      obs.observe(el);
+      observers.push(obs);
+    });
+
+    return () => observers.forEach((o) => o.disconnect());
+  }, []);
 
   return (
-    <div ref={containerRef} className="relative ml-2 pl-8">
-      {/* Background track */}
-      <div className="absolute left-0 top-0 h-full w-0.5 bg-zinc-200" />
-
-      {/* Animated fill */}
+    <div className="relative">
+      {/* Vertical line */}
       <div
-        className="absolute left-0 top-0 w-0.5 bg-primary transition-[height] duration-100 ease-out"
-        style={{ height: `${fillHeight}%` }}
+        className="absolute top-0 bottom-0 w-px bg-zinc-200"
+        style={{ left: "1.25rem" }}
+        aria-hidden="true"
+      />
+      <div
+        className="absolute top-0 bottom-0 w-px hidden md:block bg-zinc-200"
+        style={{ left: "50%", transform: "translateX(-50%)" }}
+        aria-hidden="true"
       />
 
-      {items.map((item, index) => (
-        <article
-          key={`${item.year}-${item.event}`}
-          data-index={index}
-          className="relative mb-8 rounded-2xl border border-zinc-200 bg-white p-5 transition-all duration-500 ease-out"
-          style={{
-            opacity: activeItems.has(index) ? 1 : 0.3,
-            transform: activeItems.has(index)
-              ? "translateY(0)"
-              : "translateY(12px)",
-          }}
-        >
-          {/* Dot */}
-          <span
-            data-dot
-            className="absolute -left-[41px] top-6 size-4 rounded-full border-2 transition-all duration-300"
-            style={{
-              borderColor: activeItems.has(index)
-                ? "var(--primary)"
-                : "color-mix(in oklch, var(--primary) 25%, white)",
-              backgroundColor: activeItems.has(index)
-                ? "var(--primary)"
-                : "color-mix(in oklch, var(--primary) 15%, white)",
-              transform: activeItems.has(index) ? "scale(1)" : "scale(0.6)",
-            }}
-          />
+      <div className="space-y-0">
+        {items.map((item, index) => {
+          const isLeft = index % 2 === 0;
+          const isVis = visible.has(index);
+          const cfg = TYPE_CONFIG[item.type] ?? TYPE_CONFIG.project;
+          const major = item.isMajor ?? false;
 
-          <div className="font-display text-3xl font-bold text-primary">
-            {item.year}
-          </div>
-          <p className="mt-1 text-sm text-zinc-600">{item.event}</p>
-        </article>
-      ))}
+          return (
+            <div
+              key={item.year}
+              ref={(el) => { refs.current[index] = el; }}
+              className={`relative flex pb-12 md:pb-16 ${isLeft ? "md:flex-row" : "md:flex-row-reverse"}`}
+              style={{
+                opacity: isVis ? 1 : 0,
+                transform: isVis
+                  ? "none"
+                  : `translateY(20px) translateX(${isLeft ? "-" : ""}12px)`,
+                transition: `opacity 0.55s ease ${(index % 5) * 70}ms, transform 0.55s ease ${(index % 5) * 70}ms`,
+              }}
+            >
+              {/* ── Dot ── */}
+              <div
+                className={`
+                  absolute z-10 flex items-center justify-center rounded-full
+                  border-2 border-white shadow
+                  ${cfg.dotBg}
+                  ${major ? "size-10" : "size-7"}
+                `}
+                style={{
+                  left: "calc(1.25rem - " + (major ? "1.25rem" : "0.875rem") + ")",
+                  top: "1.5rem",
+                  ["--tw-shadow" as string]: "0 1px 6px rgba(0,0,0,0.15)",
+                }}
+                aria-hidden="true"
+              >
+                {major && (
+                  <div className="size-3 rounded-full bg-white/80" />
+                )}
+              </div>
+              {/* Desktop dot */}
+              <div
+                className={`
+                  absolute z-10 hidden md:flex items-center justify-center rounded-full
+                  border-2 border-white shadow
+                  ${cfg.dotBg}
+                  ${major ? "size-10" : "size-7"}
+                `}
+                style={{
+                  left: "50%",
+                  top: "1.5rem",
+                  transform: "translateX(-50%)",
+                }}
+                aria-hidden="true"
+              >
+                {major && (
+                  <div className="size-3 rounded-full bg-white/80" />
+                )}
+              </div>
+
+              {/* ── Card ── */}
+              <div
+                className={`
+                  ml-12 flex-1
+                  md:ml-0
+                  md:w-[calc(50%-3rem)]
+                  md:max-w-[calc(50%-3rem)]
+                  md:flex-none
+                  ${isLeft ? "md:mr-[calc(50%+3rem)]" : "md:ml-[calc(50%+3rem)]"}
+                `}
+              >
+                <div
+                  className={`
+                    rounded-2xl border bg-white p-5 md:p-6
+                    transition-shadow hover:shadow-md
+                    ${major
+                      ? "border-zinc-300 shadow-sm ring-1 ring-zinc-100"
+                      : "border-zinc-200 shadow-xs"
+                    }
+                  `}
+                >
+                  {/* Badges row */}
+                  <div className="flex flex-wrap items-center gap-2 mb-3">
+                    <span
+                      className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest ${cfg.badgeCls}`}
+                    >
+                      {cfg.label}
+                    </span>
+                    {item.count && item.count > 1 && (
+                      <span className="inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-zinc-500">
+                        {item.count} obras
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Year */}
+                  <div className={`font-display text-5xl font-bold leading-none mb-2 ${cfg.yearColor}`}>
+                    {item.year}
+                  </div>
+
+                  {/* Headline */}
+                  <h3 className="text-sm font-semibold leading-snug text-zinc-800">
+                    {item.headline}
+                  </h3>
+
+                  {/* Highlight */}
+                  {item.highlight && (
+                    <p className="mt-2 text-xs leading-relaxed text-zinc-500">
+                      {item.highlight}
+                    </p>
+                  )}
+
+                  {/* Featured — major: full cards */}
+                  {major && item.featured && item.featured.length > 0 && (
+                    <div className="mt-4 space-y-2 border-t border-zinc-100 pt-4">
+                      {item.featured.map((w, wi) => (
+                        <div
+                          key={wi}
+                          className="rounded-xl bg-zinc-50 px-3 py-2"
+                        >
+                          <p className="text-xs font-semibold text-zinc-800 leading-tight">
+                            {w.client}
+                          </p>
+                          <p className="text-[11px] text-zinc-500 mt-0.5 leading-tight">
+                            {w.scope}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Featured — normal: compact chips */}
+                  {!major && item.featured && item.featured.length > 0 && (
+                    <div className="mt-3 flex flex-wrap gap-1.5">
+                      {item.featured.map((w, wi) => (
+                        <span
+                          key={wi}
+                          className="inline-block rounded-lg border border-zinc-200 bg-zinc-50 px-2 py-1 text-[10px] text-zinc-600 leading-tight"
+                        >
+                          {w.client}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Sector tags */}
+                  {item.sectors && item.sectors.length > 0 && (
+                    <div className="mt-3 flex flex-wrap gap-1">
+                      {item.sectors.map((s) => (
+                        <span
+                          key={s}
+                          className="inline-block rounded-md bg-zinc-100 px-1.5 py-0.5 text-[10px] uppercase tracking-wide text-zinc-400"
+                        >
+                          {s}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* End cap */}
+      <div className="relative ml-10 md:flex md:ml-0 md:justify-center">
+        <div className="inline-flex items-center gap-2.5 rounded-full border border-zinc-200 bg-white px-4 py-2 shadow-sm">
+          <span className="size-2 rounded-full bg-primary animate-pulse" aria-hidden="true" />
+          <span className="text-xs font-medium text-zinc-500">Em crescimento contínuo</span>
+        </div>
+      </div>
     </div>
   );
 }

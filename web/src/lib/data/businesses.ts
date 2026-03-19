@@ -35,7 +35,7 @@ export const businessAreas: BusinessArea[] = [
   {
     slug: "eletrica",
     name: "Elétrica",
-    shortDescription: "26 plantas Greenfield e 73 Brownfield em processos industriais e prediais",
+    shortDescription: "43 plantas Greenfield e 82 Brownfield em processos industriais e prediais",
     description:
       "A divisão Elétrica da Authomathika oferece soluções completas para processos industriais, prediais, de geração e cogeração de energia. Desde o projeto até o comissionamento, nossa equipe de engenheiros especializados garante excelência técnica e cumprimento de prazos.",
     services: [
@@ -48,11 +48,12 @@ export const businessAreas: BusinessArea[] = [
       "Sistemas de cogeração",
     ],
     metrics: [
-      { value: "26", label: "Plantas Greenfield" },
-      { value: "73", label: "Plantas Brownfield" },
-      { value: "225", label: "CCMs Instalados" },
-      { value: "256", label: "QGBTs Instalados" },
+      { value: "43", label: "Plantas Greenfield" },
+      { value: "82", label: "Plantas Brownfield" },
+      { value: "245", label: "CCMs Instalados" },
+      { value: "281", label: "QGBTs Instalados" },
       { value: "23", label: "Centrais Termelétricas" },
+      { value: "3", label: "Subestações" },
     ],
     partners: ["Weg", "Rockwell", "Siemens", "Altus", "ABB", "Schneider", "GE", "EATON"],
     icon: "Zap",
@@ -60,7 +61,7 @@ export const businessAreas: BusinessArea[] = [
   {
     slug: "automacao",
     name: "Automação",
-    shortDescription: "41 plantas Greenfield, 139 Brownfield e 290.000 pontos de automação",
+    shortDescription: "49 plantas Greenfield, 144 Brownfield e 296.400 pontos de automação",
     description:
       "A divisão de Automação da Authomathika é uma das mais completas do setor, atuando em automação industrial e instrumentação para geração e cogeração. Desenvolvemos software SCADA, programamos CLPs e executamos projetos de automação do início ao fim.",
     services: [
@@ -73,9 +74,9 @@ export const businessAreas: BusinessArea[] = [
       "Treinamento operacional",
     ],
     metrics: [
-      { value: "41", label: "Plantas Greenfield" },
-      { value: "139", label: "Plantas Brownfield" },
-      { value: "290.000", label: "Pontos de Automação" },
+      { value: "49", label: "Plantas Greenfield" },
+      { value: "144", label: "Plantas Brownfield" },
+      { value: "296.400", label: "Pontos de Automação" },
     ],
     partners: [
       "Rockwell",
@@ -125,7 +126,7 @@ export const businessAreas: BusinessArea[] = [
   {
     slug: "montagem-eletromecanica",
     name: "Montagem Eletromecânica",
-    shortDescription: "208 projetos em 23+ anos de experiência multissetorial",
+    shortDescription: "251 projetos em 23+ anos de experiência multissetorial",
     description:
       "Com mais de 23 anos de resultados comprovados, a divisão de Montagem Eletromecânica da Authomathika atende os mais variados segmentos industriais. Da montagem de pequenos equipamentos a grandes projetos industriais, entregamos qualidade e segurança.",
     services: [
@@ -137,9 +138,9 @@ export const businessAreas: BusinessArea[] = [
       "Comissionamento mecânico",
     ],
     metrics: [
-      { value: "105", label: "Projetos Pequeno Porte" },
-      { value: "74", label: "Projetos Médio Porte" },
-      { value: "29", label: "Projetos Grande Porte" },
+      { value: "126", label: "Projetos Pequeno Porte" },
+      { value: "81", label: "Projetos Médio Porte" },
+      { value: "44", label: "Projetos Grande Porte" },
     ],
     icon: "Settings",
   },

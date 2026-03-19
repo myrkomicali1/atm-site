@@ -14,7 +14,7 @@ export const products: Product[] = [
     name: "SLV-1A",
     shortDescription: "Medidor de Nível do Chute Donnelly Inteligente",
     description:
-      "O SLV-1A é um medidor de nível do chute Donnelly inteligente, desenvolvido pela Authomathika para o setor sucroenergético. Com mais de 2.650 pontos instalados, é referência em confiabilidade e precisão para usinas de açúcar e etanol.",
+      "O SLV-1A é um medidor de nível do chute Donnelly inteligente, desenvolvido pela Authomathika para o setor sucroenergético. Com mais de 2.685 pontos instalados no mundo, é referência em confiabilidade e precisão para usinas de açúcar e etanol.",
     features: [
       "Medição contínua e precisa do nível do chute",
       "Tecnologia ultrassônica avançada",
@@ -24,12 +24,12 @@ export const products: Product[] = [
       "Fácil instalação e manutenção",
     ],
     specs: {
-      "Pontos Instalados": "2.650+",
+      "Pontos Instalados": "2.685+",
       "Sinal de Saída": "4-20 mA / HART",
       "Grau de Proteção": "IP65",
       Alimentação: "24 VDC",
     },
-    badge: "2.650+ instalações",
+    badge: "2.685+ instalações",
   },
   {
     slug: "px-400",
