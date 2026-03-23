@@ -2152,7 +2152,9 @@
       "featured": "Destaques",
       "allProjects": "Todos os projetos",
       "viewFullCase": "Ver case completo",
-      "noCasesFound": "Nenhum case encontrado para este setor."
+      "noCasesFound": "Nenhum case encontrado para este setor.",
+      "showMore": "Ver mais",
+      "showLess": "Ver menos"
     },
     "worksList": {
       "title": "Obras",

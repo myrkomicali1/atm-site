@@ -2284,7 +2284,9 @@
       "featured": "Featured",
       "allProjects": "All projects",
       "viewFullCase": "View full case",
-      "noCasesFound": "No cases found for this sector."
+      "noCasesFound": "No cases found for this sector.",
+      "showMore": "Show more",
+      "showLess": "Show less"
     },
     "worksList": {
       "title": "Works",

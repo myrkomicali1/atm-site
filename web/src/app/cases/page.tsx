@@ -1,36 +1,34 @@
 "use client";
 
-import { Link } from "@/i18n/routing";
+import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { caseStudies, getFeaturedCaseStudies } from "@/lib/data/case-studies";
 import { sectors } from "@/lib/data/sectors";
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+
+const typeLabels: Record<string, string> = {
+  greenfield: "Greenfield",
+  brownfield: "Brownfield",
+  revamp: "Revamp",
+  epc: "EPC",
+  montagem: "Montagem",
+  solar: "Energia Solar",
+};
 
 function CaseCard({
   cs,
 }: {
   cs: (typeof caseStudies)[0];
 }) {
-  const t = useTranslations("pages.caseList");
-  const tt = useTranslations("pages.caseDetail.typeLabels");
-  const td = useTranslations("caseStudyData");
-
   const hasDetails = cs.hasDetails !== false;
-
-  let challengeText = "";
-  try {
-    challengeText = String(td.raw(`${cs.slug}.challenge`) ?? "");
-  } catch {
-    challengeText = cs.challenge ?? "";
-  }
+  const challengeText = cs.challenge ?? "";
 
   const imageContent = (
     <div className="relative aspect-[16/9]">
       <Image
         src={cs.image}
-        alt={td.raw(`${cs.slug}.altText`) as string ?? cs.altText}
+        alt={cs.altText}
         fill
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         className={`object-cover transition-transform duration-500 ${hasDetails ? "group-hover:scale-105" : ""}`}
@@ -38,7 +36,7 @@ function CaseCard({
       <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/60 to-transparent" />
       <div className="absolute bottom-3 left-3 flex gap-2">
         <span className="rounded-full bg-white/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-zinc-700">
-          {tt(cs.type)}
+          {typeLabels[cs.type] ?? cs.type}
         </span>
       </div>
     </div>
@@ -46,12 +44,12 @@ function CaseCard({
 
   const resultsContent = cs.results.length > 0 ? (
     <div className="mt-3 flex flex-wrap gap-2">
-      {cs.results.slice(0, 2).map((r, i) => (
+      {cs.results.slice(0, 2).map((r) => (
         <span
           key={r.metric}
           className="rounded-full bg-primary/8 px-2.5 py-0.5 text-[10px] font-semibold text-primary"
         >
-          {td.raw(`${cs.slug}.results.${i}.metric`) as string}: {td.raw(`${cs.slug}.results.${i}.value`) as string}
+          {r.metric}: {r.value}
         </span>
       ))}
     </div>
@@ -63,7 +61,7 @@ function CaseCard({
         {imageContent}
         <div className="p-5">
           <h3 className="font-display text-lg font-bold text-zinc-900">
-            {td.raw(`${cs.slug}.title`) as string ?? cs.title}
+            {cs.title}
           </h3>
           <p className="mt-1 text-xs text-zinc-500">
             {cs.client} — {cs.location}
@@ -87,7 +85,7 @@ function CaseCard({
       {imageContent}
       <div className="p-5">
         <h3 className="font-display text-lg font-bold text-zinc-900">
-          {td.raw(`${cs.slug}.title`) as string ?? cs.title}
+          {cs.title}
         </h3>
         <p className="mt-1 text-xs text-zinc-500">
           {cs.client} — {cs.location}
@@ -99,7 +97,7 @@ function CaseCard({
         ) : null}
         {resultsContent}
         <div className="mt-4 flex items-center gap-1.5 text-sm font-semibold text-zinc-400 transition-colors group-hover:text-primary">
-          <span>{t("viewFullCase")}</span>
+          <span>Ver case completo</span>
           <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
         </div>
       </div>
@@ -108,9 +106,6 @@ function CaseCard({
 }
 
 export default function CasesPage() {
-  const t = useTranslations("pages.caseList");
-  const ts = useTranslations("sectorNames");
-
   const [activeFilter, setActiveFilter] = useState<string>("todos");
 
   const featured = getFeaturedCaseStudies();
@@ -118,7 +113,7 @@ export default function CasesPage() {
     .filter((s) =>
       caseStudies.some((c) => c.sector === s.slug),
     )
-    .map((s) => ({ slug: s.slug }));
+    .map((s) => ({ slug: s.slug, name: s.name }));
 
   const filtered =
     activeFilter === "todos"
@@ -134,22 +129,22 @@ export default function CasesPage() {
 
         <div className="relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-8">
           <nav aria-label="Breadcrumb" className="mb-8 flex flex-wrap items-center gap-1.5 text-xs text-zinc-600">
-            <Link href="/" className="transition-colors hover:text-zinc-700">{t("breadcrumbHome")}</Link>
+            <Link href="/" className="transition-colors hover:text-zinc-700">Início</Link>
             <span className="text-zinc-300">/</span>
-            <span className="font-medium text-zinc-700" aria-current="page">{t("breadcrumbCases")}</span>
+            <span className="font-medium text-zinc-700" aria-current="page">Cases</span>
           </nav>
 
           <div className="grid gap-8 md:grid-cols-12 md:items-end">
             <div className="space-y-4 md:col-span-7">
-              <p className="mono-label">{t("tag")}</p>
+              <p className="mono-label">Cases de sucesso</p>
               <div className="h-0.5 w-10 bg-primary" />
               <h1 className="section-heading text-zinc-900">
-                {t("heading")}
+                Projetos que comprovam nossa engenharia
               </h1>
             </div>
             <div className="md:col-span-5">
               <p className="text-base leading-relaxed text-zinc-500 md:text-lg">
-                {t("subtitle")}
+                Mais de 200 projetos entregues em diferentes setores e contextos operacionais. Conheça os detalhes.
               </p>
             </div>
           </div>
@@ -169,7 +164,7 @@ export default function CasesPage() {
                   : "border-zinc-200 bg-white text-zinc-600 hover:border-zinc-300 hover:bg-zinc-50"
               }`}
             >
-              {t("allSectors")}
+              Todos os setores
             </button>
             {sectorFilters.map((sf) => (
               <button
@@ -181,7 +176,7 @@ export default function CasesPage() {
                     : "border-zinc-200 bg-white text-zinc-600 hover:border-zinc-300 hover:bg-zinc-50"
                 }`}
               >
-                {ts(`${sf.slug}.name`)}
+                {sf.name}
               </button>
             ))}
           </div>
@@ -189,7 +184,7 @@ export default function CasesPage() {
           {/* Featured cases (only when "todos") */}
           {activeFilter === "todos" && featured.length > 0 ? (
             <div className="mb-8">
-              <p className="mono-label mb-4">{t("featured")}</p>
+              <p className="mono-label mb-4">Destaques</p>
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
                 {featured.map((cs) => (
                   <CaseCard key={cs.slug} cs={cs} />
@@ -201,7 +196,7 @@ export default function CasesPage() {
           {/* All cases grid */}
           <div>
             {activeFilter === "todos" ? (
-              <p className="mono-label mb-4">{t("allProjects")}</p>
+              <p className="mono-label mb-4">Todos os projetos</p>
             ) : null}
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {filtered
@@ -217,7 +212,7 @@ export default function CasesPage() {
             {filtered.length === 0 ? (
               <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-12 text-center">
                 <p className="text-sm text-zinc-500">
-                  {t("noCasesFound")}
+                  Nenhum case encontrado para este setor.
                 </p>
               </div>
             ) : null}
