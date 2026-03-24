@@ -612,6 +612,67 @@ export const sectors: Sector[] = [
     icon: "Building",
     featured: false,
   },
+  {
+    slug: "data-centers",
+    name: "Data Centers",
+    headline:
+      "Infraestrutura elétrica, automação e montagem para Data Centers de alta disponibilidade",
+    description:
+      "A Authomathika aplica mais de 25 anos de experiência em engenharia elétrica industrial, automação e montagem eletromecânica à construção e modernização de Data Centers. Com fabricação própria de painéis, eletrocentros e power stations, a empresa entrega soluções integradas de infraestrutura crítica — da subestação de entrada ao monitoramento BMS — sob um único contrato EPC.",
+    painPoints: [
+      "Redundância elétrica (N+1, 2N) para classificações Tier III e IV exige engenharia de alta confiabilidade e zero margem para erro",
+      "Integração entre sistemas de distribuição elétrica, climatização, segurança física e TI precisa de um integrador com visão multidisciplinar",
+      "Time-to-market agressivo — o mercado de DCs pressiona por entregas rápidas sem comprometer qualidade e conformidade",
+      "Conformidade com normas técnicas (ANEEL, NBR 5410/14039, Uptime Institute) e requisitos de eficiência energética (PUE)",
+      "Encontrar um integrador único que entregue elétrica, automação, montagem e comissionamento sem fragmentação de responsabilidade",
+    ],
+    solutions: [
+      "Projeto e fabricação própria de painéis de distribuição (CCMs, QGBTs, PDUs) com certificação e testes em fábrica",
+      "Eletrocentros e Power Stations pré-montados e testados — redução de prazo de instalação em campo",
+      "Montagem eletromecânica completa: infraestrutura elétrica, cabeamento estruturado, barramentos e leitos",
+      "Automação e SCADA para BMS — monitoramento em tempo real de energia, temperatura, umidade e alarmes críticos",
+      "Sistemas de segurança integrados: CFTV, controle de acesso, detecção de incêndio e redes de fibra óptica",
+      "Subestações de entrada em média tensão com projeto, montagem e comissionamento completos",
+    ],
+    relatedBusinessAreas: [
+      "eletrica",
+      "automacao",
+      "montagem-eletromecanica",
+      "engenharia-epc",
+      "servicos",
+    ],
+    relatedCaseStudies: [],
+    relatedTestimonials: [],
+    clients: [],
+    metrics: [
+      { value: "245", label: "CCMs fabricados e instalados" },
+      { value: "43", label: "Plantas greenfield entregues" },
+      { value: "380.000+", label: "Pontos de automação implantados" },
+      { value: "EPC", label: "Contrato único integrado" },
+    ],
+    faq: [
+      {
+        question:
+          "A Authomathika constrói Data Centers?",
+        answer:
+          "A Authomathika atua como integrador EPC para a infraestrutura elétrica, de automação e montagem eletromecânica de Data Centers. Isso inclui projeto e fabricação de painéis de distribuição, eletrocentros, subestações, sistemas de monitoramento BMS/SCADA, CFTV e redes. Com mais de 43 plantas greenfield entregues e fabricação própria de painéis e power stations, a empresa possui capacidade comprovada para projetos de infraestrutura crítica.",
+      },
+      {
+        question:
+          "Quais sistemas elétricos a Authomathika fornece para Data Centers?",
+        answer:
+          "A Authomathika projeta, fabrica e instala painéis elétricos industriais de alta confiabilidade, incluindo CCMs, QGBTs, quadros de distribuição e PDUs. Além disso, fornece eletrocentros e power stations pré-montados e testados em fábrica, subestações de média tensão e sistemas de distribuição com redundância N+1 ou 2N, conforme a classificação Tier do Data Center.",
+      },
+      {
+        question:
+          "A Authomathika oferece automação e monitoramento para Data Centers?",
+        answer:
+          "Sim. A divisão de Automação desenvolve sistemas SCADA customizados para BMS (Building Management System), integrando monitoramento de energia, temperatura, umidade, alarmes e segurança em uma plataforma unificada. Com mais de 380.000 pontos de automação implantados em 25+ anos, a empresa possui expertise em sistemas de controle de alta disponibilidade.",
+      },
+    ],
+    icon: "Server",
+    featured: false,
+  },
 ];
 
 export function getSector(slug: string): Sector | undefined {

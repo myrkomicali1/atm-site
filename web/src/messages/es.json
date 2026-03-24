@@ -780,6 +780,48 @@
           "answer": "Sí. Authomathika ya proyectó y comisionó 23 centrales termoeléctricas, con ingeniería eléctrica, automatización y montaje electromecánico completos. Los proyectos incluyen desde la ingeniería básica hasta el comisionamiento y start-up."
         }
       }
+    },
+    "data-centers": {
+      "name": "Data Centers",
+      "headline": "Infraestructura eléctrica, automatización y montaje para Data Centers de alta disponibilidad",
+      "description": "Authomathika aplica más de 25 años de experiencia en ingeniería eléctrica industrial, automatización y montaje electromecánico a la construcción y modernización de Data Centers. Con fabricación propia de paneles, electrocentros y power stations, la empresa entrega soluciones integradas de infraestructura crítica — desde la subestación de entrada hasta el monitoreo BMS — bajo un único contrato EPC.",
+      "metric0Value": "245",
+      "metric0Label": "CCMs fabricados e instalados",
+      "metric1Value": "43",
+      "metric1Label": "Plantas greenfield entregadas",
+      "metric2Value": "380.000+",
+      "metric2Label": "Puntos de automatización implantados",
+      "metric3Value": "EPC",
+      "metric3Label": "Contrato único integrado",
+      "painPoints": {
+        "0": "Redundancia eléctrica (N+1, 2N) para clasificaciones Tier III y IV exige ingeniería de alta confiabilidad y cero margen de error",
+        "1": "Integración entre sistemas de distribución eléctrica, climatización, seguridad física y TI necesita un integrador con visión multidisciplinaria",
+        "2": "Time-to-market agresivo — el mercado de DCs presiona por entregas rápidas sin comprometer calidad y conformidad",
+        "3": "Conformidad con normas técnicas (ANEEL, NBR 5410/14039, Uptime Institute) y requisitos de eficiencia energética (PUE)",
+        "4": "Encontrar un integrador único que entregue eléctrica, automatización, montaje y comisionamiento sin fragmentación de responsabilidad"
+      },
+      "solutions": {
+        "0": "Proyecto y fabricación propia de paneles de distribución (CCMs, QGBTs, PDUs) con certificación y pruebas en fábrica",
+        "1": "Electrocentros y Power Stations premontados y probados — reducción del plazo de instalación en campo",
+        "2": "Montaje electromecánico completo: infraestructura eléctrica, cableado estructurado, barras y bandejas",
+        "3": "Automatización y SCADA para BMS — monitoreo en tiempo real de energía, temperatura, humedad y alarmas críticas",
+        "4": "Sistemas de seguridad integrados: CCTV, control de acceso, detección de incendios y redes de fibra óptica",
+        "5": "Subestaciones de entrada en media tensión con proyecto, montaje y comisionamiento completos"
+      },
+      "faq": {
+        "0": {
+          "question": "¿Authomathika construye Data Centers?",
+          "answer": "Authomathika actúa como integrador EPC para la infraestructura eléctrica, de automatización y montaje electromecánico de Data Centers. Esto incluye proyecto y fabricación de paneles de distribución, electrocentros, subestaciones, sistemas de monitoreo BMS/SCADA, CCTV y redes. Con más de 43 plantas greenfield entregadas y fabricación propia de paneles y power stations, la empresa posee capacidad comprobada para proyectos de infraestructura crítica."
+        },
+        "1": {
+          "question": "¿Qué sistemas eléctricos Authomathika provee para Data Centers?",
+          "answer": "Authomathika proyecta, fabrica e instala paneles eléctricos industriales de alta confiabilidad, incluyendo CCMs, QGBTs, cuadros de distribución y PDUs. Además, provee electrocentros y power stations premontados y probados en fábrica, subestaciones de media tensión y sistemas de distribución con redundancia N+1 o 2N, conforme la clasificación Tier del Data Center."
+        },
+        "2": {
+          "question": "¿Authomathika ofrece automatización y monitoreo para Data Centers?",
+          "answer": "Sí. La división de Automatización desarrolla sistemas SCADA personalizados para BMS (Building Management System), integrando monitoreo de energía, temperatura, humedad, alarmas y seguridad en una plataforma unificada. Con más de 380.000 puntos de automatización implantados en 25+ años, la empresa posee expertise en sistemas de control de alta disponibilidad."
+        }
+      }
     }
   },
   "worksData": {

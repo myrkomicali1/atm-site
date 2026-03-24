@@ -900,6 +900,48 @@
       "metric1Value": "EPC",
       "metric2Label": "Years of experience",
       "metric2Value": "25+"
+    },
+    "data-centers": {
+      "name": "Data Centers",
+      "headline": "Electrical infrastructure, automation and assembly for high-availability Data Centers",
+      "description": "Authomathika applies over 25 years of experience in industrial electrical engineering, automation and electromechanical assembly to Data Center construction and modernization. With in-house manufacturing of electrical panels, e-houses and power stations, the company delivers integrated critical infrastructure solutions — from the incoming substation to BMS monitoring — under a single EPC contract.",
+      "metric0Value": "245",
+      "metric0Label": "CCMs manufactured and installed",
+      "metric1Value": "43",
+      "metric1Label": "Greenfield plants delivered",
+      "metric2Value": "380,000+",
+      "metric2Label": "Automation control points deployed",
+      "metric3Value": "EPC",
+      "metric3Label": "Single integrated contract",
+      "painPoints": {
+        "0": "Electrical redundancy (N+1, 2N) for Tier III and IV classifications requires high-reliability engineering with zero margin for error",
+        "1": "Integration between electrical distribution, cooling, physical security and IT systems requires a multidisciplinary integrator",
+        "2": "Aggressive time-to-market — the DC market demands fast delivery without compromising quality and compliance",
+        "3": "Compliance with technical standards (ANEEL, NBR 5410/14039, Uptime Institute) and energy efficiency requirements (PUE)",
+        "4": "Finding a single integrator to deliver electrical, automation, assembly and commissioning without fragmented responsibility"
+      },
+      "solutions": {
+        "0": "In-house design and manufacturing of distribution panels (MCCs, switchboards, PDUs) with factory certification and testing",
+        "1": "Pre-assembled and factory-tested e-houses and Power Stations — reducing on-site installation time",
+        "2": "Complete electromechanical assembly: electrical infrastructure, structured cabling, busbars and cable trays",
+        "3": "Automation and SCADA for BMS — real-time monitoring of power, temperature, humidity and critical alarms",
+        "4": "Integrated security systems: CCTV, access control, fire detection and fiber optic networks",
+        "5": "Medium-voltage incoming substations with complete design, assembly and commissioning"
+      },
+      "faq": {
+        "0": {
+          "question": "Does Authomathika build Data Centers?",
+          "answer": "Authomathika serves as an EPC integrator for Data Center electrical infrastructure, automation and electromechanical assembly. This includes design and manufacturing of distribution panels, e-houses, substations, BMS/SCADA monitoring systems, CCTV and networks. With over 43 greenfield plants delivered and in-house panel and power station manufacturing, the company has proven capability for critical infrastructure projects."
+        },
+        "1": {
+          "question": "What electrical systems does Authomathika provide for Data Centers?",
+          "answer": "Authomathika designs, manufactures and installs high-reliability industrial electrical panels, including MCCs, switchboards, distribution boards and PDUs. Additionally, it provides pre-assembled and factory-tested e-houses and power stations, medium-voltage substations and distribution systems with N+1 or 2N redundancy, according to the Data Center's Tier classification."
+        },
+        "2": {
+          "question": "Does Authomathika offer automation and monitoring for Data Centers?",
+          "answer": "Yes. The Automation division develops custom SCADA systems for BMS (Building Management System), integrating power, temperature, humidity, alarm and security monitoring into a unified platform. With over 380,000 automation control points deployed over 25+ years, the company has expertise in high-availability control systems."
+        }
+      }
     }
   },
   "worksData": {
