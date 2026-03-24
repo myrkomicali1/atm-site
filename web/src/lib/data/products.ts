@@ -87,10 +87,12 @@ export const products: Product[] = [
       "Baixa necessidade de manutenção",
     ],
     specs: {
+      "Pontos Instalados": "700+",
       "Tipo de Medição": "Posição / Deslocamento",
       "Sinal de Saída": "4-20 mA",
       Aplicação: "Moendas industriais",
     },
+    badge: "700+ instalações",
   },
   {
     slug: "dclt-1c",
@@ -119,21 +121,21 @@ export const products: Product[] = [
     name: "ProMtec",
     shortDescription: "Medidor de Densidade e Processo",
     description:
-      "O ProMtec é um medidor de densidade e processo com mais de 8.500 instalações mundiais. Desenvolvido com tecnologia alemã, é referência global em medição de densidade para processos industriais.",
+      "O ProMtec é um medidor de densidade e processo com mais de 8.800 instalações mundiais. Desenvolvido com tecnologia alemã, é referência global em medição de densidade para processos industriais.",
     features: [
       "Tecnologia alemã de ponta",
-      "Mais de 8.500 instalações mundiais",
+      "Mais de 8.800 instalações mundiais",
       "Alta precisão na medição de densidade",
       "Robusto para processo industrial",
       "Ampla compatibilidade com fluidos",
       "Baixo custo de manutenção",
     ],
     specs: {
-      "Instalações Mundiais": "8.500+",
+      "Instalações Mundiais": "8.800+",
       Tecnologia: "Alemã",
       "Tipo de Medição": "Densidade / Processo",
     },
-    badge: "8.500+ instalações",
+    badge: "8.800+ instalações",
   },
   {
     slug: "derivador-asi",

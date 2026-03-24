@@ -70,10 +70,10 @@
       "anosLabel": "de mercado",
       "equipamentosValue": "42.027",
       "equipamentosLabel": "equipamentos atendidos",
-      "energiaValue": "336",
+      "energiaValue": "892",
       "energiaUnit": "MW",
       "energiaLabel": "energia solar instalada",
-      "projetosValue": "208",
+      "projetosValue": "251",
       "projetosLabel": "projetos de montagem"
     }
   },
@@ -132,12 +132,12 @@
   },
   "proof": {
     "tag": "Impacto em números",
-    "heading": "42.027 equipamentos. 336 MW solares. Zero retrabalho.",
+    "heading": "42.027 equipamentos. 892 MW solares. Zero retrabalho.",
     "equipamentosAtendidos": "Equipamentos atendidos",
     "atendimentosTecnicos": "atendimentos técnicos especializados",
     "horasDeServico": "Horas de serviço",
     "energiaSolarInstalada": "Energia solar instalada",
-    "emParquesFotovoltaicos": "em 7 parques fotovoltaicos",
+    "emParquesFotovoltaicos": "em 10 parques fotovoltaicos",
     "certificacoes": "Certificações"
   },
   "works": {
@@ -222,7 +222,7 @@
   },
   "homeFaq": {
     "q1": "O que é uma empresa integradora de sistemas?",
-    "a1": "Uma integradora de sistemas é uma empresa especializada em projetar, instalar e comissionar soluções completas de controle e monitoramento para plantas industriais. A Authomathika atua como integradora desde 1999, com mais de 296.400 pontos de automação em 180 plantas no Brasil.",
+    "a1": "Uma integradora de sistemas é uma empresa especializada em projetar, instalar e comissionar soluções completas de controle e monitoramento para plantas industriais. A Authomathika atua como integradora desde 1999, com mais de 380.000+ pontos de automação em 180 plantas no Brasil.",
     "q2": "Quais setores a Authomathika atende?",
     "a2": "A Authomathika atende mais de 12 setores industriais, incluindo sucroenergético, fertilizantes, saneamento, mineração, alimentos e bebidas, energia solar fotovoltaica, logística, química, siderurgia, papel e celulose, entre outros.",
     "q3": "Qual a diferença entre projeto greenfield e brownfield?",
@@ -254,9 +254,9 @@
   "businessAreasData": {
     "energias-renovaveis": {
       "name": "Energias Renováveis",
-      "shortDescription": "336 MW de energia solar instalados em 7 parques fotovoltaicos",
+      "shortDescription": "Mais de 890 MW de energia solar instalados em 10 parques fotovoltaicos",
       "description": "A divisão de Energias Renováveis da Authomathika atua na implantação de usinas solares fotovoltaicas de geração centralizada e distribuída. Com expertise em montagem elétrica, mecânica e civil, além de engenharia executiva, entregamos soluções completas para o setor de energia limpa.",
-      "metric0Value": "336 MW",
+      "metric0Value": "892 MW",
       "metric0Label": "Energia Solar Instalada",
       "metric1Value": "7",
       "metric1Label": "Parques Executados",
@@ -298,13 +298,13 @@
     },
     "automacao": {
       "name": "Automação",
-      "shortDescription": "49 plantas Greenfield, 144 Brownfield e 296.400 pontos de automação",
+      "shortDescription": "49 plantas Greenfield, 144 Brownfield e 380.000+ pontos de automação",
       "description": "A divisão de Automação da Authomathika é uma das mais completas do setor, atuando em automação industrial e instrumentação para geração e cogeração. Desenvolvemos software SCADA, programamos CLPs e executamos projetos de automação do início ao fim.",
       "metric0Value": "49",
       "metric0Label": "Plantas Greenfield",
       "metric1Value": "144",
       "metric1Label": "Plantas Brownfield",
-      "metric2Value": "296.400",
+      "metric2Value": "380.000+",
       "metric2Label": "Pontos de Automação",
       "services": {
         "0": "Automação industrial e instrumentação",
@@ -397,7 +397,7 @@
       "description": "Desde 1999, a Authomathika é referência em engenharia para o setor sucroenergético. Atuamos em todas as áreas da usina — fermentação, destilaria, caldeira, cogeração e fábrica de açúcar — com soluções integradas de automação, elétrica e montagem eletromecânica. Nossa experiência abrange projetos greenfield completos (turnkey) e revamps de plantas em operação.",
       "metric0Value": "180+",
       "metric0Label": "Plantas industriais atendidas",
-      "metric1Value": "296.400",
+      "metric1Value": "380.000+",
       "metric1Label": "Pontos de automação implantados",
       "metric2Value": "25+",
       "metric2Label": "Anos no setor sucroenergético",
@@ -482,12 +482,12 @@
     "energias-renovaveis": {
       "name": "Energias Renováveis",
       "headline": "Do projeto ao MW conectado — engenharia solar de grande porte",
-      "description": "A divisão de Energias Renováveis da Authomathika é especializada na implantação de usinas solares fotovoltaicas de geração centralizada e distribuída. Com 336 MW instalados em 7 parques fotovoltaicos, incluindo o projeto de 540 MW da UFV Belmonte em parceria com o Grupo Cobra, a empresa é referência em montagem elétrica, mecânica e civil para o setor solar.",
-      "metric0Value": "336",
+      "description": "A divisão de Energias Renováveis da Authomathika é especializada na implantação de usinas solares fotovoltaicas de geração centralizada e distribuída. Com mais de 890 MW instalados em 10 parques fotovoltaicos, incluindo o projeto de 455 MW da UFV Belmonte em parceria com o Grupo Cobra, a empresa é referência em montagem elétrica, mecânica e civil para o setor solar.",
+      "metric0Value": "892",
       "metric0Label": "MW instalados",
       "metric1Value": "7",
       "metric1Label": "Parques fotovoltaicos",
-      "metric2Value": "540 MW",
+      "metric2Value": "455 MW",
       "metric2Label": "Maior projeto (UFV Belmonte)",
       "painPoints": {
         "0": "Prazos agressivos de conexão com a rede exigem execução rápida e sem retrabalho",
@@ -497,8 +497,8 @@
         "4": "Integração entre montagem mecânica, elétrica e civil sem conflitos de interface"
       },
       "solutions": {
-        "0": "Capacidade comprovada em parques de até 540 MW — montagem elétrica, mecânica e civil integradas",
-        "1": "Equipes especializadas exclusivamente em solar, com mais de 336 MW de experiência acumulada",
+        "0": "Capacidade comprovada em parques de até 455 MW — montagem elétrica, mecânica e civil integradas",
+        "1": "Equipes especializadas exclusivamente em solar, com mais de 890 MW de experiência acumulada",
         "2": "Gestão logística de canteiro com controle de materiais, rastreabilidade e eficiência de montagem",
         "3": "Comissionamento rigoroso com testes de performance e entrega documentada para O&M",
         "4": "Contrato único para todas as disciplinas — sem interfaces entre múltiplos fornecedores"
@@ -506,7 +506,7 @@
       "faq": {
         "0": {
           "question": "Qual é a capacidade de implantação da Authomathika em energia solar?",
-          "answer": "A Authomathika possui capacidade comprovada para implantação de usinas solares de grande porte. O maior projeto executado foi a UFV Belmonte I & II, com 540 MW de capacidade, em parceria com o Grupo Cobra. Com 7 parques e 336 MW totais instalados, a empresa atende projetos acima de 10 MW."
+          "answer": "A Authomathika possui capacidade comprovada para implantação de usinas solares de grande porte. O maior projeto executado foi a UFV Belmonte I & II, com 455 MW de capacidade, em parceria com o Grupo Cobra. Com 10 parques e mais de 890 MW totais instalados, a empresa atende projetos acima de 10 MW."
         },
         "1": {
           "question": "A Authomathika oferece serviço de O&M para usinas solares?",
@@ -649,7 +649,7 @@
       "description": "A Authomathika atende o setor de papel e celulose com soluções de automação industrial, engenharia elétrica e montagem eletromecânica. Com conhecimento em processos contínuos de alta complexidade — da digestão e branqueamento à formação e secagem — entregamos projetos que aumentam a eficiência energética e a confiabilidade operacional das plantas.",
       "metric0Value": "25+",
       "metric0Label": "Anos em processos contínuos",
-      "metric1Value": "296.400",
+      "metric1Value": "380.000+",
       "metric1Label": "Pontos de automação implantados",
       "metric2Value": "NR-10/35",
       "metric2Label": "Equipes certificadas",
@@ -682,7 +682,7 @@
       "name": "Cimento",
       "headline": "Engenharia integrada para fábricas de cimento e materiais de construção",
       "description": "A Authomathika atende a indústria cimenteira com projetos de automação, elétrica e montagem eletromecânica para plantas de produção de cimento, cal e materiais de construção. Com experiência em processos de alta temperatura e ambientes severos, oferecemos soluções que garantem eficiência energética, disponibilidade operacional e conformidade ambiental.",
-      "metric0Value": "208+",
+      "metric0Value": "251+",
       "metric0Label": "Projetos industriais entregues",
       "metric1Value": "42.027",
       "metric1Label": "Equipamentos atendidos",
@@ -773,7 +773,7 @@
       "faq": {
         "0": {
           "question": "A Authomathika executa montagem de subestações?",
-          "answer": "Sim. A Authomathika projeta, instala e comissiona subestações de média e baixa tensão, incluindo transformadores, disjuntores, painéis de distribuição e sistemas de proteção. São mais de 25 anos de experiência em engenharia elétrica com 26 plantas greenfield e 73 brownfield entregues."
+          "answer": "Sim. A Authomathika projeta, instala e comissiona subestações de média e baixa tensão, incluindo transformadores, disjuntores, painéis de distribuição e sistemas de proteção. São mais de 25 anos de experiência em engenharia elétrica com 43 plantas greenfield e 82 brownfield entregues."
         },
         "1": {
           "question": "Vocês constroem centrais termelétricas?",
@@ -851,9 +851,9 @@
     },
     "11": {
       "type": "Energia Solar",
-      "category": "540 MW — Grupo Cobra",
-      "description": "Usina fotovoltaica de 540 MW.",
-      "altText": "UFV Belmonte I e II - usina solar fotovoltaica de 540 MW com montagem eletrica e mecanica pela Authomathika em parceria com Grupo Cobra"
+      "category": "455 MW — Grupo Cobra",
+      "description": "Usina fotovoltaica de 455 MW.",
+      "altText": "UFV Belmonte I e II - usina solar fotovoltaica de 455 MW com montagem eletrica e mecanica pela Authomathika em parceria com Grupo Cobra"
     }
   },
   "companyData": {
@@ -930,7 +930,7 @@
         "event": "2.000 dias sem acidentes de trabalho"
       },
       "10": {
-        "event": "336 MW de energia solar instalados — 7 parques"
+        "event": "Mais de 890 MW de energia solar instalados — 10 parques"
       },
       "11": {
         "event": "Mais de duas décadas consolidando presença no setor sucroenergético e industrial"
@@ -991,11 +991,11 @@
     "automacao": {
       "0": {
         "question": "O que é um integrador de sistemas de automação industrial?",
-        "answer": "Um integrador de sistemas de automação industrial é uma empresa especializada em projetar, instalar e comissionar soluções completas de controle e monitoramento de processos. A Authomathika atua como integradora desde 1999, tendo implantado mais de 296.400 pontos de automação em 180 plantas industriais no Brasil, trabalhando com plataformas como CLPs Rockwell, Siemens, Yokogawa e sistemas SCADA."
+        "answer": "Um integrador de sistemas de automação industrial é uma empresa especializada em projetar, instalar e comissionar soluções completas de controle e monitoramento de processos. A Authomathika atua como integradora desde 1999, tendo implantado mais de 380.000+ pontos de automação em 180 plantas industriais no Brasil, trabalhando com plataformas como CLPs Rockwell, Siemens, Yokogawa e sistemas SCADA."
       },
       "1": {
         "question": "Qual a diferença entre projeto greenfield e brownfield em automação?",
-        "answer": "Um projeto greenfield é uma implantação totalmente nova, onde a automação é projetada do zero para uma planta que ainda será construída. Já o brownfield envolve a modernização, ampliação ou revamp de sistemas existentes em plantas já em operação. A Authomathika possui experiência em ambos: 41 plantas greenfield e 139 brownfield na divisão de Automação."
+        "answer": "Um projeto greenfield é uma implantação totalmente nova, onde a automação é projetada do zero para uma planta que ainda será construída. Já o brownfield envolve a modernização, ampliação ou revamp de sistemas existentes em plantas já em operação. A Authomathika possui experiência em ambos: 49 plantas greenfield e 144 brownfield na divisão de Automação."
       },
       "2": {
         "question": "Quais sistemas SCADA e CLPs a Authomathika trabalha?",
@@ -1045,7 +1045,7 @@
     "montagem-eletromecanica": {
       "0": {
         "question": "O que é montagem eletromecânica industrial?",
-        "answer": "Montagem eletromecânica é o processo de instalação integrada de componentes elétricos e mecânicos em plantas industriais, incluindo equipamentos, tubulações, estruturas metálicas, painéis e sistemas de força e controle. A Authomathika já executou 251 projetos de montagem, desde pequeno até grande porte, em mais de 23 anos de atuação."
+        "answer": "Montagem eletromecânica é o processo de instalação integrada de componentes elétricos e mecânicos em plantas industriais, incluindo equipamentos, tubulações, estruturas metálicas, painéis e sistemas de força e controle. A Authomathika já executou 251 projetos de montagem, desde pequeno até grande porte, em mais de 25 anos de atuação."
       },
       "1": {
         "question": "Quais setores a Authomathika atende em montagem eletromecânica?",
@@ -1077,7 +1077,7 @@
     "energias-renovaveis": {
       "0": {
         "question": "A Authomathika instala usinas solares fotovoltaicas?",
-        "answer": "Sim. A divisão de Energias Renováveis da Authomathika já instalou 336 MW de energia solar em 7 parques fotovoltaicos, atuando em geração centralizada e distribuída. Os serviços incluem montagem elétrica e mecânica, montagem civil, engenharia executiva, comissionamento e operação e manutenção (O&M)."
+        "answer": "Sim. A divisão de Energias Renováveis da Authomathika já instalou Mais de 890 MW de energia solar em 10 parques fotovoltaicos, atuando em geração centralizada e distribuída. Os serviços incluem montagem elétrica e mecânica, montagem civil, engenharia executiva, comissionamento e operação e manutenção (O&M)."
       },
       "1": {
         "question": "Qual a diferença entre geração centralizada e distribuída de energia solar?",
@@ -1089,7 +1089,7 @@
       },
       "3": {
         "question": "Qual a capacidade de implantação da Authomathika em energia solar?",
-        "answer": "A Authomathika possui capacidade comprovada para implantação de usinas solares de grande porte. O maior projeto executado foi a UFV Belmonte I & II, com 540 MW de capacidade, em parceria com o Grupo Cobra. Com 7 parques e 336 MW totais instalados, a empresa tem experiência para atender projetos acima de 10 MW."
+        "answer": "A Authomathika possui capacidade comprovada para implantação de usinas solares de grande porte. O maior projeto executado foi a UFV Belmonte I & II, com 455 MW de capacidade, em parceria com o Grupo Cobra. Com 10 parques e mais de 890 MW totais instalados, a empresa tem experiência para atender projetos acima de 10 MW."
       }
     }
   },
@@ -1139,8 +1139,8 @@
     "roberto-g": {
       "role": "Diretor Técnico",
       "company": "Desenvolvedora de Parques Solares",
-      "quote": "Para um parque de 540 MW, precisávamos de um parceiro local com capacidade real de execução. A Authomathika mobilizou equipes rapidamente, manteve a qualidade de montagem em escala e garantiu os indicadores de performance ratio. Parceria renovada para os próximos projetos.",
-      "result": "Performance ratio garantida em 540 MW"
+      "quote": "Para um parque de 455 MW, precisávamos de um parceiro local com capacidade real de execução. A Authomathika mobilizou equipes rapidamente, manteve a qualidade de montagem em escala e garantiu os indicadores de performance ratio. Parceria renovada para os próximos projetos.",
+      "result": "Performance ratio garantida em 455 MW"
     }
   },
   "caseStudyData": {
@@ -1372,15 +1372,15 @@
       }
     },
     "ufv-belmonte": {
-      "title": "UFV Belmonte I & II — Usina Solar 540 MW",
+      "title": "UFV Belmonte I & II — Usina Solar 455 MW",
       "duration": "24 meses",
-      "challenge": "O Grupo Cobra precisava de um parceiro brasileiro com capacidade para executar a montagem elétrica e mecânica de uma das maiores usinas solares do Brasil, com 540 MW de potência. O prazo era agressivo, a logística complexa e a qualidade da montagem deveria garantir performance ratio contratual por 25+ anos.",
+      "challenge": "O Grupo Cobra precisava de um parceiro brasileiro com capacidade para executar a montagem elétrica e mecânica de uma das maiores usinas solares do Brasil, com 455 MW de potência. O prazo era agressivo, a logística complexa e a qualidade da montagem deveria garantir performance ratio contratual por 25+ anos.",
       "solution": "A Authomathika foi selecionada para a montagem elétrica e mecânica da UFV Belmonte I & II, mobilizando equipes especializadas em solar. O escopo incluiu instalação de trackers, módulos fotovoltaicos, cabeamento DC/AC, inversores string e centrais, além de subestação. O controle de qualidade em campo garantiu rastreabilidade de cada componente instalado.",
-      "altText": "UFV Belmonte I e II - usina solar fotovoltaica de 540 MW com montagem eletrica e mecanica pela Authomathika em parceria com Grupo Cobra",
+      "altText": "UFV Belmonte I e II - usina solar fotovoltaica de 455 MW com montagem eletrica e mecanica pela Authomathika em parceria com Grupo Cobra",
       "results": {
         "0": {
           "metric": "Capacidade",
-          "value": "540 MW instalados"
+          "value": "455 MW instalados"
         },
         "1": {
           "metric": "Segurança",
@@ -1929,11 +1929,11 @@
     "promtec": {
       "name": "ProMtec",
       "shortDescription": "Medidor de Densidade e Processo",
-      "description": "O ProMtec é um medidor de densidade e processo com mais de 8.500 instalações mundiais. Desenvolvido com tecnologia alemã, é referência global em medição de densidade para processos industriais.",
-      "badge": "8.500+ instalações",
+      "description": "O ProMtec é um medidor de densidade e processo com mais de 8.800 instalações mundiais. Desenvolvido com tecnologia alemã, é referência global em medição de densidade para processos industriais.",
+      "badge": "8.800+ instalações",
       "features": {
         "0": "Tecnologia alemã de ponta",
-        "1": "Mais de 8.500 instalações mundiais",
+        "1": "Mais de 8.800 instalações mundiais",
         "2": "Alta precisão na medição de densidade",
         "3": "Robusto para processo industrial",
         "4": "Ampla compatibilidade com fluidos",
@@ -1942,7 +1942,7 @@
       "specs": {
         "instalacoesMundiais": {
           "label": "Instalações Mundiais",
-          "value": "8.500+"
+          "value": "8.800+"
         },
         "tecnologia": {
           "label": "Tecnologia",
@@ -2464,7 +2464,7 @@
       "diferencial4": "Frota própria e operação nacional",
       "diferencial5": "Conformidade com normas críticas de segurança (NR-10, NR-35)",
       "diferencial6": "+25 anos de experiência no setor sucroenergético e industrial",
-      "diferencial7": "336 MW de energia solar instalados em 7 parques",
+      "diferencial7": "Mais de 890 MW de energia solar instalados em 10 parques",
       "diferencial8": "Mais de 297.000 horas de serviço executadas",
       "diferencial9": "Capacidade turnkey: projeto, execução e comissionamento",
       "dadosCorporativos": "Dados corporativos",
@@ -2485,7 +2485,7 @@
     },
     "linhaDoTempo": {
       "title": "Linha do Tempo",
-      "description": "De 1999 a hoje: mais de 25 anos de marcos na engenharia integradora. 336 MW solares, 2.000+ dias sem acidentes, certificação ISO 9001 e evolução contínua.",
+      "description": "De 1999 a hoje: mais de 25 anos de marcos na engenharia integradora. 892 MW solares, 2.000+ dias sem acidentes, certificação ISO 9001 e evolução contínua.",
       "tag": "Histórico",
       "pageTitle": "Linha do Tempo",
       "subtitle": "Marcos de evolução da Authomathika desde 1999.",
@@ -2765,7 +2765,7 @@
           "4": "Frota própria e operação nacional",
           "5": "Conformidade com normas críticas de segurança (NR-10, NR-35)",
           "6": "+25 anos de experiência no setor sucroenergético e industrial",
-          "7": "336 MW de energia solar instalados em 7 parques",
+          "7": "Mais de 890 MW de energia solar instalados em 10 parques",
           "8": "Mais de 297.000 horas de serviço executadas",
           "9": "Capacidade turnkey: projeto, execução e comissionamento"
         },
@@ -2804,7 +2804,7 @@
       },
       "linhaDoTempo": {
         "metaTitle": "Linha do Tempo",
-        "metaDescription": "De 1999 a hoje: mais de 25 anos de marcos na engenharia integradora. 336 MW solares, 2.000+ dias sem acidentes, certificação ISO 9001 e evolução contínua.",
+        "metaDescription": "De 1999 a hoje: mais de 25 anos de marcos na engenharia integradora. 892 MW solares, 2.000+ dias sem acidentes, certificação ISO 9001 e evolução contínua.",
         "tag": "Histórico",
         "title": "Linha do Tempo",
         "subtitle": "Marcos de evolução da Authomathika desde 1999.",

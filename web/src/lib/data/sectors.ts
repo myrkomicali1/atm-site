@@ -72,7 +72,7 @@ export const sectors: Sector[] = [
     ],
     metrics: [
       { value: "180+", label: "Plantas industriais atendidas" },
-      { value: "296.400", label: "Pontos de automação implantados" },
+      { value: "380.000+", label: "Pontos de automação implantados" },
       { value: "25+", label: "Anos no setor sucroenergético" },
       { value: "8", label: "Projetos turnkey entregues" },
     ],
@@ -173,7 +173,7 @@ export const sectors: Sector[] = [
     name: "Energias Renováveis",
     headline: "Do projeto ao MW conectado — engenharia solar de grande porte",
     description:
-      "A divisão de Energias Renováveis da Authomathika é especializada na implantação de usinas solares fotovoltaicas de geração centralizada e distribuída. Com 336 MW instalados em 7 parques fotovoltaicos, incluindo o projeto de 540 MW da UFV Belmonte em parceria com o Grupo Cobra, a empresa é referência em montagem elétrica, mecânica e civil para o setor solar.",
+      "A divisão de Energias Renováveis da Authomathika é especializada na implantação de usinas solares fotovoltaicas de geração centralizada e distribuída. Com mais de 890 MW instalados em 10 parques fotovoltaicos, incluindo o projeto de 455 MW da UFV Belmonte em parceria com o Grupo Cobra, a empresa é referência em montagem elétrica, mecânica e civil para o setor solar.",
     painPoints: [
       "Prazos agressivos de conexão com a rede exigem execução rápida e sem retrabalho",
       "Encontrar equipes com experiência real em parques acima de 10 MW é um desafio",
@@ -182,8 +182,8 @@ export const sectors: Sector[] = [
       "Integração entre montagem mecânica, elétrica e civil sem conflitos de interface",
     ],
     solutions: [
-      "Capacidade comprovada em parques de até 540 MW — montagem elétrica, mecânica e civil integradas",
-      "Equipes especializadas exclusivamente em solar, com mais de 336 MW de experiência acumulada",
+      "Capacidade comprovada em parques de até 455 MW — montagem elétrica, mecânica e civil integradas",
+      "Equipes especializadas exclusivamente em solar, com mais de 890 MW de experiência acumulada",
       "Gestão logística de canteiro com controle de materiais, rastreabilidade e eficiência de montagem",
       "Comissionamento rigoroso com testes de performance e entrega documentada para O&M",
       "Contrato único para todas as disciplinas — sem interfaces entre múltiplos fornecedores",
@@ -193,16 +193,16 @@ export const sectors: Sector[] = [
     relatedTestimonials: ["carlos-s"],
     clients: ["Grupo Cobra"],
     metrics: [
-      { value: "336", label: "MW instalados" },
-      { value: "7", label: "Parques fotovoltaicos" },
-      { value: "540 MW", label: "Maior projeto (UFV Belmonte)" },
+      { value: "892", label: "MW instalados" },
+      { value: "10", label: "Parques fotovoltaicos" },
+      { value: "455 MW", label: "Maior projeto (UFV Belmonte)" },
     ],
     faq: [
       {
         question:
           "Qual é a capacidade de implantação da Authomathika em energia solar?",
         answer:
-          "A Authomathika possui capacidade comprovada para implantação de usinas solares de grande porte. O maior projeto executado foi a UFV Belmonte I & II, com 540 MW de capacidade, em parceria com o Grupo Cobra. Com 7 parques e 336 MW totais instalados, a empresa atende projetos acima de 10 MW.",
+          "A Authomathika possui capacidade comprovada para implantação de usinas solares de grande porte. O maior projeto executado foi a UFV Belmonte I & II, com 455 MW de capacidade, em parceria com o Grupo Cobra. Com 10 parques e mais de 890 MW totais instalados, a empresa atende projetos acima de 10 MW.",
       },
       {
         question:
@@ -440,7 +440,7 @@ export const sectors: Sector[] = [
     clients: [],
     metrics: [
       { value: "25+", label: "Anos em processos contínuos" },
-      { value: "296.400", label: "Pontos de automação implantados" },
+      { value: "380.000+", label: "Pontos de automação implantados" },
       { value: "NR-10/35", label: "Equipes certificadas" },
     ],
     faq: [
@@ -490,7 +490,7 @@ export const sectors: Sector[] = [
     relatedTestimonials: [],
     clients: [],
     metrics: [
-      { value: "208+", label: "Projetos industriais entregues" },
+      { value: "251+", label: "Projetos industriais entregues" },
       { value: "42.027", label: "Equipamentos atendidos" },
       { value: "ISO 9001", label: "Certificação de qualidade" },
     ],
@@ -505,7 +505,7 @@ export const sectors: Sector[] = [
         question:
           "Vocês trabalham com acionamentos de média tensão para moinhos?",
         answer:
-          "Sim. A Authomathika projeta e instala sistemas elétricos de média tensão, incluindo CCMs (Centros de Controle de Motores), painéis de partida e acionamentos para motores de grande porte. São mais de 225 CCMs e 256 QGBTs instalados ao longo de 25+ anos.",
+          "Sim. A Authomathika projeta e instala sistemas elétricos de média tensão, incluindo CCMs (Centros de Controle de Motores), painéis de partida e acionamentos para motores de grande porte. São mais de 245 CCMs e 281 QGBTs instalados ao longo de 25+ anos.",
       },
     ],
     icon: "Landmark",
@@ -600,7 +600,7 @@ export const sectors: Sector[] = [
         question:
           "A Authomathika executa montagem de subestações?",
         answer:
-          "Sim. A Authomathika projeta, instala e comissiona subestações de média e baixa tensão, incluindo transformadores, disjuntores, painéis de distribuição e sistemas de proteção. São mais de 25 anos de experiência em engenharia elétrica com 26 plantas greenfield e 73 brownfield entregues.",
+          "Sim. A Authomathika projeta, instala e comissiona subestações de média e baixa tensão, incluindo transformadores, disjuntores, painéis de distribuição e sistemas de proteção. São mais de 25 anos de experiência em engenharia elétrica com 43 plantas greenfield e 82 brownfield entregues.",
       },
       {
         question:

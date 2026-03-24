@@ -7,7 +7,7 @@ import { TimelineAnimated } from "@/components/site/TimelineAnimated";
 export const metadata: Metadata = {
   title: "Linha do Tempo",
   description:
-    "De 1999 a hoje: mais de 25 anos de marcos na engenharia integradora. 336 MW solares, 2.000+ dias sem acidentes, certificação ISO 9001 e evolução contínua.",
+    "De 1999 a hoje: mais de 25 anos de marcos na engenharia integradora. Mais de 890 MW solares, 2.000+ dias sem acidentes, certificação ISO 9001 e evolução contínua.",
   alternates: {
     canonical: "/empresa/linha-do-tempo",
   },
@@ -19,7 +19,7 @@ const currentYear = new Date().getFullYear();
 const STATS = [
   { value: `${currentYear - founded}+`, label: "Anos de mercado" },
   { value: "250+", label: "Projetos entregues" },
-  { value: "336 MW", label: "Energia solar instalada" },
+  { value: "892 MW", label: "Energia solar instalada" },
   { value: "5 países", label: "Com projetos realizados" },
 ] as const;
 

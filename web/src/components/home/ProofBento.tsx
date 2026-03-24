@@ -79,7 +79,7 @@ export async function ProofBento() {
             </p>
             <div>
               <div className="font-display text-5xl font-bold leading-none tracking-tight text-white">
-                336 <span className="text-2xl font-semibold text-red-200">MW</span>
+                892 <span className="text-2xl font-semibold text-red-200">MW</span>
               </div>
               <p className="mt-2 text-sm text-red-100">{t("emParquesFotovoltaicos")}</p>
             </div>

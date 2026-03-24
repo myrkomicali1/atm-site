@@ -120,8 +120,8 @@ export const testimonials: Testimonial[] = [
     company: "Desenvolvedora de Parques Solares",
     sector: "energias-renovaveis",
     quote:
-      "Para um parque de 540 MW, precisávamos de um parceiro local com capacidade real de execução. A Authomathika mobilizou equipes rapidamente, manteve a qualidade de montagem em escala e garantiu os indicadores de performance ratio. Parceria renovada para os próximos projetos.",
-    result: "Performance ratio garantida em 540 MW",
+      "Para um parque de 455 MW, precisávamos de um parceiro local com capacidade real de execução. A Authomathika mobilizou equipes rapidamente, manteve a qualidade de montagem em escala e garantiu os indicadores de performance ratio. Parceria renovada para os próximos projetos.",
+    result: "Performance ratio garantida em 455 MW",
     rating: 5,
     featured: false,
   },

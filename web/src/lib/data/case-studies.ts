@@ -323,7 +323,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "ufv-belmonte",
-    title: "UFV Belmonte I & II — Usina Solar 540 MW",
+    title: "UFV Belmonte I & II — Usina Solar 455 MW",
     client: "Grupo Cobra",
     sector: "energias-renovaveis",
     location: "Bahia",
@@ -331,11 +331,11 @@ export const caseStudies: CaseStudy[] = [
     duration: "24 meses",
     type: "solar",
     challenge:
-      "O Grupo Cobra precisava de um parceiro brasileiro com capacidade para executar a montagem elétrica e mecânica de uma das maiores usinas solares do Brasil, com 540 MW de potência. O prazo era agressivo, a logística complexa e a qualidade da montagem deveria garantir performance ratio contratual por 25+ anos.",
+      "O Grupo Cobra precisava de um parceiro brasileiro com capacidade para executar a montagem elétrica e mecânica de uma das maiores usinas solares do Brasil, com 455 MW de potência. O prazo era agressivo, a logística complexa e a qualidade da montagem deveria garantir performance ratio contratual por 25+ anos.",
     solution:
       "A Authomathika foi selecionada para a montagem elétrica e mecânica da UFV Belmonte I & II, mobilizando equipes especializadas em solar. O escopo incluiu instalação de trackers, módulos fotovoltaicos, cabeamento DC/AC, inversores string e centrais, além de subestação. O controle de qualidade em campo garantiu rastreabilidade de cada componente instalado.",
     results: [
-      { metric: "Capacidade", value: "540 MW instalados" },
+      { metric: "Capacidade", value: "455 MW instalados" },
       { metric: "Segurança", value: "Zero acidentes graves" },
       { metric: "Entrega", value: "Dentro do cronograma" },
       { metric: "Parceiro", value: "Grupo Cobra (Espanha)" },
@@ -344,7 +344,7 @@ export const caseStudies: CaseStudy[] = [
     image:
       "https://www.authomathika.com.br/public/img/blocos/ufv-belmonte_Gm6HFNCJp429Srma7DpwrE8JL.webp",
     altText:
-      "UFV Belmonte I e II - usina solar fotovoltaica de 540 MW com montagem eletrica e mecanica pela Authomathika em parceria com Grupo Cobra",
+      "UFV Belmonte I e II - usina solar fotovoltaica de 455 MW com montagem eletrica e mecanica pela Authomathika em parceria com Grupo Cobra",
     featured: true,
   },
 

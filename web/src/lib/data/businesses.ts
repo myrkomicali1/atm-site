@@ -14,7 +14,7 @@ export const businessAreas: BusinessArea[] = [
   {
     slug: "energias-renovaveis",
     name: "Energias Renováveis",
-    shortDescription: "336 MW de energia solar instalados em 7 parques fotovoltaicos",
+    shortDescription: "Mais de 890 MW de energia solar instalados em 10 parques fotovoltaicos",
     description:
       "A divisão de Energias Renováveis da Authomathika atua na implantação de usinas solares fotovoltaicas de geração centralizada e distribuída. Com expertise em montagem elétrica, mecânica e civil, além de engenharia executiva, entregamos soluções completas para o setor de energia limpa.",
     services: [
@@ -27,8 +27,8 @@ export const businessAreas: BusinessArea[] = [
       "Operação e manutenção (O&M)",
     ],
     metrics: [
-      { value: "336 MW", label: "Energia Solar Instalada" },
-      { value: "7", label: "Parques Executados" },
+      { value: "892 MW", label: "Energia Solar Instalada" },
+      { value: "10", label: "Parques Executados" },
     ],
     icon: "Sun",
   },
@@ -61,7 +61,7 @@ export const businessAreas: BusinessArea[] = [
   {
     slug: "automacao",
     name: "Automação",
-    shortDescription: "49 plantas Greenfield, 144 Brownfield e 296.400 pontos de automação",
+    shortDescription: "49 plantas Greenfield, 144 Brownfield e mais de 380.000 pontos de automação",
     description:
       "A divisão de Automação da Authomathika é uma das mais completas do setor, atuando em automação industrial e instrumentação para geração e cogeração. Desenvolvemos software SCADA, programamos CLPs e executamos projetos de automação do início ao fim.",
     services: [
@@ -76,7 +76,7 @@ export const businessAreas: BusinessArea[] = [
     metrics: [
       { value: "49", label: "Plantas Greenfield" },
       { value: "144", label: "Plantas Brownfield" },
-      { value: "296.400", label: "Pontos de Automação" },
+      { value: "380.000+", label: "Pontos de Automação" },
     ],
     partners: [
       "Rockwell",

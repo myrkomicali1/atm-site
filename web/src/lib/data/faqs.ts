@@ -14,12 +14,12 @@ export const businessFaqs: Record<string, FAQ[]> = {
     {
       question: "O que é um integrador de sistemas de automação industrial?",
       answer:
-        "Um integrador de sistemas de automação industrial é uma empresa especializada em projetar, instalar e comissionar soluções completas de controle e monitoramento de processos. A Authomathika atua como integradora desde 1999, tendo implantado mais de 296.400 pontos de automação em 180 plantas industriais no Brasil, trabalhando com plataformas como CLPs Rockwell, Siemens, Yokogawa e sistemas SCADA.",
+        "Um integrador de sistemas de automação industrial é uma empresa especializada em projetar, instalar e comissionar soluções completas de controle e monitoramento de processos. A Authomathika atua como integradora desde 1999, tendo implantado mais de 380.000 pontos de automação em 180 plantas industriais no Brasil, trabalhando com plataformas como CLPs Rockwell, Siemens, Yokogawa e sistemas SCADA.",
     },
     {
       question: "Qual a diferença entre projeto greenfield e brownfield em automação?",
       answer:
-        "Um projeto greenfield é uma implantação totalmente nova, onde a automação é projetada do zero para uma planta que ainda será construída. Já o brownfield envolve a modernização, ampliação ou revamp de sistemas existentes em plantas já em operação. A Authomathika possui experiência em ambos: 41 plantas greenfield e 139 brownfield na divisão de Automação.",
+        "Um projeto greenfield é uma implantação totalmente nova, onde a automação é projetada do zero para uma planta que ainda será construída. Já o brownfield envolve a modernização, ampliação ou revamp de sistemas existentes em plantas já em operação. A Authomathika possui experiência em ambos: 49 plantas greenfield e 144 brownfield na divisão de Automação.",
     },
     {
       question: "Quais sistemas SCADA e CLPs a Authomathika trabalha?",
@@ -37,7 +37,7 @@ export const businessFaqs: Record<string, FAQ[]> = {
     {
       question: "O que é engenharia elétrica industrial?",
       answer:
-        "Engenharia elétrica industrial abrange o projeto, construção e comissionamento de sistemas elétricos para plantas industriais, incluindo subestações, painéis elétricos (CCMs, QGBTs), sistemas de cogeração e centrais termoelétricas. A Authomathika já executou projetos em 26 plantas greenfield e 73 brownfield, com mais de 225 CCMs e 256 QGBTs instalados.",
+        "Engenharia elétrica industrial abrange o projeto, construção e comissionamento de sistemas elétricos para plantas industriais, incluindo subestações, painéis elétricos (CCMs, QGBTs), sistemas de cogeração e centrais termoelétricas. A Authomathika já executou projetos em 43 plantas greenfield e 82 brownfield, com mais de 245 CCMs e 281 QGBTs instalados.",
     },
     {
       question: "Qual a diferença entre CCM e QGBT?",
@@ -83,12 +83,12 @@ export const businessFaqs: Record<string, FAQ[]> = {
     {
       question: "O que é montagem eletromecânica industrial?",
       answer:
-        "Montagem eletromecânica é o processo de instalação integrada de componentes elétricos e mecânicos em plantas industriais, incluindo equipamentos, tubulações, estruturas metálicas, painéis e sistemas de força e controle. A Authomathika já executou 208 projetos de montagem, desde pequeno até grande porte, em mais de 23 anos de atuação.",
+        "Montagem eletromecânica é o processo de instalação integrada de componentes elétricos e mecânicos em plantas industriais, incluindo equipamentos, tubulações, estruturas metálicas, painéis e sistemas de força e controle. A Authomathika já executou 251 projetos de montagem, desde pequeno até grande porte, em mais de 25 anos de atuação.",
     },
     {
       question: "Quais setores a Authomathika atende em montagem eletromecânica?",
       answer:
-        "A Authomathika atende diversos setores industriais: sucroenergético (usinas de açúcar e etanol), fertilizantes, saneamento, logística, mineração, alimentos e bebidas, química e siderurgia. Com 105 projetos de pequeno porte, 74 de médio porte e 29 de grande porte entregues, a empresa possui experiência multissetorial comprovada.",
+        "A Authomathika atende diversos setores industriais: sucroenergético (usinas de açúcar e etanol), fertilizantes, saneamento, logística, mineração, alimentos e bebidas, química e siderurgia. Com 126 projetos de pequeno porte, 81 de médio porte e 44 de grande porte entregues, a empresa possui experiência multissetorial comprovada.",
     },
     {
       question: "Qual a diferença entre montagem de pequeno, médio e grande porte?",
@@ -124,7 +124,7 @@ export const businessFaqs: Record<string, FAQ[]> = {
     {
       question: "A Authomathika instala usinas solares fotovoltaicas?",
       answer:
-        "Sim. A divisão de Energias Renováveis da Authomathika já instalou 336 MW de energia solar em 7 parques fotovoltaicos, atuando em geração centralizada e distribuída. Os serviços incluem montagem elétrica e mecânica, montagem civil, engenharia executiva, comissionamento e operação e manutenção (O&M).",
+        "Sim. A divisão de Energias Renováveis da Authomathika já instalou mais de 890 MW de energia solar em 10 parques fotovoltaicos, atuando em geração centralizada e distribuída. Os serviços incluem montagem elétrica e mecânica, montagem civil, engenharia executiva, comissionamento e operação e manutenção (O&M).",
     },
     {
       question: "Qual a diferença entre geração centralizada e distribuída de energia solar?",
@@ -139,7 +139,7 @@ export const businessFaqs: Record<string, FAQ[]> = {
     {
       question: "Qual a capacidade de implantação da Authomathika em energia solar?",
       answer:
-        "A Authomathika possui capacidade comprovada para implantação de usinas solares de grande porte. O maior projeto executado foi a UFV Belmonte I & II, com 540 MW de capacidade, em parceria com o Grupo Cobra. Com 7 parques e 336 MW totais instalados, a empresa tem experiência para atender projetos acima de 10 MW.",
+        "A Authomathika possui capacidade comprovada para implantação de usinas solares de grande porte. O maior projeto executado foi a UFV Belmonte I & II, com 455 MW de capacidade, em parceria com o Grupo Cobra. Com 10 parques e mais de 890 MW totais instalados, a empresa tem experiência para atender projetos acima de 10 MW.",
     },
   ],
 };

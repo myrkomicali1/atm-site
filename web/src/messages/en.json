@@ -70,10 +70,10 @@
       "anosLabel": "in the market",
       "equipamentosValue": "42,027",
       "equipamentosLabel": "equipment serviced",
-      "energiaValue": "336",
+      "energiaValue": "892",
       "energiaUnit": "MW",
       "energiaLabel": "solar energy installed",
-      "projetosValue": "208",
+      "projetosValue": "251",
       "projetosLabel": "assembly projects"
     }
   },
@@ -82,7 +82,7 @@
     "heading": "The same engineering. Any industrial segment.",
     "description": "25 years of project management across industries with distinct requirements. The ability to integrate electrical, automation, assembly and EPC under a single contract is what allows us to operate wherever your project needs us.",
     "naoEncontrouSetor": "Can't find your industry?",
-    "naoEncontrouSetorDesc": "208 projects delivered across diverse segments. Talk to our technical team about your specific challenge."
+    "naoEncontrouSetorDesc": "251 projects delivered across diverse segments. Talk to our technical team about your specific challenge."
   },
   "capabilities": {
     "tag": "Operational divisions",
@@ -92,7 +92,7 @@
     "tag": "Delivery methodology",
     "heading": "From diagnosis to commissioning.",
     "headingHighlight": "A single point of accountability.",
-    "description": "Each project follows the same integrated management methodology that has already delivered 208 projects across 12 sectors — on schedule, fully documented and with zero accidents.",
+    "description": "Each project follows the same integrated management methodology that has already delivered 251 projects across 12 sectors — on schedule, fully documented and with zero accidents.",
     "steps": {
       "step01": {
         "number": "01",
@@ -132,12 +132,12 @@
   },
   "proof": {
     "tag": "Impact in numbers",
-    "heading": "42,027 equipment. 336 MW solar. Zero rework.",
+    "heading": "42,027 equipment. 892 MW solar. Zero rework.",
     "equipamentosAtendidos": "Equipment serviced",
     "atendimentosTecnicos": "specialized technical services",
     "horasDeServico": "Service hours",
     "energiaSolarInstalada": "Solar energy installed",
-    "emParquesFotovoltaicos": "across 7 photovoltaic parks",
+    "emParquesFotovoltaicos": "across 10 photovoltaic parks",
     "certificacoes": "Certifications"
   },
   "works": {
@@ -147,7 +147,7 @@
   "company": {
     "tag": "Our story",
     "heading": "Since {founded}, integrating engineering and industrial project management.",
-    "description": "208 projects delivered across 12 industrial sectors. Authomathika assumes full responsibility — from diagnosis to commissioning — with the same management methodology that delivers on schedule, with safety and impeccable documentation. Today, artificial intelligence and data analytics are transforming the administrative and operational management of our clients.",
+    "description": "251 projects delivered across 12 industrial sectors. Authomathika assumes full responsibility — from diagnosis to commissioning — with the same management methodology that delivers on schedule, with safety and impeccable documentation. Today, artificial intelligence and data analytics are transforming the administrative and operational management of our clients.",
     "pillars": {
       "gestaoIntegrada": {
         "title": "Integrated Management",
@@ -222,7 +222,7 @@
   },
   "homeFaq": {
     "q1": "What is a systems integration company?",
-    "a1": "A systems integrator is a company specialized in designing, installing, and commissioning complete control and monitoring solutions for industrial plants. Authomathika has been operating as an integrator since 1999, with over 296,400 automation points across 180 plants in Brazil.",
+    "a1": "A systems integrator is a company specialized in designing, installing, and commissioning complete control and monitoring solutions for industrial plants. Authomathika has been operating as an integrator since 1999, with over 380,000+ automation points across 180 plants in Brazil.",
     "q2": "Which industries does Authomathika serve?",
     "a2": "Authomathika serves more than 12 industrial sectors, including sugar and ethanol, fertilizers, sanitation, mining, food and beverage, solar photovoltaic energy, logistics, chemicals, steel, pulp and paper, among others.",
     "q3": "What is the difference between greenfield and brownfield projects?",
@@ -237,7 +237,7 @@
   },
   "metadata": {
     "homeTitle": "Authomathika – Industrial Systems Integration Engineering",
-    "homeDescription": "End-to-end responsibility in industrial engineering. Electrical, automation, EPC, AI and data in a single contract. 27+ years, 208 projects, 12+ industrial sectors."
+    "homeDescription": "End-to-end responsibility in industrial engineering. Electrical, automation, EPC, AI and data in a single contract. 27+ years, 251 projects, 12+ industrial sectors."
   },
   "pageIntro": {
     "breadcrumbHome": "Home"
@@ -254,9 +254,9 @@
   "businessAreasData": {
     "energias-renovaveis": {
       "name": "Renewable Energy",
-      "shortDescription": "336 MW of solar energy installed across 7 photovoltaic parks",
+      "shortDescription": "Over 890 MW of solar energy installed across 10 photovoltaic parks",
       "description": "Authomathika's Renewable Energy division specializes in the deployment of centralized and distributed solar photovoltaic power plants. With expertise in electrical, mechanical and civil assembly, as well as executive engineering, we deliver complete solutions for the clean energy sector.",
-      "metric0Value": "336 MW",
+      "metric0Value": "892 MW",
       "metric0Label": "Solar Energy Installed",
       "metric1Value": "7",
       "metric1Label": "Parks Executed",
@@ -298,13 +298,13 @@
     },
     "automacao": {
       "name": "Automation",
-      "shortDescription": "49 Greenfield, 144 Brownfield plants and 296,400 automation points",
+      "shortDescription": "49 Greenfield, 144 Brownfield plants and 380,000+ automation points",
       "description": "Authomathika's Automation division is one of the most comprehensive in the industry, working with industrial automation and instrumentation for power generation and cogeneration. We develop SCADA software, program PLCs and execute automation projects from start to finish.",
       "metric0Value": "49",
       "metric0Label": "Greenfield Plants",
       "metric1Value": "144",
       "metric1Label": "Brownfield Plants",
-      "metric2Value": "296,400",
+      "metric2Value": "380,000+",
       "metric2Label": "Automation Points",
       "services": {
         "0": "Industrial automation and instrumentation",
@@ -339,7 +339,7 @@
     "montagem-eletromecanica": {
       "name": "Electromechanical Assembly",
       "shortDescription": "251 projects in 23+ years of multi-sector experience",
-      "description": "With over 23 years of proven results, Authomathika's Electromechanical Assembly division serves a wide range of industrial segments. From small equipment installations to large-scale industrial projects, we deliver quality and safety.",
+      "description": "With over 25 years of proven results, Authomathika's Electromechanical Assembly division serves a wide range of industrial segments. From small equipment installations to large-scale industrial projects, we deliver quality and safety.",
       "metric0Value": "126",
       "metric0Label": "Small-Scale Projects",
       "metric1Value": "81",
@@ -448,7 +448,7 @@
         }
       },
       "metric1Label": "Automation points deployed",
-      "metric1Value": "296.400",
+      "metric1Value": "380.000+",
       "metric2Label": "Years in the sugar-energy sector",
       "metric2Value": "25+",
       "metric3Label": "Turnkey projects delivered",
@@ -507,8 +507,8 @@
     "energias-renovaveis": {
       "name": "Renewable Energy",
       "headline": "From project to connected MW — large-scale solar engineering",
-      "description": "Authomathika's Renewable Energy division specializes in the deployment of centralized and distributed solar photovoltaic power plants. With 336 MW installed across 7 photovoltaic parks, including the 540 MW UFV Belmonte project in partnership with Grupo Cobra, the company is a reference in electrical, mechanical and civil assembly for the solar sector.",
-      "metric0Value": "336",
+      "description": "Authomathika's Renewable Energy division specializes in the deployment of centralized and distributed solar photovoltaic power plants. With over 890 MW installed across 10 photovoltaic parks, including the 455 MW UFV Belmonte project in partnership with Grupo Cobra, the company is a reference in electrical, mechanical and civil assembly for the solar sector.",
+      "metric0Value": "892",
       "metric0Label": "MW installed",
       "painPoints": {
         "0": "Aggressive grid connection deadlines require fast execution with zero rework",
@@ -518,8 +518,8 @@
         "4": "Integration between mechanical, electrical and civil assembly without interface conflicts"
       },
       "solutions": {
-        "0": "Proven capability in parks up to 540 MW — integrated electrical, mechanical and civil assembly",
-        "1": "Teams specialized exclusively in solar, with over 336 MW of accumulated experience",
+        "0": "Proven capability in parks up to 455 MW — integrated electrical, mechanical and civil assembly",
+        "1": "Teams specialized exclusively in solar, with over 890 MW of accumulated experience",
         "2": "Site logistics management with material control, traceability and assembly efficiency",
         "3": "Rigorous commissioning with performance testing and documented delivery for O&M",
         "4": "Single contract for all disciplines — no interfaces between multiple suppliers"
@@ -538,7 +538,7 @@
       "faq": {
         "0": {
           "question": "What is Authomathika's solar energy deployment capacity?",
-          "answer": "Authomathika has proven capability for large-scale solar plant deployment. The largest project executed was UFV Belmonte I & II, with 540 MW capacity, in partnership with Grupo Cobra. With 7 parks and 336 MW total installed, the company serves projects above 10 MW."
+          "answer": "Authomathika has proven capability for large-scale solar plant deployment. The largest project executed was UFV Belmonte I & II, with 455 MW capacity, in partnership with Grupo Cobra. With 10 parks and over 890 MW total installed, the company serves projects above 10 MW."
         },
         "1": {
           "question": "Does Authomathika offer O&M services for solar plants?",
@@ -552,7 +552,7 @@
       "metric1Label": "Photovoltaic parks",
       "metric1Value": "7",
       "metric2Label": "Largest project (UFV Belmonte)",
-      "metric2Value": "540 MW"
+      "metric2Value": "455 MW"
     },
     "saneamento": {
       "name": "Water & Sanitation",
@@ -761,7 +761,7 @@
         }
       },
       "metric1Label": "Automation points deployed",
-      "metric1Value": "296.400",
+      "metric1Value": "380.000+",
       "metric2Label": "Certified teams",
       "metric2Value": "NR-10/35"
     },
@@ -769,7 +769,7 @@
       "name": "Cement",
       "headline": "Integrated engineering for cement and building materials plants",
       "description": "Authomathika serves the cement industry with automation, electrical and electromechanical assembly projects for cement, lime and building materials production plants. With experience in high-temperature processes and harsh environments, we offer solutions that ensure energy efficiency, operational availability and environmental compliance.",
-      "metric0Value": "208+",
+      "metric0Value": "251+",
       "metric0Label": "Industrial projects delivered",
       "painPoints": {
         "0": "Clinkerization processes at 2,640°F (1,450°C) require robust instrumentation and highly reliable automation",
@@ -889,7 +889,7 @@
       "faq": {
         "0": {
           "question": "Does Authomathika perform substation assembly?",
-          "answer": "Yes. Authomathika designs, installs and commissions medium and low-voltage substations, including transformers, circuit breakers, distribution panels and protection systems. We have over 25 years of electrical engineering experience with 26 greenfield and 73 brownfield plants delivered."
+          "answer": "Yes. Authomathika designs, installs and commissions medium and low-voltage substations, including transformers, circuit breakers, distribution panels and protection systems. We have over 25 years of electrical engineering experience with 43 greenfield and 82 brownfield plants delivered."
         },
         "1": {
           "question": "Do you build thermoelectric power plants?",
@@ -971,9 +971,9 @@
     },
     "11": {
       "type": "Solar Energy",
-      "category": "540 MW — Grupo Cobra",
-      "description": "540 MW photovoltaic plant.",
-      "altText": "UFV Belmonte I & II - 540 MW solar photovoltaic plant with electrical and mechanical assembly by Authomathika in partnership with Grupo Cobra"
+      "category": "455 MW — Grupo Cobra",
+      "description": "455 MW photovoltaic plant.",
+      "altText": "UFV Belmonte I & II - 455 MW solar photovoltaic plant with electrical and mechanical assembly by Authomathika in partnership with Grupo Cobra"
     }
   },
   "companyData": {
@@ -1050,7 +1050,7 @@
         "event": "2,000 days without workplace accidents"
       },
       "10": {
-        "event": "336 MW of solar energy installed — 7 parks"
+        "event": "Over 890 MW of solar energy installed — 10 parks"
       },
       "11": {
         "event": "Over two decades consolidating presence in the sugar-energy and industrial sectors"
@@ -1111,11 +1111,11 @@
     "automacao": {
       "0": {
         "question": "What is an industrial automation systems integrator?",
-        "answer": "An industrial automation systems integrator is a company specialized in designing, installing and commissioning complete process control and monitoring solutions. Authomathika has been operating as an integrator since 1999, having deployed over 296,400 automation points across 180 industrial plants in Brazil, working with platforms such as Rockwell PLCs, Siemens, Yokogawa and SCADA systems."
+        "answer": "An industrial automation systems integrator is a company specialized in designing, installing and commissioning complete process control and monitoring solutions. Authomathika has been operating as an integrator since 1999, having deployed over 380,000+ automation points across 180 industrial plants in Brazil, working with platforms such as Rockwell PLCs, Siemens, Yokogawa and SCADA systems."
       },
       "1": {
         "question": "What is the difference between greenfield and brownfield automation projects?",
-        "answer": "A greenfield project is a completely new implementation, where the automation is designed from scratch for a plant that is yet to be built. A brownfield project involves the modernization, expansion or revamp of existing systems in plants already in operation. Authomathika has experience in both: 41 greenfield plants and 139 brownfield plants in the Automation division."
+        "answer": "A greenfield project is a completely new implementation, where the automation is designed from scratch for a plant that is yet to be built. A brownfield project involves the modernization, expansion or revamp of existing systems in plants already in operation. Authomathika has experience in both: 49 greenfield plants and 144 brownfield plants in the Automation division."
       },
       "2": {
         "question": "Which SCADA systems and PLCs does Authomathika work with?",
@@ -1129,7 +1129,7 @@
     "eletrica": {
       "0": {
         "question": "What is industrial electrical engineering?",
-        "answer": "Industrial electrical engineering encompasses the design, construction and commissioning of electrical systems for industrial plants, including substations, electrical panels (MCCs, LV switchboards), cogeneration systems and thermoelectric power plants. Authomathika has executed projects in 26 greenfield and 73 brownfield plants, with over 225 MCCs and 256 LV switchboards installed."
+        "answer": "Industrial electrical engineering encompasses the design, construction and commissioning of electrical systems for industrial plants, including substations, electrical panels (MCCs, LV switchboards), cogeneration systems and thermoelectric power plants. Authomathika has executed projects in 43 greenfield and 82 brownfield plants, with over 225 MCCs and 256 LV switchboards installed."
       },
       "1": {
         "question": "What is the difference between an MCC and an LV switchboard?",
@@ -1165,7 +1165,7 @@
     "montagem-eletromecanica": {
       "0": {
         "question": "What is industrial electromechanical assembly?",
-        "answer": "Electromechanical assembly is the integrated installation of electrical and mechanical components in industrial plants, including equipment, piping, structural steel, panels and power and control systems. Authomathika has executed 208 assembly projects, from small to large scale, over more than 23 years of operation."
+        "answer": "Electromechanical assembly is the integrated installation of electrical and mechanical components in industrial plants, including equipment, piping, structural steel, panels and power and control systems. Authomathika has executed 251 assembly projects, from small to large scale, over more than 25 years of operation."
       },
       "1": {
         "question": "Which industries does Authomathika serve in electromechanical assembly?",
@@ -1197,7 +1197,7 @@
     "energias-renovaveis": {
       "0": {
         "question": "Does Authomathika install solar photovoltaic power plants?",
-        "answer": "Yes. Authomathika's Renewable Energy division has installed 336 MW of solar energy across 7 photovoltaic parks, operating in both centralized and distributed generation. Services include electrical and mechanical assembly, civil assembly, executive engineering, commissioning and operations and maintenance (O&M)."
+        "answer": "Yes. Authomathika's Renewable Energy division has installed Over 890 MW of solar energy across 10 photovoltaic parks, operating in both centralized and distributed generation. Services include electrical and mechanical assembly, civil assembly, executive engineering, commissioning and operations and maintenance (O&M)."
       },
       "1": {
         "question": "What is the difference between centralized and distributed solar energy generation?",
@@ -1209,7 +1209,7 @@
       },
       "3": {
         "question": "What is Authomathika's solar energy deployment capacity?",
-        "answer": "Authomathika has proven capability for large-scale solar plant deployment. The largest project executed was UFV Belmonte I & II, with 540 MW capacity, in partnership with Grupo Cobra. With 7 parks and 336 MW total installed, the company has the experience to serve projects above 10 MW."
+        "answer": "Authomathika has proven capability for large-scale solar plant deployment. The largest project executed was UFV Belmonte I & II, with 455 MW capacity, in partnership with Grupo Cobra. With 10 parks and over 890 MW total installed, the company has the experience to serve projects above 10 MW."
       }
     }
   },
@@ -1259,8 +1259,8 @@
     "roberto-g": {
       "role": "Technical Director",
       "company": "Solar Park Developer",
-      "quote": "For a 540 MW park, we needed a local partner with real execution capability. Authomathika mobilized teams quickly, maintained assembly quality at scale and guaranteed the performance ratio indicators. Partnership renewed for upcoming projects.",
-      "result": "Performance ratio guaranteed at 540 MW"
+      "quote": "For a 455 MW park, we needed a local partner with real execution capability. Authomathika mobilized teams quickly, maintained assembly quality at scale and guaranteed the performance ratio indicators. Partnership renewed for upcoming projects.",
+      "result": "Performance ratio guaranteed at 455 MW"
     }
   },
   "caseStudyData": {
@@ -1500,15 +1500,15 @@
       }
     },
     "ufv-belmonte": {
-      "title": "UFV Belmonte I & II — 540 MW Solar Plant",
+      "title": "UFV Belmonte I & II — 455 MW Solar Plant",
       "duration": "24 months",
-      "challenge": "Grupo Cobra needed a Brazilian partner with the capability to execute the electrical and mechanical assembly of one of Brazil's largest solar plants, with 540 MW of capacity. The deadline was aggressive, logistics were complex and assembly quality had to guarantee the contractual performance ratio for 25+ years.",
+      "challenge": "Grupo Cobra needed a Brazilian partner with the capability to execute the electrical and mechanical assembly of one of Brazil's largest solar plants, with 455 MW of capacity. The deadline was aggressive, logistics were complex and assembly quality had to guarantee the contractual performance ratio for 25+ years.",
       "solution": "Authomathika was selected for the electrical and mechanical assembly of UFV Belmonte I & II, mobilizing solar-specialized teams. The scope included installation of trackers, photovoltaic modules, DC/AC cabling, string and central inverters, as well as the substation. On-site quality control ensured traceability of every installed component.",
-      "altText": "UFV Belmonte I & II - 540 MW solar photovoltaic plant with electrical and mechanical assembly by Authomathika in partnership with Grupo Cobra",
+      "altText": "UFV Belmonte I & II - 455 MW solar photovoltaic plant with electrical and mechanical assembly by Authomathika in partnership with Grupo Cobra",
       "results": {
         "0": {
           "metric": "Capacity",
-          "value": "540 MW installed"
+          "value": "455 MW installed"
         },
         "1": {
           "metric": "Safety",
@@ -2058,11 +2058,11 @@
     "promtec": {
       "name": "ProMtec",
       "shortDescription": "Density and Process Meter",
-      "description": "The ProMtec is a density and process meter with over 8,500 installations worldwide. Developed with German technology, it is a global reference in density measurement for industrial processes.",
-      "badge": "8,500+ installations",
+      "description": "The ProMtec is a density and process meter with over 8,800 installations worldwide. Developed with German technology, it is a global reference in density measurement for industrial processes.",
+      "badge": "8,800+ installations",
       "features": {
         "0": "Cutting-edge German technology",
-        "1": "Over 8,500 installations worldwide",
+        "1": "Over 8,800 installations worldwide",
         "2": "High-precision density measurement",
         "3": "Robust for industrial processes",
         "4": "Wide fluid compatibility",
@@ -2071,7 +2071,7 @@
       "specs": {
         "instalacoesMundiais": {
           "label": "Worldwide Installations",
-          "value": "8,500+"
+          "value": "8,800+"
         },
         "tecnologia": {
           "label": "Technology",
@@ -2596,7 +2596,7 @@
       "diferencial4": "Own fleet and nationwide operations",
       "diferencial5": "Compliance with critical safety standards (NR-10, NR-35)",
       "diferencial6": "25+ years of experience in the sugar-energy and industrial sectors",
-      "diferencial7": "336 MW of solar energy installed in 7 parks",
+      "diferencial7": "Over 890 MW of solar energy installed in 10 parks",
       "diferencial8": "Over 297,000 service hours performed",
       "diferencial9": "Turnkey capability: design, execution and commissioning",
       "dadosCorporativos": "Corporate data",
@@ -2617,7 +2617,7 @@
     },
     "linhaDoTempo": {
       "title": "Timeline",
-      "description": "From 1999 to today: over 25 years of milestones in integrating engineering. 336 MW solar, 2,000+ days without accidents, ISO 9001 certification and continuous evolution.",
+      "description": "From 1999 to today: over 25 years of milestones in integrating engineering. 892 MW solar, 2,000+ days without accidents, ISO 9001 certification and continuous evolution.",
       "tag": "History",
       "pageTitle": "Timeline",
       "subtitle": "Milestones in Authomathika's evolution since 1999.",

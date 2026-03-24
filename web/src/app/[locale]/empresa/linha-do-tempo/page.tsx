@@ -38,7 +38,7 @@ export default async function LinhaDoTempoPage() {
   const STATS = [
     { value: `${currentYear - founded}+`, label: t("stats.yearsLabel") },
     { value: "250+", label: t("stats.projectsLabel") },
-    { value: "336 MW", label: t("stats.solarLabel") },
+    { value: "892 MW", label: t("stats.solarLabel") },
     { value: t("stats.countriesValue"), label: t("stats.countriesLabel") },
   ];
 

@@ -38,7 +38,7 @@ export const stats = [
     suffix: "",
   },
   {
-    value: "336",
+    value: "892",
     label: "MW de Energia Solar",
     suffix: " MW",
   },
@@ -529,9 +529,9 @@ export const works = [
   {
     title: "UFV Belmonte I & II",
     type: "Energia Solar",
-    category: "540 MW — Grupo Cobra",
-    description: "Usina fotovoltaica de 540 MW.",
+    category: "455 MW — Grupo Cobra",
+    description: "Usina fotovoltaica de 455 MW.",
     image: "https://www.authomathika.com.br/public/img/blocos/ufv-belmonte_Gm6HFNCJp429Srma7DpwrE8JL.webp",
-    altText: "UFV Belmonte I e II - usina solar fotovoltaica de 540 MW com montagem eletrica e mecanica pela Authomathika em parceria com Grupo Cobra",
+    altText: "UFV Belmonte I e II - usina solar fotovoltaica de 455 MW com montagem eletrica e mecanica pela Authomathika em parceria com Grupo Cobra",
   },
 ];
