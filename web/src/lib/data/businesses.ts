@@ -185,6 +185,26 @@ export const businessAreas: BusinessArea[] = [
     ],
     icon: "Building2",
   },
+  {
+    slug: "data-centers",
+    name: "Data Centers",
+    shortDescription: "Infraestrutura elétrica, automação e montagem para Data Centers de alta disponibilidade",
+    description:
+      "A Authomathika aplica mais de 25 anos de experiência em engenharia elétrica industrial, automação e montagem eletromecânica à construção e modernização de Data Centers. Com fabricação própria de painéis, eletrocentros e power stations, a empresa entrega soluções integradas de infraestrutura crítica — da subestação de entrada ao monitoramento BMS — sob um único contrato EPC.",
+    services: [
+      "Projeto e fabricação de painéis de distribuição (CCMs, QGBTs, PDUs)",
+      "Eletrocentros e Power Stations pré-montados",
+      "Montagem eletromecânica de infraestrutura elétrica",
+      "Automação e SCADA para BMS",
+      "Subestações de entrada em média tensão",
+      "CFTV, controle de acesso e redes de fibra óptica",
+    ],
+    metrics: [
+      { value: "245", label: "CCMs Fabricados" },
+      { value: "43", label: "Plantas Greenfield" },
+    ],
+    icon: "Server",
+  },
 ];
 
 export function getBusinessArea(slug: string): BusinessArea | undefined {

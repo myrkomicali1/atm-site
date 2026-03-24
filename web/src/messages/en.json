@@ -388,6 +388,23 @@
         "4": "Contract administration and control",
         "5": "Strategic execution partnerships"
       }
+    },
+    "data-centers": {
+      "name": "Data Centers",
+      "shortDescription": "Electrical infrastructure, automation and assembly for high-availability Data Centers",
+      "description": "Authomathika applies over 25 years of experience in industrial electrical engineering, automation and electromechanical assembly to Data Center construction and modernization. With in-house manufacturing of electrical panels, e-houses and power stations, the company delivers integrated critical infrastructure solutions — from the incoming substation to BMS monitoring — under a single EPC contract.",
+      "metric0Value": "245",
+      "metric0Label": "MCCs Manufactured",
+      "metric1Value": "43",
+      "metric1Label": "Greenfield Plants",
+      "services": {
+        "0": "Design and manufacturing of distribution panels (MCCs, switchboards, PDUs)",
+        "1": "Pre-assembled e-houses and Power Stations",
+        "2": "Electromechanical assembly of electrical infrastructure",
+        "3": "Automation and SCADA for BMS",
+        "4": "Medium-voltage incoming substations",
+        "5": "CCTV, access control and fiber optic networks"
+      }
     }
   },
   "sectorNames": {

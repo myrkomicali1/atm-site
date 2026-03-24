@@ -12,6 +12,7 @@ import {
   Landmark,
   Fuel,
   Building,
+  Server,
 } from "lucide-react";
 import { getFeaturedSectors } from "@/lib/data/sectors";
 import { Link } from "@/i18n/routing";
@@ -31,6 +32,7 @@ const iconMap: Record<string, React.ElementType> = {
   Landmark,
   Fuel,
   Building,
+  Server,
 };
 
 export async function SectorsSection() {
@@ -64,7 +66,7 @@ export async function SectorsSection() {
         </AnimateOnScroll>
 
         {/* Featured sector cards */}
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {featured.map((sector, idx) => {
             const Icon = iconMap[sector.icon] ?? Factory;
             const primaryMetric = sector.metrics[0];

@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Sun, Zap, Cpu, Wrench, Settings, Building2, Brain } from "lucide-react";
+import { ArrowRight, Sun, Zap, Cpu, Wrench, Settings, Building2, Brain, Server } from "lucide-react";
 import { businessAreas } from "@/lib/data/businesses";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
@@ -14,6 +14,7 @@ const iconMap: Record<string, React.ElementType> = {
   Settings,
   Building2,
   Brain,
+  Server,
 };
 
 export function CapabilitiesRail() {

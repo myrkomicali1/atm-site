@@ -388,6 +388,23 @@
         "4": "Administração e controle de contratos",
         "5": "Parcerias estratégicas para execução"
       }
+    },
+    "data-centers": {
+      "name": "Data Centers",
+      "shortDescription": "Infraestrutura elétrica, automação e montagem para Data Centers de alta disponibilidade",
+      "description": "A Authomathika aplica mais de 25 anos de experiência em engenharia elétrica industrial, automação e montagem eletromecânica à construção e modernização de Data Centers. Com fabricação própria de painéis, eletrocentros e power stations, a empresa entrega soluções integradas de infraestrutura crítica — da subestação de entrada ao monitoramento BMS — sob um único contrato EPC.",
+      "metric0Value": "245",
+      "metric0Label": "CCMs Fabricados",
+      "metric1Value": "43",
+      "metric1Label": "Plantas Greenfield",
+      "services": {
+        "0": "Projeto e fabricação de painéis de distribuição (CCMs, QGBTs, PDUs)",
+        "1": "Eletrocentros e Power Stations pré-montados",
+        "2": "Montagem eletromecânica de infraestrutura elétrica",
+        "3": "Automação e SCADA para BMS",
+        "4": "Subestações de entrada em média tensão",
+        "5": "CFTV, controle de acesso e redes de fibra óptica"
+      }
     }
   },
   "sectorNames": {

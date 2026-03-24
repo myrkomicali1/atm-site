@@ -671,7 +671,7 @@ export const sectors: Sector[] = [
       },
     ],
     icon: "Server",
-    featured: false,
+    featured: true,
   },
 ];
 
