@@ -24,20 +24,22 @@ import {
   Landmark,
   Fuel,
   Building,
+  LayoutGrid,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/routing";
 import { businessAreas } from "@/lib/data/businesses";
 import { getFeaturedSectors } from "@/lib/data/sectors";
+import { servicePages } from "@/lib/data/services";
 import { cn } from "@/lib/utils";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
-type MegaPanel = "soluções" | "empresa" | "setores" | null;
+type MegaPanel = "soluções" | "empresa" | "setores" | "serviços" | "produtos" | null;
 
 const iconMap: Record<string, React.ElementType> = {
   Sun, Zap, Cpu, Wrench, Settings, Building2, Factory, Mountain,
   Droplets, Sprout, UtensilsCrossed, Flame, Warehouse, TreePine,
-  Landmark, Fuel, Building,
+  Landmark, Fuel, Building, LayoutGrid,
 };
 
 const empresaLinkKeys = [
@@ -47,9 +49,13 @@ const empresaLinkKeys = [
   { key: "clientes", href: "/empresa/clientes" },
 ] as const;
 
+const produtoLinks = [
+  { slug: "slv-1a", href: "/produtos/slv-1a" },
+  { slug: "dclt-1c", href: "/produtos/dclt-1c" },
+  { slug: "paineis", href: "/produtos/paineis" },
+] as const;
+
 const simpleLinkKeys = [
-  { key: "servicos", href: "/servicos" },
-  { key: "produtos", href: "/produtos" },
   { key: "cases", href: "/cases" },
   { key: "mediaCenter", href: "/media-center" },
   { key: "contato", href: "/contato" },
@@ -67,6 +73,8 @@ export function SiteHeader() {
   const tc = useTranslations("common");
   const tBiz = useTranslations("businessAreasData");
   const tSec = useTranslations("sectorNames");
+  const tSvc = useTranslations("serviceData");
+  const tProd = useTranslations("productData");
 
   const featuredSectors = getFeaturedSectors();
 
@@ -124,47 +132,60 @@ export function SiteHeader() {
         </Link>
 
         <nav aria-label={t("mainNav")} className="hidden items-center gap-0.5 lg:flex">
-          <button
+          <Link
+            href="/empresa"
             className={cn(
               "rounded-md px-3 py-2 text-sm font-medium transition-colors",
               activeMega === "empresa" ? "bg-zinc-100 text-zinc-900" : "text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900",
             )}
             onMouseEnter={() => setActiveMega("empresa")}
-            onClick={() => setActiveMega((prev) => (prev === "empresa" ? null : "empresa"))}
-            onKeyDown={(e) => handleMegaKeyDown(e, "empresa")}
-            aria-expanded={activeMega === "empresa"}
-            aria-haspopup="true"
           >
             {t("empresa")}
-          </button>
+          </Link>
 
-          <button
+          <Link
+            href="/nossos-negocios"
             className={cn(
               "rounded-md px-3 py-2 text-sm font-medium transition-colors",
               activeMega === "soluções" ? "bg-zinc-100 text-zinc-900" : "text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900",
             )}
             onMouseEnter={() => setActiveMega("soluções")}
-            onClick={() => setActiveMega((prev) => (prev === "soluções" ? null : "soluções"))}
-            onKeyDown={(e) => handleMegaKeyDown(e, "soluções")}
-            aria-expanded={activeMega === "soluções"}
-            aria-haspopup="true"
           >
             {t("solucoes")}
-          </button>
+          </Link>
 
-          <button
+          <Link
+            href="/setores"
             className={cn(
               "rounded-md px-3 py-2 text-sm font-medium transition-colors",
               activeMega === "setores" ? "bg-zinc-100 text-zinc-900" : "text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900",
             )}
             onMouseEnter={() => setActiveMega("setores")}
-            onClick={() => setActiveMega((prev) => (prev === "setores" ? null : "setores"))}
-            onKeyDown={(e) => handleMegaKeyDown(e, "setores")}
-            aria-expanded={activeMega === "setores"}
-            aria-haspopup="true"
           >
             {t("setores")}
-          </button>
+          </Link>
+
+          <Link
+            href="/servicos"
+            className={cn(
+              "rounded-md px-3 py-2 text-sm font-medium transition-colors",
+              activeMega === "serviços" ? "bg-zinc-100 text-zinc-900" : "text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900",
+            )}
+            onMouseEnter={() => setActiveMega("serviços")}
+          >
+            {t("servicos")}
+          </Link>
+
+          <Link
+            href="/produtos"
+            className={cn(
+              "rounded-md px-3 py-2 text-sm font-medium transition-colors",
+              activeMega === "produtos" ? "bg-zinc-100 text-zinc-900" : "text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900",
+            )}
+            onMouseEnter={() => setActiveMega("produtos")}
+          >
+            {t("produtos")}
+          </Link>
 
           {simpleLinkKeys.map((item) =>
             "external" in item && item.external ? (
@@ -245,11 +266,6 @@ export function SiteHeader() {
                       <div className="min-w-0">
                         <p className="font-display text-sm font-bold text-zinc-900">{tBiz(`${area.slug}.name`)}</p>
                         <p className="mt-0.5 line-clamp-1 text-xs text-zinc-500">{tBiz(`${area.slug}.shortDescription`)}</p>
-                        {area.metrics[0] ? (
-                          <p className="mt-1.5 text-xs font-semibold text-primary">
-                            {tBiz.has(`${area.slug}.metric0Value`) ? tBiz(`${area.slug}.metric0Value`) : area.metrics[0].value} {tBiz.has(`${area.slug}.metric0Label`) ? tBiz(`${area.slug}.metric0Label`) : area.metrics[0].label}
-                          </p>
-                        ) : null}
                       </div>
                     </Link>
                   </li>
@@ -331,16 +347,95 @@ export function SiteHeader() {
                       <div className="min-w-0">
                         <p className="font-display text-sm font-bold text-zinc-900">{tSec(`${sector.slug}.name`)}</p>
                         <p className="mt-0.5 line-clamp-2 text-xs text-zinc-500">{tSec(`${sector.slug}.headline`)}</p>
-                        {sector.metrics[0] ? (
-                          <p className="mt-1.5 text-xs font-semibold text-primary">
-                            {tSec.has(`${sector.slug}.metric0Value`) ? tSec(`${sector.slug}.metric0Value`) : sector.metrics[0].value} {tSec.has(`${sector.slug}.metric0Label`) ? tSec(`${sector.slug}.metric0Label`) : sector.metrics[0].label}
-                          </p>
-                        ) : null}
                       </div>
                     </Link>
                   </li>
                 );
               })}
+            </ul>
+          </div>
+        </div>
+      ) : null}
+
+      {/* Mega panel: Serviços */}
+      {activeMega === "serviços" ? (
+        <div
+          ref={megaPanelRef}
+          role="region"
+          aria-label={t("servicos")}
+          className="animate-reveal absolute left-0 right-0 top-full border-b border-zinc-200 bg-white shadow-2xl shadow-zinc-900/10"
+          onKeyDown={handlePanelKeyDown}
+        >
+          <div className="mx-auto max-w-7xl px-5 py-8 sm:px-8">
+            <div className="mb-5 flex items-center justify-between">
+              <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.22em] text-zinc-400">
+                {t("servicos")}
+              </p>
+              <Link
+                href="/servicos"
+                className="inline-flex items-center gap-1 text-xs font-semibold text-primary transition-opacity hover:opacity-80"
+                onClick={closeMega}
+              >
+                {t("verTodosServicos")} <ArrowUpRight className="size-3.5" />
+              </Link>
+            </div>
+            <ul role="list" className="grid grid-cols-1 gap-3 lg:grid-cols-3">
+              {servicePages.slice(0, 3).map((service) => (
+                <li key={service.slug}>
+                  <Link
+                    href={`/servicos/${service.slug}`}
+                    className="group block rounded-xl border border-zinc-100 bg-zinc-50/50 p-4 transition-all hover:border-primary/20 hover:bg-white hover:shadow-sm"
+                    onClick={closeMega}
+                  >
+                    <p className="font-display text-sm font-bold text-zinc-900 group-hover:text-primary transition-colors">
+                      {tSvc(`${service.slug}.name`)}
+                    </p>
+                    <p className="mt-1 line-clamp-2 text-xs text-zinc-500">{tSvc(`${service.slug}.shortDescription`)}</p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ) : null}
+
+      {/* Mega panel: Produtos */}
+      {activeMega === "produtos" ? (
+        <div
+          ref={megaPanelRef}
+          role="region"
+          aria-label={t("produtos")}
+          className="animate-reveal absolute left-0 right-0 top-full border-b border-zinc-200 bg-white shadow-2xl shadow-zinc-900/10"
+          onKeyDown={handlePanelKeyDown}
+        >
+          <div className="mx-auto max-w-7xl px-5 py-8 sm:px-8">
+            <div className="mb-5 flex items-center justify-between">
+              <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.22em] text-zinc-400">
+                {t("produtos")}
+              </p>
+              <Link
+                href="/produtos"
+                className="inline-flex items-center gap-1 text-xs font-semibold text-primary transition-opacity hover:opacity-80"
+                onClick={closeMega}
+              >
+                {t("verTodosProdutos")} <ArrowUpRight className="size-3.5" />
+              </Link>
+            </div>
+            <ul role="list" className="grid grid-cols-1 gap-3 lg:grid-cols-3">
+              {produtoLinks.map((product) => (
+                <li key={product.slug}>
+                  <Link
+                    href={product.href}
+                    className="group block rounded-xl border border-zinc-100 bg-zinc-50/50 p-4 transition-all hover:border-primary/20 hover:bg-white hover:shadow-sm"
+                    onClick={closeMega}
+                  >
+                    <p className="font-display text-sm font-bold text-zinc-900 group-hover:text-primary transition-colors">
+                      {tProd(`${product.slug}.name`)}
+                    </p>
+                    <p className="mt-1 line-clamp-2 text-xs text-zinc-500">{tProd(`${product.slug}.shortDescription`)}</p>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -409,6 +504,52 @@ export function SiteHeader() {
               onClick={() => setMobileOpen(false)}
             >
               {t("verTodosOsSetores")}
+            </Link>
+          </div>
+
+          <div>
+            <p className="px-3 py-1.5 font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-zinc-400">
+              {t("servicos")}
+            </p>
+            {servicePages.slice(0, 3).map((service) => (
+              <Link
+                key={service.slug}
+                href={`/servicos/${service.slug}`}
+                className="block rounded-lg px-3 py-2.5 text-sm font-medium text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900"
+                onClick={() => setMobileOpen(false)}
+              >
+                {tSvc(`${service.slug}.name`)}
+              </Link>
+            ))}
+            <Link
+              href="/servicos"
+              className="block rounded-lg px-3 py-2.5 text-sm font-medium text-primary hover:bg-zinc-50"
+              onClick={() => setMobileOpen(false)}
+            >
+              {t("verTodosServicos")}
+            </Link>
+          </div>
+
+          <div>
+            <p className="px-3 py-1.5 font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-zinc-400">
+              {t("produtos")}
+            </p>
+            {produtoLinks.map((product) => (
+              <Link
+                key={product.slug}
+                href={product.href}
+                className="block rounded-lg px-3 py-2.5 text-sm font-medium text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900"
+                onClick={() => setMobileOpen(false)}
+              >
+                {tProd(`${product.slug}.name`)}
+              </Link>
+            ))}
+            <Link
+              href="/produtos"
+              className="block rounded-lg px-3 py-2.5 text-sm font-medium text-primary hover:bg-zinc-50"
+              onClick={() => setMobileOpen(false)}
+            >
+              {t("verTodosProdutos")}
             </Link>
           </div>
 

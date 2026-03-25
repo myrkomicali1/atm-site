@@ -101,7 +101,7 @@ export function organizationSchema(t: (key: string) => string) {
       t("award2"),
     ],
     hasCredential: [
-      { "@type": "EducationalOccupationalCredential", name: "ISO 9001" },
+      { "@type": "EducationalOccupationalCredential", name: "SGQ baseado na ISO 9001" },
       { "@type": "EducationalOccupationalCredential", name: "NR-10" },
       { "@type": "EducationalOccupationalCredential", name: "NR-35" },
       { "@type": "EducationalOccupationalCredential", name: t("credential3") },

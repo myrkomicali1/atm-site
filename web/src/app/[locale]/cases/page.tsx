@@ -36,26 +36,10 @@ function CaseCard({
         className={`object-cover transition-transform duration-500 ${hasDetails ? "group-hover:scale-105" : ""}`}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/60 to-transparent" />
-      <div className="absolute bottom-3 left-3 flex gap-2">
-        <span className="rounded-full bg-white/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-zinc-700">
-          {tt(cs.type)}
-        </span>
-      </div>
     </div>
   );
 
-  const resultsContent = cs.results.length > 0 ? (
-    <div className="mt-3 flex flex-wrap gap-2">
-      {cs.results.slice(0, 2).map((r, i) => (
-        <span
-          key={r.metric}
-          className="rounded-full bg-primary/8 px-2.5 py-0.5 text-[10px] font-semibold text-primary"
-        >
-          {td.raw(`${cs.slug}.results.${i}.metric`) as string}: {td.raw(`${cs.slug}.results.${i}.value`) as string}
-        </span>
-      ))}
-    </div>
-  ) : null;
+  const resultsContent = null;
 
   if (!hasDetails) {
     return (

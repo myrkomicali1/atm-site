@@ -11,7 +11,7 @@ export const servicePages: ServicePage[] = [
   {
     slug: "paradas-programadas",
     name: "Paradas Programadas",
-    shortDescription: "Gestão completa de paradas industriais com conformidade NR-10 e NR-35",
+    shortDescription: "Revisão de instrumentos e motores elétricos durante paradas industriais programadas",
     description:
       "A Authomathika oferece serviços completos de paradas programadas, com equipes especializadas e treinadas conforme as normas NR-10 e NR-35. Planejamos e executamos paradas de forma segura, eficiente e dentro do prazo estabelecido.",
     features: [

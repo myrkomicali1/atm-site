@@ -66,7 +66,7 @@ export async function SectorsSection() {
         </AnimateOnScroll>
 
         {/* Featured sector cards */}
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {featured.map((sector, idx) => {
             const Icon = iconMap[sector.icon] ?? Factory;
             const primaryMetric = sector.metrics[0];

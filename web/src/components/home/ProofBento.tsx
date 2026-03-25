@@ -62,18 +62,8 @@ export async function ProofBento() {
             </div>
           </div>
 
-          {/* ── Stat: Horas — 2 cols × 1 row ── */}
-          <div className="flex flex-col justify-between rounded-2xl border border-zinc-200 bg-white p-6 md:col-span-2">
-            <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-zinc-600">
-              {t("horasDeServico")}
-            </p>
-            <div className="font-display text-4xl font-bold leading-none tracking-tight text-zinc-900">
-              297<span className="text-xl font-semibold text-zinc-300">k+</span>
-            </div>
-          </div>
-
-          {/* ── Stat: Solar — 3 cols × 1 row (primary color) ── */}
-          <div className="flex flex-col justify-between rounded-2xl bg-primary p-6 md:col-span-3">
+          {/* ── Stat: Solar — 5 cols × 1 row (primary color) ── */}
+          <div className="flex flex-col justify-between rounded-2xl bg-primary p-6 md:col-span-5">
             <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-red-200">
               {t("energiaSolarInstalada")}
             </p>
@@ -82,23 +72,6 @@ export async function ProofBento() {
                 892 <span className="text-2xl font-semibold text-red-200">MW</span>
               </div>
               <p className="mt-2 text-sm text-red-100">{t("emParquesFotovoltaicos")}</p>
-            </div>
-          </div>
-
-          {/* ── Certifications — 2 cols × 1 row ── */}
-          <div className="flex flex-col justify-between rounded-2xl border border-zinc-200 bg-white p-6 md:col-span-2">
-            <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-zinc-600">
-              {t("certificacoes")}
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {company.certifications.map((cert) => (
-                <span
-                  key={cert}
-                  className="inline-block rounded-full border border-zinc-200 px-3 py-1 text-xs font-semibold text-zinc-600"
-                >
-                  {cert}
-                </span>
-              ))}
             </div>
           </div>
         </div>

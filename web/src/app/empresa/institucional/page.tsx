@@ -18,7 +18,7 @@ const diferencials = [
   "Metrologia RBC com laboratórios fixos e móveis",
   "Frota própria e operação nacional",
   "Conformidade com normas críticas de segurança (NR-10, NR-35)",
-  "+25 anos de experiência no setor sucroenergético e industrial",
+  "+27 anos de experiência no setor sucroenergético e industrial",
   "Mais de 890 MW de energia solar instalados em 10 parques",
   "Mais de 297.000 horas de serviço executadas",
   "Capacidade turnkey: projeto, execução e comissionamento",

@@ -36,7 +36,9 @@
     "setoresQueAtendemos": "Sectores que atendemos",
     "verTodosOsSetores": "Ver todos los sectores",
     "mainNav": "Navegación principal",
-    "mobileNav": "Menú de navegación"
+    "mobileNav": "Menú de navegación",
+    "verTodosServicos": "Ver todos los servicios",
+    "verTodosProdutos": "Ver todos los productos"
   },
   "navEmpresa": {
     "institucional": {
@@ -49,7 +51,7 @@
     },
     "linhaDoTempo": {
       "label": "Línea de Tiempo",
-      "desc": "25 años de evolución e hitos"
+      "desc": "27 años de evolución e hitos"
     },
     "clientes": {
       "label": "Clientes",
@@ -61,7 +63,7 @@
     "headlineLine1": "Un integrador.",
     "headlineLine2": "Responsabilidad",
     "headlineLine3": "de punta a punta.",
-    "description": "Eléctrica, automatización, montaje, EPC e inteligencia de datos — integrados en un único contrato. {years} años de gestión de proyectos industriales en más de 12 sectores. Entrega a tiempo, sin accidentes, sin retrabajo.",
+    "description": "Eléctrica, automatización, montaje, EPC e inteligencia de datos — integrados en un único contrato. {years} años de gestión de proyectos industriales en más de 12 sectores. Entrega a tiempo, sin retrabajo.",
     "ctaPrimary": "Solicitar propuesta",
     "ctaSecondary": "Encuentre su solución",
     "stats": {
@@ -80,7 +82,7 @@
   "sectors": {
     "tag": "12+ sectores atendidos",
     "heading": "La misma ingeniería. Cualquier segmento industrial.",
-    "description": "25 años de gestión de proyectos en sectores con exigencias distintas. La capacidad de integrar eléctrica, automatización, montaje y EPC bajo un único contrato es lo que nos permite actuar donde su proyecto lo necesite.",
+    "description": "27 años de gestión de proyectos en sectores con exigencias distintas. La capacidad de integrar eléctrica, automatización, montaje y EPC bajo un único contrato es lo que nos permite actuar donde su proyecto lo necesite.",
     "naoEncontrouSetor": "¿No encontró su sector?",
     "naoEncontrouSetorDesc": "251 proyectos ejecutados en diversos segmentos. Hable con nuestro equipo técnico sobre su desafío específico."
   },
@@ -107,7 +109,7 @@
       "step03": {
         "number": "03",
         "title": "Ejecución integrada",
-        "description": "Eléctrica, automatización, instrumentación y montaje bajo una única coordinación. 2.000+ días sin accidentes. NR-10 y NR-35 en cada frente."
+        "description": "Eléctrica, automatización, instrumentación y montaje bajo una única coordinación. NR-10 y NR-35 en cada frente."
       },
       "step04": {
         "number": "04",
@@ -122,11 +124,11 @@
       },
       "gestao": {
         "title": "Gestión integrada de proyectos",
-        "description": "Control de alcance, plazo y costo en una única metodología — aplicada con el mismo rigor en plantas sucroenergéticas, mineras, parques solares o cualquier operación industrial."
+        "description": "Control de alcance, plazo y costo en una única metodología — aplicada con el mismo rigor en plantas sucroenergéticas, plantas de fertilizantes, parques solares o cualquier operación industrial."
       },
       "seguranca": {
         "title": "Seguridad como premisa",
-        "description": "2.000+ días sin accidentes laborales, certificaciones NR-10 y NR-35, charlas diarias de seguridad y cultura de seguridad que cumple los estándares más rigurosos del mercado."
+        "description": "Certificaciones NR-10 y NR-35, charlas diarias de seguridad y cultura de seguridad que cumple los estándares más rigurosos del mercado."
       }
     }
   },
@@ -157,9 +159,9 @@
         "title": "IA & Datos",
         "sub": "Gestión inteligente y automatización"
       },
-      "iso9001": {
-        "title": "ISO 9001",
-        "sub": "Certificación de calidad"
+      "sgq": {
+        "title": "SGC",
+        "sub": "Gestión de la calidad (base ISO 9001)"
       },
       "nr10Nr35": {
         "title": "NR-10 / NR-35",
@@ -168,10 +170,6 @@
       "lgpdNr1": {
         "title": "LGPD / NR-1",
         "sub": "Conformidad y protección de datos"
-      },
-      "diasSemAcidentes": {
-        "title": "2.000+ días",
-        "sub": "Sin accidentes laborales"
       }
     },
     "clientesTag": "Clientes de referencia",
@@ -224,7 +222,7 @@
     "q1": "¿Qué es una empresa integradora de sistemas?",
     "a1": "Una integradora de sistemas es una empresa especializada en diseñar, instalar y comisionar soluciones completas de control y monitoreo para plantas industriales. Authomathika actúa como integradora desde 1999, con más de 380.000+ puntos de automatización en 180 plantas en Brasil.",
     "q2": "¿Qué sectores atiende Authomathika?",
-    "a2": "Authomathika atiende más de 12 sectores industriales, incluyendo sucroenergético, fertilizantes, saneamiento, minería, alimentos y bebidas, energía solar fotovoltaica, logística, química, siderurgia, papel y celulosa, entre otros.",
+    "a2": "Authomathika atiende más de 12 sectores industriales, incluyendo sucroenergético, fertilizantes, saneamiento, alimentos y bebidas, energía solar fotovoltaica, logística, química, siderurgia, papel y celulosa, entre otros.",
     "q3": "¿Cuál es la diferencia entre proyecto greenfield y brownfield?",
     "a3": "Un proyecto greenfield es una implantación totalmente nueva, donde la ingeniería se diseña desde cero para una planta que aún será construida. Un brownfield involucra la modernización, ampliación o revamp de sistemas existentes en plantas ya en operación. Authomathika tiene experiencia en ambos modelos.",
     "q4": "¿Authomathika realiza proyectos EPC (llave en mano)?",
@@ -290,16 +288,17 @@
         "0": "Proyecto y adquisición de materiales",
         "1": "Construcción y montaje eléctrico",
         "2": "Comisionamiento y start-up",
-        "3": "Paneles eléctricos (CCMs, QGBTs, switchboards)",
+        "3": "Diseño y fabricación de paneles eléctricos (CCMs, QGBTs, cubículos, switchboards)",
         "4": "Bancos de capacitores",
         "5": "Centrales termoeléctricas",
-        "6": "Sistemas de cogeneración"
+        "6": "Sistemas de cogeneración",
+        "7": "Centros eléctricos y montaje de campo"
       }
     },
     "automacao": {
       "name": "Automatización",
       "shortDescription": "49 plantas Greenfield, 144 Brownfield y 380.000+ puntos de automatización",
-      "description": "La división de Automatización de Authomathika es una de las más completas del sector, actuando en automatización industrial e instrumentación para generación y cogeneración. Desarrollamos software SCADA, programamos PLCs y ejecutamos proyectos de automatización de principio a fin.",
+      "description": "La división de Automatización de Authomathika es una de las más completas del sector, actuando en automatización industrial e instrumentación para generación y cogeneración. Desarrollamos software SCADA, programamos PLCs y SDCDs, y ejecutamos proyectos de automatización de principio a fin.",
       "metric0Value": "49",
       "metric0Label": "Plantas Greenfield",
       "metric1Value": "144",
@@ -309,17 +308,17 @@
       "services": {
         "0": "Automatización industrial e instrumentación",
         "1": "Desarrollo de software SCADA",
-        "2": "Programación de PLCs",
+        "2": "Programación de PLCs y SDCDs",
         "3": "Proyectos de automatización integrados",
-        "4": "Fabricación de paneles de automatización",
-        "5": "Montaje y comisionamiento de campo",
-        "6": "Capacitación operativa"
+        "4": "Fabricación de paneles de automatización (JBs, QDTCs, paneles PLC, SDCD, gateways y distribuidores)",
+        "5": "Montaje de campo, mecánica, electromecánica, civil e instrumentación",
+        "6": "Comisionamiento, startup y capacitación operativa"
       }
     },
     "servicos": {
       "name": "Servicios",
       "shortDescription": "42.027 equipos, 297.000 horas y 1.630 atenciones técnicas",
-      "description": "La división de Servicios de Authomathika ofrece soporte técnico especializado para mantenimiento, metrología y diagnóstico de equipos industriales. Con laboratorios fijos y móviles y el sistema en línea Serelepe, garantizamos trazabilidad y calidad en cada atención.",
+      "description": "La división de Servicios de Authomathika ofrece soporte técnico especializado para mantenimiento, metrología y diagnóstico de equipos industriales. Con laboratorios fijos y móviles y el sistema en línea IndustryView, garantizamos trazabilidad y calidad en cada atención.",
       "metric0Value": "42.027",
       "metric0Label": "Equipos Atendidos",
       "metric1Value": "297.000",
@@ -331,7 +330,7 @@
         "1": "Mantenimiento correctivo y preventivo",
         "2": "Metrología RBC – certificados trazados",
         "3": "Diagnóstico y certificación de redes",
-        "4": "Servicios en campo (sistema Serelepe en línea)",
+        "4": "Servicios en campo (sistema IndustryView en línea)",
         "5": "Tecnología de la Información (CCTV, fibra óptica, redes)",
         "6": "Laboratorios fijos y móviles"
       }
@@ -339,7 +338,7 @@
     "montagem-eletromecanica": {
       "name": "Montaje Electromecánico",
       "shortDescription": "251 proyectos en 23+ años de experiencia multisectorial",
-      "description": "Con más de 25 años de resultados comprobados, la división de Montaje Electromecánico de Authomathika atiende los más variados segmentos industriales. Desde el montaje de pequeños equipos hasta grandes proyectos industriales, entregamos calidad y seguridad.",
+      "description": "Con más de 27 años de resultados comprobados, la división de Montaje Electromecánico de Authomathika atiende los más variados segmentos industriales. Desde el montaje de pequeños equipos hasta grandes proyectos industriales, entregamos calidad y seguridad.",
       "metric0Value": "126",
       "metric0Label": "Proyectos Pequeño Porte",
       "metric1Value": "81",
@@ -376,7 +375,7 @@
       "name": "Ingeniería EPC",
       "shortDescription": "EPC completo desde 1999 – Ingeniería, adquisición, construcción y producción",
       "description": "Authomathika realiza contratos EPC (Engineering, Procurement and Construction) completos desde su fundación en 1999. Nuestra capacidad de gestionar proyectos de ingeniería de principio a fin, con alianzas estratégicas para ejecución, garantiza entregas dentro del plazo y del presupuesto.",
-      "metric0Value": "25+",
+      "metric0Value": "27+",
       "metric0Label": "Años de EPC",
       "metric1Value": "100%",
       "metric1Label": "Proyectos Entregados",
@@ -389,22 +388,40 @@
         "5": "Alianzas estratégicas para ejecución"
       }
     },
+    "paineis-eletricos-eletrocentros": {
+      "name": "Paneles Eléctricos y Electrocentros",
+      "shortDescription": "Diseño y fabricación propia de CCMs, tableros, electrocentros y power stations",
+      "description": "Authomathika posee fábrica propia de paneles eléctricos y electrocentros, con capacidad para diseñar y fabricar CCMs, tableros de distribución, paneles de automatización, electrocentros y power stations premontados. Cada equipo es desarrollado a medida, conforme normas ABNT/IEC, con pruebas de fábrica (FAT) y documentación técnica completa.",
+      "metric0Value": "245",
+      "metric0Label": "CCMs Fabricados",
+      "metric1Value": "281",
+      "metric1Label": "Tableros Fabricados",
+      "services": {
+        "0": "Diseño y fabricación de CCMs (Centros de Control de Motores)",
+        "1": "Tableros de distribución industriales",
+        "2": "Paneles de automatización (JBs, QDTCs, paneles PLC, SDCD, gateways)",
+        "3": "Electrocentros premontados",
+        "4": "Power stations para grandes proyectos",
+        "5": "Pruebas de fábrica (FAT) y puesta en marcha",
+        "6": "Documentación técnica y conformidad ABNT/IEC"
+      }
+    },
     "data-centers": {
       "name": "Data Centers",
       "shortDescription": "Infraestructura eléctrica, automatización y montaje para Data Centers de alta disponibilidad",
-      "description": "Authomathika aplica más de 25 años de experiencia en ingeniería eléctrica industrial, automatización y montaje electromecánico a la construcción y modernización de Data Centers. Con fabricación propia de paneles, electrocentros y power stations, la empresa entrega soluciones integradas de infraestructura crítica — desde la subestación de entrada hasta el monitoreo BMS — bajo un único contrato EPC.",
-      "metric0Value": "245",
-      "metric0Label": "CCMs Fabricados",
-      "metric1Value": "43",
-      "metric1Label": "Plantas Greenfield",
+      "description": "Authomathika aplica más de 27 años de experiencia en ingeniería eléctrica industrial, automatización y montaje electromecánico a la construcción y modernización de Data Centers. Con fabricación propia de paneles, electrocentros y power stations, capacidad de ejecución EPC comprobada y equipos certificados, la empresa reúne todas las competencias necesarias para entregar la infraestructura crítica de un Data Center bajo un único contrato.",
       "services": {
         "0": "Proyecto y fabricación de paneles de distribución (CCMs, QGBTs, PDUs)",
         "1": "Electrocentros y Power Stations premontados",
         "2": "Montaje electromecánico de infraestructura eléctrica",
-        "3": "Automatización y SCADA para BMS",
+        "3": "Automatización y supervisión SCADA",
         "4": "Subestaciones de entrada en media tensión",
         "5": "CCTV, control de acceso y redes de fibra óptica"
-      }
+      },
+      "metric0Value": "245",
+      "metric0Label": "CCMs Fabricados",
+      "metric1Value": "43",
+      "metric1Label": "Plantas Greenfield"
     }
   },
   "sectorNames": {
@@ -416,7 +433,7 @@
       "metric0Label": "Plantas industriales atendidas",
       "metric1Value": "380.000+",
       "metric1Label": "Puntos de automatización implantados",
-      "metric2Value": "25+",
+      "metric2Value": "27+",
       "metric2Label": "Años en el sector sucroenergético",
       "metric3Value": "8",
       "metric3Label": "Proyectos turnkey entregados",
@@ -430,9 +447,10 @@
       "solutions": {
         "0": "Proyectos turnkey con responsabilidad integral — de la ingeniería al comisionamiento en un único contrato",
         "1": "Revamps de automatización con migración planificada de PLCs y SCADA sin interrumpir la producción",
-        "2": "Equipos especializados en el sector sucroenergético hace más de 25 años, conociendo cada etapa del proceso",
-        "3": "Ejecución concentrada en la entrezafra con planificación detallada y cumplimiento riguroso del cronograma",
-        "4": "Sistema Serelepe de trazabilidad con informes en línea y certificados digitales"
+        "2": "Diseño y fabricación propia de paneles eléctricos (CCMs, QGBTs, cubículos) y paneles de automatización (PLC, SDCD, JBs, QDTCs)",
+        "3": "Equipos especializados en el sector sucroenergético hace más de 27 años, conociendo cada etapa del proceso",
+        "4": "Ejecución concentrada en la entrezafra con planificación detallada y cumplimiento riguroso del cronograma",
+        "5": "Sistema IndustryView de trazabilidad con informes en línea y certificados digitales"
       },
       "faq": {
         "0": {
@@ -453,14 +471,14 @@
         },
         "4": {
           "question": "¿Authomathika ofrece soporte después del comisionamiento?",
-          "answer": "Sí. La división de Servicios de Authomathika ofrece soporte post-comisionamiento con paradas programadas, mantenimiento preventivo y correctivo, metrología RBC y el sistema Serelepe para trazabilidad en línea. Son más de 42.000 equipos atendidos y 297.000 horas de servicio acumuladas."
+          "answer": "Sí. La división de Servicios de Authomathika ofrece soporte post-comisionamiento con paradas programadas, mantenimiento preventivo y correctivo, metrología RBC y el sistema IndustryView para trazabilidad en línea. Son más de 42.000 equipos atendidos y 297.000 horas de servicio acumuladas."
         }
       }
     },
     "mineracao": {
       "name": "Minería",
       "headline": "Ingeniería electromecánica y automatización para operaciones mineras críticas",
-      "description": "Authomathika atiende el sector minero con proyectos de ingeniería eléctrica, automatización y montaje electromecánico para plantas de beneficio, centros eléctricos e infraestructura industrial. Con experiencia en grandes actores del sector como Vale, ofrecemos soluciones que cumplen los rigurosos estándares de seguridad y calificación exigidos por la minería.",
+      "description": "Authomathika atiende al sector minero con proyectos de ingeniería eléctrica, automatización y montaje electromecánico para plantas de beneficio, electrocentros e infraestructura industrial. Con experiencia atendiendo a grandes actores del sector como Vale, ofrecemos soluciones que cumplen con los rigurosos estándares de seguridad y calificación exigidos por la minería.",
       "metric0Value": "2.000+",
       "metric0Label": "Días sin accidentes",
       "metric1Value": "ISO 9001",
@@ -468,10 +486,10 @@
       "metric2Value": "NR-10/35",
       "metric2Label": "Conformidad en seguridad",
       "painPoints": {
-        "0": "Los procesos de precalificación rigurosos y prolongados exigen proveedores con documentación impecable",
-        "1": "Las operaciones en áreas remotas demandan proveedores con logística propia y capacidad de movilización rápida",
-        "2": "Los ambientes agresivos (polvo, vibración, corrosión) exigen ingeniería robusta y materiales especificados",
-        "3": "Los requisitos de seguridad extremadamente rigurosos eliminan a proveedores sin certificaciones adecuadas",
+        "0": "Procesos de precalificación rigurosos y largos exigen proveedores con documentación impecable",
+        "1": "Operaciones en áreas remotas demandan proveedores con logística propia y capacidad de movilización rápida",
+        "2": "Ambientes agresivos (polvo, vibración, corrosión) exigen ingeniería robusta y materiales especificados",
+        "3": "Requisitos de seguridad extremadamente rigurosos eliminan proveedores sin certificaciones adecuadas",
         "4": "Proyectos de CAPEX con plazos inflexibles y penalidades contractuales por retraso"
       },
       "solutions": {
@@ -484,79 +502,15 @@
       "faq": {
         "0": {
           "question": "¿Authomathika posee las certificaciones exigidas por la minería?",
-          "answer": "Sí. Authomathika cuenta con certificación ISO 9001, equipos capacitados y certificados en NR-10 (Seguridad en Instalaciones y Servicios Eléctricos) y NR-35 (Trabajo en Altura), además de laboratorios de metrología con certificación RBC (Red Brasileña de Calibración). Toda la documentación está disponible para procesos de precalificación."
+          "answer": "Sí. Authomathika está certificada ISO 9001, posee equipos capacitados y certificados en NR-10 (Seguridad en Instalaciones y Servicios Eléctricos) y NR-35 (Trabajo en Altura), además de laboratorios de metrología con certificación RBC (Red Brasileña de Calibración). Toda la documentación está disponible para procesos de precalificación."
         },
         "1": {
           "question": "¿Cómo solicitar la documentación para precalificación?",
-          "answer": "Authomathika mantiene un paquete de documentación de precalificación actualizado y listo para envío. Contacte a nuestro equipo comercial para recibir el kit completo, incluyendo certificaciones, indicadores de seguridad (TFCA, TFSA), registros de CNPJ, constancias y referencias de proyectos anteriores."
+          "answer": "Authomathika mantiene un paquete de documentación de precalificación actualizado y listo para envío. Contacte a nuestro equipo comercial para recibir el kit completo, incluyendo certificaciones, indicadores de seguridad (TFCA, TFSA), registros de CNPJ, certificados y referencias de proyectos anteriores."
         },
         "2": {
-          "question": "¿Authomathika ya ejecutó proyectos para grandes mineras?",
-          "answer": "Sí. Authomathika ejecutó proyectos para Vale en Carajás (PA), incluyendo implantación de centros eléctricos con ingeniería eléctrica y automatización completa. La empresa también atiende empresas del segmento de fertilizantes vinculados a la minería, como Vale Fertilizantes en Uberaba y Araxá."
-        }
-      }
-    },
-    "energias-renovaveis": {
-      "name": "Energías Renovables",
-      "headline": "Del proyecto al MW conectado — ingeniería solar de gran porte",
-      "description": "La división de Energías Renovables de Authomathika es especializada en la implantación de plantas solares fotovoltaicas de generación centralizada y distribuida. Con más de 890 MW instalados en 10 parques fotovoltaicos, incluyendo el proyecto de 455 MW de la UFV Belmonte en alianza con el Grupo Cobra, la empresa es referencia en montaje eléctrico, mecánico y civil para el sector solar.",
-      "metric0Value": "892",
-      "metric0Label": "MW instalados",
-      "metric1Value": "7",
-      "metric1Label": "Parques fotovoltaicos",
-      "metric2Value": "455 MW",
-      "metric2Label": "Mayor proyecto (UFV Belmonte)",
-      "painPoints": {
-        "0": "Plazos agresivos de conexión a la red exigen ejecución rápida y sin retrabajo",
-        "1": "Encontrar equipos con experiencia real en parques superiores a 10 MW es un desafío",
-        "2": "Logística compleja de recepción, almacenamiento e instalación de miles de módulos y trackers",
-        "3": "Garantizar calidad de montaje que asegure el performance ratio (PR) contratado por 25+ años",
-        "4": "Integración entre montaje mecánico, eléctrico y civil sin conflictos de interfaz"
-      },
-      "solutions": {
-        "0": "Capacidad comprobada en parques de hasta 455 MW — montaje eléctrico, mecánico y civil integrados",
-        "1": "Equipos especializados exclusivamente en solar, con más de 890 MW de experiencia acumulada",
-        "2": "Gestión logística de obra con control de materiales, trazabilidad y eficiencia de montaje",
-        "3": "Comisionamiento riguroso con pruebas de rendimiento y entrega documentada para O&M",
-        "4": "Contrato único para todas las disciplinas — sin interfaces entre múltiples proveedores"
-      },
-      "faq": {
-        "0": {
-          "question": "¿Cuál es la capacidad de implantación de Authomathika en energía solar?",
-          "answer": "Authomathika posee capacidad comprobada para implantación de plantas solares de gran porte. El mayor proyecto ejecutado fue la UFV Belmonte I & II, con 455 MW de capacidad, en alianza con el Grupo Cobra. Con 10 parques y más de 890 MW totales instalados, la empresa atiende proyectos superiores a 10 MW."
-        },
-        "1": {
-          "question": "¿Authomathika ofrece servicio de O&M para plantas solares?",
-          "answer": "Sí. El servicio de Operación y Mantenimiento (O&M) incluye monitoreo remoto de rendimiento, inspecciones periódicas, limpieza de módulos, mantenimiento preventivo y correctivo de inversores y trackers, gestión de alarmas e interfaz con la distribuidora."
-        },
-        "2": {
-          "question": "¿Cuál es la diferencia entre generación centralizada y distribuida?",
-          "answer": "La generación centralizada (GC) son grandes plantas solares, generalmente superiores a 5 MW, que inyectan energía directamente en la red de transmisión. La generación distribuida (GD) son sistemas menores, conectados a la red de distribución local. Authomathika actúa en ambas modalidades."
-        }
-      }
-    },
-    "saneamento": {
-      "name": "Saneamiento",
-      "headline": "Automatización y montaje para estaciones de tratamiento de agua y efluentes",
-      "description": "Authomathika actúa en el sector de saneamiento con proyectos de automatización, montaje electromecánico y mantenimiento para estaciones de tratamiento de agua (ETA) y efluentes (ETE). Con clientes como SAMAR, Ambient, SANEVAP, SESAMM y Odebrecht Ambiental, la empresa entrega soluciones que garantizan eficiencia operativa y conformidad regulatoria.",
-      "metric0Value": "5+",
-      "metric0Label": "Clientes en el sector",
-      "metric1Value": "24/7",
-      "metric1Label": "Operación continua",
-      "painPoints": {
-        "0": "Las estaciones de tratamiento operan 24/7 y exigen automatización confiable con redundancia",
-        "1": "Los equipos expuestos a ambientes corrosivos demandan mantenimiento especializado",
-        "2": "Necesidad de cumplir exigencias regulatorias de calidad de agua cada vez más rigurosas"
-      },
-      "solutions": {
-        "0": "Automatización de procesos con PLCs y SCADA para monitoreo y control en tiempo real",
-        "1": "Montaje electromecánico con materiales y acabados adecuados para ambientes corrosivos",
-        "2": "Mantenimiento preventivo y metrología RBC para instrumentos críticos de medición"
-      },
-      "faq": {
-        "0": {
-          "question": "¿Authomathika tiene experiencia en estaciones de tratamiento de agua?",
-          "answer": "Sí. Authomathika ya ejecutó proyectos completos para ETAs y ETEs, incluyendo el greenfield del SESAMM en Mogi Mirim con automatización y montaje electromecánico completo. Atendemos clientes como SAMAR, Ambient, SANEVAP y Odebrecht Ambiental."
+          "question": "¿Authomathika ha ejecutado proyectos para grandes mineras?",
+          "answer": "Sí. Authomathika ejecutó proyectos para Vale en Carajás (PA), incluyendo implantación de electrocentros con ingeniería eléctrica y automatización completa. La empresa también atiende empresas del segmento de fertilizantes vinculados a la minería, como Vale Fertilizantes en Uberaba y Araxá."
         }
       }
     },
@@ -585,6 +539,75 @@
         }
       }
     },
+    "energias-renovaveis": {
+      "name": "Energías Renovables",
+      "headline": "Generación centralizada y distribuida — del proyecto al MW conectado",
+      "description": "La división de Energías Renovables de Authomathika ofrece servicios completos e integrados para proyectos de generación de energía fotovoltaica (UFV), atendiendo tanto la Generación Centralizada (GC) como la Generación Distribuida (GD). En GC, acumula más de 890 MW instalados en 10 parques fotovoltaicos, incluyendo el proyecto de 455 MW de la UFV Belmonte. En GD, suministra Power Stations (Skids) personalizadas, String Boxes, cabinas de conexión y soluciones completas para plantas conectadas a la red de distribución.",
+      "metric0Value": "892",
+      "metric0Label": "MW instalados",
+      "metric1Value": "10",
+      "metric1Label": "Parques fotovoltaicos",
+      "metric2Value": "455 MW",
+      "metric2Label": "Mayor proyecto (UFV Belmonte)",
+      "painPoints": {
+        "0": "Plazos agresivos de conexión a la red exigen ejecución rápida y sin retrabajo",
+        "1": "Encontrar equipos con experiencia real en parques superiores a 10 MW es un desafío",
+        "2": "Logística compleja de recepción, almacenamiento e instalación de miles de módulos y trackers",
+        "3": "Proyectos de GD exigen equipos compactos, probados en fábrica y listos para instalación rápida",
+        "4": "Integración entre montaje mecánico, eléctrico y civil sin conflictos de interfaz"
+      },
+      "solutions": {
+        "0": "Capacidad comprobada en parques de hasta 455 MW (GC) — montaje eléctrico, mecánico y civil integrados",
+        "1": "Power Stations (Skids) personalizadas de 25 a 5.400+ KVA para GD, probadas en fábrica y con monitoreo SCADA integrado",
+        "2": "String Boxes con tensión de hasta 1500 Vcc, módulo de monitoreo y protección mínima IP65",
+        "3": "Servicios completos de EPC: ingeniería civil, mecánica, eléctrica, comisionamiento y O&M",
+        "4": "Operación y mantenimiento (O&M) con monitoreo remoto, pruebas de curva I-V y gestión de Centro de Operaciones Integradas (COI)"
+      },
+      "faq": {
+        "0": {
+          "question": "¿Cuál es la capacidad de implantación de Authomathika en energía solar?",
+          "answer": "Authomathika posee capacidad comprobada para implantación de plantas solares de gran porte (GC) y distribuida (GD). En GC, el mayor proyecto ejecutado fue la UFV Belmonte I & II, con 455 MW, en alianza con el Grupo Cobra. En GD, la empresa suministra Power Stations (Skids) personalizadas, String Boxes y soluciones completas de EPC para plantas conectadas a la red de distribución."
+        },
+        "1": {
+          "question": "¿Authomathika ofrece servicio de O&M para plantas solares?",
+          "answer": "Sí. El servicio de Operación y Mantenimiento (O&M) incluye monitoreo remoto de rendimiento, pruebas de curva I-V, pruebas de aislamiento VLF (Hipot Test), inspecciones visuales, limpieza de módulos, mantenimiento preventivo y correctivo de inversores y trackers, gestión de alarmas y monitoreo integrado vía Centro de Operaciones Integradas (COI)."
+        },
+        "2": {
+          "question": "¿Qué son las Power Stations (Skids) de Authomathika?",
+          "answer": "Las Power Stations son soluciones personalizadas para GD, totalmente probadas en fábrica, con potencias de 25 a 5.400+ KVA y tensión de hasta 34,5 kV. Incluyen PLC para enclavamiento, cuenca de contención integrada, monitoreo continuo vía SCADA y pueden ser suministradas con o sin inversores y panel de media tensión, conforme normas ABNT NBR 16690 y NBR 16274."
+        },
+        "3": {
+          "question": "¿Cuál es la diferencia entre generación centralizada y distribuida?",
+          "answer": "La generación centralizada (GC) son grandes plantas solares, generalmente superiores a 5 MW, que inyectan energía directamente en la red de transmisión. La generación distribuida (GD) son sistemas menores, conectados a la red de distribución local. Authomathika actúa en ambas modalidades, con servicios completos de EPC, suministro de equipos y O&M."
+        }
+      }
+    },
+    "saneamento": {
+      "name": "Saneamiento",
+      "headline": "Automatización y montaje para estaciones de tratamiento de agua y efluentes",
+      "description": "Authomathika actúa en el sector de saneamiento con proyectos de automatización, montaje electromecánico y mantenimiento para estaciones de tratamiento de agua (ETA) y efluentes (ETE). Con clientes como SAMAR, Ambient, SANEVAP, SESAMM y Odebrecht Ambiental, la empresa entrega soluciones que garantizan eficiencia operativa y conformidad regulatoria.",
+      "metric0Value": "5+",
+      "metric0Label": "Clientes en el sector",
+      "metric1Value": "24/7",
+      "metric1Label": "Operación continua",
+      "painPoints": {
+        "0": "Las estaciones de tratamiento operan 24/7 y exigen automatización confiable con redundancia",
+        "1": "Los equipos expuestos a ambientes corrosivos demandan mantenimiento especializado",
+        "2": "Necesidad de cumplir exigencias regulatorias de calidad de agua cada vez más rigurosas"
+      },
+      "solutions": {
+        "0": "Fabricación de paneles de automatización y eléctricos (CCMs, QGBTs) para estaciones de tratamiento",
+        "1": "Automatización de procesos con PLCs y SCADA para monitoreo y control en tiempo real",
+        "2": "Montaje electromecánico con materiales y acabados adecuados para ambientes corrosivos",
+        "3": "Mantenimiento preventivo y metrología RBC para instrumentos críticos de medición"
+      },
+      "faq": {
+        "0": {
+          "question": "¿Authomathika tiene experiencia en estaciones de tratamiento de agua?",
+          "answer": "Sí. Authomathika ya ejecutó proyectos completos para ETAs y ETEs, incluyendo el greenfield del SESAMM en Mogi Mirim con automatización y montaje electromecánico completo. Atendemos clientes como SAMAR, Ambient, SANEVAP y Odebrecht Ambiental."
+        }
+      }
+    },
     "alimentos-bebidas": {
       "name": "Alimentos y Bebidas",
       "headline": "Automatización y montaje electromecánico para la industria alimentaria",
@@ -599,9 +622,10 @@
         "2": "El mantenimiento preventivo es crítico para evitar contaminación y paradas no programadas"
       },
       "solutions": {
-        "0": "Automatización con trazabilidad de lote y conformidad con normas sanitarias",
-        "1": "Montaje electromecánico de nuevas líneas con acabado en acero inoxidable y materiales food-grade",
-        "2": "Servicios de mantenimiento con equipos capacitados en buenas prácticas de manufactura (BPM)"
+        "0": "Fabricación de paneles eléctricos (CCMs, QGBTs) y paneles de automatización para líneas de producción alimenticia",
+        "1": "Automatización con trazabilidad de lote y conformidad con normas sanitarias",
+        "2": "Montaje electromecánico de nuevas líneas con acabado en acero inoxidable y materiales food-grade",
+        "3": "Servicios de mantenimiento con equipos capacitados en buenas prácticas de manufactura (BPM)"
       },
       "faq": {
         "0": {
@@ -616,17 +640,18 @@
       "description": "Authomathika atiende los sectores de siderurgia, química, petroquímica y farmacéutica con proyectos de automatización, eléctrica y montaje electromecánico. Con expertise en procesos continuos de alta exigencia, la empresa entrega soluciones seguras y confiables para ambientes industriales severos.",
       "metric0Value": "NR-10",
       "metric0Label": "Conformidad eléctrica",
-      "metric1Value": "ISO 9001",
-      "metric1Label": "Calidad certificada",
+      "metric1Value": "SGC",
+      "metric1Label": "Gestión de la calidad (ISO 9001)",
       "painPoints": {
         "0": "Procesos continuos de alta temperatura y presión exigen instrumentación y automatización de máxima confiabilidad",
         "1": "Áreas clasificadas (Ex) demandan equipos y mano de obra especializada en atmósferas explosivas",
         "2": "Paradas programadas cortas y complejas exigen planificación milimétrica y ejecución impecable"
       },
       "solutions": {
-        "0": "Automatización de procesos continuos con redundancia y sistemas de seguridad (SIS/SIL)",
-        "1": "Ingeniería para áreas clasificadas con equipos a prueba de explosión y conformidad NR-10",
-        "2": "Paradas programadas con equipos multidisciplinarios certificados y planificación integrada"
+        "0": "Diseño y fabricación de paneles eléctricos (CCMs, QGBTs, cubículos) y paneles de automatización para áreas clasificadas",
+        "1": "Automatización de procesos continuos con redundancia y sistemas de seguridad (SIS/SIL)",
+        "2": "Ingeniería para áreas clasificadas con equipos a prueba de explosión y conformidad NR-10",
+        "3": "Paradas programadas con equipos multidisciplinarios certificados y planificación integrada"
       },
       "faq": {
         "0": {
@@ -649,9 +674,10 @@
         "2": "La integración entre sistemas de transporte, pesaje y expedición demanda ingeniería de automatización integrada"
       },
       "solutions": {
-        "0": "Automatización de sistemas de transporte con PLCs y SCADA para monitoreo continuo",
-        "1": "Montaje electromecánico de cintas transportadoras, elevadores y sistemas de movimiento de materiales",
-        "2": "Instrumentación de pesaje y medición con calibración RBC trazada"
+        "0": "Fabricación de paneles eléctricos (CCMs) y paneles de automatización para sistemas de transporte y almacenamiento",
+        "1": "Automatización de sistemas de transporte con PLCs y SCADA para monitoreo continuo",
+        "2": "Montaje electromecánico de cintas transportadoras, elevadores y sistemas de movimiento de materiales",
+        "3": "Instrumentación de pesaje y medición con calibración RBC trazada"
       },
       "faq": {
         "0": {
@@ -664,7 +690,7 @@
       "name": "Papel y Celulosa",
       "headline": "Automatización y eléctrica para fábricas de celulosa, papel y empaques",
       "description": "Authomathika atiende el sector de papel y celulosa con soluciones de automatización industrial, ingeniería eléctrica y montaje electromecánico. Con conocimiento en procesos continuos de alta complejidad — desde la digestión y blanqueo hasta la formación y secado — entregamos proyectos que aumentan la eficiencia energética y la confiabilidad operativa de las plantas.",
-      "metric0Value": "25+",
+      "metric0Value": "27+",
       "metric0Label": "Años en procesos continuos",
       "metric1Value": "380.000+",
       "metric1Label": "Puntos de automatización implantados",
@@ -678,16 +704,17 @@
         "4": "Integración entre sistemas de control de proceso (DCS/SCADA) y sistemas de energía es crítica"
       },
       "solutions": {
-        "0": "Automatización de proceso con PLCs y SCADA personalizados para digestores, calderas de recuperación y máquinas de papel",
-        "1": "Ingeniería eléctrica para cogeneración, distribución y paneles de media y baja tensión",
-        "2": "Montaje electromecánico de equipos rotativos, tuberías y estructuras metálicas",
-        "3": "Paradas programadas con equipos multidisciplinarios certificados NR-10/NR-35",
-        "4": "Metrología RBC para instrumentos críticos de temperatura, presión y caudal"
+        "0": "Diseño y fabricación de paneles eléctricos (CCMs, QGBTs, cubículos) y paneles de automatización (PLC, SDCD) a medida",
+        "1": "Automatización de proceso con PLCs y SCADA personalizados para digestores, calderas de recuperación y máquinas de papel",
+        "2": "Ingeniería eléctrica para cogeneración, distribución y paneles de media y baja tensión",
+        "3": "Montaje electromecánico de equipos rotativos, tuberías y estructuras metálicas",
+        "4": "Paradas programadas con equipos multidisciplinarios certificados NR-10/NR-35",
+        "5": "Metrología RBC para instrumentos críticos de temperatura, presión y caudal"
       },
       "faq": {
         "0": {
           "question": "¿Authomathika tiene experiencia en fábricas de celulosa y papel?",
-          "answer": "Authomathika posee más de 25 años de experiencia en procesos industriales continuos, con expertise directamente aplicable a fábricas de celulosa y papel. Nuestra actuación incluye automatización de calderas, sistemas de cogeneración, montaje electromecánico y paradas programadas — todas competencias esenciales para este sector."
+          "answer": "Authomathika posee más de 27 años de experiencia en procesos industriales continuos, con expertise directamente aplicable a fábricas de celulosa y papel. Nuestra actuación incluye automatización de calderas, sistemas de cogeneración, montaje electromecánico y paradas programadas — todas competencias esenciales para este sector."
         },
         "1": {
           "question": "¿Trabajan con automatización de calderas de recuperación?",
@@ -703,8 +730,8 @@
       "metric0Label": "Proyectos industriales entregados",
       "metric1Value": "42.027",
       "metric1Label": "Equipos atendidos",
-      "metric2Value": "ISO 9001",
-      "metric2Label": "Certificación de calidad",
+      "metric2Value": "SGC",
+      "metric2Label": "Gestión de la calidad (ISO 9001)",
       "painPoints": {
         "0": "Procesos de clinquerización a 1.450°C exigen instrumentación robusta y automatización de altísima confiabilidad",
         "1": "El consumo energético representa hasta el 40% del costo de producción, exigiendo optimización continua de motores y accionamientos",
@@ -717,7 +744,7 @@
         "1": "Ingeniería eléctrica para accionamientos de media tensión, CCMs y bancos de capacitores con eficiencia energética",
         "2": "Montaje electromecánico de equipos rotativos de gran porte, transportadores y sistemas de desempolvamiento",
         "3": "Instrumentación especializada para medición de temperatura, nivel y caudal en ambientes extremos",
-        "4": "Mantenimiento preventivo y predictivo con metrología RBC y sistema Serelepe de trazabilidad"
+        "4": "Mantenimiento preventivo y predictivo con metrología RBC y sistema IndustryView de trazabilidad"
       },
       "faq": {
         "0": {
@@ -726,7 +753,7 @@
         },
         "1": {
           "question": "¿Trabajan con accionamientos de media tensión para molinos?",
-          "answer": "Sí. Authomathika proyecta e instala sistemas eléctricos de media tensión, incluyendo CCMs (Centros de Control de Motores), paneles de arranque y accionamientos para motores de gran porte. Son más de 245 CCMs y 281 QGBTs instalados a lo largo de 25+ años."
+          "answer": "Sí. Authomathika proyecta e instala sistemas eléctricos de media tensión, incluyendo CCMs (Centros de Control de Motores), paneles de arranque y accionamientos para motores de gran porte. Son más de 245 CCMs y 281 QGBTs instalados a lo largo de 27+ años."
         }
       }
     },
@@ -734,11 +761,11 @@
       "name": "Petróleo y Gas",
       "headline": "Automatización y eléctrica para operaciones de petróleo, gas y petroquímica",
       "description": "Authomathika ofrece soluciones de automatización, ingeniería eléctrica y montaje electromecánico para el sector de petróleo, gas y petroquímica. Con equipos certificados para trabajo en áreas clasificadas (Ex), instrumentación para ambientes explosivos y experiencia en procesos continuos de alta criticidad, atendemos refinerías, terminales, plataformas onshore y plantas petroquímicas.",
-      "metric0Value": "2.000+",
-      "metric0Label": "Días sin accidentes",
+      "metric0Value": "27+",
+      "metric0Label": "Años en procesos industriales",
       "metric1Value": "NR-10/20/33/35",
       "metric1Label": "Conformidad total",
-      "metric2Value": "25+",
+      "metric2Value": "27+",
       "metric2Label": "Años en procesos industriales",
       "painPoints": {
         "0": "Las áreas clasificadas (zonas 0, 1 y 2) exigen equipos y mano de obra altamente especializada en atmósferas explosivas",
@@ -748,11 +775,12 @@
         "4": "La instrumentación en ambientes corrosivos (H₂S, ácidos) demanda materiales especiales y mantenimiento frecuente"
       },
       "solutions": {
-        "0": "Automatización de procesos con sistemas de seguridad instrumentados (SIS/SIL) y PLCs de alta disponibilidad",
-        "1": "Ingeniería eléctrica para áreas clasificadas con equipos a prueba de explosión certificados (Ex d, Ex e, Ex i)",
-        "2": "Montaje electromecánico con procedimientos específicos para ambientes con hidrocarburos",
-        "3": "Instrumentación industrial con grado de protección IP68 y materiales resistentes a la corrosión (Hastelloy, Inconel, titanio)",
-        "4": "Paradas programadas con equipos multidisciplinarios certificados en NR-10, NR-20, NR-33 y NR-35"
+        "0": "Diseño y fabricación de paneles eléctricos (CCMs, QGBTs) y paneles de automatización certificados para áreas clasificadas (Ex)",
+        "1": "Automatización de procesos con sistemas de seguridad instrumentados (SIS/SIL) y PLCs de alta disponibilidad",
+        "2": "Ingeniería eléctrica para áreas clasificadas con equipos a prueba de explosión certificados (Ex d, Ex e, Ex i)",
+        "3": "Montaje electromecánico con procedimientos específicos para ambientes con hidrocarburos",
+        "4": "Instrumentación industrial con grado de protección IP68 y materiales resistentes a la corrosión (Hastelloy, Inconel, titanio)",
+        "5": "Paradas programadas con equipos multidisciplinarios certificados en NR-10, NR-20, NR-33 y NR-35"
       },
       "faq": {
         "0": {
@@ -773,7 +801,7 @@
       "metric0Label": "Centrales termoeléctricas",
       "metric1Value": "EPC",
       "metric1Label": "Gestión integrada",
-      "metric2Value": "25+",
+      "metric2Value": "27+",
       "metric2Label": "Años de experiencia",
       "painPoints": {
         "0": "Los proyectos de infraestructura involucran múltiples disciplinas e interfaces complejas entre proveedores",
@@ -782,15 +810,16 @@
         "3": "Los sistemas de utilidades (vapor, aire comprimido, agua helada) necesitan automatización integrada y monitoreo 24/7"
       },
       "solutions": {
-        "0": "Ingeniería EPC con gestión integrada de proyecto, adquisición y construcción para todas las disciplinas",
-        "1": "Montaje electromecánico de subestaciones, generadores, transformadores y sistemas de distribución",
-        "2": "Automatización de centrales de utilidades con PLCs y SCADA para monitoreo y control en tiempo real",
-        "3": "23 centrales termoeléctricas proyectadas y comisionadas — experiencia comprobada en generación de energía"
+        "0": "Diseño y fabricación de paneles de distribución (CCMs, QGBTs, cubículos) y paneles de automatización",
+        "1": "Ingeniería EPC con gestión integrada de proyecto, adquisición y construcción para todas las disciplinas",
+        "2": "Montaje electromecánico de subestaciones, generadores, transformadores y sistemas de distribución",
+        "3": "Automatización de centrales de utilidades con PLCs y SCADA para monitoreo y control en tiempo real",
+        "4": "23 centrales termoeléctricas proyectadas y comisionadas — experiencia comprobada en generación de energía"
       },
       "faq": {
         "0": {
           "question": "¿Authomathika ejecuta montaje de subestaciones?",
-          "answer": "Sí. Authomathika proyecta, instala y comisiona subestaciones de media y baja tensión, incluyendo transformadores, disyuntores, paneles de distribución y sistemas de protección. Son más de 25 años de experiencia en ingeniería eléctrica con 43 plantas greenfield y 82 brownfield entregadas."
+          "answer": "Sí. Authomathika proyecta, instala y comisiona subestaciones de media y baja tensión, incluyendo transformadores, disyuntores, paneles de distribución y sistemas de protección. Son más de 27 años de experiencia en ingeniería eléctrica con 43 plantas greenfield y 82 brownfield entregadas."
         },
         "1": {
           "question": "¿Construyen centrales termoeléctricas?",
@@ -798,18 +827,42 @@
         }
       }
     },
+    "paineis-eletricos-eletrocentros": {
+      "name": "Paneles Eléctricos y Electrocentros",
+      "headline": "Diseño y fabricación propia de paneles eléctricos, electrocentros y power stations",
+      "description": "Authomathika posee fábrica propia con capacidad para diseñar y fabricar CCMs, tableros de distribución, paneles de automatización, electrocentros y power stations premontados. Cada equipo es desarrollado a medida, conforme normas ABNT/IEC, con pruebas de fábrica (FAT) y documentación técnica completa.",
+      "metric0Value": "245",
+      "metric0Label": "CCMs Fabricados",
+      "metric1Value": "281",
+      "metric1Label": "Tableros Fabricados",
+      "painPoints": {
+        "0": "Dependencia de fabricantes externos de paneles genera atrasos y falta de control sobre calidad y plazos",
+        "1": "Paneles genéricos no cumplen especificaciones técnicas de plantas industriales complejas",
+        "2": "Falta de integración entre paneles eléctricos y sistemas de automatización genera retrabajo en la puesta en marcha",
+        "3": "Electrocentros y power stations exigen ingeniería personalizada para cada layout de planta"
+      },
+      "solutions": {
+        "0": "Fábrica propia con control total de calidad, plazos y trazabilidad de materiales",
+        "1": "Diseño a medida de CCMs, tableros y paneles de automatización conforme normas ABNT/IEC",
+        "2": "Electrocentros y power stations premontados y probados en fábrica antes del envío",
+        "3": "Integración nativa entre paneles eléctricos y de automatización — misma ingeniería, cero interfaz",
+        "4": "Pruebas de fábrica (FAT) con cliente y documentación técnica completa para puesta en marcha"
+      },
+      "faq": {
+        "0": {
+          "question": "¿Authomathika fabrica paneles eléctricos?",
+          "answer": "Sí. Authomathika posee fábrica propia para diseño y fabricación de paneles eléctricos industriales, incluyendo CCMs, tableros de distribución, paneles de automatización y cubículos. Cada panel es desarrollado a medida conforme normas ABNT/IEC, con pruebas de fábrica y documentación completa."
+        },
+        "1": {
+          "question": "¿Qué son los electrocentros?",
+          "answer": "Los electrocentros son estructuras premontadas que albergan paneles eléctricos de distribución y control, listos para instalación en campo. Authomathika diseña y fabrica electrocentros personalizados, probados en fábrica (FAT), optimizando plazos de montaje y garantizando calidad controlada."
+        }
+      }
+    },
     "data-centers": {
       "name": "Data Centers",
       "headline": "Infraestructura eléctrica, automatización y montaje para Data Centers de alta disponibilidad",
-      "description": "Authomathika aplica más de 25 años de experiencia en ingeniería eléctrica industrial, automatización y montaje electromecánico a la construcción y modernización de Data Centers. Con fabricación propia de paneles, electrocentros y power stations, la empresa entrega soluciones integradas de infraestructura crítica — desde la subestación de entrada hasta el monitoreo BMS — bajo un único contrato EPC.",
-      "metric0Value": "245",
-      "metric0Label": "CCMs fabricados e instalados",
-      "metric1Value": "43",
-      "metric1Label": "Plantas greenfield entregadas",
-      "metric2Value": "380.000+",
-      "metric2Label": "Puntos de automatización implantados",
-      "metric3Value": "EPC",
-      "metric3Label": "Contrato único integrado",
+      "description": "Authomathika aplica más de 27 años de experiencia en ingeniería eléctrica industrial, automatización y montaje electromecánico a la construcción y modernización de Data Centers. Con fabricación propia de paneles, electrocentros y power stations, capacidad de ejecución EPC comprobada en plantas industriales de gran porte y equipos certificados, la empresa reúne todas las competencias necesarias para entregar la infraestructura crítica de un Data Center — desde la subestación de entrada hasta el comisionamiento — bajo un único contrato.",
       "painPoints": {
         "0": "Redundancia eléctrica (N+1, 2N) para clasificaciones Tier III y IV exige ingeniería de alta confiabilidad y cero margen de error",
         "1": "Integración entre sistemas de distribución eléctrica, climatización, seguridad física y TI necesita un integrador con visión multidisciplinaria",
@@ -821,22 +874,55 @@
         "0": "Proyecto y fabricación propia de paneles de distribución (CCMs, QGBTs, PDUs) con certificación y pruebas en fábrica",
         "1": "Electrocentros y Power Stations premontados y probados — reducción del plazo de instalación en campo",
         "2": "Montaje electromecánico completo: infraestructura eléctrica, cableado estructurado, barras y bandejas",
-        "3": "Automatización y SCADA para BMS — monitoreo en tiempo real de energía, temperatura, humedad y alarmas críticas",
+        "3": "Automatización y supervisión SCADA para monitoreo de energía, temperatura y alarmas críticas",
         "4": "Sistemas de seguridad integrados: CCTV, control de acceso, detección de incendios y redes de fibra óptica",
         "5": "Subestaciones de entrada en media tensión con proyecto, montaje y comisionamiento completos"
       },
       "faq": {
         "0": {
-          "question": "¿Authomathika construye Data Centers?",
-          "answer": "Authomathika actúa como integrador EPC para la infraestructura eléctrica, de automatización y montaje electromecánico de Data Centers. Esto incluye proyecto y fabricación de paneles de distribución, electrocentros, subestaciones, sistemas de monitoreo BMS/SCADA, CCTV y redes. Con más de 43 plantas greenfield entregadas y fabricación propia de paneles y power stations, la empresa posee capacidad comprobada para proyectos de infraestructura crítica."
+          "question": "¿Authomathika ejecuta proyectos para Data Centers?",
+          "answer": "Sí. Authomathika posee capacidad de ejecución comprobada en proyectos de infraestructura eléctrica, automatización y montaje electromecánico de gran porte. La empresa proyecta y fabrica paneles de distribución, electrocentros y power stations en fábrica propia, además de ejecutar subestaciones, sistemas SCADA, CCTV y redes — reuniendo todas las competencias necesarias para la infraestructura crítica de Data Centers bajo un único contrato EPC."
         },
         "1": {
           "question": "¿Qué sistemas eléctricos Authomathika provee para Data Centers?",
           "answer": "Authomathika proyecta, fabrica e instala paneles eléctricos industriales de alta confiabilidad, incluyendo CCMs, QGBTs, cuadros de distribución y PDUs. Además, provee electrocentros y power stations premontados y probados en fábrica, subestaciones de media tensión y sistemas de distribución con redundancia N+1 o 2N, conforme la clasificación Tier del Data Center."
         },
         "2": {
-          "question": "¿Authomathika ofrece automatización y monitoreo para Data Centers?",
-          "answer": "Sí. La división de Automatización desarrolla sistemas SCADA personalizados para BMS (Building Management System), integrando monitoreo de energía, temperatura, humedad, alarmas y seguridad en una plataforma unificada. Con más de 380.000 puntos de automatización implantados en 25+ años, la empresa posee expertise en sistemas de control de alta disponibilidad."
+          "question": "¿Cuál es la experiencia de Authomathika en infraestructura crítica?",
+          "answer": "Authomathika acumula más de 27 años de ingeniería eléctrica y automatización industrial, con ejecución de proyectos EPC en sectores que exigen alta disponibilidad y confiabilidad, como sucroenergético, fertilizantes y siderurgia. Esa experiencia en ambientes industriales de misión crítica se traduce directamente en la capacidad de atender los estándares exigidos por Data Centers."
+        }
+      },
+      "metric0Value": "245",
+      "metric0Label": "CCMs fabricados e instalados",
+      "metric1Value": "43",
+      "metric1Label": "Plantas greenfield entregadas",
+      "metric2Value": "380.000+",
+      "metric2Label": "Puntos de automatización implantados",
+      "metric3Value": "EPC",
+      "metric3Label": "Contrato único integrado"
+    },
+    "industrias-em-geral": {
+      "name": "Industrias en General",
+      "headline": "Soluciones de automatización y eléctrica para cualquier segmento industrial",
+      "description": "Authomathika atiende industrias de diversos segmentos con proyectos de automatización, eléctrica, montaje electromecánico y mantenimiento industrial. Con más de 27 años de experiencia multisectorial y un equipo técnico altamente calificado, la empresa ofrece soluciones personalizadas para cualquier operación industrial que demande confiabilidad y eficiencia.",
+      "metric0Value": "250+",
+      "metric0Label": "Proyectos entregados",
+      "metric1Value": "27+",
+      "metric1Label": "Años de experiencia",
+      "painPoints": {
+        "0": "Procesos industriales diversos demandan integradores con experiencia multisectorial comprobada",
+        "1": "Falta de estandarización entre sistemas legados dificulta la integración y el control centralizado",
+        "2": "Mantenimiento de equipos críticos exige respuesta rápida y equipos disponibles 24/7"
+      },
+      "solutions": {
+        "0": "Proyectos de automatización y eléctrica personalizados para cualquier proceso industrial",
+        "1": "Montaje electromecánico con equipos certificados NR-10, NR-12 y NR-35",
+        "2": "Mantenimiento preventivo y correctivo con soporte técnico en campo y metrología RBC"
+      },
+      "faq": {
+        "0": {
+          "question": "¿Authomathika atiende segmentos industriales además de los listados?",
+          "answer": "Sí. Authomathika posee experiencia multisectorial con más de 250 proyectos entregados en 27+ años. La empresa ofrece soluciones de automatización, eléctrica, montaje electromecánico y mantenimiento para cualquier segmento industrial que demande confiabilidad y eficiencia operativa."
         }
       }
     }
@@ -888,7 +974,7 @@
       "type": "Proyecto",
       "category": "Centro Eléctrico",
       "description": "Implantación de centro eléctrico.",
-      "altText": "Vale Carajás - implantación de centro eléctrico para minería con ingeniería eléctrica y automatización por Authomathika"
+      "altText": "Vale Carajás - implantación de centro eléctrico con ingeniería eléctrica y automatización por Authomathika"
     },
     "8": {
       "type": "Revamp",
@@ -965,7 +1051,7 @@
         "event": "Inicio de las operaciones de automatización industrial de gran porte"
       },
       "2": {
-        "event": "Certificación ISO 9001 obtenida"
+        "event": "Sistema de gestión de la calidad implementado"
       },
       "3": {
         "event": "Expansión hacia el sector de montaje electromecánico"
@@ -986,7 +1072,7 @@
         "event": "Participación en Fenasucro & Agrocana 2018"
       },
       "9": {
-        "event": "2.000 días sin accidentes laborales"
+        "event": "Hito de seguridad operacional consolidado"
       },
       "10": {
         "event": "Más de 890 MW de energía solar instalados — 10 parques"
@@ -1013,8 +1099,8 @@
         "description": "Almacenes, silos, transporte de bagazo y granos."
       },
       "4": {
-        "name": "Minería",
-        "description": "Proyectos electromecánicos y de automatización para minería."
+        "name": "Fertilizantes",
+        "description": "Automatización, eléctrica y montaje electromecánico para plantas de fertilizantes."
       },
       "5": {
         "name": "Energías Renovables",
@@ -1050,15 +1136,15 @@
     "automacao": {
       "0": {
         "question": "¿Qué es un integrador de sistemas de automatización industrial?",
-        "answer": "Un integrador de sistemas de automatización industrial es una empresa especializada en diseñar, instalar y comisionar soluciones completas de control y monitoreo de procesos. Authomathika actúa como integradora desde 1999, habiendo implantado más de 380.000+ puntos de automatización en 180 plantas industriales en Brasil, trabajando con plataformas como PLCs Rockwell, Siemens, Yokogawa y sistemas SCADA."
+        "answer": "Un integrador de sistemas de automatización industrial es una empresa especializada en diseñar, instalar y comisionar soluciones completas de control y monitoreo de procesos. Authomathika actúa como integradora desde 1999, habiendo implantado más de 380.000+ puntos de automatización en 180 plantas industriales en Brasil, trabajando con plataformas como PLCs y SDCDs Rockwell, Siemens, Yokogawa y sistemas SCADA."
       },
       "1": {
         "question": "¿Cuál es la diferencia entre proyecto greenfield y brownfield en automatización?",
         "answer": "Un proyecto greenfield es una implantación totalmente nueva, donde la automatización se diseña desde cero para una planta que aún será construida. El brownfield involucra la modernización, ampliación o revamp de sistemas existentes en plantas ya en operación. Authomathika posee experiencia en ambos: 49 plantas greenfield y 144 brownfield en la división de Automatización."
       },
       "2": {
-        "question": "¿Con qué sistemas SCADA y PLCs trabaja Authomathika?",
-        "answer": "Authomathika trabaja con las principales plataformas del mercado: PLCs Rockwell (Allen-Bradley), Siemens, Yokogawa, Emerson, Altus, ABB, Schneider y GE. En SCADA, desarrollamos software personalizado e integramos sistemas de supervisión para monitoreo en tiempo real de procesos industriales."
+        "question": "¿Con qué sistemas SCADA, PLCs y SDCDs trabaja Authomathika?",
+        "answer": "Authomathika trabaja con las principales plataformas del mercado: PLCs y SDCDs Rockwell (Allen-Bradley), Siemens, Yokogawa, Emerson, Altus, ABB, Schneider y GE. En SCADA, desarrollamos software personalizado e integramos sistemas de supervisión para monitoreo en tiempo real de procesos industriales."
       },
       "3": {
         "question": "¿Cuánto tiempo toma un proyecto de automatización industrial?",
@@ -1097,18 +1183,18 @@
         "answer": "La metrología RBC (Red Brasileña de Calibración) es el sistema de calibración de instrumentos de medición con trazabilidad certificada por INMETRO. Es fundamental para garantizar que instrumentos como transmisores de presión, temperatura y caudal proporcionen medidas precisas y confiables. Authomathika posee laboratorios fijos y móviles con certificación RBC."
       },
       "3": {
-        "question": "¿Qué es el sistema Serelepe de Authomathika?",
-        "answer": "El Serelepe es el sistema en línea propietario de Authomathika para gestión de servicios de campo. Permite trazabilidad completa de atenciones técnicas, generación de certificados digitales y seguimiento en tiempo real del estado de mantenimientos y calibraciones, garantizando transparencia y calidad en cada atención."
+        "question": "¿Qué es el sistema IndustryView de Authomathika?",
+        "answer": "El IndustryView es el sistema en línea propietario de Authomathika para gestión de servicios de campo. Permite trazabilidad completa de atenciones técnicas, generación de certificados digitales y seguimiento en tiempo real del estado de mantenimientos y calibraciones, garantizando transparencia y calidad en cada atención."
       }
     },
     "montagem-eletromecanica": {
       "0": {
         "question": "¿Qué es montaje electromecánico industrial?",
-        "answer": "El montaje electromecánico es el proceso de instalación integrada de componentes eléctricos y mecánicos en plantas industriales, incluyendo equipos, tuberías, estructuras metálicas, paneles y sistemas de fuerza y control. Authomathika ya ejecutó 251 proyectos de montaje, desde pequeño hasta gran porte, en más de 25 años de actuación."
+        "answer": "El montaje electromecánico es el proceso de instalación integrada de componentes eléctricos y mecánicos en plantas industriales, incluyendo equipos, tuberías, estructuras metálicas, paneles y sistemas de fuerza y control. Authomathika ya ejecutó 251 proyectos de montaje, desde pequeño hasta gran porte, en más de 27 años de actuación."
       },
       "1": {
         "question": "¿Qué sectores atiende Authomathika en montaje electromecánico?",
-        "answer": "Authomathika atiende diversos sectores industriales: sucroenergético (plantas de azúcar y etanol), fertilizantes, saneamiento, logística, minería, alimentos y bebidas, química y siderurgia. Con 126 proyectos de pequeño porte, 81 de mediano porte y 44 de gran porte entregados, la empresa posee experiencia multisectorial comprobada."
+        "answer": "Authomathika atiende diversos sectores industriales: sucroenergético (plantas de azúcar y etanol), fertilizantes, saneamiento, logística, alimentos y bebidas, química y siderurgia. Con 126 proyectos de pequeño porte, 81 de mediano porte y 44 de gran porte entregados, la empresa posee experiencia multisectorial comprobada."
       },
       "2": {
         "question": "¿Cuál es la diferencia entre montaje de pequeño, mediano y gran porte?",
@@ -1174,7 +1260,7 @@
     "3": {
       "role": "Gerente de Mantenimiento",
       "company": "Planta de Azúcar y Etanol",
-      "quote": "Trabajamos con Authomathika en paradas programadas hace más de 10 años. El equipo certificado NR-10 y NR-35, junto con el sistema Serelepe de trazabilidad, nos da total confianza en la calidad y seguridad de los servicios prestados.",
+      "quote": "Trabajamos con Authomathika en paradas programadas hace más de 10 años. El equipo certificado NR-10 y NR-35, junto con el sistema IndustryView de trazabilidad, nos da total confianza en la calidad y seguridad de los servicios prestados.",
       "result": "10+ años de alianza en paradas programadas"
     },
     "4": {
@@ -1352,9 +1438,9 @@
     },
     "vale-carajas": {
       "title": "Vale Carajás — Implantación de Centro Eléctrico",
-      "challenge": "Vale necesitaba la implantación de un centro eléctrico en la operación de Carajás, región remota del Pará. El desafío incluía la logística de movilización en área aislada, los rigurosos estándares de seguridad y calificación de la minería, y el ambiente operativo severo con polvo y vibración.",
+      "challenge": "Vale necesitaba la implantación de un centro eléctrico en la operación de Carajás, región remota del Pará. El desafío incluía la logística de movilización en área aislada, los rigurosos estándares de seguridad y calificación, y el ambiente operativo severo con polvo y vibración.",
       "solution": "Authomathika ejecutó la implantación completa del centro eléctrico, incluyendo ingeniería eléctrica, automatización y montaje electromecánico. La movilización de equipos certificados NR-10/NR-35 fue planificada con logística independiente. Toda la documentación técnica fue entregada conforme los estándares de precalificación de Vale.",
-      "altText": "Vale Carajás - implantación de centro eléctrico para minería con ingeniería eléctrica y automatización por Authomathika",
+      "altText": "Vale Carajás - implantación de centro eléctrico con ingeniería eléctrica y automatización por Authomathika",
       "results": {
         "0": {
           "metric": "Alcance",
@@ -1433,7 +1519,7 @@
     "ufv-belmonte": {
       "title": "UFV Belmonte I & II — Planta Solar 455 MW",
       "duration": "24 meses",
-      "challenge": "El Grupo Cobra precisaba de un socio brasileño con capacidad para ejecutar el montaje eléctrico y mecánico de una de las mayores plantas solares de Brasil, con 455 MW de potencia. El plazo era agresivo, la logística compleja y la calidad del montaje debía garantizar el performance ratio contractual por 25+ años.",
+      "challenge": "El Grupo Cobra precisaba de un socio brasileño con capacidad para ejecutar el montaje eléctrico y mecánico de una de las mayores plantas solares de Brasil, con 455 MW de potencia. El plazo era agresivo, la logística compleja y la calidad del montaje debía garantizar el performance ratio contractual por 27+ años.",
       "solution": "Authomathika fue seleccionada para el montaje eléctrico y mecánico de la UFV Belmonte I & II, movilizando equipos especializados en solar. El alcance incluyó instalación de trackers, módulos fotovoltaicos, cableado DC/AC, inversores string y centrales, además de subestación. El control de calidad en campo garantizó trazabilidad de cada componente instalado.",
       "altText": "UFV Belmonte I y II - planta solar fotovoltaica de 455 MW con montaje eléctrico y mecánico por Authomathika en alianza con Grupo Cobra",
       "results": {
@@ -1726,9 +1812,9 @@
       "challenge": "GS Inima (Samar) requería un revamp de ETA y ETE Baguaçu con implantación de telemetría en São Paulo, modernizando automatización y eléctrica para operación remota y monitoreo continuo."
     },
     "vale-mineradora": {
-      "title": "Vale Minería — Greenfield Sistema de Molinos",
-      "altText": "Vale Minería - implantación greenfield de sistema de molinos con automatización eléctrica y montaje por Authomathika",
-      "challenge": "Vale requería la implantación greenfield de un sistema de molinos para minería, con automatización, eléctrica y montaje electromecánico para operación de alta demanda en ambiente severo."
+      "title": "Vale Fertilizantes — Greenfield Sistema de Molinos",
+      "altText": "Vale Fertilizantes - implantación greenfield de sistema de molinos con automatización eléctrica y montaje por Authomathika",
+      "challenge": "Vale Fertilizantes requería la implantación greenfield de un sistema de molinos, con automatización, eléctrica y montaje electromecánico para operación de alta demanda en ambiente severo."
     },
     "mosaic-catalao": {
       "title": "Vale Mosaic Catalão — Renovación de Tableros de Automatización",
@@ -1774,7 +1860,7 @@
   "serviceData": {
     "paradas-programadas": {
       "name": "Paradas Programadas",
-      "shortDescription": "Gestión completa de paradas industriales con conformidad NR-10 y NR-35",
+      "shortDescription": "Revisión de instrumentos y motores eléctricos durante paradas industriales programadas",
       "description": "Authomathika ofrece servicios completos de paradas programadas, con equipos especializados y capacitados conforme las normas NR-10 y NR-35. Planificamos y ejecutamos paradas de forma segura, eficiente y dentro del plazo establecido.",
       "features": {
         "0": "Planificación y programación de paradas",
@@ -1793,8 +1879,8 @@
         "0": "Mantenimiento correctivo de emergencia 24/7",
         "1": "Programas de mantenimiento preventivo",
         "2": "Mantenimiento predictivo",
-        "3": "Revisión y overhaul de equipos",
-        "4": "Calibración de instrumentos",
+        "3": "Calibración de instrumentos",
+        "4": "Sistema IndustryView – informes en línea",
         "5": "Sistema Serelepe – informes en línea"
       }
     },
@@ -1813,11 +1899,11 @@
     },
     "servicos-em-campo": {
       "name": "Servicios en Campo",
-      "shortDescription": "Atención técnica especializada con sistema en línea Serelepe",
-      "description": "Authomathika ofrece servicios en campo con equipos altamente capacitados y respaldo del sistema Serelepe, que permite seguimiento en línea de informes e historial de atenciones. Flota propia con control por radar garantiza agilidad en la atención.",
+      "shortDescription": "Atención técnica especializada con sistema en línea IndustryView",
+      "description": "Authomathika ofrece servicios en campo con equipos altamente capacitados y respaldo del sistema IndustryView, que permite seguimiento en línea de informes e historial de atenciones. Flota propia con control por radar garantiza agilidad en la atención.",
       "features": {
         "0": "Atención técnica especializada",
-        "1": "Sistema Serelepe – seguimiento en línea",
+        "1": "Sistema IndustryView – seguimiento en línea",
         "2": "Flota propia con control por radar",
         "3": "Informes en línea en tiempo real",
         "4": "Historial de atenciones",
@@ -1853,19 +1939,19 @@
         "5": "Fácil instalación y mantenimiento"
       },
       "specs": {
-        "Puntos Instalados": {
+        "pontosInstalados": {
           "label": "Puntos Instalados",
           "value": "2.685+"
         },
-        "Señal de Salida": {
+        "sinalDeSaida": {
           "label": "Señal de Salida",
           "value": "4-20 mA / HART"
         },
-        "Grado de Protección": {
+        "grauDeProtecao": {
           "label": "Grado de Protección",
           "value": "IP65"
         },
-        "Alimentación": {
+        "alimentacao": {
           "label": "Alimentación",
           "value": "24 VDC"
         }
@@ -1885,15 +1971,15 @@
         "5": "Certificación para uso industrial"
       },
       "specs": {
-        "Patente": {
+        "patente": {
           "label": "Patente",
           "value": "US Patent 6,870,486"
         },
-        "Tipo de Medición": {
+        "tipoDeMedicao": {
           "label": "Tipo de Medición",
           "value": "Pasteurización"
         },
-        "Comunicación": {
+        "comunicacao": {
           "label": "Comunicación",
           "value": "Industrial"
         }
@@ -1913,15 +1999,15 @@
         "5": "Amplio rango de aplicación"
       },
       "specs": {
-        "Puntos Instalados": {
+        "pontosInstalados": {
           "label": "Puntos Instalados",
           "value": "190+"
         },
-        "Tipo": {
+        "tipo": {
           "label": "Tipo",
           "value": "Electroneumático"
         },
-        "Señal de Control": {
+        "sinalDeControle": {
           "label": "Señal de Control",
           "value": "4-20 mA"
         }
@@ -1939,19 +2025,24 @@
         "4": "Baja necesidad de mantenimiento"
       },
       "specs": {
-        "Tipo de Medición": {
+        "pontosInstalados": {
+          "label": "Puntos Instalados",
+          "value": "700+"
+        },
+        "tipoDeMedicao": {
           "label": "Tipo de Medición",
           "value": "Posición / Desplazamiento"
         },
-        "Señal de Salida": {
+        "sinalDeSaida": {
           "label": "Señal de Salida",
           "value": "4-20 mA"
         },
-        "Aplicación": {
+        "aplicacao": {
           "label": "Aplicación",
           "value": "Molinos industriales"
         }
-      }
+      },
+      "badge": "700+ instalaciones"
     },
     "dclt-1c": {
       "name": "DCLT-1C",
@@ -1967,19 +2058,19 @@
         "5": "Resistencia a ambientes húmedos y agresivos"
       },
       "specs": {
-        "Display": {
+        "display": {
           "label": "Display",
           "value": "OLED"
         },
-        "Grado de Protección": {
+        "grauDeProtecao": {
           "label": "Grado de Protección",
           "value": "IP67"
         },
-        "Patente": {
+        "patente": {
           "label": "Patente",
           "value": "Patent pending"
         },
-        "Medición": {
+        "medicao": {
           "label": "Medición",
           "value": "Continua"
         }
@@ -1999,15 +2090,15 @@
         "5": "Bajo costo de mantenimiento"
       },
       "specs": {
-        "Instalaciones Mundiales": {
+        "instalacoesMundiais": {
           "label": "Instalaciones Mundiales",
           "value": "8.800+"
         },
-        "Tecnología": {
+        "tecnologia": {
           "label": "Tecnología",
           "value": "Alemana"
         },
-        "Tipo de Medición": {
+        "tipoDeMedicao": {
           "label": "Tipo de Medición",
           "value": "Densidad / Proceso"
         }
@@ -2025,11 +2116,11 @@
         "4": "Protección contra interferencias"
       },
       "specs": {
-        "Protocolo": {
+        "protocolo": {
           "label": "Protocolo",
           "value": "AS-Interface (AS-i)"
         },
-        "Aplicación": {
+        "aplicacao": {
           "label": "Aplicación",
           "value": "Redes industriales de campo"
         }
@@ -2048,19 +2139,19 @@
         "5": "Material didáctico incluido"
       },
       "specs": {
-        "Aplicación": {
+        "aplicacao": {
           "label": "Aplicación",
           "value": "Capacitación y entrenamiento"
         },
-        "Tipo de Lazos": {
+        "tipoDeMalhas": {
           "label": "Tipo de Lazos",
           "value": "PID, cascada, feedforward"
         }
       }
     },
     "paineis": {
-      "name": "Paneles Eléctricos",
-      "shortDescription": "Paneles Eléctricos Industriales a Medida",
+      "name": "Paneles Eléctricos y Electrocentros",
+      "shortDescription": "Paneles Eléctricos Industriales y Electrocentros a Medida",
       "description": "Authomathika proyecta y fabrica paneles eléctricos industriales a medida, incluyendo CCMs, QGBTs, switchboards y paneles de automatización. Cada panel es desarrollado conforme las normas técnicas vigentes y las necesidades específicas del cliente.",
       "features": {
         "0": "Proyecto y fabricación a medida",
@@ -2071,15 +2162,15 @@
         "5": "Documentación técnica completa"
       },
       "specs": {
-        "Tipos": {
+        "tipos": {
           "label": "Tipos",
           "value": "CCM, QGBT, Switchboard, Automatización"
         },
-        "Normas": {
+        "normas": {
           "label": "Normas",
           "value": "ABNT / IEC"
         },
-        "Fabricación": {
+        "fabricacao": {
           "label": "Fabricación",
           "value": "A medida"
         }
@@ -2169,7 +2260,7 @@
     },
     "sectorList": {
       "title": "Sectores Atendidos",
-      "description": "Authomathika atiende 12 sectores industriales: sucroenergético, minería, energías renovables, saneamiento, fertilizantes, alimentos, siderurgia, logística, papel y celulosa, cemento, petróleo y gas e infraestructura.",
+      "description": "Authomathika atiende 12 sectores industriales: sucroenergético, fertilizantes, energías renovables, saneamiento, alimentos, siderurgia, logística, papel y celulosa, cemento, petróleo y gas, data centers e infraestructura.",
       "tag": "Actuación sectorial",
       "heading": "Sectores que Atendemos",
       "subtitle": "Cada sector tiene desafíos únicos. Nuestra ingeniería es especializada para resolver los problemas reales de su operación industrial.",
@@ -2249,7 +2340,7 @@
     },
     "documentation": {
       "metaTitle": "Documentación y Certificaciones",
-      "metaDescription": "Certificaciones, indicadores de seguridad, datos corporativos y materiales técnicos de Authomathika. ISO 9001, NR-10, NR-35, RBC.",
+      "metaDescription": "Certificaciones, indicadores de seguridad, datos corporativos y materiales técnicos de Authomathika. SGC (base ISO 9001), NR-10, NR-35, RBC.",
       "tag": "Pre-calificación",
       "title": "Documentación y Certificaciones",
       "subtitle": "Acceso rápido a certificaciones, indicadores de seguridad, datos corporativos y materiales técnicos para procesos de calificación.",
@@ -2260,8 +2351,8 @@
       "statusActive": "Vigente",
       "certifications": {
         "0": {
-          "name": "ISO 9001",
-          "description": "Sistema de gestión de calidad certificado, garantizando procesos estandarizados y mejora continua en todos los proyectos."
+          "name": "SGC (base ISO 9001)",
+          "description": "Sistema de gestión de la calidad basado en la ISO 9001, garantizando procesos estandarizados y mejora continua en todos los proyectos."
         },
         "1": {
           "name": "NR-10",
@@ -2281,16 +2372,6 @@
       "safetyDescription": "La seguridad no es una meta — es una premisa. Cada número refleja el compromiso de Authomathika con la integridad de sus colaboradores.",
       "safetyIndicators": {
         "0": {
-          "value": "2.000+",
-          "label": "Días sin accidentes laborales",
-          "description": "Marca alcanzada en 2019 y mantenida como estándar operativo"
-        },
-        "1": {
-          "value": "0",
-          "label": "TFCA (Tasa de Frecuencia de Accidentes)",
-          "description": "Compromiso de cero accidentes en todos los frentes de trabajo"
-        },
-        "2": {
           "value": "297.000+",
           "label": "Horas de servicio acumuladas",
           "description": "Volumen de operación con historial de seguridad ejemplar"
@@ -2320,8 +2401,8 @@
           "description": "Línea de productos propios: SLV-1A, AUTH 300, AUTH 600 y más."
         },
         "2": {
-          "title": "Certificado ISO 9001",
-          "description": "Certificado vigente del sistema de gestión de calidad."
+          "title": "Manual del SGC",
+          "description": "Manual del sistema de gestión de la calidad basado en la ISO 9001."
         },
         "3": {
           "title": "Ficha de Pre-Calificación",
@@ -2360,7 +2441,7 @@
           "excerpt": "Nuevos proyectos e inversiones para el sector industrial."
         },
         "2": {
-          "title": "2.000 días sin accidentes laborales",
+          "title": "Cultura de seguridad consolidada",
           "excerpt": "Hito en el compromiso con la seguridad operacional."
         },
         "3": {
@@ -2414,18 +2495,17 @@
     "proposalForm": {
       "sectors": {
         "0": "Sucroenergético",
-        "1": "Minería",
+        "1": "Fertilizantes",
         "2": "Energías Renovables",
         "3": "Saneamiento",
-        "4": "Fertilizantes",
-        "5": "Alimentos y Bebidas",
-        "6": "Siderurgia y Química",
-        "7": "Logística",
-        "8": "Papel y Celulosa",
-        "9": "Cemento",
-        "10": "Petróleo y Gas",
-        "11": "Infraestructura",
-        "12": "Otro"
+        "4": "Alimentos y Bebidas",
+        "5": "Siderurgia y Química",
+        "6": "Logística",
+        "7": "Papel y Celulosa",
+        "8": "Cemento",
+        "9": "Petróleo y Gas",
+        "10": "Infraestructura",
+        "11": "Otro"
       },
       "projectTypes": {
         "0": "Greenfield (planta nueva)",
@@ -2522,7 +2602,7 @@
       "diferencial3": "Metrología RBC con laboratorios fijos y móviles",
       "diferencial4": "Flota propia y operación nacional",
       "diferencial5": "Conformidad con normas críticas de seguridad (NR-10, NR-35)",
-      "diferencial6": "+25 años de experiencia en el sector sucroenergético e industrial",
+      "diferencial6": "+27 años de experiencia en el sector sucroenergético e industrial",
       "diferencial7": "Más de 890 MW de energía solar instalados en 10 parques",
       "diferencial8": "Más de 297.000 horas de servicio ejecutadas",
       "diferencial9": "Capacidad turnkey: proyecto, ejecución y comisionamiento",
@@ -2534,7 +2614,7 @@
     },
     "visaoCorporativa": {
       "title": "Visión Corporativa",
-      "description": "Conozca los principios y valores que guían a Authomathika desde hace más de 25 años: compromiso con el cliente, seguridad, calidad ISO 9001 y transparencia.",
+      "description": "Conozca los principios y valores que guían a Authomathika desde hace más de 27 años: compromiso con el cliente, seguridad, sistema de gestión de la calidad y transparencia.",
       "tag": "Dirección",
       "pageTitle": "Visión Corporativa",
       "subtitle": "Principios que orientan las decisiones técnicas, contractuales y relacionales de Authomathika.",
@@ -2544,7 +2624,7 @@
     },
     "linhaDoTempo": {
       "title": "Línea de Tiempo",
-      "description": "De 1999 a hoy: más de 25 años de hitos en la ingeniería integradora. 892 MW solares, 2.000+ días sin accidentes, certificación ISO 9001 y evolución continua.",
+      "description": "De 1999 a hoy: más de 27 años de hitos en la ingeniería integradora. 892 MW solares, sistema de gestión de la calidad y evolución continua.",
       "tag": "Historial",
       "pageTitle": "Línea de Tiempo",
       "subtitle": "Hitos de evolución de Authomathika desde 1999.",
@@ -2578,7 +2658,7 @@
           "highlight": "Primeros proyectos de automatización completa en plantas de cogeneración"
         },
         "2005": {
-          "headline": "Certificación ISO 9001 obtenida",
+          "headline": "Sistema de gestión de la calidad implementado",
           "highlight": "Sistema de gestión de calidad implementado en todos los procesos"
         },
         "2008": {
@@ -2615,7 +2695,7 @@
           "highlight": "Mayor volumen de operaciones en la historia de la empresa. Bunge (3 unidades), São Martinho, Mosaic y primeros proyectos EPC de gran escala."
         },
         "2019": {
-          "headline": "2.000 días sin accidentes — hito de seguridad operacional",
+          "headline": "Hito de seguridad operacional consolidado",
           "highlight": "Hito histórico de seguridad consolidado. 18 proyectos entregados: São Martinho, FS Bioenergia y expansión de saneamiento."
         },
         "2020": {
@@ -2647,13 +2727,12 @@
         "Logística": "Logística",
         "Internacional": "Internacional",
         "Solar": "Solar",
-        "Alimentos": "Alimentos",
-        "Mineração": "Minería"
+        "Alimentos": "Alimentos"
       }
     },
     "clientes": {
       "title": "Clientes",
-      "description": "Empresas líderes que confían en Authomathika desde hace más de 25 años.",
+      "description": "Empresas líderes que confían en Authomathika desde hace más de 27 años.",
       "tag": "Relaciones de mercado",
       "pageTitle": "Clientes y Socios",
       "subtitle": "Base de relaciones construida en proyectos críticos de ingeniería industrial.",
@@ -2664,7 +2743,7 @@
     },
     "equipe": {
       "title": "Nuestro Equipo",
-      "description": "Conozca el liderazgo de Authomathika. Más de 25 años de experiencia en ingeniería integradora de sistemas eléctricos y automatización.",
+      "description": "Conozca el liderazgo de Authomathika. Más de 27 años de experiencia en ingeniería integradora de sistemas eléctricos y automatización.",
       "tag": "Personas",
       "pageTitle": "Nuestro Equipo",
       "subtitle": "Detrás de cada proyecto entregado, existe un equipo comprometido con la excelencia técnica y la seguridad.",
@@ -2674,13 +2753,13 @@
       "fotoAlt": "Foto de {name}, {role} de Authomathika",
       "lideranca": "Liderazgo",
       "equipeGestao": "Equipo de gestión",
-      "equipeGestaoDesc": "Profesionales con décadas de experiencia en los sectores sucroenergético, minería, energía e infraestructura.",
+      "equipeGestaoDesc": "Profesionales con décadas de experiencia en los sectores sucroenergético, fertilizantes, energía e infraestructura.",
       "memberFotoAlt": "Foto de {name}, {role}",
       "linkedinAlt": "LinkedIn de {name}",
       "presidentRole": "Presidente y Fundador",
-      "presidentMessage": "Desde 1999, fundé Authomathika con un principio simple: cumplir lo que prometemos. En más de 25 años de mercado, construimos nuestra reputación entregando proyectos industriales críticos con responsabilidad, seguridad y excelencia técnica. Nuestro equipo está formado por profesionales apasionados por la ingeniería, que entienden que cada proyecto representa la confianza que el cliente deposita en nosotros. Trabajamos para que esa confianza sea siempre retribuida con resultados concretos.",
+      "presidentMessage": "Desde 1999, fundé Authomathika con un principio simple: cumplir lo que prometemos. En más de 27 años de mercado, construimos nuestra reputación entregando proyectos industriales críticos con responsabilidad, seguridad y excelencia técnica. Nuestro equipo está formado por profesionales apasionados por la ingeniería, que entienden que cada proyecto representa la confianza que el cliente deposita en nosotros. Trabajamos para que esa confianza sea siempre retribuida con resultados concretos.",
       "member0Role": "Presidente y Fundador",
-      "member0Bio": "Ingeniero fundador de Authomathika en 1999. Lidera la visión estratégica y el crecimiento de la empresa hace más de 25 años.",
+      "member0Bio": "Ingeniero fundador de Authomathika en 1999. Lidera la visión estratégica y el crecimiento de la empresa hace más de 27 años.",
       "member1Name": "Director de Ingeniería",
       "member1Role": "Director de Ingeniería",
       "member1Bio": "Responsable de la gestión técnica de todas las divisiones operativas y garantía de calidad de los proyectos.",
@@ -2695,7 +2774,7 @@
       "member4Bio": "Gestiona los contratos EPC y turnkey, garantizando entregas dentro del plazo y presupuesto.",
       "member5Name": "Coordinador de Seguridad",
       "member5Role": "Coordinador de QSMS",
-      "member5Bio": "Responsable de los estándares de calidad, seguridad, medio ambiente y salud que sustentan los 2.000+ días sin accidentes."
+      "member5Bio": "Responsable de los estándares de calidad, seguridad, medio ambiente y salud que garantizan la excelencia operacional en seguridad."
     },
     "contato": {
       "title": "Contacto",
@@ -2798,7 +2877,7 @@
     "knows10": "Metrología Industrial",
     "knows11": "Paradas Programadas",
     "award0": "Premio Excelencia de Proveedores BP Biofuels 2016/2017",
-    "award1": "2.000 días sin accidentes laborales (2019)",
+    "award1": "Excelencia en seguridad operacional (2019)",
     "award2": "Sello Verde – Empresa Sostenible",
     "credential3": "RBC – Red Brasileña de Calibración"
   }

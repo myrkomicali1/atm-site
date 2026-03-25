@@ -8,10 +8,9 @@ import { AnimateOnScroll } from "@/components/ui/animate-on-scroll";
 const pillarKeys = [
   "gestaoIntegrada",
   "iaDados",
-  "iso9001",
+  "sgq",
   "nr10Nr35",
   "lgpdNr1",
-  "diasSemAcidentes",
 ] as const;
 
 export async function CompanyBrief() {

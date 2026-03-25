@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import { Link } from "@/i18n/routing";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight, Mail, Phone } from "lucide-react";
-import { getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 import { getProduct, products } from "@/lib/data/products";
 import { productSchema } from "@/lib/schemas";
-import { routing } from "@/i18n/routing";
 import { PageIntro } from "@/components/layout/PageIntro";
 import { Container, Eyebrow, Panel, Section } from "@/components/site/primitives";
 
@@ -14,37 +12,18 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
-/** Convert a display spec key (e.g. "Pontos Instalados") to a camelCase
- *  translation key (e.g. "pontosInstalados") stripping accents. */
-function specKeyToCamel(key: string): string {
-  return key
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .split(/\s+/)
-    .map((w, i) =>
-      i === 0
-        ? w.toLowerCase()
-        : w.charAt(0).toUpperCase() + w.slice(1).toLowerCase(),
-    )
-    .join("");
-}
-
 export async function generateStaticParams() {
-  return routing.locales.flatMap((locale) =>
-    products.map((product) => ({ locale, slug: product.slug }))
-  );
+  return products.map((product) => ({ slug: product.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const product = getProduct(slug);
-  const t = await getTranslations('pages.metadata');
-  const td = await getTranslations('productData');
-  if (!product) return { title: t('notFound') };
+  if (!product) return { title: "Não encontrado" };
 
   return {
-    title: `${td(`${slug}.name`)} – ${td(`${slug}.shortDescription`)}`,
-    description: td(`${slug}.description`),
+    title: `${product.name} – ${product.shortDescription}`,
+    description: product.description,
     alternates: {
       canonical: `/produtos/${slug}`,
     },
@@ -56,31 +35,12 @@ export default async function ProductPage({ params }: Props) {
   const product = getProduct(slug);
   if (!product) notFound();
 
-  const tp = await getTranslations('pages.productDetail');
-  const td = await getTranslations('productData');
-  const tn = await getTranslations('nav');
-
-  const translatedName = td(`${slug}.name`);
-  const translatedDescription = td(`${slug}.description`);
-  const translatedShortDescription = td(`${slug}.shortDescription`);
-  const translatedBadge = product.badge ? td(`${slug}.badge`) : null;
-  const translatedFeatures = Array.from({ length: product.features.length }, (_, i) => td(`${slug}.features.${i}`));
-
-  const specKeys = product.specs ? Object.keys(product.specs) : [];
-  const translatedSpecs = specKeys.map((key) => {
-    const camel = specKeyToCamel(key);
-    return {
-      label: td(`${slug}.specs.${camel}.label`),
-      value: td(`${slug}.specs.${camel}.value`),
-    };
-  });
-
   const schema = productSchema({
-    name: translatedName,
-    description: translatedDescription,
+    name: product.name,
+    description: product.description,
     url: `/produtos/${slug}`,
     specs: product.specs,
-    badge: translatedBadge ?? undefined,
+    badge: product.badge,
   });
 
   return (
@@ -88,12 +48,12 @@ export default async function ProductPage({ params }: Props) {
       <script id={`schema-product-${slug}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <PageIntro
-        tag={tp('product')}
-        title={translatedName}
-        subtitle={translatedShortDescription}
+        tag="Produto"
+        title={product.name}
+        subtitle={product.shortDescription}
         breadcrumbs={[
-          { label: tn('produtos'), href: "/produtos" },
-          { label: translatedName },
+          { label: "Produtos", href: "/produtos" },
+          { label: product.name },
         ]}
       />
 
@@ -101,15 +61,15 @@ export default async function ProductPage({ params }: Props) {
         <Container className="grid gap-8 lg:grid-cols-12">
           <div className="space-y-6 lg:col-span-8">
             <Panel className="space-y-3">
-              <Eyebrow>{tp('application')}</Eyebrow>
-              <p className="text-zinc-600">{translatedDescription}</p>
-              {translatedBadge ? <span className="w-fit rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-xs font-medium text-primary">{translatedBadge}</span> : null}
+              <Eyebrow>Aplicação</Eyebrow>
+              <p className="text-zinc-600">{product.description}</p>
+              {product.badge ? <span className="w-fit rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-xs font-medium text-primary">{product.badge}</span> : null}
             </Panel>
 
             <div className="overflow-hidden rounded-3xl border border-zinc-200 bg-white">
-              <div className="border-b border-zinc-200 px-5 py-3 text-xs uppercase tracking-[0.14em] text-zinc-500">{tp('mainFeatures')}</div>
+              <div className="border-b border-zinc-200 px-5 py-3 text-xs uppercase tracking-[0.14em] text-zinc-500">Características principais</div>
               <div className="divide-y divide-zinc-200">
-                {translatedFeatures.map((feature, idx) => (
+                {product.features.map((feature, idx) => (
                   <div key={feature} className="grid gap-2 px-5 py-4 md:grid-cols-[48px_1fr] md:items-center">
                     <span className="font-mono text-xs text-zinc-500">{String(idx + 1).padStart(2, "0")}</span>
                     <span className="text-sm text-zinc-700">{feature}</span>
@@ -118,14 +78,14 @@ export default async function ProductPage({ params }: Props) {
               </div>
             </div>
 
-            {translatedSpecs.length > 0 ? (
+            {product.specs ? (
               <div className="overflow-hidden rounded-3xl border border-zinc-200 bg-white">
-                <div className="border-b border-zinc-200 px-5 py-3 text-xs uppercase tracking-[0.14em] text-zinc-500">{tp('specifications')}</div>
+                <div className="border-b border-zinc-200 px-5 py-3 text-xs uppercase tracking-[0.14em] text-zinc-500">Especificações</div>
                 <div className="divide-y divide-zinc-200">
-                  {translatedSpecs.map((spec) => (
-                    <div key={spec.label} className="flex items-center justify-between gap-4 px-5 py-4">
-                      <span className="text-xs uppercase tracking-[0.14em] text-zinc-500">{spec.label}</span>
-                      <span className="text-sm font-semibold text-zinc-900">{spec.value}</span>
+                  {Object.entries(product.specs).map(([label, value]) => (
+                    <div key={label} className="flex items-center justify-between gap-4 px-5 py-4">
+                      <span className="text-xs uppercase tracking-[0.14em] text-zinc-500">{label}</span>
+                      <span className="text-sm font-semibold text-zinc-900">{value}</span>
                     </div>
                   ))}
                 </div>
@@ -135,10 +95,10 @@ export default async function ProductPage({ params }: Props) {
 
           <aside className="space-y-6 lg:col-span-4">
             <Panel className="space-y-4">
-              <h3 className="font-display text-xl font-bold text-zinc-900">{tp('requestTechnicalEvaluation')}</h3>
+              <h3 className="font-display text-xl font-bold text-zinc-900">Solicitar avaliação técnica</h3>
               <Button asChild className="w-full rounded-full font-semibold">
                 <Link href="/contato/solicitacao-de-orcamento">
-                  {tp('openRequest')} <ArrowRight className="size-4" />
+                  Abrir solicitação <ArrowRight className="size-4" />
                 </Link>
               </Button>
               <a href="tel:+551635134000" className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900">
@@ -150,13 +110,13 @@ export default async function ProductPage({ params }: Props) {
             </Panel>
 
             <Panel className="space-y-3">
-              <Eyebrow>{tp('otherProducts')}</Eyebrow>
+              <Eyebrow>Outros produtos</Eyebrow>
               {products
                 .filter((item) => item.slug !== slug)
                 .slice(0, 5)
                 .map((item) => (
                   <Link key={item.slug} href={`/produtos/${item.slug}`} className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900">
-                    <ArrowRight className="size-3 text-primary" /> {td(`${item.slug}.name`)}
+                    <ArrowRight className="size-3 text-primary" /> {item.name}
                   </Link>
                 ))}
             </Panel>

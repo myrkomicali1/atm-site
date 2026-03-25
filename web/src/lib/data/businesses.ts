@@ -199,10 +199,7 @@ export const businessAreas: BusinessArea[] = [
       "Subestações de entrada em média tensão",
       "CFTV, controle de acesso e redes de fibra óptica",
     ],
-    metrics: [
-      { value: "245", label: "CCMs Fabricados" },
-      { value: "43", label: "Plantas Greenfield" },
-    ],
+    metrics: [],
     icon: "Server",
   },
 ];

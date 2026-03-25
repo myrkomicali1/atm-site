@@ -7,7 +7,7 @@ import { TimelineAnimated } from "@/components/site/TimelineAnimated";
 export const metadata: Metadata = {
   title: "Linha do Tempo",
   description:
-    "De 1999 a hoje: mais de 25 anos de marcos na engenharia integradora. Mais de 890 MW solares, 2.000+ dias sem acidentes, certificação ISO 9001 e evolução contínua.",
+    "De 1999 a hoje: mais de 27 anos de marcos na engenharia integradora. Mais de 890 MW solares, sistema de gestão da qualidade e evolução contínua.",
   alternates: {
     canonical: "/empresa/linha-do-tempo",
   },

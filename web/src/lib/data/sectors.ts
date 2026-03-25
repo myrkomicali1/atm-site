@@ -166,7 +166,7 @@ export const sectors: Sector[] = [
       },
     ],
     icon: "Mountain",
-    featured: true,
+    featured: false,
   },
   {
     slug: "energias-renovaveis",
@@ -293,7 +293,7 @@ export const sectors: Sector[] = [
       },
     ],
     icon: "Sprout",
-    featured: false,
+    featured: true,
   },
   {
     slug: "alimentos-bebidas",
@@ -406,7 +406,7 @@ export const sectors: Sector[] = [
       },
     ],
     icon: "Warehouse",
-    featured: false,
+    featured: true,
   },
   {
     slug: "papel-celulose",
@@ -671,6 +671,46 @@ export const sectors: Sector[] = [
       },
     ],
     icon: "Server",
+    featured: true,
+  },
+  {
+    slug: "industrias-em-geral",
+    name: "Indústrias em Geral",
+    headline: "Soluções de automação e elétrica para qualquer segmento industrial",
+    description:
+      "A Authomathika atende indústrias de diversos segmentos com projetos de automação, elétrica, montagem eletromecânica e manutenção industrial. Com mais de 27 anos de experiência multissetorial e uma equipe técnica altamente qualificada, a empresa oferece soluções customizadas para qualquer operação industrial que demande confiabilidade e eficiência.",
+    painPoints: [
+      "Processos industriais diversos demandam integradores com experiência multissetorial comprovada",
+      "Falta de padronização entre sistemas legados dificulta a integração e o controle centralizado",
+      "Manutenção de equipamentos críticos exige resposta rápida e equipes disponíveis 24/7",
+    ],
+    solutions: [
+      "Projetos de automação e elétrica customizados para qualquer processo industrial",
+      "Montagem eletromecânica com equipes certificadas NR-10, NR-12 e NR-35",
+      "Manutenção preventiva e corretiva com suporte técnico em campo e metrologia RBC",
+    ],
+    relatedBusinessAreas: [
+      "automacao",
+      "eletrica",
+      "montagem-eletromecanica",
+      "servicos",
+    ],
+    relatedCaseStudies: [],
+    relatedTestimonials: [],
+    clients: [],
+    metrics: [
+      { value: "250+", label: "Projetos entregues" },
+      { value: "27+", label: "Anos de experiência" },
+    ],
+    faq: [
+      {
+        question:
+          "A Authomathika atende segmentos industriais além dos listados?",
+        answer:
+          "Sim. A Authomathika possui experiência multissetorial com mais de 250 projetos entregues em 27+ anos. A empresa oferece soluções de automação, elétrica, montagem eletromecânica e manutenção para qualquer segmento industrial que demande confiabilidade e eficiência operacional.",
+      },
+    ],
+    icon: "Building",
     featured: true,
   },
 ];

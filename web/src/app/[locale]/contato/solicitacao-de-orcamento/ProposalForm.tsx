@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { ArrowRight, ArrowLeft, Shield, Clock, CheckCircle2, Send } from "lucide-react";
+import { ArrowRight, ArrowLeft, Shield, Clock, CheckCircle2, Send, ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -19,6 +19,259 @@ import {
 } from "@/components/ui/select";
 import { Panel } from "@/components/site/primitives";
 import { cn } from "@/lib/utils";
+
+type Country = { code: string; dial: string; flag: string; name: string; mask: string };
+
+const countries: Country[] = [
+  { code: "BR", dial: "+55", flag: "🇧🇷", name: "Brasil", mask: "(##) #####-####" },
+  { code: "US", dial: "+1", flag: "🇺🇸", name: "United States", mask: "(###) ###-####" },
+  { code: "AF", dial: "+93", flag: "🇦🇫", name: "Afghanistan", mask: "## ### ####" },
+  { code: "AL", dial: "+355", flag: "🇦🇱", name: "Albania", mask: "## ### ####" },
+  { code: "DZ", dial: "+213", flag: "🇩🇿", name: "Algeria", mask: "### ## ## ##" },
+  { code: "AD", dial: "+376", flag: "🇦🇩", name: "Andorra", mask: "### ###" },
+  { code: "AO", dial: "+244", flag: "🇦🇴", name: "Angola", mask: "### ### ###" },
+  { code: "AR", dial: "+54", flag: "🇦🇷", name: "Argentina", mask: "(##) ####-####" },
+  { code: "AM", dial: "+374", flag: "🇦🇲", name: "Armenia", mask: "## ######" },
+  { code: "AU", dial: "+61", flag: "🇦🇺", name: "Australia", mask: "### ### ###" },
+  { code: "AT", dial: "+43", flag: "🇦🇹", name: "Austria", mask: "### #######" },
+  { code: "AZ", dial: "+994", flag: "🇦🇿", name: "Azerbaijan", mask: "## ### ## ##" },
+  { code: "BH", dial: "+973", flag: "🇧🇭", name: "Bahrain", mask: "#### ####" },
+  { code: "BD", dial: "+880", flag: "🇧🇩", name: "Bangladesh", mask: "#### ######" },
+  { code: "BY", dial: "+375", flag: "🇧🇾", name: "Belarus", mask: "## ### ## ##" },
+  { code: "BE", dial: "+32", flag: "🇧🇪", name: "Belgium", mask: "### ## ## ##" },
+  { code: "BZ", dial: "+501", flag: "🇧🇿", name: "Belize", mask: "### ####" },
+  { code: "BJ", dial: "+229", flag: "🇧🇯", name: "Benin", mask: "## ## ####" },
+  { code: "BO", dial: "+591", flag: "🇧🇴", name: "Bolivia", mask: "# #######" },
+  { code: "BA", dial: "+387", flag: "🇧🇦", name: "Bosnia", mask: "## ### ###" },
+  { code: "BW", dial: "+267", flag: "🇧🇼", name: "Botswana", mask: "## ### ###" },
+  { code: "BN", dial: "+673", flag: "🇧🇳", name: "Brunei", mask: "### ####" },
+  { code: "BG", dial: "+359", flag: "🇧🇬", name: "Bulgaria", mask: "### ### ###" },
+  { code: "KH", dial: "+855", flag: "🇰🇭", name: "Cambodia", mask: "## ### ###" },
+  { code: "CM", dial: "+237", flag: "🇨🇲", name: "Cameroon", mask: "## ## ## ##" },
+  { code: "CA", dial: "+1", flag: "🇨🇦", name: "Canada", mask: "(###) ###-####" },
+  { code: "CL", dial: "+56", flag: "🇨🇱", name: "Chile", mask: "# ####-####" },
+  { code: "CN", dial: "+86", flag: "🇨🇳", name: "China", mask: "### #### ####" },
+  { code: "CO", dial: "+57", flag: "🇨🇴", name: "Colombia", mask: "### ###-####" },
+  { code: "CR", dial: "+506", flag: "🇨🇷", name: "Costa Rica", mask: "#### ####" },
+  { code: "HR", dial: "+385", flag: "🇭🇷", name: "Croatia", mask: "## ### ####" },
+  { code: "CU", dial: "+53", flag: "🇨🇺", name: "Cuba", mask: "# ### ####" },
+  { code: "CY", dial: "+357", flag: "🇨🇾", name: "Cyprus", mask: "## ######" },
+  { code: "CZ", dial: "+420", flag: "🇨🇿", name: "Czech Republic", mask: "### ### ###" },
+  { code: "DK", dial: "+45", flag: "🇩🇰", name: "Denmark", mask: "## ## ## ##" },
+  { code: "DO", dial: "+1", flag: "🇩🇴", name: "Dominican Rep.", mask: "(###) ###-####" },
+  { code: "EC", dial: "+593", flag: "🇪🇨", name: "Ecuador", mask: "## ### ####" },
+  { code: "EG", dial: "+20", flag: "🇪🇬", name: "Egypt", mask: "### ### ####" },
+  { code: "SV", dial: "+503", flag: "🇸🇻", name: "El Salvador", mask: "#### ####" },
+  { code: "EE", dial: "+372", flag: "🇪🇪", name: "Estonia", mask: "#### ####" },
+  { code: "ET", dial: "+251", flag: "🇪🇹", name: "Ethiopia", mask: "## ### ####" },
+  { code: "FI", dial: "+358", flag: "🇫🇮", name: "Finland", mask: "## ### ####" },
+  { code: "FR", dial: "+33", flag: "🇫🇷", name: "France", mask: "# ## ## ## ##" },
+  { code: "GE", dial: "+995", flag: "🇬🇪", name: "Georgia", mask: "### ## ## ##" },
+  { code: "DE", dial: "+49", flag: "🇩🇪", name: "Germany", mask: "### #######" },
+  { code: "GH", dial: "+233", flag: "🇬🇭", name: "Ghana", mask: "## ### ####" },
+  { code: "GR", dial: "+30", flag: "🇬🇷", name: "Greece", mask: "### ### ####" },
+  { code: "GT", dial: "+502", flag: "🇬🇹", name: "Guatemala", mask: "#### ####" },
+  { code: "HN", dial: "+504", flag: "🇭🇳", name: "Honduras", mask: "#### ####" },
+  { code: "HK", dial: "+852", flag: "🇭🇰", name: "Hong Kong", mask: "#### ####" },
+  { code: "HU", dial: "+36", flag: "🇭🇺", name: "Hungary", mask: "## ### ####" },
+  { code: "IS", dial: "+354", flag: "🇮🇸", name: "Iceland", mask: "### ####" },
+  { code: "IN", dial: "+91", flag: "🇮🇳", name: "India", mask: "##### #####" },
+  { code: "ID", dial: "+62", flag: "🇮🇩", name: "Indonesia", mask: "### #### ####" },
+  { code: "IR", dial: "+98", flag: "🇮🇷", name: "Iran", mask: "### ### ####" },
+  { code: "IQ", dial: "+964", flag: "🇮🇶", name: "Iraq", mask: "### ### ####" },
+  { code: "IE", dial: "+353", flag: "🇮🇪", name: "Ireland", mask: "## ### ####" },
+  { code: "IL", dial: "+972", flag: "🇮🇱", name: "Israel", mask: "## ### ####" },
+  { code: "IT", dial: "+39", flag: "🇮🇹", name: "Italy", mask: "### ### ####" },
+  { code: "JM", dial: "+1", flag: "🇯🇲", name: "Jamaica", mask: "(###) ###-####" },
+  { code: "JP", dial: "+81", flag: "🇯🇵", name: "Japan", mask: "## #### ####" },
+  { code: "JO", dial: "+962", flag: "🇯🇴", name: "Jordan", mask: "# #### ####" },
+  { code: "KZ", dial: "+7", flag: "🇰🇿", name: "Kazakhstan", mask: "### ### ## ##" },
+  { code: "KE", dial: "+254", flag: "🇰🇪", name: "Kenya", mask: "### ######" },
+  { code: "KR", dial: "+82", flag: "🇰🇷", name: "South Korea", mask: "## #### ####" },
+  { code: "KW", dial: "+965", flag: "🇰🇼", name: "Kuwait", mask: "#### ####" },
+  { code: "LV", dial: "+371", flag: "🇱🇻", name: "Latvia", mask: "## ### ###" },
+  { code: "LB", dial: "+961", flag: "🇱🇧", name: "Lebanon", mask: "## ### ###" },
+  { code: "LT", dial: "+370", flag: "🇱🇹", name: "Lithuania", mask: "### #####" },
+  { code: "LU", dial: "+352", flag: "🇱🇺", name: "Luxembourg", mask: "### ### ###" },
+  { code: "MY", dial: "+60", flag: "🇲🇾", name: "Malaysia", mask: "## #### ####" },
+  { code: "MX", dial: "+52", flag: "🇲🇽", name: "Mexico", mask: "## ####-####" },
+  { code: "MA", dial: "+212", flag: "🇲🇦", name: "Morocco", mask: "## #### ###" },
+  { code: "MZ", dial: "+258", flag: "🇲🇿", name: "Mozambique", mask: "## ### ####" },
+  { code: "NL", dial: "+31", flag: "🇳🇱", name: "Netherlands", mask: "# ########" },
+  { code: "NZ", dial: "+64", flag: "🇳🇿", name: "New Zealand", mask: "## ### ####" },
+  { code: "NI", dial: "+505", flag: "🇳🇮", name: "Nicaragua", mask: "#### ####" },
+  { code: "NG", dial: "+234", flag: "🇳🇬", name: "Nigeria", mask: "### ### ####" },
+  { code: "NO", dial: "+47", flag: "🇳🇴", name: "Norway", mask: "### ## ###" },
+  { code: "OM", dial: "+968", flag: "🇴🇲", name: "Oman", mask: "#### ####" },
+  { code: "PK", dial: "+92", flag: "🇵🇰", name: "Pakistan", mask: "### #######" },
+  { code: "PA", dial: "+507", flag: "🇵🇦", name: "Panama", mask: "#### ####" },
+  { code: "PY", dial: "+595", flag: "🇵🇾", name: "Paraguay", mask: "### ###-###" },
+  { code: "PE", dial: "+51", flag: "🇵🇪", name: "Peru", mask: "### ###-###" },
+  { code: "PH", dial: "+63", flag: "🇵🇭", name: "Philippines", mask: "### ### ####" },
+  { code: "PL", dial: "+48", flag: "🇵🇱", name: "Poland", mask: "### ### ###" },
+  { code: "PT", dial: "+351", flag: "🇵🇹", name: "Portugal", mask: "### ### ###" },
+  { code: "QA", dial: "+974", flag: "🇶🇦", name: "Qatar", mask: "#### ####" },
+  { code: "RO", dial: "+40", flag: "🇷🇴", name: "Romania", mask: "### ### ###" },
+  { code: "RU", dial: "+7", flag: "🇷🇺", name: "Russia", mask: "### ### ## ##" },
+  { code: "SA", dial: "+966", flag: "🇸🇦", name: "Saudi Arabia", mask: "## ### ####" },
+  { code: "SN", dial: "+221", flag: "🇸🇳", name: "Senegal", mask: "## ### ## ##" },
+  { code: "RS", dial: "+381", flag: "🇷🇸", name: "Serbia", mask: "## ### ####" },
+  { code: "SG", dial: "+65", flag: "🇸🇬", name: "Singapore", mask: "#### ####" },
+  { code: "SK", dial: "+421", flag: "🇸🇰", name: "Slovakia", mask: "### ### ###" },
+  { code: "SI", dial: "+386", flag: "🇸🇮", name: "Slovenia", mask: "## ### ###" },
+  { code: "ZA", dial: "+27", flag: "🇿🇦", name: "South Africa", mask: "## ### ####" },
+  { code: "ES", dial: "+34", flag: "🇪🇸", name: "Spain", mask: "### ## ## ##" },
+  { code: "LK", dial: "+94", flag: "🇱🇰", name: "Sri Lanka", mask: "## ### ####" },
+  { code: "SE", dial: "+46", flag: "🇸🇪", name: "Sweden", mask: "## ### ####" },
+  { code: "CH", dial: "+41", flag: "🇨🇭", name: "Switzerland", mask: "## ### ## ##" },
+  { code: "TW", dial: "+886", flag: "🇹🇼", name: "Taiwan", mask: "### ### ###" },
+  { code: "TZ", dial: "+255", flag: "🇹🇿", name: "Tanzania", mask: "### ### ###" },
+  { code: "TH", dial: "+66", flag: "🇹🇭", name: "Thailand", mask: "## ### ####" },
+  { code: "TN", dial: "+216", flag: "🇹🇳", name: "Tunisia", mask: "## ### ###" },
+  { code: "TR", dial: "+90", flag: "🇹🇷", name: "Turkey", mask: "### ### ####" },
+  { code: "UA", dial: "+380", flag: "🇺🇦", name: "Ukraine", mask: "## ### ####" },
+  { code: "AE", dial: "+971", flag: "🇦🇪", name: "UAE", mask: "## ### ####" },
+  { code: "GB", dial: "+44", flag: "🇬🇧", name: "United Kingdom", mask: "#### ######" },
+  { code: "UY", dial: "+598", flag: "🇺🇾", name: "Uruguay", mask: "## ###-###" },
+  { code: "VE", dial: "+58", flag: "🇻🇪", name: "Venezuela", mask: "### ###-####" },
+  { code: "VN", dial: "+84", flag: "🇻🇳", name: "Vietnam", mask: "## ### ## ##" },
+];
+
+function applyPhoneMask(value: string, mask: string): string {
+  const digits = value.replace(/\D/g, "");
+  let result = "";
+  let digitIndex = 0;
+  for (let i = 0; i < mask.length && digitIndex < digits.length; i++) {
+    if (mask[i] === "#") {
+      result += digits[digitIndex++];
+    } else {
+      result += mask[i];
+    }
+  }
+  return result;
+}
+
+function PhoneInput({
+  value,
+  onChange,
+  placeholder,
+  id,
+  hasError,
+}: {
+  value: string;
+  onChange: (fullValue: string) => void;
+  placeholder?: string;
+  id?: string;
+  hasError?: boolean;
+}) {
+  const [selectedCountry, setSelectedCountry] = useState(countries[0]);
+  const [localNumber, setLocalNumber] = useState("");
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [search, setSearch] = useState("");
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const searchRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setDropdownOpen(false);
+        setSearch("");
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  useEffect(() => {
+    if (dropdownOpen && searchRef.current) {
+      searchRef.current.focus();
+    }
+  }, [dropdownOpen]);
+
+  const filtered = search
+    ? countries.filter(
+        (c) =>
+          c.name.toLowerCase().includes(search.toLowerCase()) ||
+          c.code.toLowerCase().includes(search.toLowerCase()) ||
+          c.dial.includes(search),
+      )
+    : countries;
+
+  const handleNumberChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    const raw = e.target.value.replace(/\D/g, "");
+    const masked = applyPhoneMask(raw, selectedCountry.mask);
+    setLocalNumber(masked);
+    onChange(`${selectedCountry.dial} ${masked}`);
+  }, [selectedCountry, onChange]);
+
+  const selectCountry = useCallback((country: Country) => {
+    setSelectedCountry(country);
+    setLocalNumber("");
+    onChange(`${country.dial} `);
+    setDropdownOpen(false);
+    setSearch("");
+  }, [onChange]);
+
+  return (
+    <div className="relative flex" ref={dropdownRef}>
+      <button
+        type="button"
+        onClick={() => setDropdownOpen((v) => !v)}
+        className={cn(
+          "flex items-center gap-1 rounded-l-lg border border-r-0 border-zinc-200 bg-zinc-50 px-2.5 text-xs transition-colors hover:bg-zinc-100",
+          hasError && "border-destructive",
+        )}
+      >
+        <span className="text-sm leading-none">{selectedCountry.flag}</span>
+        <span className="text-[11px] text-zinc-600">{selectedCountry.dial}</span>
+        <ChevronDown className="size-2.5 text-zinc-400" />
+      </button>
+      {dropdownOpen ? (
+        <div className="absolute left-0 top-full z-50 mt-1 w-60 rounded-lg border border-zinc-200 bg-white shadow-lg">
+          <div className="border-b border-zinc-100 p-1.5">
+            <input
+              ref={searchRef}
+              type="text"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Search country..."
+              className="w-full rounded-md border border-zinc-200 bg-zinc-50 px-2.5 py-1.5 text-xs text-zinc-900 outline-none placeholder:text-zinc-400 focus:border-primary/40 focus:ring-1 focus:ring-primary/20"
+            />
+          </div>
+          <div className="max-h-48 overflow-y-auto py-0.5">
+            {filtered.length === 0 ? (
+              <p className="px-3 py-2 text-[11px] text-zinc-400">No results</p>
+            ) : (
+              filtered.map((c, i) => (
+                <button
+                  key={`${c.code}-${c.dial}-${i}`}
+                  type="button"
+                  onClick={() => selectCountry(c)}
+                  className={cn(
+                    "flex w-full items-center gap-2 px-2.5 py-1.5 text-[11px] transition-colors hover:bg-zinc-50",
+                    c.code === selectedCountry.code && c.dial === selectedCountry.dial && "bg-zinc-50 font-medium",
+                  )}
+                >
+                  <span className="text-sm leading-none">{c.flag}</span>
+                  <span className="text-zinc-900">{c.name}</span>
+                  <span className="ml-auto text-zinc-400">{c.dial}</span>
+                </button>
+              ))
+            )}
+          </div>
+        </div>
+      ) : null}
+      <Input
+        id={id}
+        type="tel"
+        className={cn("h-11 rounded-l-none", hasError && "border-destructive")}
+        placeholder={selectedCountry.mask.replace(/#/g, "0")}
+        value={localNumber}
+        onChange={handleNumberChange}
+      />
+    </div>
+  );
+}
 
 const sectorKeys = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"] as const;
 const projectTypeKeys = ["0", "1", "2", "3", "4"] as const;
@@ -334,7 +587,12 @@ export function ProposalForm() {
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="telefone">{t("labelTelefone")}</Label>
-                  <Input id="telefone" className="h-11" placeholder={t("placeholderTelefone")} {...register("telefone")} />
+                  <PhoneInput
+                    id="telefone"
+                    value={watch("telefone")}
+                    onChange={(v) => setValue("telefone", v, { shouldValidate: true })}
+                    hasError={!!errors.telefone}
+                  />
                   {errors.telefone ? <p className="text-xs text-destructive">{errors.telefone.message}</p> : null}
                 </div>
               </div>
